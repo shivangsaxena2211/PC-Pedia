@@ -3,6 +3,7 @@ import type { Product } from '@/types'
 import {
   resolveHardwareImage,
   getCategoryFallbackImage,
+  getHardwareImageAlt,
   getImageVariantClasses,
   type ImageVariant,
 } from '@/utils/hardwareImage'
@@ -39,7 +40,7 @@ export default function HardwareImage({
     }
   }
 
-  const label = alt ?? product?.name ?? 'Hardware component'
+  const label = getHardwareImageAlt(product, categorySlug, alt)
 
   return (
     <div

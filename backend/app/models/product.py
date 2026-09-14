@@ -44,21 +44,21 @@ class Product(db.Model):
     specifications = db.relationship(
         "Specification",
         back_populates="product",
-        lazy="joined",
+        lazy="select",
         cascade="all, delete-orphan",
         order_by="Specification.sort_order",
     )
     images = db.relationship(
         "ProductImage",
         back_populates="product",
-        lazy="joined",
+        lazy="select",
         cascade="all, delete-orphan",
         order_by="ProductImage.sort_order",
     )
     benchmarks = db.relationship(
         "Benchmark",
         back_populates="product",
-        lazy="joined",
+        lazy="select",
         cascade="all, delete-orphan",
     )
 
@@ -75,6 +75,8 @@ class Product(db.Model):
         include_images=False,
         include_benchmarks=False,
         list_view=False,
+        quick_specs: dict | None = None,
+        primary_image_url_override: str | None = None,
     ):
         data = {
             "id": self.id,
@@ -99,17 +101,23 @@ class Product(db.Model):
             "description": self.description,
             "release_date": self.release_date.isoformat() if self.release_date else None,
             "image_url": self.image_url,
-            "primary_image_url": self.primary_image_url,
+            "primary_image_url": primary_image_url_override,
             "status": self.status,
             "is_popular": self.is_popular,
             "created_at": self.created_at.isoformat() if self.created_at else None,
             "updated_at": self.updated_at.isoformat() if self.updated_at else None,
         }
 
-        if list_view and self.specifications:
-            data["quick_specs"] = {
-                s.key: s.value for s in self.specifications[:6]
-            }
+        if primary_image_url_override is None:
+            data["primary_image_url"] = self.primary_image_url
+
+        if list_view:
+            if quick_specs is not None:
+                data["quick_specs"] = quick_specs
+            elif self.specifications:
+                data["quick_specs"] = {
+                    s.key: s.value for s in self.specifications[:6]
+                }
 
         if include_specs:
             data["specifications"] = [s.to_dict() for s in self.specifications]
@@ -123,12 +131,9 @@ class Product(db.Model):
     @property
     def primary_image_url(self):
         """Resolve the best available product-specific image URL."""
-        if self.image_url and self.image_url.strip():
-            return self.image_url.strip()
-        for img in sorted(self.images, key=lambda i: (not i.is_primary, i.sort_order)):
-            if img.url and img.url.strip():
-                return img.url.strip()
-        return None
+        from app.utils.images import resolve_primary_image_url
+
+        return resolve_primary_image_url(self.image_url, list(self.images))
 
     @property
     def url_path(self):

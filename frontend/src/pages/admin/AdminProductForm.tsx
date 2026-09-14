@@ -245,6 +245,15 @@ export default function AdminProductForm() {
                     />
                   </div>
                 </div>
+                <div className="flex items-center gap-2">
+                  <input
+                    type="checkbox"
+                    id={`primary-${index}`}
+                    checked={img.is_primary ?? false}
+                    onChange={(e) => updateImageRow(index, 'is_primary', e.target.checked)}
+                  />
+                  <label htmlFor={`primary-${index}`} className="text-xs">Mark as primary image</label>
+                </div>
                 {img.url && !img._previewError && (
                   <img
                     src={img.url}

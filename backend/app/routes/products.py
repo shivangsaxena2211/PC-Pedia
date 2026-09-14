@@ -8,6 +8,7 @@ from app.services.product_service import (
     get_product_by_path,
     get_related_products,
     get_filter_options,
+    products_to_list_dicts,
     CATEGORY_SLUG_MAP,
     CATEGORY_API_ENDPOINTS,
 )
@@ -52,7 +53,7 @@ def get_product_by_id_route(product_id):
 
     data = product_detail(product)
     data["specification_groups"] = grouped_specifications(product)
-    data["related_products"] = [p.to_dict() for p in get_related_products(product)]
+    data["related_products"] = products_to_list_dicts(get_related_products(product))
     data["url_path"] = product.url_path
     return jsonify(data)
 
@@ -65,7 +66,7 @@ def get_product_by_slug_route(slug):
 
     data = product_detail(product)
     data["specification_groups"] = grouped_specifications(product)
-    data["related_products"] = [p.to_dict() for p in get_related_products(product)]
+    data["related_products"] = products_to_list_dicts(get_related_products(product))
     data["url_path"] = product.url_path
     return jsonify(data)
 
@@ -78,7 +79,7 @@ def get_product_by_path_route(category, manufacturer, slug):
 
     data = product_detail(product)
     data["specification_groups"] = grouped_specifications(product)
-    data["related_products"] = [p.to_dict() for p in get_related_products(product)]
+    data["related_products"] = products_to_list_dicts(get_related_products(product))
     data["url_path"] = product.url_path
     return jsonify(data)
 
@@ -94,6 +95,6 @@ def get_product_legacy(slug):
 
     data = product_detail(product)
     data["specification_groups"] = grouped_specifications(product)
-    data["related_products"] = [p.to_dict() for p in get_related_products(product)]
+    data["related_products"] = products_to_list_dicts(get_related_products(product))
     data["url_path"] = product.url_path
     return jsonify(data)

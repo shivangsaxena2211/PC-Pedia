@@ -76,3 +76,50 @@ def test_compare_different_categories(client, app):
 def test_product_by_path_not_found(client):
     response = client.get("/api/products/cpu/amd/nonexistent-product")
     assert response.status_code == 404
+
+
+def test_products_pagination_limit(client, app):
+    with app.app_context():
+        cat = Category.query.filter_by(slug="cpu").first()
+        mfr = Manufacturer(name="Paginate Mfr", slug="paginate-mfr")
+        db.session.add(mfr)
+        db.session.flush()
+        for i in range(15):
+            db.session.add(Product(
+                name=f"CPU {i}",
+                slug=f"cpu-{i}",
+                category_id=cat.id,
+                manufacturer_id=mfr.id,
+                status="active",
+            ))
+        db.session.commit()
+
+    response = client.get("/api/products?category=cpu&page=1&limit=5")
+    assert response.status_code == 200
+    data = response.get_json()
+    assert len(data["data"]) == 5
+    assert data["pagination"]["limit"] == 5
+    assert data["pagination"]["total"] >= 15
+
+
+def test_search_by_product_name(client, app):
+    with app.app_context():
+        cat = Category.query.filter_by(slug="cpu").first()
+        mfr = Manufacturer(name="AMD", slug="amd-search")
+        db.session.add(mfr)
+        db.session.flush()
+        db.session.add(Product(
+            name="AMD Ryzen 7 7800X3D",
+            slug="ryzen-7-7800x3d",
+            category_id=cat.id,
+            manufacturer_id=mfr.id,
+            architecture="Zen 4",
+            status="active",
+        ))
+        db.session.commit()
+
+    response = client.get("/api/search?q=7800X3D")
+    assert response.status_code == 200
+    data = response.get_json()
+    names = [item["name"] for item in data["items"]]
+    assert any("7800X3D" in name for name in names)
