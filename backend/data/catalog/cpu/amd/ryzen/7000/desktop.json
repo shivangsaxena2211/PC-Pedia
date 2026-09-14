@@ -1,0 +1,2151 @@
+[
+  {
+    "category": "CPU",
+    "manufacturer": "AMD",
+    "family": "Ryzen",
+    "series": "Ryzen",
+    "generation": "Ryzen 7000",
+    "architecture": "Zen 4",
+    "source": {
+      "name": "AMD Official Product Page",
+      "url": "https://www.amd.com/en/products/processors/desktops/ryzen/7000-series/amd-ryzen-9-7950x3d.html",
+      "date": "2026-09-14",
+      "notes": "Specifications verified against AMD official product information."
+    },
+    "product": {
+      "name": "AMD Ryzen 9 7950X3D",
+      "slug": "amd-ryzen-9-7950x3d",
+      "description": "Desktop processor based on the Zen 4 architecture with 16 cores and 32 threads. Features AMD 3D V-Cache technology.",
+      "release_date": "2023-02-28",
+      "status": "active",
+      "is_popular": false,
+      "architecture": "Zen 4"
+    },
+    "images": [],
+    "specifications": [
+      {
+        "group": "General",
+        "key": "architecture",
+        "value": "Zen 4"
+      },
+      {
+        "group": "General",
+        "key": "microarchitecture",
+        "value": "Zen 4"
+      },
+      {
+        "group": "General",
+        "key": "process_node",
+        "value": "5"
+      },
+      {
+        "group": "General",
+        "key": "market_segment",
+        "value": "Enthusiast Desktop"
+      },
+      {
+        "group": "General",
+        "key": "product_family",
+        "value": "Ryzen"
+      },
+      {
+        "group": "General",
+        "key": "generation",
+        "value": "Ryzen 7000"
+      },
+      {
+        "group": "Socket",
+        "key": "socket",
+        "value": "AM5"
+      },
+      {
+        "group": "Core Configuration",
+        "key": "cores",
+        "value": "16"
+      },
+      {
+        "group": "Core Configuration",
+        "key": "threads",
+        "value": "32"
+      },
+      {
+        "group": "Core Configuration",
+        "key": "smt",
+        "value": "true"
+      },
+      {
+        "group": "Clock Speeds",
+        "key": "base_clock",
+        "value": "4.2",
+        "unit": "GHz"
+      },
+      {
+        "group": "Clock Speeds",
+        "key": "boost_clock",
+        "value": "5.7",
+        "unit": "GHz"
+      },
+      {
+        "group": "Cache",
+        "key": "l2_cache",
+        "value": "16",
+        "unit": "MB"
+      },
+      {
+        "group": "Cache",
+        "key": "l3_cache",
+        "value": "128",
+        "unit": "MB"
+      },
+      {
+        "group": "Power",
+        "key": "tdp",
+        "value": "120",
+        "unit": "W"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_type",
+        "value": "DDR5"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_channels",
+        "value": "2"
+      },
+      {
+        "group": "Memory",
+        "key": "max_memory",
+        "value": "128",
+        "unit": "GB"
+      },
+      {
+        "group": "Memory",
+        "key": "ecc_support",
+        "value": "true"
+      },
+      {
+        "group": "Graphics",
+        "key": "integrated_graphics",
+        "value": "true"
+      },
+      {
+        "group": "Graphics",
+        "key": "graphics_model",
+        "value": "AMD Radeon Graphics"
+      },
+      {
+        "group": "Graphics",
+        "key": "graphics_max_clock",
+        "value": "2200",
+        "unit": "MHz"
+      },
+      {
+        "group": "Features",
+        "key": "overclocking_support",
+        "value": "false"
+      },
+      {
+        "group": "Features",
+        "key": "precision_boost",
+        "value": "true"
+      },
+      {
+        "group": "Features",
+        "key": "aes",
+        "value": "true"
+      },
+      {
+        "group": "Features",
+        "key": "avx2",
+        "value": "true"
+      },
+      {
+        "group": "Features",
+        "key": "avx512",
+        "value": "true"
+      },
+      {
+        "group": "Features",
+        "key": "virtualization",
+        "value": "true"
+      },
+      {
+        "group": "Cache",
+        "key": "l1_cache",
+        "value": "1",
+        "unit": "MB"
+      }
+    ],
+    "benchmarks": []
+  },
+  {
+    "category": "CPU",
+    "manufacturer": "AMD",
+    "family": "Ryzen",
+    "series": "Ryzen",
+    "generation": "Ryzen 7000",
+    "architecture": "Zen 4",
+    "source": {
+      "name": "AMD Official Product Page",
+      "url": "https://www.amd.com/en/products/processors/desktops/ryzen/7000-series/amd-ryzen-9-7950x.html",
+      "date": "2026-09-14",
+      "notes": "Specifications verified against AMD official product information."
+    },
+    "product": {
+      "name": "AMD Ryzen 9 7950X",
+      "slug": "amd-ryzen-9-7950x",
+      "description": "Desktop processor based on the Zen 4 architecture with 16 cores and 32 threads.",
+      "release_date": "2022-09-27",
+      "status": "active",
+      "is_popular": true,
+      "architecture": "Zen 4"
+    },
+    "images": [],
+    "specifications": [
+      {
+        "group": "General",
+        "key": "architecture",
+        "value": "Zen 4"
+      },
+      {
+        "group": "General",
+        "key": "microarchitecture",
+        "value": "Zen 4"
+      },
+      {
+        "group": "General",
+        "key": "process_node",
+        "value": "5"
+      },
+      {
+        "group": "General",
+        "key": "market_segment",
+        "value": "Enthusiast Desktop"
+      },
+      {
+        "group": "General",
+        "key": "product_family",
+        "value": "Ryzen"
+      },
+      {
+        "group": "General",
+        "key": "generation",
+        "value": "Ryzen 7000"
+      },
+      {
+        "group": "Socket",
+        "key": "socket",
+        "value": "AM5"
+      },
+      {
+        "group": "Core Configuration",
+        "key": "cores",
+        "value": "16"
+      },
+      {
+        "group": "Core Configuration",
+        "key": "threads",
+        "value": "32"
+      },
+      {
+        "group": "Core Configuration",
+        "key": "smt",
+        "value": "true"
+      },
+      {
+        "group": "Clock Speeds",
+        "key": "base_clock",
+        "value": "4.5",
+        "unit": "GHz"
+      },
+      {
+        "group": "Clock Speeds",
+        "key": "boost_clock",
+        "value": "5.7",
+        "unit": "GHz"
+      },
+      {
+        "group": "Cache",
+        "key": "l2_cache",
+        "value": "16",
+        "unit": "MB"
+      },
+      {
+        "group": "Cache",
+        "key": "l3_cache",
+        "value": "64",
+        "unit": "MB"
+      },
+      {
+        "group": "Power",
+        "key": "tdp",
+        "value": "170",
+        "unit": "W"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_type",
+        "value": "DDR5"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_channels",
+        "value": "2"
+      },
+      {
+        "group": "Memory",
+        "key": "max_memory",
+        "value": "128",
+        "unit": "GB"
+      },
+      {
+        "group": "Memory",
+        "key": "ecc_support",
+        "value": "true"
+      },
+      {
+        "group": "Graphics",
+        "key": "integrated_graphics",
+        "value": "true"
+      },
+      {
+        "group": "Graphics",
+        "key": "graphics_model",
+        "value": "AMD Radeon Graphics"
+      },
+      {
+        "group": "Graphics",
+        "key": "graphics_max_clock",
+        "value": "2200",
+        "unit": "MHz"
+      },
+      {
+        "group": "Features",
+        "key": "overclocking_support",
+        "value": "true"
+      },
+      {
+        "group": "Features",
+        "key": "precision_boost",
+        "value": "true"
+      },
+      {
+        "group": "Features",
+        "key": "aes",
+        "value": "true"
+      },
+      {
+        "group": "Features",
+        "key": "avx2",
+        "value": "true"
+      },
+      {
+        "group": "Features",
+        "key": "avx512",
+        "value": "true"
+      },
+      {
+        "group": "Features",
+        "key": "virtualization",
+        "value": "true"
+      },
+      {
+        "group": "Cache",
+        "key": "l1_cache",
+        "value": "1",
+        "unit": "MB"
+      }
+    ],
+    "benchmarks": []
+  },
+  {
+    "category": "CPU",
+    "manufacturer": "AMD",
+    "family": "Ryzen",
+    "series": "Ryzen",
+    "generation": "Ryzen 7000",
+    "architecture": "Zen 4",
+    "source": {
+      "name": "AMD Official Product Page",
+      "url": "https://www.amd.com/en/products/processors/desktops/ryzen/7000-series/amd-ryzen-9-7900x3d.html",
+      "date": "2026-09-14",
+      "notes": "Specifications verified against AMD official product information."
+    },
+    "product": {
+      "name": "AMD Ryzen 9 7900X3D",
+      "slug": "amd-ryzen-9-7900x3d",
+      "description": "Desktop processor based on the Zen 4 architecture with 12 cores and 24 threads. Features AMD 3D V-Cache technology.",
+      "release_date": "2023-02-28",
+      "status": "active",
+      "is_popular": false,
+      "architecture": "Zen 4"
+    },
+    "images": [],
+    "specifications": [
+      {
+        "group": "General",
+        "key": "architecture",
+        "value": "Zen 4"
+      },
+      {
+        "group": "General",
+        "key": "microarchitecture",
+        "value": "Zen 4"
+      },
+      {
+        "group": "General",
+        "key": "process_node",
+        "value": "5"
+      },
+      {
+        "group": "General",
+        "key": "market_segment",
+        "value": "Enthusiast Desktop"
+      },
+      {
+        "group": "General",
+        "key": "product_family",
+        "value": "Ryzen"
+      },
+      {
+        "group": "General",
+        "key": "generation",
+        "value": "Ryzen 7000"
+      },
+      {
+        "group": "Socket",
+        "key": "socket",
+        "value": "AM5"
+      },
+      {
+        "group": "Core Configuration",
+        "key": "cores",
+        "value": "12"
+      },
+      {
+        "group": "Core Configuration",
+        "key": "threads",
+        "value": "24"
+      },
+      {
+        "group": "Core Configuration",
+        "key": "smt",
+        "value": "true"
+      },
+      {
+        "group": "Clock Speeds",
+        "key": "base_clock",
+        "value": "4.4",
+        "unit": "GHz"
+      },
+      {
+        "group": "Clock Speeds",
+        "key": "boost_clock",
+        "value": "5.6",
+        "unit": "GHz"
+      },
+      {
+        "group": "Cache",
+        "key": "l2_cache",
+        "value": "12",
+        "unit": "MB"
+      },
+      {
+        "group": "Cache",
+        "key": "l3_cache",
+        "value": "128",
+        "unit": "MB"
+      },
+      {
+        "group": "Power",
+        "key": "tdp",
+        "value": "120",
+        "unit": "W"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_type",
+        "value": "DDR5"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_channels",
+        "value": "2"
+      },
+      {
+        "group": "Memory",
+        "key": "max_memory",
+        "value": "128",
+        "unit": "GB"
+      },
+      {
+        "group": "Memory",
+        "key": "ecc_support",
+        "value": "true"
+      },
+      {
+        "group": "Graphics",
+        "key": "integrated_graphics",
+        "value": "true"
+      },
+      {
+        "group": "Graphics",
+        "key": "graphics_model",
+        "value": "AMD Radeon Graphics"
+      },
+      {
+        "group": "Graphics",
+        "key": "graphics_max_clock",
+        "value": "2200",
+        "unit": "MHz"
+      },
+      {
+        "group": "Features",
+        "key": "overclocking_support",
+        "value": "false"
+      },
+      {
+        "group": "Features",
+        "key": "precision_boost",
+        "value": "true"
+      },
+      {
+        "group": "Features",
+        "key": "aes",
+        "value": "true"
+      },
+      {
+        "group": "Features",
+        "key": "avx2",
+        "value": "true"
+      },
+      {
+        "group": "Features",
+        "key": "avx512",
+        "value": "true"
+      },
+      {
+        "group": "Features",
+        "key": "virtualization",
+        "value": "true"
+      },
+      {
+        "group": "Cache",
+        "key": "l1_cache",
+        "value": "768",
+        "unit": "MB"
+      }
+    ],
+    "benchmarks": []
+  },
+  {
+    "category": "CPU",
+    "manufacturer": "AMD",
+    "family": "Ryzen",
+    "series": "Ryzen",
+    "generation": "Ryzen 7000",
+    "architecture": "Zen 4",
+    "source": {
+      "name": "AMD Official Product Page",
+      "url": "https://www.amd.com/en/products/processors/desktops/ryzen/7000-series/amd-ryzen-9-7900x.html",
+      "date": "2026-09-14",
+      "notes": "Specifications verified against AMD official product information."
+    },
+    "product": {
+      "name": "AMD Ryzen 9 7900X",
+      "slug": "amd-ryzen-9-7900x",
+      "description": "Desktop processor based on the Zen 4 architecture with 12 cores and 24 threads.",
+      "release_date": "2022-09-27",
+      "status": "active",
+      "is_popular": false,
+      "architecture": "Zen 4"
+    },
+    "images": [],
+    "specifications": [
+      {
+        "group": "General",
+        "key": "architecture",
+        "value": "Zen 4"
+      },
+      {
+        "group": "General",
+        "key": "microarchitecture",
+        "value": "Zen 4"
+      },
+      {
+        "group": "General",
+        "key": "process_node",
+        "value": "5"
+      },
+      {
+        "group": "General",
+        "key": "market_segment",
+        "value": "Enthusiast Desktop"
+      },
+      {
+        "group": "General",
+        "key": "product_family",
+        "value": "Ryzen"
+      },
+      {
+        "group": "General",
+        "key": "generation",
+        "value": "Ryzen 7000"
+      },
+      {
+        "group": "Socket",
+        "key": "socket",
+        "value": "AM5"
+      },
+      {
+        "group": "Core Configuration",
+        "key": "cores",
+        "value": "12"
+      },
+      {
+        "group": "Core Configuration",
+        "key": "threads",
+        "value": "24"
+      },
+      {
+        "group": "Core Configuration",
+        "key": "smt",
+        "value": "true"
+      },
+      {
+        "group": "Clock Speeds",
+        "key": "base_clock",
+        "value": "4.7",
+        "unit": "GHz"
+      },
+      {
+        "group": "Clock Speeds",
+        "key": "boost_clock",
+        "value": "5.6",
+        "unit": "GHz"
+      },
+      {
+        "group": "Cache",
+        "key": "l2_cache",
+        "value": "12",
+        "unit": "MB"
+      },
+      {
+        "group": "Cache",
+        "key": "l3_cache",
+        "value": "64",
+        "unit": "MB"
+      },
+      {
+        "group": "Power",
+        "key": "tdp",
+        "value": "170",
+        "unit": "W"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_type",
+        "value": "DDR5"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_channels",
+        "value": "2"
+      },
+      {
+        "group": "Memory",
+        "key": "max_memory",
+        "value": "128",
+        "unit": "GB"
+      },
+      {
+        "group": "Memory",
+        "key": "ecc_support",
+        "value": "true"
+      },
+      {
+        "group": "Graphics",
+        "key": "integrated_graphics",
+        "value": "true"
+      },
+      {
+        "group": "Graphics",
+        "key": "graphics_model",
+        "value": "AMD Radeon Graphics"
+      },
+      {
+        "group": "Graphics",
+        "key": "graphics_max_clock",
+        "value": "2200",
+        "unit": "MHz"
+      },
+      {
+        "group": "Features",
+        "key": "overclocking_support",
+        "value": "true"
+      },
+      {
+        "group": "Features",
+        "key": "precision_boost",
+        "value": "true"
+      },
+      {
+        "group": "Features",
+        "key": "aes",
+        "value": "true"
+      },
+      {
+        "group": "Features",
+        "key": "avx2",
+        "value": "true"
+      },
+      {
+        "group": "Features",
+        "key": "avx512",
+        "value": "true"
+      },
+      {
+        "group": "Features",
+        "key": "virtualization",
+        "value": "true"
+      },
+      {
+        "group": "Cache",
+        "key": "l1_cache",
+        "value": "768",
+        "unit": "MB"
+      }
+    ],
+    "benchmarks": []
+  },
+  {
+    "category": "CPU",
+    "manufacturer": "AMD",
+    "family": "Ryzen",
+    "series": "Ryzen",
+    "generation": "Ryzen 7000",
+    "architecture": "Zen 4",
+    "source": {
+      "name": "AMD Official Product Page",
+      "url": "https://www.amd.com/en/products/processors/desktops/ryzen/7000-series/amd-ryzen-9-7900.html",
+      "date": "2026-09-14",
+      "notes": "Specifications verified against AMD official product information."
+    },
+    "product": {
+      "name": "AMD Ryzen 9 7900",
+      "slug": "amd-ryzen-9-7900",
+      "description": "Desktop processor based on the Zen 4 architecture with 12 cores and 24 threads.",
+      "release_date": "2023-01-14",
+      "status": "active",
+      "is_popular": false,
+      "architecture": "Zen 4"
+    },
+    "images": [],
+    "specifications": [
+      {
+        "group": "General",
+        "key": "architecture",
+        "value": "Zen 4"
+      },
+      {
+        "group": "General",
+        "key": "microarchitecture",
+        "value": "Zen 4"
+      },
+      {
+        "group": "General",
+        "key": "process_node",
+        "value": "5"
+      },
+      {
+        "group": "General",
+        "key": "market_segment",
+        "value": "Enthusiast Desktop"
+      },
+      {
+        "group": "General",
+        "key": "product_family",
+        "value": "Ryzen"
+      },
+      {
+        "group": "General",
+        "key": "generation",
+        "value": "Ryzen 7000"
+      },
+      {
+        "group": "Socket",
+        "key": "socket",
+        "value": "AM5"
+      },
+      {
+        "group": "Core Configuration",
+        "key": "cores",
+        "value": "12"
+      },
+      {
+        "group": "Core Configuration",
+        "key": "threads",
+        "value": "24"
+      },
+      {
+        "group": "Core Configuration",
+        "key": "smt",
+        "value": "true"
+      },
+      {
+        "group": "Clock Speeds",
+        "key": "base_clock",
+        "value": "3.7",
+        "unit": "GHz"
+      },
+      {
+        "group": "Clock Speeds",
+        "key": "boost_clock",
+        "value": "5.4",
+        "unit": "GHz"
+      },
+      {
+        "group": "Cache",
+        "key": "l2_cache",
+        "value": "12",
+        "unit": "MB"
+      },
+      {
+        "group": "Cache",
+        "key": "l3_cache",
+        "value": "64",
+        "unit": "MB"
+      },
+      {
+        "group": "Power",
+        "key": "tdp",
+        "value": "65",
+        "unit": "W"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_type",
+        "value": "DDR5"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_channels",
+        "value": "2"
+      },
+      {
+        "group": "Memory",
+        "key": "max_memory",
+        "value": "128",
+        "unit": "GB"
+      },
+      {
+        "group": "Memory",
+        "key": "ecc_support",
+        "value": "true"
+      },
+      {
+        "group": "Graphics",
+        "key": "integrated_graphics",
+        "value": "true"
+      },
+      {
+        "group": "Graphics",
+        "key": "graphics_model",
+        "value": "AMD Radeon Graphics"
+      },
+      {
+        "group": "Graphics",
+        "key": "graphics_max_clock",
+        "value": "2200",
+        "unit": "MHz"
+      },
+      {
+        "group": "Features",
+        "key": "overclocking_support",
+        "value": "true"
+      },
+      {
+        "group": "Features",
+        "key": "precision_boost",
+        "value": "true"
+      },
+      {
+        "group": "Features",
+        "key": "aes",
+        "value": "true"
+      },
+      {
+        "group": "Features",
+        "key": "avx2",
+        "value": "true"
+      },
+      {
+        "group": "Features",
+        "key": "avx512",
+        "value": "true"
+      },
+      {
+        "group": "Features",
+        "key": "virtualization",
+        "value": "true"
+      },
+      {
+        "group": "Cache",
+        "key": "l1_cache",
+        "value": "768",
+        "unit": "MB"
+      }
+    ],
+    "benchmarks": []
+  },
+  {
+    "category": "CPU",
+    "manufacturer": "AMD",
+    "family": "Ryzen",
+    "series": "Ryzen",
+    "generation": "Ryzen 7000",
+    "architecture": "Zen 4",
+    "source": {
+      "name": "AMD Official Product Page",
+      "url": "https://www.amd.com/en/products/processors/desktops/ryzen/7000-series/amd-ryzen-7-7800x3d.html",
+      "date": "2026-09-14",
+      "notes": "Specifications verified against AMD official product information."
+    },
+    "product": {
+      "name": "AMD Ryzen 7 7800X3D",
+      "slug": "amd-ryzen-7-7800x3d",
+      "description": "Desktop processor based on the Zen 4 architecture with 8 cores and 16 threads. Features AMD 3D V-Cache technology.",
+      "release_date": "2023-04-06",
+      "status": "active",
+      "is_popular": true,
+      "architecture": "Zen 4"
+    },
+    "images": [],
+    "specifications": [
+      {
+        "group": "General",
+        "key": "architecture",
+        "value": "Zen 4"
+      },
+      {
+        "group": "General",
+        "key": "microarchitecture",
+        "value": "Zen 4"
+      },
+      {
+        "group": "General",
+        "key": "process_node",
+        "value": "5"
+      },
+      {
+        "group": "General",
+        "key": "market_segment",
+        "value": "Enthusiast Desktop"
+      },
+      {
+        "group": "General",
+        "key": "product_family",
+        "value": "Ryzen"
+      },
+      {
+        "group": "General",
+        "key": "generation",
+        "value": "Ryzen 7000"
+      },
+      {
+        "group": "Socket",
+        "key": "socket",
+        "value": "AM5"
+      },
+      {
+        "group": "Core Configuration",
+        "key": "cores",
+        "value": "8"
+      },
+      {
+        "group": "Core Configuration",
+        "key": "threads",
+        "value": "16"
+      },
+      {
+        "group": "Core Configuration",
+        "key": "smt",
+        "value": "true"
+      },
+      {
+        "group": "Clock Speeds",
+        "key": "base_clock",
+        "value": "4.2",
+        "unit": "GHz"
+      },
+      {
+        "group": "Clock Speeds",
+        "key": "boost_clock",
+        "value": "5",
+        "unit": "GHz"
+      },
+      {
+        "group": "Cache",
+        "key": "l2_cache",
+        "value": "8",
+        "unit": "MB"
+      },
+      {
+        "group": "Cache",
+        "key": "l3_cache",
+        "value": "96",
+        "unit": "MB"
+      },
+      {
+        "group": "Power",
+        "key": "tdp",
+        "value": "120",
+        "unit": "W"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_type",
+        "value": "DDR5"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_channels",
+        "value": "2"
+      },
+      {
+        "group": "Memory",
+        "key": "max_memory",
+        "value": "128",
+        "unit": "GB"
+      },
+      {
+        "group": "Memory",
+        "key": "ecc_support",
+        "value": "true"
+      },
+      {
+        "group": "Graphics",
+        "key": "integrated_graphics",
+        "value": "true"
+      },
+      {
+        "group": "Graphics",
+        "key": "graphics_model",
+        "value": "AMD Radeon Graphics"
+      },
+      {
+        "group": "Graphics",
+        "key": "graphics_max_clock",
+        "value": "2200",
+        "unit": "MHz"
+      },
+      {
+        "group": "Features",
+        "key": "overclocking_support",
+        "value": "false"
+      },
+      {
+        "group": "Features",
+        "key": "precision_boost",
+        "value": "true"
+      },
+      {
+        "group": "Features",
+        "key": "aes",
+        "value": "true"
+      },
+      {
+        "group": "Features",
+        "key": "avx2",
+        "value": "true"
+      },
+      {
+        "group": "Features",
+        "key": "avx512",
+        "value": "true"
+      },
+      {
+        "group": "Features",
+        "key": "virtualization",
+        "value": "true"
+      },
+      {
+        "group": "Cache",
+        "key": "l1_cache",
+        "value": "512",
+        "unit": "MB"
+      }
+    ],
+    "benchmarks": []
+  },
+  {
+    "category": "CPU",
+    "manufacturer": "AMD",
+    "family": "Ryzen",
+    "series": "Ryzen",
+    "generation": "Ryzen 7000",
+    "architecture": "Zen 4",
+    "source": {
+      "name": "AMD Official Product Page",
+      "url": "https://www.amd.com/en/products/processors/desktops/ryzen/7000-series/amd-ryzen-7-7700x.html",
+      "date": "2026-09-14",
+      "notes": "Specifications verified against AMD official product information."
+    },
+    "product": {
+      "name": "AMD Ryzen 7 7700X",
+      "slug": "amd-ryzen-7-7700x",
+      "description": "Desktop processor based on the Zen 4 architecture with 8 cores and 16 threads.",
+      "release_date": "2022-09-27",
+      "status": "active",
+      "is_popular": false,
+      "architecture": "Zen 4"
+    },
+    "images": [],
+    "specifications": [
+      {
+        "group": "General",
+        "key": "architecture",
+        "value": "Zen 4"
+      },
+      {
+        "group": "General",
+        "key": "microarchitecture",
+        "value": "Zen 4"
+      },
+      {
+        "group": "General",
+        "key": "process_node",
+        "value": "5"
+      },
+      {
+        "group": "General",
+        "key": "market_segment",
+        "value": "Enthusiast Desktop"
+      },
+      {
+        "group": "General",
+        "key": "product_family",
+        "value": "Ryzen"
+      },
+      {
+        "group": "General",
+        "key": "generation",
+        "value": "Ryzen 7000"
+      },
+      {
+        "group": "Socket",
+        "key": "socket",
+        "value": "AM5"
+      },
+      {
+        "group": "Core Configuration",
+        "key": "cores",
+        "value": "8"
+      },
+      {
+        "group": "Core Configuration",
+        "key": "threads",
+        "value": "16"
+      },
+      {
+        "group": "Core Configuration",
+        "key": "smt",
+        "value": "true"
+      },
+      {
+        "group": "Clock Speeds",
+        "key": "base_clock",
+        "value": "4.5",
+        "unit": "GHz"
+      },
+      {
+        "group": "Clock Speeds",
+        "key": "boost_clock",
+        "value": "5.4",
+        "unit": "GHz"
+      },
+      {
+        "group": "Cache",
+        "key": "l2_cache",
+        "value": "8",
+        "unit": "MB"
+      },
+      {
+        "group": "Cache",
+        "key": "l3_cache",
+        "value": "32",
+        "unit": "MB"
+      },
+      {
+        "group": "Power",
+        "key": "tdp",
+        "value": "105",
+        "unit": "W"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_type",
+        "value": "DDR5"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_channels",
+        "value": "2"
+      },
+      {
+        "group": "Memory",
+        "key": "max_memory",
+        "value": "128",
+        "unit": "GB"
+      },
+      {
+        "group": "Memory",
+        "key": "ecc_support",
+        "value": "true"
+      },
+      {
+        "group": "Graphics",
+        "key": "integrated_graphics",
+        "value": "true"
+      },
+      {
+        "group": "Graphics",
+        "key": "graphics_model",
+        "value": "AMD Radeon Graphics"
+      },
+      {
+        "group": "Graphics",
+        "key": "graphics_max_clock",
+        "value": "2200",
+        "unit": "MHz"
+      },
+      {
+        "group": "Features",
+        "key": "overclocking_support",
+        "value": "true"
+      },
+      {
+        "group": "Features",
+        "key": "precision_boost",
+        "value": "true"
+      },
+      {
+        "group": "Features",
+        "key": "aes",
+        "value": "true"
+      },
+      {
+        "group": "Features",
+        "key": "avx2",
+        "value": "true"
+      },
+      {
+        "group": "Features",
+        "key": "avx512",
+        "value": "true"
+      },
+      {
+        "group": "Features",
+        "key": "virtualization",
+        "value": "true"
+      },
+      {
+        "group": "Cache",
+        "key": "l1_cache",
+        "value": "512",
+        "unit": "MB"
+      }
+    ],
+    "benchmarks": []
+  },
+  {
+    "category": "CPU",
+    "manufacturer": "AMD",
+    "family": "Ryzen",
+    "series": "Ryzen",
+    "generation": "Ryzen 7000",
+    "architecture": "Zen 4",
+    "source": {
+      "name": "AMD Official Product Page",
+      "url": "https://www.amd.com/en/products/processors/desktops/ryzen/7000-series/amd-ryzen-7-7700.html",
+      "date": "2026-09-14",
+      "notes": "Specifications verified against AMD official product information."
+    },
+    "product": {
+      "name": "AMD Ryzen 7 7700",
+      "slug": "amd-ryzen-7-7700",
+      "description": "Desktop processor based on the Zen 4 architecture with 8 cores and 16 threads.",
+      "release_date": "2023-01-14",
+      "status": "active",
+      "is_popular": false,
+      "architecture": "Zen 4"
+    },
+    "images": [],
+    "specifications": [
+      {
+        "group": "General",
+        "key": "architecture",
+        "value": "Zen 4"
+      },
+      {
+        "group": "General",
+        "key": "microarchitecture",
+        "value": "Zen 4"
+      },
+      {
+        "group": "General",
+        "key": "process_node",
+        "value": "5"
+      },
+      {
+        "group": "General",
+        "key": "market_segment",
+        "value": "Enthusiast Desktop"
+      },
+      {
+        "group": "General",
+        "key": "product_family",
+        "value": "Ryzen"
+      },
+      {
+        "group": "General",
+        "key": "generation",
+        "value": "Ryzen 7000"
+      },
+      {
+        "group": "Socket",
+        "key": "socket",
+        "value": "AM5"
+      },
+      {
+        "group": "Core Configuration",
+        "key": "cores",
+        "value": "8"
+      },
+      {
+        "group": "Core Configuration",
+        "key": "threads",
+        "value": "16"
+      },
+      {
+        "group": "Core Configuration",
+        "key": "smt",
+        "value": "true"
+      },
+      {
+        "group": "Clock Speeds",
+        "key": "base_clock",
+        "value": "3.8",
+        "unit": "GHz"
+      },
+      {
+        "group": "Clock Speeds",
+        "key": "boost_clock",
+        "value": "5.3",
+        "unit": "GHz"
+      },
+      {
+        "group": "Cache",
+        "key": "l2_cache",
+        "value": "8",
+        "unit": "MB"
+      },
+      {
+        "group": "Cache",
+        "key": "l3_cache",
+        "value": "32",
+        "unit": "MB"
+      },
+      {
+        "group": "Power",
+        "key": "tdp",
+        "value": "65",
+        "unit": "W"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_type",
+        "value": "DDR5"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_channels",
+        "value": "2"
+      },
+      {
+        "group": "Memory",
+        "key": "max_memory",
+        "value": "128",
+        "unit": "GB"
+      },
+      {
+        "group": "Memory",
+        "key": "ecc_support",
+        "value": "true"
+      },
+      {
+        "group": "Graphics",
+        "key": "integrated_graphics",
+        "value": "true"
+      },
+      {
+        "group": "Graphics",
+        "key": "graphics_model",
+        "value": "AMD Radeon Graphics"
+      },
+      {
+        "group": "Graphics",
+        "key": "graphics_max_clock",
+        "value": "2200",
+        "unit": "MHz"
+      },
+      {
+        "group": "Features",
+        "key": "overclocking_support",
+        "value": "true"
+      },
+      {
+        "group": "Features",
+        "key": "precision_boost",
+        "value": "true"
+      },
+      {
+        "group": "Features",
+        "key": "aes",
+        "value": "true"
+      },
+      {
+        "group": "Features",
+        "key": "avx2",
+        "value": "true"
+      },
+      {
+        "group": "Features",
+        "key": "avx512",
+        "value": "true"
+      },
+      {
+        "group": "Features",
+        "key": "virtualization",
+        "value": "true"
+      },
+      {
+        "group": "Cache",
+        "key": "l1_cache",
+        "value": "512",
+        "unit": "MB"
+      }
+    ],
+    "benchmarks": []
+  },
+  {
+    "category": "CPU",
+    "manufacturer": "AMD",
+    "family": "Ryzen",
+    "series": "Ryzen",
+    "generation": "Ryzen 7000",
+    "architecture": "Zen 4",
+    "source": {
+      "name": "AMD Official Product Page",
+      "url": "https://www.amd.com/en/products/processors/desktops/ryzen/7000-series/amd-ryzen-5-7600x3d.html",
+      "date": "2026-09-14",
+      "notes": "Specifications verified against AMD official product information."
+    },
+    "product": {
+      "name": "AMD Ryzen 5 7600X3D",
+      "slug": "amd-ryzen-5-7600x3d",
+      "description": "Desktop processor based on the Zen 4 architecture with 6 cores and 12 threads. Features AMD 3D V-Cache technology.",
+      "release_date": "2024-09-05",
+      "status": "active",
+      "is_popular": false,
+      "architecture": "Zen 4"
+    },
+    "images": [],
+    "specifications": [
+      {
+        "group": "General",
+        "key": "architecture",
+        "value": "Zen 4"
+      },
+      {
+        "group": "General",
+        "key": "microarchitecture",
+        "value": "Zen 4"
+      },
+      {
+        "group": "General",
+        "key": "process_node",
+        "value": "5"
+      },
+      {
+        "group": "General",
+        "key": "market_segment",
+        "value": "Enthusiast Desktop"
+      },
+      {
+        "group": "General",
+        "key": "product_family",
+        "value": "Ryzen"
+      },
+      {
+        "group": "General",
+        "key": "generation",
+        "value": "Ryzen 7000"
+      },
+      {
+        "group": "Socket",
+        "key": "socket",
+        "value": "AM5"
+      },
+      {
+        "group": "Core Configuration",
+        "key": "cores",
+        "value": "6"
+      },
+      {
+        "group": "Core Configuration",
+        "key": "threads",
+        "value": "12"
+      },
+      {
+        "group": "Core Configuration",
+        "key": "smt",
+        "value": "true"
+      },
+      {
+        "group": "Clock Speeds",
+        "key": "base_clock",
+        "value": "4.1",
+        "unit": "GHz"
+      },
+      {
+        "group": "Clock Speeds",
+        "key": "boost_clock",
+        "value": "4.7",
+        "unit": "GHz"
+      },
+      {
+        "group": "Cache",
+        "key": "l2_cache",
+        "value": "6",
+        "unit": "MB"
+      },
+      {
+        "group": "Cache",
+        "key": "l3_cache",
+        "value": "96",
+        "unit": "MB"
+      },
+      {
+        "group": "Power",
+        "key": "tdp",
+        "value": "65",
+        "unit": "W"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_type",
+        "value": "DDR5"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_channels",
+        "value": "2"
+      },
+      {
+        "group": "Memory",
+        "key": "max_memory",
+        "value": "128",
+        "unit": "GB"
+      },
+      {
+        "group": "Memory",
+        "key": "ecc_support",
+        "value": "true"
+      },
+      {
+        "group": "Graphics",
+        "key": "integrated_graphics",
+        "value": "true"
+      },
+      {
+        "group": "Graphics",
+        "key": "graphics_model",
+        "value": "AMD Radeon Graphics"
+      },
+      {
+        "group": "Graphics",
+        "key": "graphics_max_clock",
+        "value": "2200",
+        "unit": "MHz"
+      },
+      {
+        "group": "Features",
+        "key": "overclocking_support",
+        "value": "false"
+      },
+      {
+        "group": "Features",
+        "key": "precision_boost",
+        "value": "true"
+      },
+      {
+        "group": "Features",
+        "key": "aes",
+        "value": "true"
+      },
+      {
+        "group": "Features",
+        "key": "avx2",
+        "value": "true"
+      },
+      {
+        "group": "Features",
+        "key": "avx512",
+        "value": "true"
+      },
+      {
+        "group": "Features",
+        "key": "virtualization",
+        "value": "true"
+      },
+      {
+        "group": "Cache",
+        "key": "l1_cache",
+        "value": "384",
+        "unit": "MB"
+      }
+    ],
+    "benchmarks": []
+  },
+  {
+    "category": "CPU",
+    "manufacturer": "AMD",
+    "family": "Ryzen",
+    "series": "Ryzen",
+    "generation": "Ryzen 7000",
+    "architecture": "Zen 4",
+    "source": {
+      "name": "AMD Official Product Page",
+      "url": "https://www.amd.com/en/products/processors/desktops/ryzen/7000-series/amd-ryzen-5-7600x.html",
+      "date": "2026-09-14",
+      "notes": "Specifications verified against AMD official product information."
+    },
+    "product": {
+      "name": "AMD Ryzen 5 7600X",
+      "slug": "amd-ryzen-5-7600x",
+      "description": "Desktop processor based on the Zen 4 architecture with 6 cores and 12 threads.",
+      "release_date": "2022-09-27",
+      "status": "active",
+      "is_popular": true,
+      "architecture": "Zen 4"
+    },
+    "images": [],
+    "specifications": [
+      {
+        "group": "General",
+        "key": "architecture",
+        "value": "Zen 4"
+      },
+      {
+        "group": "General",
+        "key": "microarchitecture",
+        "value": "Zen 4"
+      },
+      {
+        "group": "General",
+        "key": "process_node",
+        "value": "5"
+      },
+      {
+        "group": "General",
+        "key": "market_segment",
+        "value": "Enthusiast Desktop"
+      },
+      {
+        "group": "General",
+        "key": "product_family",
+        "value": "Ryzen"
+      },
+      {
+        "group": "General",
+        "key": "generation",
+        "value": "Ryzen 7000"
+      },
+      {
+        "group": "Socket",
+        "key": "socket",
+        "value": "AM5"
+      },
+      {
+        "group": "Core Configuration",
+        "key": "cores",
+        "value": "6"
+      },
+      {
+        "group": "Core Configuration",
+        "key": "threads",
+        "value": "12"
+      },
+      {
+        "group": "Core Configuration",
+        "key": "smt",
+        "value": "true"
+      },
+      {
+        "group": "Clock Speeds",
+        "key": "base_clock",
+        "value": "4.7",
+        "unit": "GHz"
+      },
+      {
+        "group": "Clock Speeds",
+        "key": "boost_clock",
+        "value": "5.3",
+        "unit": "GHz"
+      },
+      {
+        "group": "Cache",
+        "key": "l2_cache",
+        "value": "6",
+        "unit": "MB"
+      },
+      {
+        "group": "Cache",
+        "key": "l3_cache",
+        "value": "32",
+        "unit": "MB"
+      },
+      {
+        "group": "Power",
+        "key": "tdp",
+        "value": "105",
+        "unit": "W"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_type",
+        "value": "DDR5"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_channels",
+        "value": "2"
+      },
+      {
+        "group": "Memory",
+        "key": "max_memory",
+        "value": "128",
+        "unit": "GB"
+      },
+      {
+        "group": "Memory",
+        "key": "ecc_support",
+        "value": "true"
+      },
+      {
+        "group": "Graphics",
+        "key": "integrated_graphics",
+        "value": "true"
+      },
+      {
+        "group": "Graphics",
+        "key": "graphics_model",
+        "value": "AMD Radeon Graphics"
+      },
+      {
+        "group": "Graphics",
+        "key": "graphics_max_clock",
+        "value": "2200",
+        "unit": "MHz"
+      },
+      {
+        "group": "Features",
+        "key": "overclocking_support",
+        "value": "true"
+      },
+      {
+        "group": "Features",
+        "key": "precision_boost",
+        "value": "true"
+      },
+      {
+        "group": "Features",
+        "key": "aes",
+        "value": "true"
+      },
+      {
+        "group": "Features",
+        "key": "avx2",
+        "value": "true"
+      },
+      {
+        "group": "Features",
+        "key": "avx512",
+        "value": "true"
+      },
+      {
+        "group": "Features",
+        "key": "virtualization",
+        "value": "true"
+      },
+      {
+        "group": "Cache",
+        "key": "l1_cache",
+        "value": "384",
+        "unit": "MB"
+      }
+    ],
+    "benchmarks": []
+  },
+  {
+    "category": "CPU",
+    "manufacturer": "AMD",
+    "family": "Ryzen",
+    "series": "Ryzen",
+    "generation": "Ryzen 7000",
+    "architecture": "Zen 4",
+    "source": {
+      "name": "AMD Official Product Page",
+      "url": "https://www.amd.com/en/products/processors/desktops/ryzen/7000-series/amd-ryzen-5-7600.html",
+      "date": "2026-09-14",
+      "notes": "Specifications verified against AMD official product information."
+    },
+    "product": {
+      "name": "AMD Ryzen 5 7600",
+      "slug": "amd-ryzen-5-7600",
+      "description": "Desktop processor based on the Zen 4 architecture with 6 cores and 12 threads.",
+      "release_date": "2023-01-14",
+      "status": "active",
+      "is_popular": false,
+      "architecture": "Zen 4"
+    },
+    "images": [],
+    "specifications": [
+      {
+        "group": "General",
+        "key": "architecture",
+        "value": "Zen 4"
+      },
+      {
+        "group": "General",
+        "key": "microarchitecture",
+        "value": "Zen 4"
+      },
+      {
+        "group": "General",
+        "key": "process_node",
+        "value": "5"
+      },
+      {
+        "group": "General",
+        "key": "market_segment",
+        "value": "Enthusiast Desktop"
+      },
+      {
+        "group": "General",
+        "key": "product_family",
+        "value": "Ryzen"
+      },
+      {
+        "group": "General",
+        "key": "generation",
+        "value": "Ryzen 7000"
+      },
+      {
+        "group": "Socket",
+        "key": "socket",
+        "value": "AM5"
+      },
+      {
+        "group": "Core Configuration",
+        "key": "cores",
+        "value": "6"
+      },
+      {
+        "group": "Core Configuration",
+        "key": "threads",
+        "value": "12"
+      },
+      {
+        "group": "Core Configuration",
+        "key": "smt",
+        "value": "true"
+      },
+      {
+        "group": "Clock Speeds",
+        "key": "base_clock",
+        "value": "3.8",
+        "unit": "GHz"
+      },
+      {
+        "group": "Clock Speeds",
+        "key": "boost_clock",
+        "value": "5.1",
+        "unit": "GHz"
+      },
+      {
+        "group": "Cache",
+        "key": "l2_cache",
+        "value": "6",
+        "unit": "MB"
+      },
+      {
+        "group": "Cache",
+        "key": "l3_cache",
+        "value": "32",
+        "unit": "MB"
+      },
+      {
+        "group": "Power",
+        "key": "tdp",
+        "value": "65",
+        "unit": "W"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_type",
+        "value": "DDR5"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_channels",
+        "value": "2"
+      },
+      {
+        "group": "Memory",
+        "key": "max_memory",
+        "value": "128",
+        "unit": "GB"
+      },
+      {
+        "group": "Memory",
+        "key": "ecc_support",
+        "value": "true"
+      },
+      {
+        "group": "Graphics",
+        "key": "integrated_graphics",
+        "value": "true"
+      },
+      {
+        "group": "Graphics",
+        "key": "graphics_model",
+        "value": "AMD Radeon Graphics"
+      },
+      {
+        "group": "Graphics",
+        "key": "graphics_max_clock",
+        "value": "2200",
+        "unit": "MHz"
+      },
+      {
+        "group": "Features",
+        "key": "overclocking_support",
+        "value": "true"
+      },
+      {
+        "group": "Features",
+        "key": "precision_boost",
+        "value": "true"
+      },
+      {
+        "group": "Features",
+        "key": "aes",
+        "value": "true"
+      },
+      {
+        "group": "Features",
+        "key": "avx2",
+        "value": "true"
+      },
+      {
+        "group": "Features",
+        "key": "avx512",
+        "value": "true"
+      },
+      {
+        "group": "Features",
+        "key": "virtualization",
+        "value": "true"
+      },
+      {
+        "group": "Cache",
+        "key": "l1_cache",
+        "value": "384",
+        "unit": "MB"
+      }
+    ],
+    "benchmarks": []
+  },
+  {
+    "category": "CPU",
+    "manufacturer": "AMD",
+    "family": "Ryzen",
+    "series": "Ryzen",
+    "generation": "Ryzen 7000",
+    "architecture": "Zen 4",
+    "source": {
+      "name": "AMD Official Product Page",
+      "url": "https://www.amd.com/en/products/processors/desktops/ryzen/7000-series/amd-ryzen-5-7500f.html",
+      "date": "2026-09-14",
+      "notes": "Specifications verified against AMD official product information."
+    },
+    "product": {
+      "name": "AMD Ryzen 5 7500F",
+      "slug": "amd-ryzen-5-7500f",
+      "description": "Desktop processor based on the Zen 4 architecture with 6 cores and 12 threads.",
+      "release_date": "2023-07-22",
+      "status": "active",
+      "is_popular": false,
+      "architecture": "Zen 4"
+    },
+    "images": [],
+    "specifications": [
+      {
+        "group": "General",
+        "key": "architecture",
+        "value": "Zen 4"
+      },
+      {
+        "group": "General",
+        "key": "microarchitecture",
+        "value": "Zen 4"
+      },
+      {
+        "group": "General",
+        "key": "process_node",
+        "value": "5"
+      },
+      {
+        "group": "General",
+        "key": "market_segment",
+        "value": "Enthusiast Desktop"
+      },
+      {
+        "group": "General",
+        "key": "product_family",
+        "value": "Ryzen"
+      },
+      {
+        "group": "General",
+        "key": "generation",
+        "value": "Ryzen 7000"
+      },
+      {
+        "group": "Socket",
+        "key": "socket",
+        "value": "AM5"
+      },
+      {
+        "group": "Core Configuration",
+        "key": "cores",
+        "value": "6"
+      },
+      {
+        "group": "Core Configuration",
+        "key": "threads",
+        "value": "12"
+      },
+      {
+        "group": "Core Configuration",
+        "key": "smt",
+        "value": "true"
+      },
+      {
+        "group": "Clock Speeds",
+        "key": "base_clock",
+        "value": "3.7",
+        "unit": "GHz"
+      },
+      {
+        "group": "Clock Speeds",
+        "key": "boost_clock",
+        "value": "5",
+        "unit": "GHz"
+      },
+      {
+        "group": "Cache",
+        "key": "l2_cache",
+        "value": "6",
+        "unit": "MB"
+      },
+      {
+        "group": "Cache",
+        "key": "l3_cache",
+        "value": "32",
+        "unit": "MB"
+      },
+      {
+        "group": "Power",
+        "key": "tdp",
+        "value": "65",
+        "unit": "W"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_type",
+        "value": "DDR5"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_channels",
+        "value": "2"
+      },
+      {
+        "group": "Memory",
+        "key": "max_memory",
+        "value": "128",
+        "unit": "GB"
+      },
+      {
+        "group": "Memory",
+        "key": "ecc_support",
+        "value": "true"
+      },
+      {
+        "group": "Graphics",
+        "key": "integrated_graphics",
+        "value": "false"
+      },
+      {
+        "group": "Features",
+        "key": "overclocking_support",
+        "value": "true"
+      },
+      {
+        "group": "Features",
+        "key": "precision_boost",
+        "value": "true"
+      },
+      {
+        "group": "Features",
+        "key": "aes",
+        "value": "true"
+      },
+      {
+        "group": "Features",
+        "key": "avx2",
+        "value": "true"
+      },
+      {
+        "group": "Features",
+        "key": "avx512",
+        "value": "true"
+      },
+      {
+        "group": "Features",
+        "key": "virtualization",
+        "value": "true"
+      },
+      {
+        "group": "Cache",
+        "key": "l1_cache",
+        "value": "384",
+        "unit": "MB"
+      }
+    ],
+    "benchmarks": []
+  }
+]

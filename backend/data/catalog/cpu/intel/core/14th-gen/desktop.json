@@ -1,0 +1,2940 @@
+[
+  {
+    "category": "CPU",
+    "manufacturer": "Intel",
+    "family": "Core",
+    "series": "Core",
+    "generation": "14th Generation",
+    "architecture": "Raptor Lake Refresh",
+    "source": {
+      "name": "Intel ARK",
+      "url": "https://www.intel.com/content/www/us/en/products/sku/236773/specifications.html",
+      "date": "2026-09-14",
+      "notes": "Specifications verified against Intel ARK product specification page."
+    },
+    "product": {
+      "name": "Intel Core i9-14900K",
+      "slug": "intel-core-i9-14900k",
+      "description": "14th Gen Intel Core desktop processor with 24 cores and 32 threads.",
+      "release_date": "2023-10-17",
+      "status": "active",
+      "is_popular": true,
+      "architecture": "Raptor Lake Refresh"
+    },
+    "images": [],
+    "specifications": [
+      {
+        "group": "Socket",
+        "key": "socket",
+        "value": "LGA 1700"
+      },
+      {
+        "group": "General",
+        "key": "architecture",
+        "value": "Raptor Lake Refresh"
+      },
+      {
+        "group": "General",
+        "key": "microarchitecture",
+        "value": "Raptor Lake"
+      },
+      {
+        "group": "General",
+        "key": "process_node",
+        "value": "Intel 7"
+      },
+      {
+        "group": "General",
+        "key": "market_segment",
+        "value": "Desktop"
+      },
+      {
+        "group": "General",
+        "key": "product_family",
+        "value": "Core"
+      },
+      {
+        "group": "General",
+        "key": "generation",
+        "value": "14th Generation"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_channels",
+        "value": "2"
+      },
+      {
+        "group": "Memory",
+        "key": "max_memory",
+        "value": "192",
+        "unit": "GB"
+      },
+      {
+        "group": "PCI Express",
+        "key": "pcie_version",
+        "value": "5.0"
+      },
+      {
+        "group": "PCI Express",
+        "key": "pcie_lanes",
+        "value": "20"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_type",
+        "value": "DDR5, DDR4"
+      },
+      {
+        "group": "Memory",
+        "key": "ecc_support",
+        "value": "true"
+      },
+      {
+        "group": "Features",
+        "key": "virtualization",
+        "value": "true"
+      },
+      {
+        "group": "Features",
+        "key": "aes",
+        "value": "true"
+      },
+      {
+        "group": "Features",
+        "key": "avx2",
+        "value": "true"
+      },
+      {
+        "group": "Features",
+        "key": "intel_turbo_boost",
+        "value": "true"
+      },
+      {
+        "group": "Memory",
+        "key": "max_memory_speed",
+        "value": "5600",
+        "unit": "MT/s"
+      },
+      {
+        "group": "Core Configuration",
+        "key": "cores",
+        "value": "24"
+      },
+      {
+        "group": "Core Configuration",
+        "key": "p_cores",
+        "value": "8"
+      },
+      {
+        "group": "Core Configuration",
+        "key": "e_cores",
+        "value": "16"
+      },
+      {
+        "group": "Core Configuration",
+        "key": "threads",
+        "value": "32"
+      },
+      {
+        "group": "Clock Speeds",
+        "key": "base_clock",
+        "value": "3.2",
+        "unit": "GHz"
+      },
+      {
+        "group": "Clock Speeds",
+        "key": "p_core_base_clock",
+        "value": "3.2",
+        "unit": "GHz"
+      },
+      {
+        "group": "Clock Speeds",
+        "key": "p_core_boost_clock",
+        "value": "5.6",
+        "unit": "GHz"
+      },
+      {
+        "group": "Clock Speeds",
+        "key": "e_core_base_clock",
+        "value": "2.4",
+        "unit": "GHz"
+      },
+      {
+        "group": "Clock Speeds",
+        "key": "e_core_boost_clock",
+        "value": "4.4",
+        "unit": "GHz"
+      },
+      {
+        "group": "Clock Speeds",
+        "key": "boost_clock",
+        "value": "6.0",
+        "unit": "GHz"
+      },
+      {
+        "group": "Cache",
+        "key": "l2_cache",
+        "value": "32",
+        "unit": "MB"
+      },
+      {
+        "group": "Cache",
+        "key": "l3_cache",
+        "value": "36",
+        "unit": "MB"
+      },
+      {
+        "group": "Power",
+        "key": "processor_base_power",
+        "value": "125",
+        "unit": "W"
+      },
+      {
+        "group": "Power",
+        "key": "max_turbo_power",
+        "value": "253",
+        "unit": "W"
+      },
+      {
+        "group": "Power",
+        "key": "tdp",
+        "value": "125",
+        "unit": "W"
+      },
+      {
+        "group": "Graphics",
+        "key": "integrated_graphics",
+        "value": "true"
+      },
+      {
+        "group": "Graphics",
+        "key": "graphics_model",
+        "value": "Intel UHD Graphics 770"
+      },
+      {
+        "group": "Graphics",
+        "key": "graphics_base_clock",
+        "value": "300",
+        "unit": "MHz"
+      },
+      {
+        "group": "Graphics",
+        "key": "graphics_max_clock",
+        "value": "1650",
+        "unit": "MHz"
+      },
+      {
+        "group": "Features",
+        "key": "overclocking_support",
+        "value": "true"
+      },
+      {
+        "group": "Features",
+        "key": "turbo_boost_max",
+        "value": "true"
+      }
+    ],
+    "benchmarks": []
+  },
+  {
+    "category": "CPU",
+    "manufacturer": "Intel",
+    "family": "Core",
+    "series": "Core",
+    "generation": "14th Generation",
+    "architecture": "Raptor Lake Refresh",
+    "source": {
+      "name": "Intel ARK",
+      "url": "https://www.intel.com/content/www/us/en/products/sku/236787/specifications.html",
+      "date": "2026-09-14",
+      "notes": "Specifications verified against Intel ARK product specification page."
+    },
+    "product": {
+      "name": "Intel Core i9-14900KF",
+      "slug": "intel-core-i9-14900kf",
+      "description": "14th Gen Intel Core desktop processor with 24 cores and 32 threads. Requires discrete graphics.",
+      "release_date": "2023-10-17",
+      "status": "active",
+      "is_popular": false,
+      "architecture": "Raptor Lake Refresh"
+    },
+    "images": [],
+    "specifications": [
+      {
+        "group": "Socket",
+        "key": "socket",
+        "value": "LGA 1700"
+      },
+      {
+        "group": "General",
+        "key": "architecture",
+        "value": "Raptor Lake Refresh"
+      },
+      {
+        "group": "General",
+        "key": "microarchitecture",
+        "value": "Raptor Lake"
+      },
+      {
+        "group": "General",
+        "key": "process_node",
+        "value": "Intel 7"
+      },
+      {
+        "group": "General",
+        "key": "market_segment",
+        "value": "Desktop"
+      },
+      {
+        "group": "General",
+        "key": "product_family",
+        "value": "Core"
+      },
+      {
+        "group": "General",
+        "key": "generation",
+        "value": "14th Generation"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_channels",
+        "value": "2"
+      },
+      {
+        "group": "Memory",
+        "key": "max_memory",
+        "value": "192",
+        "unit": "GB"
+      },
+      {
+        "group": "PCI Express",
+        "key": "pcie_version",
+        "value": "5.0"
+      },
+      {
+        "group": "PCI Express",
+        "key": "pcie_lanes",
+        "value": "20"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_type",
+        "value": "DDR5, DDR4"
+      },
+      {
+        "group": "Memory",
+        "key": "ecc_support",
+        "value": "true"
+      },
+      {
+        "group": "Features",
+        "key": "virtualization",
+        "value": "true"
+      },
+      {
+        "group": "Features",
+        "key": "aes",
+        "value": "true"
+      },
+      {
+        "group": "Features",
+        "key": "avx2",
+        "value": "true"
+      },
+      {
+        "group": "Features",
+        "key": "intel_turbo_boost",
+        "value": "true"
+      },
+      {
+        "group": "Memory",
+        "key": "max_memory_speed",
+        "value": "5600",
+        "unit": "MT/s"
+      },
+      {
+        "group": "Core Configuration",
+        "key": "cores",
+        "value": "24"
+      },
+      {
+        "group": "Core Configuration",
+        "key": "p_cores",
+        "value": "8"
+      },
+      {
+        "group": "Core Configuration",
+        "key": "e_cores",
+        "value": "16"
+      },
+      {
+        "group": "Core Configuration",
+        "key": "threads",
+        "value": "32"
+      },
+      {
+        "group": "Clock Speeds",
+        "key": "base_clock",
+        "value": "3.2",
+        "unit": "GHz"
+      },
+      {
+        "group": "Clock Speeds",
+        "key": "p_core_base_clock",
+        "value": "3.2",
+        "unit": "GHz"
+      },
+      {
+        "group": "Clock Speeds",
+        "key": "p_core_boost_clock",
+        "value": "5.6",
+        "unit": "GHz"
+      },
+      {
+        "group": "Clock Speeds",
+        "key": "e_core_base_clock",
+        "value": "2.4",
+        "unit": "GHz"
+      },
+      {
+        "group": "Clock Speeds",
+        "key": "e_core_boost_clock",
+        "value": "4.4",
+        "unit": "GHz"
+      },
+      {
+        "group": "Clock Speeds",
+        "key": "boost_clock",
+        "value": "6.0",
+        "unit": "GHz"
+      },
+      {
+        "group": "Cache",
+        "key": "l2_cache",
+        "value": "32",
+        "unit": "MB"
+      },
+      {
+        "group": "Cache",
+        "key": "l3_cache",
+        "value": "36",
+        "unit": "MB"
+      },
+      {
+        "group": "Power",
+        "key": "processor_base_power",
+        "value": "125",
+        "unit": "W"
+      },
+      {
+        "group": "Power",
+        "key": "max_turbo_power",
+        "value": "253",
+        "unit": "W"
+      },
+      {
+        "group": "Power",
+        "key": "tdp",
+        "value": "125",
+        "unit": "W"
+      },
+      {
+        "group": "Graphics",
+        "key": "integrated_graphics",
+        "value": "false"
+      },
+      {
+        "group": "Features",
+        "key": "overclocking_support",
+        "value": "true"
+      },
+      {
+        "group": "Features",
+        "key": "turbo_boost_max",
+        "value": "true"
+      }
+    ],
+    "benchmarks": []
+  },
+  {
+    "category": "CPU",
+    "manufacturer": "Intel",
+    "family": "Core",
+    "series": "Core",
+    "generation": "14th Generation",
+    "architecture": "Raptor Lake Refresh",
+    "source": {
+      "name": "Intel ARK",
+      "url": "https://www.intel.com/content/www/us/en/products/sku/236793/specifications.html",
+      "date": "2026-09-14",
+      "notes": "Specifications verified against Intel ARK product specification page."
+    },
+    "product": {
+      "name": "Intel Core i9-14900",
+      "slug": "intel-core-i9-14900",
+      "description": "14th Gen Intel Core desktop processor with 24 cores and 32 threads.",
+      "release_date": "2024-01-08",
+      "status": "active",
+      "is_popular": false,
+      "architecture": "Raptor Lake Refresh"
+    },
+    "images": [],
+    "specifications": [
+      {
+        "group": "Socket",
+        "key": "socket",
+        "value": "LGA 1700"
+      },
+      {
+        "group": "General",
+        "key": "architecture",
+        "value": "Raptor Lake Refresh"
+      },
+      {
+        "group": "General",
+        "key": "microarchitecture",
+        "value": "Raptor Lake"
+      },
+      {
+        "group": "General",
+        "key": "process_node",
+        "value": "Intel 7"
+      },
+      {
+        "group": "General",
+        "key": "market_segment",
+        "value": "Desktop"
+      },
+      {
+        "group": "General",
+        "key": "product_family",
+        "value": "Core"
+      },
+      {
+        "group": "General",
+        "key": "generation",
+        "value": "14th Generation"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_channels",
+        "value": "2"
+      },
+      {
+        "group": "Memory",
+        "key": "max_memory",
+        "value": "192",
+        "unit": "GB"
+      },
+      {
+        "group": "PCI Express",
+        "key": "pcie_version",
+        "value": "5.0"
+      },
+      {
+        "group": "PCI Express",
+        "key": "pcie_lanes",
+        "value": "20"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_type",
+        "value": "DDR5, DDR4"
+      },
+      {
+        "group": "Memory",
+        "key": "ecc_support",
+        "value": "true"
+      },
+      {
+        "group": "Features",
+        "key": "virtualization",
+        "value": "true"
+      },
+      {
+        "group": "Features",
+        "key": "aes",
+        "value": "true"
+      },
+      {
+        "group": "Features",
+        "key": "avx2",
+        "value": "true"
+      },
+      {
+        "group": "Features",
+        "key": "intel_turbo_boost",
+        "value": "true"
+      },
+      {
+        "group": "Memory",
+        "key": "max_memory_speed",
+        "value": "5600",
+        "unit": "MT/s"
+      },
+      {
+        "group": "Core Configuration",
+        "key": "cores",
+        "value": "24"
+      },
+      {
+        "group": "Core Configuration",
+        "key": "p_cores",
+        "value": "8"
+      },
+      {
+        "group": "Core Configuration",
+        "key": "e_cores",
+        "value": "16"
+      },
+      {
+        "group": "Core Configuration",
+        "key": "threads",
+        "value": "32"
+      },
+      {
+        "group": "Clock Speeds",
+        "key": "base_clock",
+        "value": "2.0",
+        "unit": "GHz"
+      },
+      {
+        "group": "Clock Speeds",
+        "key": "p_core_base_clock",
+        "value": "2.0",
+        "unit": "GHz"
+      },
+      {
+        "group": "Clock Speeds",
+        "key": "p_core_boost_clock",
+        "value": "5.6",
+        "unit": "GHz"
+      },
+      {
+        "group": "Clock Speeds",
+        "key": "e_core_base_clock",
+        "value": "1.5",
+        "unit": "GHz"
+      },
+      {
+        "group": "Clock Speeds",
+        "key": "e_core_boost_clock",
+        "value": "4.3",
+        "unit": "GHz"
+      },
+      {
+        "group": "Clock Speeds",
+        "key": "boost_clock",
+        "value": "5.8",
+        "unit": "GHz"
+      },
+      {
+        "group": "Cache",
+        "key": "l2_cache",
+        "value": "32",
+        "unit": "MB"
+      },
+      {
+        "group": "Cache",
+        "key": "l3_cache",
+        "value": "36",
+        "unit": "MB"
+      },
+      {
+        "group": "Power",
+        "key": "processor_base_power",
+        "value": "65",
+        "unit": "W"
+      },
+      {
+        "group": "Power",
+        "key": "max_turbo_power",
+        "value": "219",
+        "unit": "W"
+      },
+      {
+        "group": "Power",
+        "key": "tdp",
+        "value": "65",
+        "unit": "W"
+      },
+      {
+        "group": "Graphics",
+        "key": "integrated_graphics",
+        "value": "true"
+      },
+      {
+        "group": "Graphics",
+        "key": "graphics_model",
+        "value": "Intel UHD Graphics 770"
+      },
+      {
+        "group": "Graphics",
+        "key": "graphics_base_clock",
+        "value": "300",
+        "unit": "MHz"
+      },
+      {
+        "group": "Graphics",
+        "key": "graphics_max_clock",
+        "value": "1650",
+        "unit": "MHz"
+      },
+      {
+        "group": "Features",
+        "key": "overclocking_support",
+        "value": "false"
+      },
+      {
+        "group": "Features",
+        "key": "turbo_boost_max",
+        "value": "true"
+      }
+    ],
+    "benchmarks": []
+  },
+  {
+    "category": "CPU",
+    "manufacturer": "Intel",
+    "family": "Core",
+    "series": "Core",
+    "generation": "14th Generation",
+    "architecture": "Raptor Lake Refresh",
+    "source": {
+      "name": "Intel ARK",
+      "url": "https://www.intel.com/content/www/us/en/products/sku/236783/specifications.html",
+      "date": "2026-09-14",
+      "notes": "Specifications verified against Intel ARK product specification page."
+    },
+    "product": {
+      "name": "Intel Core i7-14700K",
+      "slug": "intel-core-i7-14700k",
+      "description": "14th Gen Intel Core desktop processor with 20 cores and 28 threads.",
+      "release_date": "2023-10-17",
+      "status": "active",
+      "is_popular": true,
+      "architecture": "Raptor Lake Refresh"
+    },
+    "images": [],
+    "specifications": [
+      {
+        "group": "Socket",
+        "key": "socket",
+        "value": "LGA 1700"
+      },
+      {
+        "group": "General",
+        "key": "architecture",
+        "value": "Raptor Lake Refresh"
+      },
+      {
+        "group": "General",
+        "key": "microarchitecture",
+        "value": "Raptor Lake"
+      },
+      {
+        "group": "General",
+        "key": "process_node",
+        "value": "Intel 7"
+      },
+      {
+        "group": "General",
+        "key": "market_segment",
+        "value": "Desktop"
+      },
+      {
+        "group": "General",
+        "key": "product_family",
+        "value": "Core"
+      },
+      {
+        "group": "General",
+        "key": "generation",
+        "value": "14th Generation"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_channels",
+        "value": "2"
+      },
+      {
+        "group": "Memory",
+        "key": "max_memory",
+        "value": "192",
+        "unit": "GB"
+      },
+      {
+        "group": "PCI Express",
+        "key": "pcie_version",
+        "value": "5.0"
+      },
+      {
+        "group": "PCI Express",
+        "key": "pcie_lanes",
+        "value": "20"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_type",
+        "value": "DDR5, DDR4"
+      },
+      {
+        "group": "Memory",
+        "key": "ecc_support",
+        "value": "true"
+      },
+      {
+        "group": "Features",
+        "key": "virtualization",
+        "value": "true"
+      },
+      {
+        "group": "Features",
+        "key": "aes",
+        "value": "true"
+      },
+      {
+        "group": "Features",
+        "key": "avx2",
+        "value": "true"
+      },
+      {
+        "group": "Features",
+        "key": "intel_turbo_boost",
+        "value": "true"
+      },
+      {
+        "group": "Memory",
+        "key": "max_memory_speed",
+        "value": "5600",
+        "unit": "MT/s"
+      },
+      {
+        "group": "Core Configuration",
+        "key": "cores",
+        "value": "20"
+      },
+      {
+        "group": "Core Configuration",
+        "key": "p_cores",
+        "value": "8"
+      },
+      {
+        "group": "Core Configuration",
+        "key": "e_cores",
+        "value": "12"
+      },
+      {
+        "group": "Core Configuration",
+        "key": "threads",
+        "value": "28"
+      },
+      {
+        "group": "Clock Speeds",
+        "key": "base_clock",
+        "value": "3.4",
+        "unit": "GHz"
+      },
+      {
+        "group": "Clock Speeds",
+        "key": "p_core_base_clock",
+        "value": "3.4",
+        "unit": "GHz"
+      },
+      {
+        "group": "Clock Speeds",
+        "key": "p_core_boost_clock",
+        "value": "5.5",
+        "unit": "GHz"
+      },
+      {
+        "group": "Clock Speeds",
+        "key": "e_core_base_clock",
+        "value": "2.5",
+        "unit": "GHz"
+      },
+      {
+        "group": "Clock Speeds",
+        "key": "e_core_boost_clock",
+        "value": "4.3",
+        "unit": "GHz"
+      },
+      {
+        "group": "Clock Speeds",
+        "key": "boost_clock",
+        "value": "5.6",
+        "unit": "GHz"
+      },
+      {
+        "group": "Cache",
+        "key": "l2_cache",
+        "value": "28",
+        "unit": "MB"
+      },
+      {
+        "group": "Cache",
+        "key": "l3_cache",
+        "value": "33",
+        "unit": "MB"
+      },
+      {
+        "group": "Power",
+        "key": "processor_base_power",
+        "value": "125",
+        "unit": "W"
+      },
+      {
+        "group": "Power",
+        "key": "max_turbo_power",
+        "value": "253",
+        "unit": "W"
+      },
+      {
+        "group": "Power",
+        "key": "tdp",
+        "value": "125",
+        "unit": "W"
+      },
+      {
+        "group": "Graphics",
+        "key": "integrated_graphics",
+        "value": "true"
+      },
+      {
+        "group": "Graphics",
+        "key": "graphics_model",
+        "value": "Intel UHD Graphics 770"
+      },
+      {
+        "group": "Graphics",
+        "key": "graphics_base_clock",
+        "value": "300",
+        "unit": "MHz"
+      },
+      {
+        "group": "Graphics",
+        "key": "graphics_max_clock",
+        "value": "1600",
+        "unit": "MHz"
+      },
+      {
+        "group": "Features",
+        "key": "overclocking_support",
+        "value": "true"
+      },
+      {
+        "group": "Features",
+        "key": "turbo_boost_max",
+        "value": "true"
+      }
+    ],
+    "benchmarks": []
+  },
+  {
+    "category": "CPU",
+    "manufacturer": "Intel",
+    "family": "Core",
+    "series": "Core",
+    "generation": "14th Generation",
+    "architecture": "Raptor Lake Refresh",
+    "source": {
+      "name": "Intel ARK",
+      "url": "https://www.intel.com/content/www/us/en/products/sku/236789/specifications.html",
+      "date": "2026-09-14",
+      "notes": "Specifications verified against Intel ARK product specification page."
+    },
+    "product": {
+      "name": "Intel Core i7-14700KF",
+      "slug": "intel-core-i7-14700kf",
+      "description": "14th Gen Intel Core desktop processor with 20 cores and 28 threads. Requires discrete graphics.",
+      "release_date": "2023-10-17",
+      "status": "active",
+      "is_popular": false,
+      "architecture": "Raptor Lake Refresh"
+    },
+    "images": [],
+    "specifications": [
+      {
+        "group": "Socket",
+        "key": "socket",
+        "value": "LGA 1700"
+      },
+      {
+        "group": "General",
+        "key": "architecture",
+        "value": "Raptor Lake Refresh"
+      },
+      {
+        "group": "General",
+        "key": "microarchitecture",
+        "value": "Raptor Lake"
+      },
+      {
+        "group": "General",
+        "key": "process_node",
+        "value": "Intel 7"
+      },
+      {
+        "group": "General",
+        "key": "market_segment",
+        "value": "Desktop"
+      },
+      {
+        "group": "General",
+        "key": "product_family",
+        "value": "Core"
+      },
+      {
+        "group": "General",
+        "key": "generation",
+        "value": "14th Generation"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_channels",
+        "value": "2"
+      },
+      {
+        "group": "Memory",
+        "key": "max_memory",
+        "value": "192",
+        "unit": "GB"
+      },
+      {
+        "group": "PCI Express",
+        "key": "pcie_version",
+        "value": "5.0"
+      },
+      {
+        "group": "PCI Express",
+        "key": "pcie_lanes",
+        "value": "20"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_type",
+        "value": "DDR5, DDR4"
+      },
+      {
+        "group": "Memory",
+        "key": "ecc_support",
+        "value": "true"
+      },
+      {
+        "group": "Features",
+        "key": "virtualization",
+        "value": "true"
+      },
+      {
+        "group": "Features",
+        "key": "aes",
+        "value": "true"
+      },
+      {
+        "group": "Features",
+        "key": "avx2",
+        "value": "true"
+      },
+      {
+        "group": "Features",
+        "key": "intel_turbo_boost",
+        "value": "true"
+      },
+      {
+        "group": "Memory",
+        "key": "max_memory_speed",
+        "value": "5600",
+        "unit": "MT/s"
+      },
+      {
+        "group": "Core Configuration",
+        "key": "cores",
+        "value": "20"
+      },
+      {
+        "group": "Core Configuration",
+        "key": "p_cores",
+        "value": "8"
+      },
+      {
+        "group": "Core Configuration",
+        "key": "e_cores",
+        "value": "12"
+      },
+      {
+        "group": "Core Configuration",
+        "key": "threads",
+        "value": "28"
+      },
+      {
+        "group": "Clock Speeds",
+        "key": "base_clock",
+        "value": "3.4",
+        "unit": "GHz"
+      },
+      {
+        "group": "Clock Speeds",
+        "key": "p_core_base_clock",
+        "value": "3.4",
+        "unit": "GHz"
+      },
+      {
+        "group": "Clock Speeds",
+        "key": "p_core_boost_clock",
+        "value": "5.5",
+        "unit": "GHz"
+      },
+      {
+        "group": "Clock Speeds",
+        "key": "e_core_base_clock",
+        "value": "2.5",
+        "unit": "GHz"
+      },
+      {
+        "group": "Clock Speeds",
+        "key": "e_core_boost_clock",
+        "value": "4.3",
+        "unit": "GHz"
+      },
+      {
+        "group": "Clock Speeds",
+        "key": "boost_clock",
+        "value": "5.6",
+        "unit": "GHz"
+      },
+      {
+        "group": "Cache",
+        "key": "l2_cache",
+        "value": "28",
+        "unit": "MB"
+      },
+      {
+        "group": "Cache",
+        "key": "l3_cache",
+        "value": "33",
+        "unit": "MB"
+      },
+      {
+        "group": "Power",
+        "key": "processor_base_power",
+        "value": "125",
+        "unit": "W"
+      },
+      {
+        "group": "Power",
+        "key": "max_turbo_power",
+        "value": "253",
+        "unit": "W"
+      },
+      {
+        "group": "Power",
+        "key": "tdp",
+        "value": "125",
+        "unit": "W"
+      },
+      {
+        "group": "Graphics",
+        "key": "integrated_graphics",
+        "value": "false"
+      },
+      {
+        "group": "Features",
+        "key": "overclocking_support",
+        "value": "true"
+      },
+      {
+        "group": "Features",
+        "key": "turbo_boost_max",
+        "value": "true"
+      }
+    ],
+    "benchmarks": []
+  },
+  {
+    "category": "CPU",
+    "manufacturer": "Intel",
+    "family": "Core",
+    "series": "Core",
+    "generation": "14th Generation",
+    "architecture": "Raptor Lake Refresh",
+    "source": {
+      "name": "Intel ARK",
+      "url": "https://www.intel.com/content/www/us/en/products/sku/236781/specifications.html",
+      "date": "2026-09-14",
+      "notes": "Specifications verified against Intel ARK product specification page."
+    },
+    "product": {
+      "name": "Intel Core i7-14700",
+      "slug": "intel-core-i7-14700",
+      "description": "14th Gen Intel Core desktop processor with 20 cores and 28 threads.",
+      "release_date": "2024-01-08",
+      "status": "active",
+      "is_popular": false,
+      "architecture": "Raptor Lake Refresh"
+    },
+    "images": [],
+    "specifications": [
+      {
+        "group": "Socket",
+        "key": "socket",
+        "value": "LGA 1700"
+      },
+      {
+        "group": "General",
+        "key": "architecture",
+        "value": "Raptor Lake Refresh"
+      },
+      {
+        "group": "General",
+        "key": "microarchitecture",
+        "value": "Raptor Lake"
+      },
+      {
+        "group": "General",
+        "key": "process_node",
+        "value": "Intel 7"
+      },
+      {
+        "group": "General",
+        "key": "market_segment",
+        "value": "Desktop"
+      },
+      {
+        "group": "General",
+        "key": "product_family",
+        "value": "Core"
+      },
+      {
+        "group": "General",
+        "key": "generation",
+        "value": "14th Generation"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_channels",
+        "value": "2"
+      },
+      {
+        "group": "Memory",
+        "key": "max_memory",
+        "value": "192",
+        "unit": "GB"
+      },
+      {
+        "group": "PCI Express",
+        "key": "pcie_version",
+        "value": "5.0"
+      },
+      {
+        "group": "PCI Express",
+        "key": "pcie_lanes",
+        "value": "20"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_type",
+        "value": "DDR5, DDR4"
+      },
+      {
+        "group": "Memory",
+        "key": "ecc_support",
+        "value": "true"
+      },
+      {
+        "group": "Features",
+        "key": "virtualization",
+        "value": "true"
+      },
+      {
+        "group": "Features",
+        "key": "aes",
+        "value": "true"
+      },
+      {
+        "group": "Features",
+        "key": "avx2",
+        "value": "true"
+      },
+      {
+        "group": "Features",
+        "key": "intel_turbo_boost",
+        "value": "true"
+      },
+      {
+        "group": "Memory",
+        "key": "max_memory_speed",
+        "value": "5600",
+        "unit": "MT/s"
+      },
+      {
+        "group": "Core Configuration",
+        "key": "cores",
+        "value": "20"
+      },
+      {
+        "group": "Core Configuration",
+        "key": "p_cores",
+        "value": "8"
+      },
+      {
+        "group": "Core Configuration",
+        "key": "e_cores",
+        "value": "12"
+      },
+      {
+        "group": "Core Configuration",
+        "key": "threads",
+        "value": "28"
+      },
+      {
+        "group": "Clock Speeds",
+        "key": "base_clock",
+        "value": "2.1",
+        "unit": "GHz"
+      },
+      {
+        "group": "Clock Speeds",
+        "key": "p_core_base_clock",
+        "value": "2.1",
+        "unit": "GHz"
+      },
+      {
+        "group": "Clock Speeds",
+        "key": "p_core_boost_clock",
+        "value": "5.3",
+        "unit": "GHz"
+      },
+      {
+        "group": "Clock Speeds",
+        "key": "e_core_base_clock",
+        "value": "1.5",
+        "unit": "GHz"
+      },
+      {
+        "group": "Clock Speeds",
+        "key": "e_core_boost_clock",
+        "value": "4.2",
+        "unit": "GHz"
+      },
+      {
+        "group": "Clock Speeds",
+        "key": "boost_clock",
+        "value": "5.4",
+        "unit": "GHz"
+      },
+      {
+        "group": "Cache",
+        "key": "l2_cache",
+        "value": "28",
+        "unit": "MB"
+      },
+      {
+        "group": "Cache",
+        "key": "l3_cache",
+        "value": "33",
+        "unit": "MB"
+      },
+      {
+        "group": "Power",
+        "key": "processor_base_power",
+        "value": "65",
+        "unit": "W"
+      },
+      {
+        "group": "Power",
+        "key": "max_turbo_power",
+        "value": "219",
+        "unit": "W"
+      },
+      {
+        "group": "Power",
+        "key": "tdp",
+        "value": "65",
+        "unit": "W"
+      },
+      {
+        "group": "Graphics",
+        "key": "integrated_graphics",
+        "value": "true"
+      },
+      {
+        "group": "Graphics",
+        "key": "graphics_model",
+        "value": "Intel UHD Graphics 770"
+      },
+      {
+        "group": "Graphics",
+        "key": "graphics_base_clock",
+        "value": "300",
+        "unit": "MHz"
+      },
+      {
+        "group": "Graphics",
+        "key": "graphics_max_clock",
+        "value": "1600",
+        "unit": "MHz"
+      },
+      {
+        "group": "Features",
+        "key": "overclocking_support",
+        "value": "false"
+      },
+      {
+        "group": "Features",
+        "key": "turbo_boost_max",
+        "value": "true"
+      }
+    ],
+    "benchmarks": []
+  },
+  {
+    "category": "CPU",
+    "manufacturer": "Intel",
+    "family": "Core",
+    "series": "Core",
+    "generation": "14th Generation",
+    "architecture": "Raptor Lake Refresh",
+    "source": {
+      "name": "Intel ARK",
+      "url": "https://www.intel.com/content/www/us/en/products/sku/236799/specifications.html",
+      "date": "2026-09-14",
+      "notes": "Specifications verified against Intel ARK product specification page."
+    },
+    "product": {
+      "name": "Intel Core i5-14600K",
+      "slug": "intel-core-i5-14600k",
+      "description": "14th Gen Intel Core desktop processor with 14 cores and 20 threads.",
+      "release_date": "2023-10-17",
+      "status": "active",
+      "is_popular": true,
+      "architecture": "Raptor Lake Refresh"
+    },
+    "images": [],
+    "specifications": [
+      {
+        "group": "Socket",
+        "key": "socket",
+        "value": "LGA 1700"
+      },
+      {
+        "group": "General",
+        "key": "architecture",
+        "value": "Raptor Lake Refresh"
+      },
+      {
+        "group": "General",
+        "key": "microarchitecture",
+        "value": "Raptor Lake"
+      },
+      {
+        "group": "General",
+        "key": "process_node",
+        "value": "Intel 7"
+      },
+      {
+        "group": "General",
+        "key": "market_segment",
+        "value": "Desktop"
+      },
+      {
+        "group": "General",
+        "key": "product_family",
+        "value": "Core"
+      },
+      {
+        "group": "General",
+        "key": "generation",
+        "value": "14th Generation"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_channels",
+        "value": "2"
+      },
+      {
+        "group": "Memory",
+        "key": "max_memory",
+        "value": "192",
+        "unit": "GB"
+      },
+      {
+        "group": "PCI Express",
+        "key": "pcie_version",
+        "value": "5.0"
+      },
+      {
+        "group": "PCI Express",
+        "key": "pcie_lanes",
+        "value": "20"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_type",
+        "value": "DDR5, DDR4"
+      },
+      {
+        "group": "Memory",
+        "key": "ecc_support",
+        "value": "true"
+      },
+      {
+        "group": "Features",
+        "key": "virtualization",
+        "value": "true"
+      },
+      {
+        "group": "Features",
+        "key": "aes",
+        "value": "true"
+      },
+      {
+        "group": "Features",
+        "key": "avx2",
+        "value": "true"
+      },
+      {
+        "group": "Features",
+        "key": "intel_turbo_boost",
+        "value": "true"
+      },
+      {
+        "group": "Memory",
+        "key": "max_memory_speed",
+        "value": "5600",
+        "unit": "MT/s"
+      },
+      {
+        "group": "Core Configuration",
+        "key": "cores",
+        "value": "14"
+      },
+      {
+        "group": "Core Configuration",
+        "key": "p_cores",
+        "value": "6"
+      },
+      {
+        "group": "Core Configuration",
+        "key": "e_cores",
+        "value": "8"
+      },
+      {
+        "group": "Core Configuration",
+        "key": "threads",
+        "value": "20"
+      },
+      {
+        "group": "Clock Speeds",
+        "key": "base_clock",
+        "value": "3.5",
+        "unit": "GHz"
+      },
+      {
+        "group": "Clock Speeds",
+        "key": "p_core_base_clock",
+        "value": "3.5",
+        "unit": "GHz"
+      },
+      {
+        "group": "Clock Speeds",
+        "key": "p_core_boost_clock",
+        "value": "5.1",
+        "unit": "GHz"
+      },
+      {
+        "group": "Clock Speeds",
+        "key": "e_core_base_clock",
+        "value": "2.6",
+        "unit": "GHz"
+      },
+      {
+        "group": "Clock Speeds",
+        "key": "e_core_boost_clock",
+        "value": "4.0",
+        "unit": "GHz"
+      },
+      {
+        "group": "Clock Speeds",
+        "key": "boost_clock",
+        "value": "5.3",
+        "unit": "GHz"
+      },
+      {
+        "group": "Cache",
+        "key": "l2_cache",
+        "value": "20",
+        "unit": "MB"
+      },
+      {
+        "group": "Cache",
+        "key": "l3_cache",
+        "value": "24",
+        "unit": "MB"
+      },
+      {
+        "group": "Power",
+        "key": "processor_base_power",
+        "value": "125",
+        "unit": "W"
+      },
+      {
+        "group": "Power",
+        "key": "max_turbo_power",
+        "value": "181",
+        "unit": "W"
+      },
+      {
+        "group": "Power",
+        "key": "tdp",
+        "value": "125",
+        "unit": "W"
+      },
+      {
+        "group": "Graphics",
+        "key": "integrated_graphics",
+        "value": "true"
+      },
+      {
+        "group": "Graphics",
+        "key": "graphics_model",
+        "value": "Intel UHD Graphics 770"
+      },
+      {
+        "group": "Graphics",
+        "key": "graphics_base_clock",
+        "value": "300",
+        "unit": "MHz"
+      },
+      {
+        "group": "Graphics",
+        "key": "graphics_max_clock",
+        "value": "1550",
+        "unit": "MHz"
+      },
+      {
+        "group": "Features",
+        "key": "overclocking_support",
+        "value": "true"
+      }
+    ],
+    "benchmarks": []
+  },
+  {
+    "category": "CPU",
+    "manufacturer": "Intel",
+    "family": "Core",
+    "series": "Core",
+    "generation": "14th Generation",
+    "architecture": "Raptor Lake Refresh",
+    "source": {
+      "name": "Intel ARK",
+      "url": "https://www.intel.com/content/www/us/en/products/sku/236778/specifications.html",
+      "date": "2026-09-14",
+      "notes": "Specifications verified against Intel ARK product specification page."
+    },
+    "product": {
+      "name": "Intel Core i5-14600KF",
+      "slug": "intel-core-i5-14600kf",
+      "description": "14th Gen Intel Core desktop processor with 14 cores and 20 threads. Requires discrete graphics.",
+      "release_date": "2023-10-17",
+      "status": "active",
+      "is_popular": false,
+      "architecture": "Raptor Lake Refresh"
+    },
+    "images": [],
+    "specifications": [
+      {
+        "group": "Socket",
+        "key": "socket",
+        "value": "LGA 1700"
+      },
+      {
+        "group": "General",
+        "key": "architecture",
+        "value": "Raptor Lake Refresh"
+      },
+      {
+        "group": "General",
+        "key": "microarchitecture",
+        "value": "Raptor Lake"
+      },
+      {
+        "group": "General",
+        "key": "process_node",
+        "value": "Intel 7"
+      },
+      {
+        "group": "General",
+        "key": "market_segment",
+        "value": "Desktop"
+      },
+      {
+        "group": "General",
+        "key": "product_family",
+        "value": "Core"
+      },
+      {
+        "group": "General",
+        "key": "generation",
+        "value": "14th Generation"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_channels",
+        "value": "2"
+      },
+      {
+        "group": "Memory",
+        "key": "max_memory",
+        "value": "192",
+        "unit": "GB"
+      },
+      {
+        "group": "PCI Express",
+        "key": "pcie_version",
+        "value": "5.0"
+      },
+      {
+        "group": "PCI Express",
+        "key": "pcie_lanes",
+        "value": "20"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_type",
+        "value": "DDR5, DDR4"
+      },
+      {
+        "group": "Memory",
+        "key": "ecc_support",
+        "value": "true"
+      },
+      {
+        "group": "Features",
+        "key": "virtualization",
+        "value": "true"
+      },
+      {
+        "group": "Features",
+        "key": "aes",
+        "value": "true"
+      },
+      {
+        "group": "Features",
+        "key": "avx2",
+        "value": "true"
+      },
+      {
+        "group": "Features",
+        "key": "intel_turbo_boost",
+        "value": "true"
+      },
+      {
+        "group": "Memory",
+        "key": "max_memory_speed",
+        "value": "5600",
+        "unit": "MT/s"
+      },
+      {
+        "group": "Core Configuration",
+        "key": "cores",
+        "value": "14"
+      },
+      {
+        "group": "Core Configuration",
+        "key": "p_cores",
+        "value": "6"
+      },
+      {
+        "group": "Core Configuration",
+        "key": "e_cores",
+        "value": "8"
+      },
+      {
+        "group": "Core Configuration",
+        "key": "threads",
+        "value": "20"
+      },
+      {
+        "group": "Clock Speeds",
+        "key": "base_clock",
+        "value": "3.5",
+        "unit": "GHz"
+      },
+      {
+        "group": "Clock Speeds",
+        "key": "p_core_base_clock",
+        "value": "3.5",
+        "unit": "GHz"
+      },
+      {
+        "group": "Clock Speeds",
+        "key": "p_core_boost_clock",
+        "value": "5.1",
+        "unit": "GHz"
+      },
+      {
+        "group": "Clock Speeds",
+        "key": "e_core_base_clock",
+        "value": "2.6",
+        "unit": "GHz"
+      },
+      {
+        "group": "Clock Speeds",
+        "key": "e_core_boost_clock",
+        "value": "4.0",
+        "unit": "GHz"
+      },
+      {
+        "group": "Clock Speeds",
+        "key": "boost_clock",
+        "value": "5.3",
+        "unit": "GHz"
+      },
+      {
+        "group": "Cache",
+        "key": "l2_cache",
+        "value": "20",
+        "unit": "MB"
+      },
+      {
+        "group": "Cache",
+        "key": "l3_cache",
+        "value": "24",
+        "unit": "MB"
+      },
+      {
+        "group": "Power",
+        "key": "processor_base_power",
+        "value": "125",
+        "unit": "W"
+      },
+      {
+        "group": "Power",
+        "key": "max_turbo_power",
+        "value": "181",
+        "unit": "W"
+      },
+      {
+        "group": "Power",
+        "key": "tdp",
+        "value": "125",
+        "unit": "W"
+      },
+      {
+        "group": "Graphics",
+        "key": "integrated_graphics",
+        "value": "false"
+      },
+      {
+        "group": "Features",
+        "key": "overclocking_support",
+        "value": "true"
+      }
+    ],
+    "benchmarks": []
+  },
+  {
+    "category": "CPU",
+    "manufacturer": "Intel",
+    "family": "Core",
+    "series": "Core",
+    "generation": "14th Generation",
+    "architecture": "Raptor Lake Refresh",
+    "source": {
+      "name": "Intel ARK",
+      "url": "https://www.intel.com/content/www/us/en/products/sku/236782/specifications.html",
+      "date": "2026-09-14",
+      "notes": "Specifications verified against Intel ARK product specification page."
+    },
+    "product": {
+      "name": "Intel Core i5-14600",
+      "slug": "intel-core-i5-14600",
+      "description": "14th Gen Intel Core desktop processor with 14 cores and 20 threads.",
+      "release_date": "2024-01-08",
+      "status": "active",
+      "is_popular": false,
+      "architecture": "Raptor Lake Refresh"
+    },
+    "images": [],
+    "specifications": [
+      {
+        "group": "Socket",
+        "key": "socket",
+        "value": "LGA 1700"
+      },
+      {
+        "group": "General",
+        "key": "architecture",
+        "value": "Raptor Lake Refresh"
+      },
+      {
+        "group": "General",
+        "key": "microarchitecture",
+        "value": "Raptor Lake"
+      },
+      {
+        "group": "General",
+        "key": "process_node",
+        "value": "Intel 7"
+      },
+      {
+        "group": "General",
+        "key": "market_segment",
+        "value": "Desktop"
+      },
+      {
+        "group": "General",
+        "key": "product_family",
+        "value": "Core"
+      },
+      {
+        "group": "General",
+        "key": "generation",
+        "value": "14th Generation"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_channels",
+        "value": "2"
+      },
+      {
+        "group": "Memory",
+        "key": "max_memory",
+        "value": "192",
+        "unit": "GB"
+      },
+      {
+        "group": "PCI Express",
+        "key": "pcie_version",
+        "value": "5.0"
+      },
+      {
+        "group": "PCI Express",
+        "key": "pcie_lanes",
+        "value": "20"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_type",
+        "value": "DDR5, DDR4"
+      },
+      {
+        "group": "Memory",
+        "key": "ecc_support",
+        "value": "true"
+      },
+      {
+        "group": "Features",
+        "key": "virtualization",
+        "value": "true"
+      },
+      {
+        "group": "Features",
+        "key": "aes",
+        "value": "true"
+      },
+      {
+        "group": "Features",
+        "key": "avx2",
+        "value": "true"
+      },
+      {
+        "group": "Features",
+        "key": "intel_turbo_boost",
+        "value": "true"
+      },
+      {
+        "group": "Memory",
+        "key": "max_memory_speed",
+        "value": "5600",
+        "unit": "MT/s"
+      },
+      {
+        "group": "Core Configuration",
+        "key": "cores",
+        "value": "14"
+      },
+      {
+        "group": "Core Configuration",
+        "key": "p_cores",
+        "value": "6"
+      },
+      {
+        "group": "Core Configuration",
+        "key": "e_cores",
+        "value": "8"
+      },
+      {
+        "group": "Core Configuration",
+        "key": "threads",
+        "value": "20"
+      },
+      {
+        "group": "Clock Speeds",
+        "key": "base_clock",
+        "value": "2.7",
+        "unit": "GHz"
+      },
+      {
+        "group": "Clock Speeds",
+        "key": "p_core_base_clock",
+        "value": "2.7",
+        "unit": "GHz"
+      },
+      {
+        "group": "Clock Speeds",
+        "key": "p_core_boost_clock",
+        "value": "5.0",
+        "unit": "GHz"
+      },
+      {
+        "group": "Clock Speeds",
+        "key": "e_core_base_clock",
+        "value": "2.0",
+        "unit": "GHz"
+      },
+      {
+        "group": "Clock Speeds",
+        "key": "e_core_boost_clock",
+        "value": "3.7",
+        "unit": "GHz"
+      },
+      {
+        "group": "Clock Speeds",
+        "key": "boost_clock",
+        "value": "5.2",
+        "unit": "GHz"
+      },
+      {
+        "group": "Cache",
+        "key": "l2_cache",
+        "value": "20",
+        "unit": "MB"
+      },
+      {
+        "group": "Cache",
+        "key": "l3_cache",
+        "value": "24",
+        "unit": "MB"
+      },
+      {
+        "group": "Power",
+        "key": "processor_base_power",
+        "value": "65",
+        "unit": "W"
+      },
+      {
+        "group": "Power",
+        "key": "max_turbo_power",
+        "value": "154",
+        "unit": "W"
+      },
+      {
+        "group": "Power",
+        "key": "tdp",
+        "value": "65",
+        "unit": "W"
+      },
+      {
+        "group": "Graphics",
+        "key": "integrated_graphics",
+        "value": "true"
+      },
+      {
+        "group": "Graphics",
+        "key": "graphics_model",
+        "value": "Intel UHD Graphics 770"
+      },
+      {
+        "group": "Graphics",
+        "key": "graphics_base_clock",
+        "value": "300",
+        "unit": "MHz"
+      },
+      {
+        "group": "Graphics",
+        "key": "graphics_max_clock",
+        "value": "1550",
+        "unit": "MHz"
+      },
+      {
+        "group": "Features",
+        "key": "overclocking_support",
+        "value": "false"
+      }
+    ],
+    "benchmarks": []
+  },
+  {
+    "category": "CPU",
+    "manufacturer": "Intel",
+    "family": "Core",
+    "series": "Core",
+    "generation": "14th Generation",
+    "architecture": "Raptor Lake Refresh",
+    "source": {
+      "name": "Intel ARK",
+      "url": "https://www.intel.com/content/www/us/en/products/sku/236784/specifications.html",
+      "date": "2026-09-14",
+      "notes": "Specifications verified against Intel ARK product specification page."
+    },
+    "product": {
+      "name": "Intel Core i5-14500",
+      "slug": "intel-core-i5-14500",
+      "description": "14th Gen Intel Core desktop processor with 14 cores and 20 threads.",
+      "release_date": "2024-01-08",
+      "status": "active",
+      "is_popular": false,
+      "architecture": "Raptor Lake Refresh"
+    },
+    "images": [],
+    "specifications": [
+      {
+        "group": "Socket",
+        "key": "socket",
+        "value": "LGA 1700"
+      },
+      {
+        "group": "General",
+        "key": "architecture",
+        "value": "Raptor Lake Refresh"
+      },
+      {
+        "group": "General",
+        "key": "microarchitecture",
+        "value": "Raptor Lake"
+      },
+      {
+        "group": "General",
+        "key": "process_node",
+        "value": "Intel 7"
+      },
+      {
+        "group": "General",
+        "key": "market_segment",
+        "value": "Desktop"
+      },
+      {
+        "group": "General",
+        "key": "product_family",
+        "value": "Core"
+      },
+      {
+        "group": "General",
+        "key": "generation",
+        "value": "14th Generation"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_channels",
+        "value": "2"
+      },
+      {
+        "group": "Memory",
+        "key": "max_memory",
+        "value": "192",
+        "unit": "GB"
+      },
+      {
+        "group": "PCI Express",
+        "key": "pcie_version",
+        "value": "5.0"
+      },
+      {
+        "group": "PCI Express",
+        "key": "pcie_lanes",
+        "value": "20"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_type",
+        "value": "DDR5, DDR4"
+      },
+      {
+        "group": "Memory",
+        "key": "ecc_support",
+        "value": "true"
+      },
+      {
+        "group": "Features",
+        "key": "virtualization",
+        "value": "true"
+      },
+      {
+        "group": "Features",
+        "key": "aes",
+        "value": "true"
+      },
+      {
+        "group": "Features",
+        "key": "avx2",
+        "value": "true"
+      },
+      {
+        "group": "Features",
+        "key": "intel_turbo_boost",
+        "value": "true"
+      },
+      {
+        "group": "Memory",
+        "key": "max_memory_speed",
+        "value": "4800",
+        "unit": "MT/s"
+      },
+      {
+        "group": "Core Configuration",
+        "key": "cores",
+        "value": "14"
+      },
+      {
+        "group": "Core Configuration",
+        "key": "p_cores",
+        "value": "6"
+      },
+      {
+        "group": "Core Configuration",
+        "key": "e_cores",
+        "value": "8"
+      },
+      {
+        "group": "Core Configuration",
+        "key": "threads",
+        "value": "20"
+      },
+      {
+        "group": "Clock Speeds",
+        "key": "base_clock",
+        "value": "2.6",
+        "unit": "GHz"
+      },
+      {
+        "group": "Clock Speeds",
+        "key": "p_core_base_clock",
+        "value": "2.6",
+        "unit": "GHz"
+      },
+      {
+        "group": "Clock Speeds",
+        "key": "p_core_boost_clock",
+        "value": "4.8",
+        "unit": "GHz"
+      },
+      {
+        "group": "Clock Speeds",
+        "key": "e_core_base_clock",
+        "value": "1.9",
+        "unit": "GHz"
+      },
+      {
+        "group": "Clock Speeds",
+        "key": "e_core_boost_clock",
+        "value": "3.5",
+        "unit": "GHz"
+      },
+      {
+        "group": "Clock Speeds",
+        "key": "boost_clock",
+        "value": "5.0",
+        "unit": "GHz"
+      },
+      {
+        "group": "Cache",
+        "key": "l2_cache",
+        "value": "20",
+        "unit": "MB"
+      },
+      {
+        "group": "Cache",
+        "key": "l3_cache",
+        "value": "24",
+        "unit": "MB"
+      },
+      {
+        "group": "Power",
+        "key": "processor_base_power",
+        "value": "65",
+        "unit": "W"
+      },
+      {
+        "group": "Power",
+        "key": "max_turbo_power",
+        "value": "154",
+        "unit": "W"
+      },
+      {
+        "group": "Power",
+        "key": "tdp",
+        "value": "65",
+        "unit": "W"
+      },
+      {
+        "group": "Graphics",
+        "key": "integrated_graphics",
+        "value": "true"
+      },
+      {
+        "group": "Graphics",
+        "key": "graphics_model",
+        "value": "Intel UHD Graphics 770"
+      },
+      {
+        "group": "Graphics",
+        "key": "graphics_base_clock",
+        "value": "300",
+        "unit": "MHz"
+      },
+      {
+        "group": "Graphics",
+        "key": "graphics_max_clock",
+        "value": "1550",
+        "unit": "MHz"
+      },
+      {
+        "group": "Features",
+        "key": "overclocking_support",
+        "value": "false"
+      }
+    ],
+    "benchmarks": []
+  },
+  {
+    "category": "CPU",
+    "manufacturer": "Intel",
+    "family": "Core",
+    "series": "Core",
+    "generation": "14th Generation",
+    "architecture": "Raptor Lake Refresh",
+    "source": {
+      "name": "Intel ARK",
+      "url": "https://www.intel.com/content/www/us/en/products/sku/236788/specifications.html",
+      "date": "2026-09-14",
+      "notes": "Specifications verified against Intel ARK product specification page."
+    },
+    "product": {
+      "name": "Intel Core i5-14400",
+      "slug": "intel-core-i5-14400",
+      "description": "14th Gen Intel Core desktop processor with 10 cores and 16 threads.",
+      "release_date": "2024-01-08",
+      "status": "active",
+      "is_popular": false,
+      "architecture": "Raptor Lake Refresh"
+    },
+    "images": [],
+    "specifications": [
+      {
+        "group": "Socket",
+        "key": "socket",
+        "value": "LGA 1700"
+      },
+      {
+        "group": "General",
+        "key": "architecture",
+        "value": "Raptor Lake Refresh"
+      },
+      {
+        "group": "General",
+        "key": "microarchitecture",
+        "value": "Raptor Lake"
+      },
+      {
+        "group": "General",
+        "key": "process_node",
+        "value": "Intel 7"
+      },
+      {
+        "group": "General",
+        "key": "market_segment",
+        "value": "Desktop"
+      },
+      {
+        "group": "General",
+        "key": "product_family",
+        "value": "Core"
+      },
+      {
+        "group": "General",
+        "key": "generation",
+        "value": "14th Generation"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_channels",
+        "value": "2"
+      },
+      {
+        "group": "Memory",
+        "key": "max_memory",
+        "value": "192",
+        "unit": "GB"
+      },
+      {
+        "group": "PCI Express",
+        "key": "pcie_version",
+        "value": "5.0"
+      },
+      {
+        "group": "PCI Express",
+        "key": "pcie_lanes",
+        "value": "20"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_type",
+        "value": "DDR5, DDR4"
+      },
+      {
+        "group": "Memory",
+        "key": "ecc_support",
+        "value": "true"
+      },
+      {
+        "group": "Features",
+        "key": "virtualization",
+        "value": "true"
+      },
+      {
+        "group": "Features",
+        "key": "aes",
+        "value": "true"
+      },
+      {
+        "group": "Features",
+        "key": "avx2",
+        "value": "true"
+      },
+      {
+        "group": "Features",
+        "key": "intel_turbo_boost",
+        "value": "true"
+      },
+      {
+        "group": "Memory",
+        "key": "max_memory_speed",
+        "value": "4800",
+        "unit": "MT/s"
+      },
+      {
+        "group": "Core Configuration",
+        "key": "cores",
+        "value": "10"
+      },
+      {
+        "group": "Core Configuration",
+        "key": "p_cores",
+        "value": "6"
+      },
+      {
+        "group": "Core Configuration",
+        "key": "e_cores",
+        "value": "4"
+      },
+      {
+        "group": "Core Configuration",
+        "key": "threads",
+        "value": "16"
+      },
+      {
+        "group": "Clock Speeds",
+        "key": "base_clock",
+        "value": "2.5",
+        "unit": "GHz"
+      },
+      {
+        "group": "Clock Speeds",
+        "key": "p_core_base_clock",
+        "value": "2.5",
+        "unit": "GHz"
+      },
+      {
+        "group": "Clock Speeds",
+        "key": "p_core_boost_clock",
+        "value": "4.6",
+        "unit": "GHz"
+      },
+      {
+        "group": "Clock Speeds",
+        "key": "e_core_base_clock",
+        "value": "1.8",
+        "unit": "GHz"
+      },
+      {
+        "group": "Clock Speeds",
+        "key": "e_core_boost_clock",
+        "value": "3.3",
+        "unit": "GHz"
+      },
+      {
+        "group": "Clock Speeds",
+        "key": "boost_clock",
+        "value": "4.7",
+        "unit": "GHz"
+      },
+      {
+        "group": "Cache",
+        "key": "l2_cache",
+        "value": "9.5",
+        "unit": "MB"
+      },
+      {
+        "group": "Cache",
+        "key": "l3_cache",
+        "value": "20",
+        "unit": "MB"
+      },
+      {
+        "group": "Power",
+        "key": "processor_base_power",
+        "value": "65",
+        "unit": "W"
+      },
+      {
+        "group": "Power",
+        "key": "max_turbo_power",
+        "value": "148",
+        "unit": "W"
+      },
+      {
+        "group": "Power",
+        "key": "tdp",
+        "value": "65",
+        "unit": "W"
+      },
+      {
+        "group": "Graphics",
+        "key": "integrated_graphics",
+        "value": "true"
+      },
+      {
+        "group": "Graphics",
+        "key": "graphics_model",
+        "value": "Intel UHD Graphics 730"
+      },
+      {
+        "group": "Graphics",
+        "key": "graphics_base_clock",
+        "value": "300",
+        "unit": "MHz"
+      },
+      {
+        "group": "Graphics",
+        "key": "graphics_max_clock",
+        "value": "1550",
+        "unit": "MHz"
+      },
+      {
+        "group": "Features",
+        "key": "overclocking_support",
+        "value": "false"
+      }
+    ],
+    "benchmarks": []
+  },
+  {
+    "category": "CPU",
+    "manufacturer": "Intel",
+    "family": "Core",
+    "series": "Core",
+    "generation": "14th Generation",
+    "architecture": "Raptor Lake Refresh",
+    "source": {
+      "name": "Intel ARK",
+      "url": "https://www.intel.com/content/www/us/en/products/sku/236774/specifications.html",
+      "date": "2026-09-14",
+      "notes": "Specifications verified against Intel ARK product specification page."
+    },
+    "product": {
+      "name": "Intel Core i3-14100",
+      "slug": "intel-core-i3-14100",
+      "description": "14th Gen Intel Core desktop processor with 4 cores and 8 threads.",
+      "release_date": "2024-01-08",
+      "status": "active",
+      "is_popular": false,
+      "architecture": "Raptor Lake Refresh"
+    },
+    "images": [],
+    "specifications": [
+      {
+        "group": "Socket",
+        "key": "socket",
+        "value": "LGA 1700"
+      },
+      {
+        "group": "General",
+        "key": "architecture",
+        "value": "Raptor Lake Refresh"
+      },
+      {
+        "group": "General",
+        "key": "microarchitecture",
+        "value": "Raptor Lake"
+      },
+      {
+        "group": "General",
+        "key": "process_node",
+        "value": "Intel 7"
+      },
+      {
+        "group": "General",
+        "key": "market_segment",
+        "value": "Desktop"
+      },
+      {
+        "group": "General",
+        "key": "product_family",
+        "value": "Core"
+      },
+      {
+        "group": "General",
+        "key": "generation",
+        "value": "14th Generation"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_channels",
+        "value": "2"
+      },
+      {
+        "group": "Memory",
+        "key": "max_memory",
+        "value": "192",
+        "unit": "GB"
+      },
+      {
+        "group": "PCI Express",
+        "key": "pcie_version",
+        "value": "5.0"
+      },
+      {
+        "group": "PCI Express",
+        "key": "pcie_lanes",
+        "value": "20"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_type",
+        "value": "DDR5, DDR4"
+      },
+      {
+        "group": "Memory",
+        "key": "ecc_support",
+        "value": "false"
+      },
+      {
+        "group": "Features",
+        "key": "virtualization",
+        "value": "true"
+      },
+      {
+        "group": "Features",
+        "key": "aes",
+        "value": "true"
+      },
+      {
+        "group": "Features",
+        "key": "avx2",
+        "value": "true"
+      },
+      {
+        "group": "Features",
+        "key": "intel_turbo_boost",
+        "value": "true"
+      },
+      {
+        "group": "Memory",
+        "key": "max_memory_speed",
+        "value": "4800",
+        "unit": "MT/s"
+      },
+      {
+        "group": "Core Configuration",
+        "key": "cores",
+        "value": "4"
+      },
+      {
+        "group": "Core Configuration",
+        "key": "p_cores",
+        "value": "4"
+      },
+      {
+        "group": "Core Configuration",
+        "key": "threads",
+        "value": "8"
+      },
+      {
+        "group": "Clock Speeds",
+        "key": "base_clock",
+        "value": "3.5",
+        "unit": "GHz"
+      },
+      {
+        "group": "Clock Speeds",
+        "key": "p_core_base_clock",
+        "value": "3.5",
+        "unit": "GHz"
+      },
+      {
+        "group": "Clock Speeds",
+        "key": "p_core_boost_clock",
+        "value": "4.7",
+        "unit": "GHz"
+      },
+      {
+        "group": "Clock Speeds",
+        "key": "boost_clock",
+        "value": "4.7",
+        "unit": "GHz"
+      },
+      {
+        "group": "Cache",
+        "key": "l2_cache",
+        "value": "5",
+        "unit": "MB"
+      },
+      {
+        "group": "Cache",
+        "key": "l3_cache",
+        "value": "12",
+        "unit": "MB"
+      },
+      {
+        "group": "Power",
+        "key": "processor_base_power",
+        "value": "60",
+        "unit": "W"
+      },
+      {
+        "group": "Power",
+        "key": "max_turbo_power",
+        "value": "110",
+        "unit": "W"
+      },
+      {
+        "group": "Power",
+        "key": "tdp",
+        "value": "60",
+        "unit": "W"
+      },
+      {
+        "group": "Graphics",
+        "key": "integrated_graphics",
+        "value": "true"
+      },
+      {
+        "group": "Graphics",
+        "key": "graphics_model",
+        "value": "Intel UHD Graphics 730"
+      },
+      {
+        "group": "Graphics",
+        "key": "graphics_max_clock",
+        "value": "1500",
+        "unit": "MHz"
+      },
+      {
+        "group": "Features",
+        "key": "overclocking_support",
+        "value": "false"
+      }
+    ],
+    "benchmarks": []
+  },
+  {
+    "category": "CPU",
+    "manufacturer": "Intel",
+    "family": "Core",
+    "series": "Core",
+    "generation": "14th Generation",
+    "architecture": "Raptor Lake Refresh",
+    "source": {
+      "name": "Intel ARK",
+      "url": "https://www.intel.com/content/www/us/en/products/sku/236786/specifications.html",
+      "date": "2026-09-14",
+      "notes": "Specifications verified against Intel ARK product specification page."
+    },
+    "product": {
+      "name": "Intel Core i3-14100F",
+      "slug": "intel-core-i3-14100f",
+      "description": "14th Gen Intel Core desktop processor with 4 cores and 8 threads. Requires discrete graphics.",
+      "release_date": "2024-01-08",
+      "status": "active",
+      "is_popular": false,
+      "architecture": "Raptor Lake Refresh"
+    },
+    "images": [],
+    "specifications": [
+      {
+        "group": "Socket",
+        "key": "socket",
+        "value": "LGA 1700"
+      },
+      {
+        "group": "General",
+        "key": "architecture",
+        "value": "Raptor Lake Refresh"
+      },
+      {
+        "group": "General",
+        "key": "microarchitecture",
+        "value": "Raptor Lake"
+      },
+      {
+        "group": "General",
+        "key": "process_node",
+        "value": "Intel 7"
+      },
+      {
+        "group": "General",
+        "key": "market_segment",
+        "value": "Desktop"
+      },
+      {
+        "group": "General",
+        "key": "product_family",
+        "value": "Core"
+      },
+      {
+        "group": "General",
+        "key": "generation",
+        "value": "14th Generation"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_channels",
+        "value": "2"
+      },
+      {
+        "group": "Memory",
+        "key": "max_memory",
+        "value": "192",
+        "unit": "GB"
+      },
+      {
+        "group": "PCI Express",
+        "key": "pcie_version",
+        "value": "5.0"
+      },
+      {
+        "group": "PCI Express",
+        "key": "pcie_lanes",
+        "value": "20"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_type",
+        "value": "DDR5, DDR4"
+      },
+      {
+        "group": "Memory",
+        "key": "ecc_support",
+        "value": "false"
+      },
+      {
+        "group": "Features",
+        "key": "virtualization",
+        "value": "true"
+      },
+      {
+        "group": "Features",
+        "key": "aes",
+        "value": "true"
+      },
+      {
+        "group": "Features",
+        "key": "avx2",
+        "value": "true"
+      },
+      {
+        "group": "Features",
+        "key": "intel_turbo_boost",
+        "value": "true"
+      },
+      {
+        "group": "Memory",
+        "key": "max_memory_speed",
+        "value": "4800",
+        "unit": "MT/s"
+      },
+      {
+        "group": "Core Configuration",
+        "key": "cores",
+        "value": "4"
+      },
+      {
+        "group": "Core Configuration",
+        "key": "p_cores",
+        "value": "4"
+      },
+      {
+        "group": "Core Configuration",
+        "key": "threads",
+        "value": "8"
+      },
+      {
+        "group": "Clock Speeds",
+        "key": "base_clock",
+        "value": "3.5",
+        "unit": "GHz"
+      },
+      {
+        "group": "Clock Speeds",
+        "key": "p_core_base_clock",
+        "value": "3.5",
+        "unit": "GHz"
+      },
+      {
+        "group": "Clock Speeds",
+        "key": "p_core_boost_clock",
+        "value": "4.7",
+        "unit": "GHz"
+      },
+      {
+        "group": "Clock Speeds",
+        "key": "boost_clock",
+        "value": "4.7",
+        "unit": "GHz"
+      },
+      {
+        "group": "Cache",
+        "key": "l2_cache",
+        "value": "5",
+        "unit": "MB"
+      },
+      {
+        "group": "Cache",
+        "key": "l3_cache",
+        "value": "12",
+        "unit": "MB"
+      },
+      {
+        "group": "Power",
+        "key": "processor_base_power",
+        "value": "58",
+        "unit": "W"
+      },
+      {
+        "group": "Power",
+        "key": "max_turbo_power",
+        "value": "110",
+        "unit": "W"
+      },
+      {
+        "group": "Power",
+        "key": "tdp",
+        "value": "58",
+        "unit": "W"
+      },
+      {
+        "group": "Graphics",
+        "key": "integrated_graphics",
+        "value": "false"
+      },
+      {
+        "group": "Features",
+        "key": "overclocking_support",
+        "value": "false"
+      }
+    ],
+    "benchmarks": []
+  }
+]

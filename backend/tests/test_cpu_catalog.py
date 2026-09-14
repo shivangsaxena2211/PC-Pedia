@@ -1,11 +1,16 @@
-"""CPU catalog, taxonomy, and filtering tests."""
+"""CPU catalog, taxonomy, filtering, and batch import tests."""
+
+import json
+from pathlib import Path
 
 import pytest
 
 from app import db
-from app.models import Category, Manufacturer, Product, SpecificationDefinition
+from app.models import Category, Product, SpecificationDefinition
 from app.services.import_service import import_hardware, import_hardware_from_path, ImportMode
 from seed_data.cpu_spec_definitions import CPU_SPECS
+
+CATALOG_ROOT = Path(__file__).resolve().parents[1] / "data" / "catalog" / "cpu"
 
 
 @pytest.fixture
@@ -17,7 +22,7 @@ def cpu_setup(app):
             db.session.add(cpu)
             db.session.flush()
 
-        for group, key, display, dtype, unit, filt, comp, req, order in CPU_SPECS[:10]:
+        for group, key, display, dtype, unit, filt, comp, req, order in CPU_SPECS:
             existing = SpecificationDefinition.query.filter_by(
                 category_id=cpu.id, key=key
             ).first()
@@ -40,40 +45,52 @@ def cpu_setup(app):
 
 def test_cpu_specification_definitions_exist(cpu_setup):
     count = SpecificationDefinition.query.filter_by(category_id=cpu_setup.id).count()
-    assert count >= 10
+    assert count >= 48
 
 
-def test_cpu_catalog_import(client, cpu_setup):
-    result = import_hardware_from_path(
-        "data/catalog/cpu/amd/ryzen/example.json",
-        mode=ImportMode.UPSERT,
-    )
+def test_valid_intel_taxonomy_record(cpu_setup):
+    record = {
+        "category": "CPU",
+        "manufacturer": "Intel",
+        "family": "Core",
+        "series": "Core",
+        "generation": "14th Generation",
+        "product": {"name": "Taxonomy Intel CPU", "slug": "taxonomy-intel-cpu"},
+        "specifications": [{"group": "Socket", "key": "socket", "value": "LGA 1700"}],
+        "images": [],
+    }
+    result = import_hardware([record], mode=ImportMode.UPSERT)
     assert result.errors == 0
-    assert result.created >= 1
-    assert Product.query.filter_by(slug="amd-ryzen-7-7800x3d").first() is not None
 
 
-def test_cpu_filtering_by_socket(client, cpu_setup):
-    import_hardware_from_path(
-        "data/catalog/cpu/amd/ryzen/example.json",
-        mode=ImportMode.UPSERT,
-    )
-    response = client.get("/api/cpus?spec_socket=AM5&limit=50")
-    assert response.status_code == 200
-    data = response.get_json()
-    assert len(data["data"]) >= 1
+def test_valid_core_ultra_taxonomy_record(cpu_setup):
+    record = {
+        "category": "CPU",
+        "manufacturer": "Intel",
+        "family": "Core Ultra",
+        "series": "Core Ultra",
+        "generation": "Series 1",
+        "product": {"name": "Taxonomy Core Ultra CPU", "slug": "taxonomy-core-ultra-cpu"},
+        "specifications": [],
+        "images": [],
+    }
+    result = import_hardware([record], mode=ImportMode.UPSERT)
+    assert result.errors == 0
 
 
-def test_cpu_product_detail_includes_sources(client, cpu_setup):
-    import_hardware_from_path(
-        "data/catalog/cpu/amd/ryzen/example.json",
-        mode=ImportMode.UPSERT,
-    )
-    response = client.get("/api/products/cpu/amd/amd-ryzen-7-7800x3d")
-    assert response.status_code == 200
-    payload = response.get_json()
-    assert "sources" in payload
-    assert len(payload["sources"]) >= 1
+def test_valid_amd_ryzen_7000_taxonomy_record(cpu_setup):
+    record = {
+        "category": "CPU",
+        "manufacturer": "AMD",
+        "family": "Ryzen",
+        "series": "Ryzen",
+        "generation": "Ryzen 7000",
+        "product": {"name": "Taxonomy Ryzen CPU", "slug": "taxonomy-ryzen-7000-cpu"},
+        "specifications": [{"group": "Socket", "key": "socket", "value": "AM5"}],
+        "images": [],
+    }
+    result = import_hardware([record], mode=ImportMode.UPSERT)
+    assert result.errors == 0
 
 
 def test_invalid_cpu_taxonomy_rejected(cpu_setup):
@@ -88,3 +105,110 @@ def test_invalid_cpu_taxonomy_rejected(cpu_setup):
     }
     result = import_hardware([bad_record], mode=ImportMode.UPSERT)
     assert result.errors == 1
+
+
+def test_intel_14th_gen_batch_import(cpu_setup):
+    result = import_hardware_from_path(
+        "data/catalog/cpu/intel/core/14th-gen/desktop.json",
+        mode=ImportMode.UPSERT,
+    )
+    assert result.errors == 0
+    assert result.created + result.updated >= 13
+    assert Product.query.filter_by(slug="intel-core-i9-14900k").first() is not None
+
+
+def test_amd_ryzen_7000_batch_import(cpu_setup):
+    result = import_hardware_from_path(
+        "data/catalog/cpu/amd/ryzen/7000/desktop.json",
+        mode=ImportMode.UPSERT,
+    )
+    assert result.errors == 0
+    assert result.created + result.updated >= 12
+    assert Product.query.filter_by(slug="amd-ryzen-7-7800x3d").first() is not None
+
+
+def test_duplicate_cpu_upsert_is_idempotent(cpu_setup):
+    import_hardware_from_path(
+        "data/catalog/cpu/amd/ryzen/7000/desktop.json",
+        mode=ImportMode.UPSERT,
+    )
+    first_count = Product.query.filter_by(slug="amd-ryzen-7-7800x3d").count()
+    result = import_hardware_from_path(
+        "data/catalog/cpu/amd/ryzen/7000/desktop.json",
+        mode=ImportMode.UPSERT,
+    )
+    second_count = Product.query.filter_by(slug="amd-ryzen-7-7800x3d").count()
+    assert first_count == 1
+    assert second_count == 1
+    assert result.created == 0
+    assert result.updated >= 1
+
+
+def test_catalog_batch_dry_run(cpu_setup):
+    result = import_hardware_from_path(
+        "data/catalog/cpu/intel/core/14th-gen/desktop.json",
+        dry_run=True,
+    )
+    assert result.dry_run is True
+    assert result.valid_records == 13
+    assert result.invalid_records == 0
+
+
+def test_catalog_records_have_sources():
+    intel_path = CATALOG_ROOT / "intel" / "core" / "14th-gen" / "desktop.json"
+    records = json.loads(intel_path.read_text(encoding="utf-8"))
+    assert len(records) == 13
+    for record in records:
+        assert record.get("source", {}).get("url")
+        assert record.get("source", {}).get("name") == "Intel ARK"
+        assert record["images"] == []
+
+
+def test_cpu_filtering_by_socket(client, cpu_setup):
+    import_hardware_from_path(
+        "data/catalog/cpu/amd/ryzen/7000/desktop.json",
+        mode=ImportMode.UPSERT,
+    )
+    response = client.get("/api/cpus?spec_socket=AM5&limit=50")
+    assert response.status_code == 200
+    data = response.get_json()
+    assert len(data["data"]) >= 1
+
+
+def test_cpu_search(client, cpu_setup):
+    import_hardware_from_path(
+        "data/catalog/cpu/intel/core/14th-gen/desktop.json",
+        mode=ImportMode.UPSERT,
+    )
+    for query in ("14900K", "Core i9-14900K"):
+        response = client.get(f"/api/search?q={query}")
+        assert response.status_code == 200
+        results = response.get_json()
+        items = results.get("items", results.get("data", []))
+        assert any("14900" in item.get("name", "") for item in items)
+
+
+def test_cpu_product_detail_includes_sources(client, cpu_setup):
+    import_hardware_from_path(
+        "data/catalog/cpu/amd/ryzen/7000/desktop.json",
+        mode=ImportMode.UPSERT,
+    )
+    response = client.get("/api/products/cpu/amd/amd-ryzen-7-7800x3d")
+    assert response.status_code == 200
+    payload = response.get_json()
+    assert "sources" in payload
+    assert len(payload["sources"]) >= 1
+    assert payload.get("related_products") is not None
+
+
+def test_intel_product_detail_page(client, cpu_setup):
+    import_hardware_from_path(
+        "data/catalog/cpu/intel/core/14th-gen/desktop.json",
+        mode=ImportMode.UPSERT,
+    )
+    response = client.get("/api/products/cpu/intel/intel-core-i9-14900k")
+    assert response.status_code == 200
+    payload = response.get_json()
+    assert payload["name"] == "Intel Core i9-14900K"
+    assert payload.get("specification_groups")
+    assert len(payload.get("sources", [])) >= 1
