@@ -1,0 +1,20 @@
+{
+  "category": "Motherboard",
+  "manufacturer": "ASUS",
+  "family": "ROG",
+  "series": "ROG Strix",
+  "generation": "AM5",
+  "product": {
+    "name": "ASUS ROG Strix X670E-E Gaming WiFi",
+    "slug": "rog-strix-x670e-e-gaming-wifi",
+    "status": "active",
+    "is_popular": true
+  },
+  "images": [],
+  "specifications": [
+    { "group": "General", "key": "Socket", "value": "AM5" },
+    { "group": "General", "key": "Chipset", "value": "AMD X670E" },
+    { "group": "Memory", "key": "RAM Type", "value": "DDR5" }
+  ],
+  "benchmarks": []
+}

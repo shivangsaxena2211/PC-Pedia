@@ -1,0 +1,20 @@
+{
+  "category": "RAM",
+  "manufacturer": "Corsair",
+  "family": "Vengeance",
+  "series": "Vengeance",
+  "generation": "DDR5",
+  "product": {
+    "name": "Corsair Vengeance DDR5 32GB (2x16GB) 6000MHz",
+    "slug": "vengeance-ddr5-32gb-6000",
+    "status": "active",
+    "is_popular": true
+  },
+  "images": [],
+  "specifications": [
+    { "group": "Memory", "key": "DDR Generation", "value": "DDR5" },
+    { "group": "Memory", "key": "Capacity", "value": "32", "unit": "GB" },
+    { "group": "Performance", "key": "Frequency", "value": "6000", "unit": "MHz" }
+  ],
+  "benchmarks": []
+}

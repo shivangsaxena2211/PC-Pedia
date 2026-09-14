@@ -1,0 +1,19 @@
+{
+  "category": "PSU",
+  "manufacturer": "Corsair",
+  "family": "RM Series",
+  "series": "RMx",
+  "generation": "ATX",
+  "product": {
+    "name": "Corsair RM850x",
+    "slug": "rm850x",
+    "status": "active"
+  },
+  "images": [],
+  "specifications": [
+    { "group": "General", "key": "Wattage", "value": "850", "unit": "W" },
+    { "group": "General", "key": "Efficiency Rating", "value": "80 PLUS Gold" },
+    { "group": "General", "key": "Form Factor", "value": "ATX" }
+  ],
+  "benchmarks": []
+}

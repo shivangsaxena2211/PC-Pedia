@@ -1,0 +1,16 @@
+{
+  "category": "Cases",
+  "manufacturer": "Lian Li",
+  "family": "O11",
+  "series": "O11 Dynamic",
+  "generation": "ATX",
+  "product": {
+    "name": "Lian Li O11 Dynamic",
+    "slug": "o11-dynamic",
+    "status": "active",
+    "is_popular": true
+  },
+  "images": [],
+  "specifications": [],
+  "benchmarks": []
+}

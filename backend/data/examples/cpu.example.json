@@ -1,0 +1,31 @@
+{
+  "category": "CPU",
+  "manufacturer": "AMD",
+  "family": "Ryzen",
+  "series": "Ryzen",
+  "generation": "Ryzen 7000",
+  "architecture": "Zen 4",
+  "source": {
+    "name": "AMD official product specifications",
+    "url": "https://www.amd.com/en/products/processors/desktops/ryzen/7000-series/amd-ryzen-7-7800x3d.html"
+  },
+  "product": {
+    "name": "AMD Ryzen 7 7800X3D",
+    "slug": "ryzen-7-7800x3d",
+    "description": "8-core desktop processor with AMD 3D V-Cache technology.",
+    "release_date": "2023-04-06",
+    "status": "active",
+    "is_popular": true,
+    "architecture": "Zen 4"
+  },
+  "images": [],
+  "specifications": [
+    { "group": "General", "key": "Socket", "value": "AM5" },
+    { "group": "General", "key": "Architecture", "value": "Zen 4" },
+    { "group": "Core Configuration", "key": "Cores", "value": "8" },
+    { "group": "Core Configuration", "key": "Threads", "value": "16" },
+    { "group": "Cache", "key": "L3 Cache", "value": "96", "unit": "MB" },
+    { "group": "Power", "key": "TDP", "value": "120", "unit": "W" }
+  ],
+  "benchmarks": []
+}

@@ -1,0 +1,16 @@
+{
+  "category": "Cooler",
+  "manufacturer": "Noctua",
+  "family": "NH-D15",
+  "series": "NH-D15",
+  "generation": "Tower Coolers",
+  "product": {
+    "name": "Noctua NH-D15",
+    "slug": "nh-d15",
+    "status": "active",
+    "is_popular": true
+  },
+  "images": [],
+  "specifications": [],
+  "benchmarks": []
+}

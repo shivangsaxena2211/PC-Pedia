@@ -31,3 +31,7 @@ instance/
 
 # Migrations (keep folder, ignore pycache)
 backend/migrations/versions/__pycache__/
+
+# Local bulk hardware datasets
+backend/data/imports/*
+!backend/data/imports/.gitkeep

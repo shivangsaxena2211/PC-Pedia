@@ -1,0 +1,15 @@
+{
+  "category": "Fans",
+  "manufacturer": "Noctua",
+  "family": "NF-A",
+  "series": "NF-A",
+  "generation": "120mm",
+  "product": {
+    "name": "Noctua NF-A12x25 PWM",
+    "slug": "nf-a12x25-pwm",
+    "status": "active"
+  },
+  "images": [],
+  "specifications": [],
+  "benchmarks": []
+}

@@ -5,7 +5,12 @@ from app.models import (
     SpecificationDefinition,
 )
 from app.services import admin_service
-from app.services.import_service import HardwareImportService
+from app.services.import_service import (
+    HardwareImportService,
+    import_hardware,
+    validate_import_records,
+    ImportMode,
+)
 from app.utils.validation import ValidationError
 from app.utils.responses import error_response
 
@@ -167,12 +172,50 @@ def admin_product_detail(product_id):
     return jsonify({"message": "Product deleted"}), 200
 
 
+def _normalize_import_payload(data):
+    if isinstance(data, dict):
+        return [data]
+    if isinstance(data, list):
+        return data
+    return None
+
+
+@admin_bp.route("/import/validate", methods=["POST"])
+def admin_import_validate():
+    data = request.get_json()
+    records = _normalize_import_payload(data)
+    if not records:
+        return error_response("Expected JSON object or array of hardware records")
+
+    result = validate_import_records(records)
+    valid = result.errors == 0
+    errors = [d for d in result.details if d.status == "error"]
+    warnings = [
+        {"product": d.product, "warnings": d.warnings}
+        for d in result.details if d.warnings
+    ]
+    return jsonify({
+        "valid": valid,
+        "errors": [
+            {"product": item.product, "errors": item.errors}
+            for item in errors
+        ],
+        "warnings": warnings,
+        "summary": result.to_dict(),
+    })
+
+
 @admin_bp.route("/import", methods=["POST"])
 def admin_import():
     data = request.get_json()
-    if not data or not isinstance(data, list):
-        return error_response("Expected JSON array of records")
+    records = _normalize_import_payload(data)
+    if not records:
+        return error_response("Expected JSON object or array of hardware records")
 
-    service = HardwareImportService()
-    result = service.import_batch(data)
+    mode = request.args.get("mode", ImportMode.UPSERT.value)
+    if mode not in {m.value for m in ImportMode}:
+        return error_response("Invalid mode. Use create, update, or upsert")
+
+    dry_run = request.args.get("dry_run", "false").lower() in ("1", "true", "yes")
+    result = import_hardware(records, mode=mode, dry_run=dry_run)
     return jsonify(result.to_dict())

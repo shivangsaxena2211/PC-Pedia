@@ -1,0 +1,20 @@
+{
+  "category": "SSD",
+  "manufacturer": "Samsung",
+  "family": "990 Series",
+  "series": "990 PRO",
+  "generation": "NVMe",
+  "product": {
+    "name": "Samsung 990 PRO 2TB",
+    "slug": "990-pro-2tb",
+    "status": "active",
+    "is_popular": true
+  },
+  "images": [],
+  "specifications": [
+    { "group": "General", "key": "Interface", "value": "PCIe 4.0 x4 NVMe" },
+    { "group": "Capacity", "key": "Capacity", "value": "2", "unit": "TB" },
+    { "group": "Performance", "key": "Sequential Read", "value": "7450", "unit": "MB/s" }
+  ],
+  "benchmarks": []
+}

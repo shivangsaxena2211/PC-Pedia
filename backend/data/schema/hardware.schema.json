@@ -1,0 +1,125 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://pc-pedia.local/schema/hardware.schema.json",
+  "title": "PC Pedia Hardware Record",
+  "description": "Standard format for importing PC hardware products into PC Pedia.",
+  "type": "object",
+  "required": ["category", "manufacturer", "product"],
+  "properties": {
+    "category": {
+      "type": "string",
+      "description": "Hardware category slug or name (cpu, gpu, ram, motherboards, ssd, psu, coolers, aio, fans, cases)"
+    },
+    "manufacturer": {
+      "type": "string",
+      "description": "Manufacturer name"
+    },
+    "family": {
+      "type": "string",
+      "description": "Product family within the manufacturer and category"
+    },
+    "series": {
+      "type": "string",
+      "description": "Product series within the family"
+    },
+    "generation": {
+      "type": "string",
+      "description": "Optional generation/platform within the series"
+    },
+    "architecture": {
+      "type": "string",
+      "description": "Optional architecture label applied at taxonomy level"
+    },
+    "source": {
+      "type": "object",
+      "description": "Optional data provenance metadata",
+      "properties": {
+        "name": { "type": "string" },
+        "url": { "type": "string", "format": "uri" },
+        "date": { "type": "string", "format": "date" }
+      },
+      "additionalProperties": false
+    },
+    "product": {
+      "type": "object",
+      "required": ["name"],
+      "properties": {
+        "name": { "type": "string" },
+        "slug": { "type": "string" },
+        "description": { "type": "string" },
+        "release_date": { "type": "string", "format": "date" },
+        "status": {
+          "type": "string",
+          "enum": ["active", "draft", "discontinued"]
+        },
+        "is_popular": { "type": "boolean" },
+        "architecture": { "type": "string" },
+        "image_url": {
+          "type": "string",
+          "format": "uri",
+          "description": "Legacy single-image URL; prefer images array"
+        }
+      },
+      "additionalProperties": false
+    },
+    "images": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/image" }
+    },
+    "specifications": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/specification" }
+    },
+    "benchmarks": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/benchmark" }
+    }
+  },
+  "additionalProperties": false,
+  "$defs": {
+    "specification": {
+      "type": "object",
+      "required": ["key", "value"],
+      "properties": {
+        "group": { "type": "string" },
+        "group_name": { "type": "string" },
+        "key": { "type": "string" },
+        "value": {},
+        "unit": { "type": ["string", "null"] },
+        "sort_order": { "type": "integer" }
+      },
+      "additionalProperties": false
+    },
+    "image": {
+      "type": "object",
+      "required": ["url"],
+      "properties": {
+        "url": { "type": "string", "format": "uri" },
+        "type": {
+          "type": "string",
+          "enum": ["primary", "front", "back", "side", "installed", "diagram", "thumbnail"]
+        },
+        "image_type": {
+          "type": "string",
+          "enum": ["primary", "front", "back", "side", "installed", "diagram", "thumbnail"]
+        },
+        "alt_text": { "type": "string" },
+        "is_primary": { "type": "boolean" },
+        "sort_order": { "type": "integer" }
+      },
+      "additionalProperties": false
+    },
+    "benchmark": {
+      "type": "object",
+      "required": ["name"],
+      "properties": {
+        "name": { "type": "string" },
+        "score": { "type": "number" },
+        "unit": { "type": "string" },
+        "source": { "type": "string" },
+        "notes": { "type": "string" }
+      },
+      "additionalProperties": false
+    }
+  }
+}

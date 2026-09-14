@@ -1,0 +1,15 @@
+{
+  "category": "AIO",
+  "manufacturer": "NZXT",
+  "family": "Kraken",
+  "series": "Kraken",
+  "generation": "240mm",
+  "product": {
+    "name": "NZXT Kraken 240",
+    "slug": "kraken-240",
+    "status": "active"
+  },
+  "images": [],
+  "specifications": [],
+  "benchmarks": []
+}
