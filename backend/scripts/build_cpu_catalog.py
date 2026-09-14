@@ -1,12 +1,15 @@
 """
-Build verified CPU catalog JSON from Intel ARK data and AMD product pages.
+Build verified CPU catalog JSON from curated Intel ARK data and AMD product pages.
 
-Run from backend/:
+Usage:
     python scripts/build_cpu_catalog.py
+    python scripts/build_cpu_catalog.py --validate
+    python scripts/build_cpu_catalog.py --fetch-amd
 """
 
 from __future__ import annotations
 
+import argparse
 import json
 import re
 import sys
@@ -18,6 +21,9 @@ import requests
 BACKEND_ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(BACKEND_ROOT))
 
+from app.catalog.catalog_validation import validate_catalog_records
+from data.catalog.cpu.verified_intel_12th_gen import INTEL_12TH_GEN_DESKTOP
+from data.catalog.cpu.verified_intel_13th_gen import INTEL_13TH_GEN_DESKTOP
 from data.catalog.cpu.verified_intel_14th_gen import INTEL_14TH_GEN_DESKTOP, VERIFIED_DATE
 
 CATALOG_ROOT = BACKEND_ROOT / "data" / "catalog" / "cpu"
@@ -49,6 +55,8 @@ SPEC_GROUPS = {
     "tdp": "Power",
     "processor_base_power": "Power",
     "max_turbo_power": "Power",
+    "ppt": "Power",
+    "package_power": "Power",
     "memory_type": "Memory",
     "memory_channels": "Memory",
     "max_memory": "Memory",
@@ -105,12 +113,21 @@ AMD_SLUGS = [
     "amd-ryzen-5-7500f",
 ]
 
+AMD_REQUIRED_FIELDS = ("cores", "threads", "socket", "architecture", "base_clock", "boost_clock", "tdp")
+
+
+class CatalogBuildError(Exception):
+    pass
+
 
 def _specs_from_dict(specs: dict) -> list[dict]:
     entries = []
-    for key, value in specs.items():
+    for key in sorted(specs.keys()):
+        value = specs[key]
         if value is None or value == "":
             continue
+        if key not in SPEC_GROUPS:
+            raise CatalogBuildError(f"Unknown specification key '{key}'")
         entry = {"group": SPEC_GROUPS[key], "key": key, "value": str(value)}
         unit = SPEC_UNITS.get(key)
         if unit:
@@ -123,29 +140,40 @@ def _intel_ark_url(sku: int) -> str:
     return f"https://www.intel.com/content/www/us/en/products/sku/{sku}/specifications.html"
 
 
-def build_intel_record(entry: dict) -> dict:
+def build_intel_record(
+    entry: dict,
+    *,
+    generation: str,
+    architecture: str,
+    gen_short: str,
+) -> dict:
     model = entry["model"]
     sku = entry["sku"]
     specs = entry["specs"]
+    required = ("cores", "threads", "socket", "architecture")
+    missing = [field for field in required if not specs.get(field)]
+    if missing:
+        raise CatalogBuildError(f"Intel {model} missing required specs: {', '.join(missing)}")
+
     name = f"Intel Core {model}"
     slug = f"intel-core-{model.lower()}"
     has_igpu = specs.get("integrated_graphics") == "true"
-    is_kf = model.endswith("KF") or model.endswith("F")
+    is_graphics_free = model.endswith("KF") or model.endswith("F")
 
     desc = (
-        f"14th Gen Intel Core desktop processor with {specs['cores']} cores "
+        f"{gen_short} Intel Core desktop processor with {specs['cores']} cores "
         f"and {specs['threads']} threads."
     )
-    if is_kf and not has_igpu:
+    if is_graphics_free and not has_igpu:
         desc += " Requires discrete graphics."
 
-    return {
+    record = {
         "category": "CPU",
         "manufacturer": "Intel",
         "family": "Core",
         "series": "Core",
-        "generation": "14th Generation",
-        "architecture": "Raptor Lake Refresh",
+        "generation": generation,
+        "architecture": architecture,
         "source": {
             "name": "Intel ARK",
             "url": _intel_ark_url(sku),
@@ -159,12 +187,25 @@ def build_intel_record(entry: dict) -> dict:
             "release_date": entry["release_date"],
             "status": "active",
             "is_popular": entry.get("is_popular", False),
-            "architecture": "Raptor Lake Refresh",
+            "architecture": architecture,
         },
         "images": [],
         "specifications": _specs_from_dict(specs),
         "benchmarks": [],
     }
+    errors, _ = validate_catalog_records([record])
+    if errors:
+        raise CatalogBuildError(f"Intel {model} validation failed: {'; '.join(errors)}")
+    return record
+
+
+def build_intel_batch(entries: list[dict], *, generation: str, architecture: str, gen_short: str) -> list[dict]:
+    records = [
+        build_intel_record(entry, generation=generation, architecture=architecture, gen_short=gen_short)
+        for entry in entries
+    ]
+    records.sort(key=lambda row: row["product"]["slug"])
+    return records
 
 
 def _amd_field(html: str, label: str) -> str | None:
@@ -179,8 +220,7 @@ def _amd_field(html: str, label: str) -> str | None:
 
 def _clean_product_name(name: str) -> str:
     cleaned = name.replace("\u2122", "").replace("â¢", "")
-    cleaned = re.sub(r"\s+", " ", cleaned).strip()
-    return cleaned
+    return re.sub(r"\s+", " ", cleaned).strip()
 
 
 def _parse_ghz(value: str | None) -> str | None:
@@ -240,6 +280,9 @@ def build_amd_record(slug: str) -> dict:
     extensions = _amd_field(html, "Supported Extensions") or ""
     market = _amd_field(html, "Market Segment") or "Desktop"
 
+    if not all([cores, threads, arch, socket, base, boost, tdp]):
+        raise CatalogBuildError(f"AMD {slug}: failed to parse required fields from product page")
+
     specs = {
         "architecture": arch,
         "microarchitecture": arch,
@@ -279,13 +322,21 @@ def build_amd_record(slug: str) -> dict:
     if l1:
         l1_kb = re.search(r"(\d+)", l1)
         if l1_kb:
-            specs["l1_cache"] = str(int(l1_kb.group(1)) // 1024) if int(l1_kb.group(1)) >= 1024 else l1_kb.group(1)
+            specs["l1_cache"] = (
+                str(int(l1_kb.group(1)) // 1024)
+                if int(l1_kb.group(1)) >= 1024
+                else l1_kb.group(1)
+            )
+
+    missing = [field for field in AMD_REQUIRED_FIELDS if not specs.get(field)]
+    if missing:
+        raise CatalogBuildError(f"AMD {slug}: missing required specs after parse: {', '.join(missing)}")
 
     desc = f"Desktop processor based on the {arch} architecture with {cores} cores and {threads} threads."
     if "x3d" in slug.lower():
         desc += " Features AMD 3D V-Cache technology."
 
-    return {
+    record = {
         "category": "CPU",
         "manufacturer": "AMD",
         "family": "Ryzen",
@@ -315,24 +366,92 @@ def build_amd_record(slug: str) -> dict:
         "specifications": _specs_from_dict(specs),
         "benchmarks": [],
     }
+    errors, _ = validate_catalog_records([record])
+    if errors:
+        raise CatalogBuildError(f"AMD {slug} validation failed: {'; '.join(errors)}")
+    return record
 
 
 def write_catalog(path: Path, records: list[dict]):
+    errors, warnings = validate_catalog_records(records)
+    if errors:
+        raise CatalogBuildError(f"{path}: {'; '.join(errors)}")
+    for warning in warnings:
+        print(f"WARNING: {warning}")
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(json.dumps(records, indent=2) + "\n", encoding="utf-8")
     print(f"Wrote {len(records)} records to {path}")
 
 
-def main():
-    intel_records = [build_intel_record(entry) for entry in INTEL_14TH_GEN_DESKTOP]
-    amd_records = []
-    for slug in AMD_SLUGS:
-        print(f"Fetching AMD {slug}...")
-        amd_records.append(build_amd_record(slug))
-        time.sleep(0.3)
+def validate_catalog_tree() -> int:
+    errors_found = 0
+    for path in sorted(CATALOG_ROOT.glob("**/*.json")):
+        if path.read_text(encoding="utf-8").strip() in ("", "[]"):
+            continue
+        records = json.loads(path.read_text(encoding="utf-8"))
+        errors, warnings = validate_catalog_records(records)
+        if errors:
+            errors_found += len(errors)
+            print(f"FAIL {path}")
+            for err in errors:
+                print(f"  - {err}")
+        else:
+            print(f"OK {path} ({len(records)} records)")
+        for warning in warnings:
+            print(f"  warning: {warning}")
+    return 1 if errors_found else 0
 
-    write_catalog(CATALOG_ROOT / "intel" / "core" / "14th-gen" / "desktop.json", intel_records)
-    write_catalog(CATALOG_ROOT / "amd" / "ryzen" / "7000" / "desktop.json", amd_records)
+
+def build_all(fetch_amd: bool = False):
+    intel_14 = build_intel_batch(
+        INTEL_14TH_GEN_DESKTOP,
+        generation="14th Generation",
+        architecture="Raptor Lake Refresh",
+        gen_short="14th Gen",
+    )
+    intel_13 = build_intel_batch(
+        INTEL_13TH_GEN_DESKTOP,
+        generation="13th Generation",
+        architecture="Raptor Lake",
+        gen_short="13th Gen",
+    )
+    intel_12 = build_intel_batch(
+        INTEL_12TH_GEN_DESKTOP,
+        generation="12th Generation",
+        architecture="Alder Lake",
+        gen_short="12th Gen",
+    )
+
+    write_catalog(CATALOG_ROOT / "intel" / "core" / "14th-gen" / "desktop.json", intel_14)
+    write_catalog(CATALOG_ROOT / "intel" / "core" / "13th-gen" / "desktop.json", intel_13)
+    write_catalog(CATALOG_ROOT / "intel" / "core" / "12th-gen" / "desktop.json", intel_12)
+
+    if fetch_amd:
+        amd_records = []
+        for slug in AMD_SLUGS:
+            print(f"Fetching AMD {slug}...")
+            amd_records.append(build_amd_record(slug))
+            time.sleep(0.3)
+        amd_records.sort(key=lambda row: row["product"]["slug"])
+        write_catalog(CATALOG_ROOT / "amd" / "ryzen" / "7000" / "desktop.json", amd_records)
+    else:
+        print("Skipping AMD fetch (use --fetch-amd to refresh Ryzen 7000 from AMD product pages).")
+
+
+def main():
+    parser = argparse.ArgumentParser(description="Build or validate verified CPU catalog JSON")
+    parser.add_argument("--validate", action="store_true", help="Validate catalog JSON files only")
+    parser.add_argument(
+        "--fetch-amd",
+        action="store_true",
+        help="Fetch AMD Ryzen 7000 records from AMD product pages",
+    )
+    args = parser.parse_args()
+
+    if args.validate:
+        raise SystemExit(validate_catalog_tree())
+
+    build_all(fetch_amd=args.fetch_amd)
 
 
 if __name__ == "__main__":

@@ -88,6 +88,8 @@ python run.py
 
 API: `http://localhost:5000`
 
+The frontend requires the Flask backend to be running. If the UI shows a network error, verify that `python run.py` is active in a separate terminal.
+
 ## Frontend Setup
 
 ```bash
@@ -98,6 +100,22 @@ npm run dev
 ```
 
 Frontend: `http://localhost:5173`
+
+### Development (both servers)
+
+Run these in **two separate terminals**:
+
+```bash
+# Terminal 1 — API
+cd backend
+python run.py
+
+# Terminal 2 — UI
+cd frontend
+npm run dev
+```
+
+The frontend `.env` uses `VITE_API_URL=/api` so Vite proxies API calls to `http://localhost:5000`.
 
 ## API Documentation
 

@@ -101,68 +101,9 @@ OTHER_TAXONOMY = [
     ("cases", "Fractal Design", "North", "North", ["ATX", "Mini-ITX"]),
 ]
 
+# CPU demo products are imported from verified catalog JSON (data/catalog/cpu/).
+# Seed only creates non-CPU demo products to avoid duplicate slug conflicts.
 DEMO_PRODUCTS = [
-    {
-        "category": "cpu", "manufacturer": "Intel", "family": "Core", "series": "Core",
-        "generation": "14th Generation", "architecture": "Raptor Lake Refresh",
-        "product": {
-            "name": "Intel Core i9-14900K", "slug": "core-i9-14900k",
-            "release_date": "2023-10-17", "is_popular": True,
-            "specifications": [
-                {"group_name": "Socket", "key": "socket", "value": "LGA 1700"},
-                {"group_name": "General", "key": "architecture", "value": "Raptor Lake Refresh"},
-                {"group_name": "Core Configuration", "key": "cores", "value": "24"},
-                {"group_name": "Core Configuration", "key": "threads", "value": "32"},
-                {"group_name": "Clock Speeds", "key": "boost_clock", "value": "6.0", "unit": "GHz"},
-                {"group_name": "Power", "key": "tdp", "value": "125", "unit": "W"},
-            ],
-        },
-    },
-    {
-        "category": "cpu", "manufacturer": "Intel", "family": "Core", "series": "Core",
-        "generation": "14th Generation", "architecture": "Raptor Lake Refresh",
-        "product": {
-            "name": "Intel Core i7-14700K", "slug": "core-i7-14700k",
-            "release_date": "2023-10-17", "is_popular": True,
-            "specifications": [
-                {"group_name": "Socket", "key": "socket", "value": "LGA 1700"},
-                {"group_name": "Core Configuration", "key": "cores", "value": "20"},
-                {"group_name": "Core Configuration", "key": "threads", "value": "28"},
-                {"group_name": "Power", "key": "tdp", "value": "125", "unit": "W"},
-            ],
-        },
-    },
-    {
-        "category": "cpu", "manufacturer": "AMD", "family": "Ryzen", "series": "Ryzen",
-        "generation": "Ryzen 7000", "architecture": "Zen 4",
-        "product": {
-            "name": "AMD Ryzen 7 7800X3D", "slug": "ryzen-7-7800x3d",
-            "release_date": "2023-04-06", "is_popular": True,
-            "specifications": [
-                {"group_name": "Socket", "key": "socket", "value": "AM5"},
-                {"group_name": "General", "key": "architecture", "value": "Zen 4"},
-                {"group_name": "Core Configuration", "key": "cores", "value": "8"},
-                {"group_name": "Core Configuration", "key": "threads", "value": "16"},
-                {"group_name": "Cache", "key": "l3_cache", "value": "96", "unit": "MB"},
-                {"group_name": "Cache", "key": "v_cache", "value": "64", "unit": "MB"},
-                {"group_name": "Power", "key": "tdp", "value": "120", "unit": "W"},
-            ],
-        },
-    },
-    {
-        "category": "cpu", "manufacturer": "AMD", "family": "Ryzen", "series": "Ryzen",
-        "generation": "Ryzen 9000", "architecture": "Zen 5",
-        "product": {
-            "name": "AMD Ryzen 9 9950X", "slug": "ryzen-9-9950x",
-            "release_date": "2024-08-15", "is_popular": True,
-            "specifications": [
-                {"group_name": "Socket", "key": "socket", "value": "AM5"},
-                {"group_name": "Core Configuration", "key": "cores", "value": "16"},
-                {"group_name": "Core Configuration", "key": "threads", "value": "32"},
-                {"group_name": "Power", "key": "tdp", "value": "170", "unit": "W"},
-            ],
-        },
-    },
     {
         "category": "gpu", "manufacturer": "NVIDIA", "family": "GeForce", "series": "GeForce RTX",
         "generation": "RTX 40 Series", "architecture": "Ada Lovelace",

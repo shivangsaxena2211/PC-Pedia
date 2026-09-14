@@ -201,6 +201,26 @@ def test_cpu_product_detail_includes_sources(client, cpu_setup):
     assert payload.get("related_products") is not None
 
 
+def test_intel_13th_gen_batch_import(cpu_setup):
+    result = import_hardware_from_path(
+        "data/catalog/cpu/intel/core/13th-gen/desktop.json",
+        mode=ImportMode.UPSERT,
+    )
+    assert result.errors == 0
+    assert result.created + result.updated >= 13
+    assert Product.query.filter_by(slug="intel-core-i9-13900k").first() is not None
+
+
+def test_intel_12th_gen_batch_import(cpu_setup):
+    result = import_hardware_from_path(
+        "data/catalog/cpu/intel/core/12th-gen/desktop.json",
+        mode=ImportMode.UPSERT,
+    )
+    assert result.errors == 0
+    assert result.created + result.updated >= 12
+    assert Product.query.filter_by(slug="intel-core-i9-12900k").first() is not None
+
+
 def test_intel_product_detail_page(client, cpu_setup):
     import_hardware_from_path(
         "data/catalog/cpu/intel/core/14th-gen/desktop.json",

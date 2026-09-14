@@ -38,3 +38,19 @@ python scripts/build_cpu_catalog.py
 ```
 
 Each JSON file should contain an array of hardware records using canonical specification keys.
+
+## Canonical slug policy
+
+CPU product slugs are deterministic and manufacturer-prefixed:
+
+```text
+intel-core-i9-14900k
+amd-ryzen-7-7800x3d
+```
+
+Do not create alternate slugs for the same physical CPU (for example `core-i9-14900k`).
+Legacy seed slugs are reconciled into canonical catalog slugs via:
+
+```bash
+python -m app.cli reconcile-cpus
+```
