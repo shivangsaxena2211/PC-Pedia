@@ -99,6 +99,7 @@ class Product(db.Model):
             "description": self.description,
             "release_date": self.release_date.isoformat() if self.release_date else None,
             "image_url": self.image_url,
+            "primary_image_url": self.primary_image_url,
             "status": self.status,
             "is_popular": self.is_popular,
             "created_at": self.created_at.isoformat() if self.created_at else None,
@@ -118,6 +119,16 @@ class Product(db.Model):
             data["benchmarks"] = [b.to_dict() for b in self.benchmarks]
 
         return data
+
+    @property
+    def primary_image_url(self):
+        """Resolve the best available product-specific image URL."""
+        if self.image_url and self.image_url.strip():
+            return self.image_url.strip()
+        for img in sorted(self.images, key=lambda i: (not i.is_primary, i.sort_order)):
+            if img.url and img.url.strip():
+                return img.url.strip()
+        return None
 
     @property
     def url_path(self):

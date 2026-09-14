@@ -1,6 +1,6 @@
 # PC Pedia — PC Hardware Database
 
-A scalable searchable encyclopedia for computer hardware. Built with React (Vite + TypeScript) and Flask (Python) REST API with PostgreSQL.
+A scalable searchable encyclopedia for computer hardware. Built with React (Vite + TypeScript) and Flask (Python) REST API with SQLite (development) and SQLAlchemy.
 
 ## Architecture
 
@@ -15,7 +15,7 @@ A scalable searchable encyclopedia for computer hardware. Built with React (Vite
                        │
                   SQLAlchemy
                        │
-                  PostgreSQL
+                   SQLite
                        │
         ┌──────────────┴──────────────┐
         │                             │
@@ -57,14 +57,14 @@ pc-hardware-database/
 
 - Node.js 18+ and npm
 - Python 3.10+
-- PostgreSQL 14+ (SQLite supported for local dev)
+- SQLite 3 (included with Python; no separate database server required)
 
 ## Backend Setup
 
 ```bash
 cd backend
 pip install -r requirements.txt
-cp .env.example .env   # configure DATABASE_URL
+cp .env.example .env   # optional — SQLite default works out of the box
 ```
 
 ### Database Migrations
@@ -182,7 +182,8 @@ npm run build
 
 **Backend (`backend/.env`):**
 ```
-DATABASE_URL=postgresql://user:pass@localhost:5432/pc_hardware_db
+# Optional — defaults to backend/instance/pc_pedia.db
+# DATABASE_URL=sqlite:///instance/pc_pedia.db
 SECRET_KEY=your-secret-key
 ```
 

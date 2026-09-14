@@ -1,11 +1,12 @@
 import { Link } from 'react-router-dom'
 import { useParams } from 'react-router-dom'
-import { Calendar, Building2, Layers, GitCompareArrows, GitBranch } from 'lucide-react'
+import { Calendar, Layers, GitCompareArrows, GitBranch } from 'lucide-react'
 import { useProduct } from '@/hooks/useProduct'
 import { useCompare } from '@/hooks/useCompare'
 import Breadcrumbs from '@/components/Breadcrumbs'
 import SpecTable from '@/components/SpecTable'
 import ProductCard from '@/components/ProductCard'
+import HardwareImage from '@/components/HardwareImage'
 import LoadingState from '@/components/LoadingState'
 import ErrorState from '@/components/ErrorState'
 import { Badge } from '@/components/ui/badge'
@@ -105,16 +106,19 @@ export default function ProductPage() {
         </div>
 
         <div className="space-y-4">
-          <div className="rounded-lg border border-border bg-card p-6 aspect-square flex items-center justify-center">
-            {product.image_url ? (
-              <img src={product.image_url} alt={product.name} className="max-h-full max-w-full object-contain" />
-            ) : (
-              <div className="text-center text-muted-foreground">
-                <Building2 className="h-16 w-16 mx-auto mb-2 opacity-30" />
-                <p className="text-sm">No image available</p>
-              </div>
-            )}
-          </div>
+          <HardwareImage product={product} variant="detail" className="bg-card border-border" />
+          {product.images && product.images.length > 1 && (
+            <div className="grid grid-cols-4 gap-2">
+              {product.images.slice(0, 4).map((img) => (
+                <HardwareImage
+                  key={img.id}
+                  product={{ ...product, primary_image_url: img.url, image_url: img.url }}
+                  variant="thumbnail"
+                  alt={img.alt_text || product.name}
+                />
+              ))}
+            </div>
+          )}
           <Button onClick={handleCompare} variant="outline" className="w-full gap-2">
             <GitCompareArrows className="h-4 w-4" />
             Add to Compare

@@ -13,6 +13,7 @@ from app.models import (
     Benchmark,
     ProductImage,
 )
+from app.models.product_image import IMAGE_TYPES
 from app.utils.helpers import slugify
 from app.utils.validation import (
     ValidationError,
@@ -126,6 +127,29 @@ def create_specification_definition(data: dict):
     return defn
 
 
+def _save_product_images(product: Product, images: list[dict]):
+    if images is None:
+        return
+    ProductImage.query.filter_by(product_id=product.id).delete()
+    for i, img in enumerate(images):
+        url = (img.get("url") or "").strip()
+        if not url:
+            continue
+        image_type = img.get("image_type", "primary")
+        if image_type not in IMAGE_TYPES:
+            image_type = "primary"
+        db.session.add(
+            ProductImage(
+                product_id=product.id,
+                url=url,
+                alt_text=img.get("alt_text") or product.name,
+                image_type=image_type,
+                is_primary=img.get("is_primary", image_type == "primary"),
+                sort_order=img.get("sort_order", i),
+            )
+        )
+
+
 def create_product(data: dict):
     validate_product_data(data)
     if data.get("specifications"):
@@ -177,6 +201,9 @@ def create_product(data: dict):
             )
         )
 
+    if data.get("images"):
+        _save_product_images(product, data["images"])
+
     db.session.commit()
     return product
 
@@ -214,6 +241,9 @@ def update_product(product_id: int, data: dict):
                     sort_order=spec.get("sort_order", i),
                 )
             )
+
+    if "images" in data:
+        _save_product_images(product, data["images"])
 
     db.session.commit()
     return product

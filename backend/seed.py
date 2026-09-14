@@ -443,12 +443,23 @@ def migrate_legacy_series_to_families():
     db.session.flush()
 
 
+def _reset_schema():
+    """Drop all tables and recreate schema via Flask-Migrate."""
+    from sqlalchemy import text
+    from flask_migrate import upgrade
+
+    db.drop_all()
+    with db.engine.connect() as conn:
+        conn.execute(text("DROP TABLE IF EXISTS alembic_version"))
+        conn.commit()
+    upgrade()
+
+
 def seed(reset=False):
     app = create_app()
     with app.app_context():
         if reset:
-            db.drop_all()
-            db.create_all()
+            _reset_schema()
         else:
             db.create_all()
             migrate_legacy_series_to_families()

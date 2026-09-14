@@ -109,6 +109,7 @@ export interface Product {
   description?: string
   release_date?: string
   image_url?: string
+  primary_image_url?: string
   status?: string
   is_popular?: boolean
   created_at?: string
@@ -125,8 +126,17 @@ export interface ProductImage {
   id: number
   url: string
   alt_text?: string
+  image_type?: string
   is_primary: boolean
   sort_order: number
+}
+
+export interface ProductImageInput {
+  url: string
+  alt_text?: string
+  image_type?: string
+  is_primary?: boolean
+  sort_order?: number
 }
 
 export interface Benchmark {
