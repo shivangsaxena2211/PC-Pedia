@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+*.db
+
+# Node
+node_modules/
+dist/
+
+# Environment
+.env
+*.local
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Flask
+instance/
+.mypy_cache/
+
+# Migrations (keep folder, ignore pycache)
+backend/migrations/versions/__pycache__/
