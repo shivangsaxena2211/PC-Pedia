@@ -8,6 +8,9 @@ from app.models.specification import Specification
 from app.models.specification_definition import SpecificationDefinition
 from app.models.benchmark import Benchmark
 from app.models.product_image import ProductImage
+from app.models.data_source import DataSource
+from app.models.product_source import ProductSource
+from app.models.specification_source import SpecificationSource
 
 __all__ = [
     "Category",
@@ -20,4 +23,7 @@ __all__ = [
     "SpecificationDefinition",
     "Benchmark",
     "ProductImage",
+    "DataSource",
+    "ProductSource",
+    "SpecificationSource",
 ]

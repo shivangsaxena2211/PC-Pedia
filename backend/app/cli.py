@@ -6,7 +6,7 @@ import logging
 import sys
 
 from app import create_app
-from app.services.import_service import HardwareImportService, import_hardware
+from app.services.import_service import import_hardware_from_path
 
 
 def _configure_logging(verbose: bool):
@@ -21,29 +21,34 @@ def _configure_logging(verbose: bool):
 def _print_result(result: dict):
     print(json.dumps(result, indent=2))
     print(
-        f"\nSummary: total={result['total']} created={result['created']} "
+        f"\nSummary: files={result.get('files_processed', 1)} "
+        f"total={result['total']} created={result['created']} "
         f"updated={result['updated']} skipped={result['skipped']} "
         f"errors={result['errors']} warnings={result['warnings']}"
     )
     if result.get("dry_run"):
+        print(
+            f"Dry run: valid={result.get('valid_records', 0)} "
+            f"invalid={result.get('invalid_records', 0)} "
+            f"new={result.get('new_records', 0)} "
+            f"existing={result.get('existing_records', 0)}"
+        )
         print("Dry run complete — no database changes were committed.")
 
 
 def cmd_import_data(args) -> int:
     app = create_app()
     with app.app_context():
-        records = HardwareImportService.load_records_from_file(args.path)
-        if not records:
-            print("No records found in import file.", file=sys.stderr)
-            return 1
-
-        result = import_hardware(
-            records,
+        result = import_hardware_from_path(
+            args.path,
             mode=args.mode,
             dry_run=args.dry_run,
             replace_specifications=args.replace_specifications,
             replace_images=args.replace_images,
         )
+        if result.total == 0:
+            print("No records found in import path.", file=sys.stderr)
+            return 1
         _print_result(result.to_dict())
         return 1 if result.errors else 0
 
@@ -56,9 +61,12 @@ def build_parser() -> argparse.ArgumentParser:
 
     import_parser = subparsers.add_parser(
         "import-data",
-        help="Import hardware records from JSON or CSV",
+        help="Import hardware records from JSON, CSV, or a directory",
     )
-    import_parser.add_argument("path", help="Path to JSON or CSV import file")
+    import_parser.add_argument(
+        "path",
+        help="Path to JSON/CSV file or directory containing import files",
+    )
     import_parser.add_argument(
         "--mode",
         choices=["create", "update", "upsert"],

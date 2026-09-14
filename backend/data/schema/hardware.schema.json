@@ -32,11 +32,12 @@
     },
     "source": {
       "type": "object",
-      "description": "Optional data provenance metadata",
+      "description": "Recommended data provenance metadata for catalog imports",
       "properties": {
         "name": { "type": "string" },
         "url": { "type": "string", "format": "uri" },
-        "date": { "type": "string", "format": "date" }
+        "date": { "type": "string", "format": "date" },
+        "notes": { "type": "string" }
       },
       "additionalProperties": false
     },

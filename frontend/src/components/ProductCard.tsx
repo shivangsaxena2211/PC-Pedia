@@ -12,7 +12,10 @@ interface ProductCardProps {
 
 function getHighlightSpecs(product: Product): { key: string; value: string }[] {
   const specs = product.quick_specs ?? {}
-  const priority = ['VRAM', 'Cores', 'Capacity', 'Wattage', 'Socket', 'TDP', 'Frequency']
+  const priority = [
+    'VRAM', 'Total Cores', 'Threads', 'Capacity', 'Wattage',
+    'Socket', 'TDP', 'Base Clock', 'Maximum Boost Clock', 'Frequency',
+  ]
   const highlights: { key: string; value: string }[] = []
 
   for (const key of priority) {

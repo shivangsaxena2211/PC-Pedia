@@ -7,11 +7,13 @@
   "architecture": "Zen 4",
   "source": {
     "name": "AMD official product specifications",
-    "url": "https://www.amd.com/en/products/processors/desktops/ryzen/7000-series/amd-ryzen-7-7800x3d.html"
+    "url": "https://www.amd.com/en/products/processors/desktops/ryzen/7000-series/amd-ryzen-7-7800x3d.html",
+    "date": "2023-04-06",
+    "notes": "AMD desktop processor product page"
   },
   "product": {
     "name": "AMD Ryzen 7 7800X3D",
-    "slug": "ryzen-7-7800x3d",
+    "slug": "amd-ryzen-7-7800x3d",
     "description": "8-core desktop processor with AMD 3D V-Cache technology.",
     "release_date": "2023-04-06",
     "status": "active",
@@ -20,12 +22,13 @@
   },
   "images": [],
   "specifications": [
-    { "group": "General", "key": "Socket", "value": "AM5" },
-    { "group": "General", "key": "Architecture", "value": "Zen 4" },
-    { "group": "Core Configuration", "key": "Cores", "value": "8" },
-    { "group": "Core Configuration", "key": "Threads", "value": "16" },
-    { "group": "Cache", "key": "L3 Cache", "value": "96", "unit": "MB" },
-    { "group": "Power", "key": "TDP", "value": "120", "unit": "W" }
+    { "group": "Socket", "key": "socket", "value": "AM5" },
+    { "group": "General", "key": "architecture", "value": "Zen 4" },
+    { "group": "Core Configuration", "key": "cores", "value": "8" },
+    { "group": "Core Configuration", "key": "threads", "value": "16" },
+    { "group": "Cache", "key": "l3_cache", "value": "96", "unit": "MB" },
+    { "group": "Cache", "key": "v_cache", "value": "64", "unit": "MB" },
+    { "group": "Power", "key": "tdp", "value": "120", "unit": "W" }
   ],
   "benchmarks": []
 }

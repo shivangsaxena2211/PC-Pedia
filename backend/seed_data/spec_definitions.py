@@ -1,24 +1,6 @@
 """Category-specific specification definitions."""
 
-CPU_SPECS = [
-    ("General", "Socket", "Socket", "string", None, True, True, True, 1),
-    ("General", "Architecture", "Architecture", "string", None, True, True, False, 2),
-    ("General", "Process Node", "Process Node", "string", None, True, True, False, 3),
-    ("Core Configuration", "Cores", "Cores", "integer", None, True, True, False, 10),
-    ("Core Configuration", "Threads", "Threads", "integer", None, True, True, False, 11),
-    ("Core Configuration", "Performance Cores", "Performance Cores", "integer", None, False, True, False, 12),
-    ("Core Configuration", "Efficiency Cores", "Efficiency Cores", "integer", None, False, True, False, 13),
-    ("Clock Speeds", "Base Clock", "Base Clock", "decimal", "GHz", True, True, False, 20),
-    ("Clock Speeds", "Boost Clock", "Boost Clock", "decimal", "GHz", True, True, False, 21),
-    ("Cache", "L2 Cache", "L2 Cache", "string", "MB", False, True, False, 30),
-    ("Cache", "L3 Cache", "L3 Cache", "string", "MB", False, True, False, 31),
-    ("Power", "TDP", "TDP", "integer", "W", True, True, False, 40),
-    ("Power", "Maximum Turbo Power", "Maximum Turbo Power", "integer", "W", False, True, False, 41),
-    ("Graphics", "Integrated Graphics", "Integrated Graphics", "string", None, False, True, False, 50),
-    ("Memory", "Memory Type", "Memory Type", "string", None, True, True, False, 60),
-    ("Memory", "Maximum Memory", "Maximum Memory", "string", "GB", False, True, False, 61),
-    ("PCIe", "PCIe Version", "PCIe Version", "string", None, False, True, False, 70),
-]
+from seed_data.cpu_spec_definitions import CPU_SPECS
 
 GPU_SPECS = [
     ("General", "Architecture", "Architecture", "string", None, True, True, False, 1),

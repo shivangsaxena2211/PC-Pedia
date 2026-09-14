@@ -80,9 +80,28 @@ export interface Specification {
   id: number
   group_name: string
   key: string
+  display_name?: string
   value: string
   unit?: string
   sort_order: number
+}
+
+export interface DataSource {
+  id: number
+  name: string
+  slug: string
+  url?: string
+  description?: string
+}
+
+export interface ProductSource {
+  id: number
+  product_id: number
+  source_id: number
+  source_url?: string
+  source_date?: string
+  notes?: string
+  source?: DataSource
 }
 
 export interface Product {
@@ -120,6 +139,14 @@ export interface Product {
   images?: ProductImage[]
   benchmarks?: Benchmark[]
   related_products?: Product[]
+  sources?: ProductSource[]
+}
+
+export interface ProductSourceInput {
+  name: string
+  url?: string
+  date?: string
+  notes?: string
 }
 
 export interface ProductImage {

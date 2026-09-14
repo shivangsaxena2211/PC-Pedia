@@ -6,8 +6,12 @@ import {
   getAdminManufacturers,
   getAdminSeries,
   getAdminGenerations,
+  getSpecificationDefinitions,
 } from '@/services/hardwareApi'
-import type { Category, Manufacturer, Series, Generation, ProductImageInput } from '@/types'
+import type {
+  Category, Manufacturer, Series, Generation, ProductImageInput,
+  SpecificationDefinition, ProductSourceInput,
+} from '@/types'
 import { Input } from '@/components/ui/input'
 import { Select } from '@/components/ui/select'
 import { Button } from '@/components/ui/button'
@@ -43,6 +47,14 @@ export default function AdminProductForm() {
   })
 
   const [additionalImages, setAdditionalImages] = useState<ImageRow[]>([])
+  const [specDefinitions, setSpecDefinitions] = useState<SpecificationDefinition[]>([])
+  const [specValues, setSpecValues] = useState<Record<string, string>>({})
+  const [source, setSource] = useState<ProductSourceInput>({
+    name: '',
+    url: '',
+    date: '',
+    notes: '',
+  })
 
   useEffect(() => {
     Promise.all([
@@ -60,6 +72,26 @@ export default function AdminProductForm() {
 
   const selectedCategory = categories.find((c) => c.id === parseInt(form.category_id))
 
+  useEffect(() => {
+    if (!selectedCategory?.slug) {
+      setSpecDefinitions([])
+      return
+    }
+    getSpecificationDefinitions(selectedCategory.slug)
+      .then(setSpecDefinitions)
+      .catch(() => setSpecDefinitions([]))
+  }, [selectedCategory?.slug])
+
+  const groupedSpecs = specDefinitions.reduce<Record<string, SpecificationDefinition[]>>(
+    (groups, def) => {
+      const group = def.group_name || 'General'
+      if (!groups[group]) groups[group] = []
+      groups[group].push(def)
+      return groups
+    },
+    {},
+  )
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     setSaving(true)
@@ -74,6 +106,27 @@ export default function AdminProductForm() {
           sort_order: img.sort_order ?? i + 1,
         }))
 
+      const specifications = Object.entries(specValues)
+        .filter(([, value]) => value.trim())
+        .map(([key, value]) => {
+          const def = specDefinitions.find((item) => item.key === key)
+          return {
+            key,
+            value,
+            group: def?.group_name || 'General',
+            unit: def?.unit,
+          }
+        })
+
+      const sourcePayload = source.name.trim()
+        ? {
+            name: source.name.trim(),
+            url: source.url?.trim() || undefined,
+            date: source.date || undefined,
+            notes: source.notes?.trim() || undefined,
+          }
+        : undefined
+
       await createProduct({
         name: form.name,
         manufacturer_id: parseInt(form.manufacturer_id),
@@ -86,6 +139,8 @@ export default function AdminProductForm() {
         image_url: form.image_url.trim() || undefined,
         is_popular: form.is_popular,
         images: images.length > 0 ? images : undefined,
+        specifications: specifications.length > 0 ? specifications : undefined,
+        source: sourcePayload,
       })
       navigate('/admin/products')
     } catch (err) {
@@ -167,6 +222,70 @@ export default function AdminProductForm() {
         <div>
           <label className="text-sm text-muted-foreground mb-1 block">Description</label>
           <Input value={form.description} onChange={(e) => update('description', e.target.value)} />
+        </div>
+
+        {Object.keys(groupedSpecs).length > 0 && (
+          <div className="border-t border-border pt-6 space-y-4">
+            <h3 className="font-semibold">Specifications</h3>
+            {Object.entries(groupedSpecs).map(([group, defs]) => (
+              <div key={group} className="space-y-3">
+                <h4 className="text-sm font-medium text-primary">{group}</h4>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+                  {defs.map((def) => (
+                    <div key={def.key}>
+                      <label className="text-xs text-muted-foreground mb-1 block">
+                        {def.display_name}{def.unit ? ` (${def.unit})` : ''}
+                      </label>
+                      <Input
+                        value={specValues[def.key] || ''}
+                        onChange={(e) => setSpecValues((prev) => ({
+                          ...prev,
+                          [def.key]: e.target.value,
+                        }))}
+                      />
+                    </div>
+                  ))}
+                </div>
+              </div>
+            ))}
+          </div>
+        )}
+
+        <div className="border-t border-border pt-6 space-y-4">
+          <h3 className="font-semibold">Data Source</h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+            <div>
+              <label className="text-xs text-muted-foreground mb-1 block">Source Name</label>
+              <Input
+                value={source.name}
+                onChange={(e) => setSource((prev) => ({ ...prev, name: e.target.value }))}
+                placeholder="AMD official product page"
+              />
+            </div>
+            <div>
+              <label className="text-xs text-muted-foreground mb-1 block">Source URL</label>
+              <Input
+                value={source.url || ''}
+                onChange={(e) => setSource((prev) => ({ ...prev, url: e.target.value }))}
+                placeholder="https://..."
+              />
+            </div>
+            <div>
+              <label className="text-xs text-muted-foreground mb-1 block">Source Date</label>
+              <Input
+                type="date"
+                value={source.date || ''}
+                onChange={(e) => setSource((prev) => ({ ...prev, date: e.target.value }))}
+              />
+            </div>
+            <div>
+              <label className="text-xs text-muted-foreground mb-1 block">Source Notes</label>
+              <Input
+                value={source.notes || ''}
+                onChange={(e) => setSource((prev) => ({ ...prev, notes: e.target.value }))}
+              />
+            </div>
+          </div>
         </div>
 
         <div className="border-t border-border pt-6 space-y-4">

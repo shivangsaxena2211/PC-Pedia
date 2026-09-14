@@ -15,6 +15,12 @@ class Specification(db.Model):
     sort_order = db.Column(db.Integer, default=0)
 
     product = db.relationship("Product", back_populates="specifications")
+    specification_sources = db.relationship(
+        "SpecificationSource",
+        back_populates="specification",
+        lazy="select",
+        cascade="all, delete-orphan",
+    )
 
     __table_args__ = (
         db.Index("ix_spec_product_group_key", "product_id", "group_name", "key"),

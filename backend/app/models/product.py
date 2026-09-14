@@ -61,6 +61,12 @@ class Product(db.Model):
         lazy="select",
         cascade="all, delete-orphan",
     )
+    product_sources = db.relationship(
+        "ProductSource",
+        back_populates="product",
+        lazy="select",
+        cascade="all, delete-orphan",
+    )
 
     __table_args__ = (
         db.UniqueConstraint(
@@ -74,6 +80,7 @@ class Product(db.Model):
         include_specs=False,
         include_images=False,
         include_benchmarks=False,
+        include_sources=False,
         list_view=False,
         quick_specs: dict | None = None,
         primary_image_url_override: str | None = None,
@@ -125,6 +132,8 @@ class Product(db.Model):
             data["images"] = [i.to_dict() for i in self.images]
         if include_benchmarks:
             data["benchmarks"] = [b.to_dict() for b in self.benchmarks]
+        if include_sources:
+            data["sources"] = [s.to_dict() for s in self.product_sources]
 
         return data
 

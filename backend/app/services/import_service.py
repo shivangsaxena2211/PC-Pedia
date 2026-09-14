@@ -38,6 +38,10 @@ from app.models import (
     SpecificationDefinition,
 )
 from app.models.product_image import IMAGE_TYPES
+from app.services.source_service import (
+    upsert_product_source,
+    upsert_specification_sources,
+)
 from app.utils.helpers import parse_bool, slugify
 from app.utils.spec_normalizer import normalize_spec_entry
 
@@ -61,6 +65,7 @@ class RecordImportResult:
     errors: list[str] = field(default_factory=list)
     warnings: list[str] = field(default_factory=list)
     actions: list[str] = field(default_factory=list)
+    is_new: bool = False
 
 
 @dataclass
@@ -71,6 +76,11 @@ class ImportBatchResult:
     skipped: int = 0
     errors: int = 0
     warnings: int = 0
+    files_processed: int = 0
+    valid_records: int = 0
+    invalid_records: int = 0
+    existing_records: int = 0
+    new_records: int = 0
     details: list[RecordImportResult] = field(default_factory=list)
     dry_run: bool = False
 
@@ -82,6 +92,11 @@ class ImportBatchResult:
             "skipped": self.skipped,
             "errors": self.errors,
             "warnings": self.warnings,
+            "files_processed": self.files_processed,
+            "valid_records": self.valid_records,
+            "invalid_records": self.invalid_records,
+            "existing_records": self.existing_records,
+            "new_records": self.new_records,
             "dry_run": self.dry_run,
             "details": [
                 {
@@ -134,6 +149,17 @@ class HardwareImportService:
 
     @staticmethod
     def load_records_from_file(path: str) -> list[dict]:
+        import os
+
+        if os.path.isdir(path):
+            records: list[dict] = []
+            for root, _, files in os.walk(path):
+                for filename in sorted(files):
+                    if filename.lower().endswith((".json", ".csv")):
+                        file_path = os.path.join(root, filename)
+                        records.extend(HardwareImportService.load_records_from_file(file_path))
+            return records
+
         if path.lower().endswith(".json"):
             with open(path, encoding="utf-8") as handle:
                 data = json.load(handle)
@@ -145,6 +171,20 @@ class HardwareImportService:
         if path.lower().endswith(".csv"):
             return HardwareImportService.load_records_from_csv(path)
         raise ValueError(f"Unsupported file format: {path}")
+
+    @staticmethod
+    def count_import_files(path: str) -> int:
+        import os
+
+        if os.path.isdir(path):
+            count = 0
+            for _, _, files in os.walk(path):
+                count += sum(
+                    1 for filename in files
+                    if filename.lower().endswith((".json", ".csv"))
+                )
+            return count
+        return 1
 
     @staticmethod
     def load_records_from_csv(path: str) -> list[dict]:
@@ -436,7 +476,7 @@ class HardwareImportService:
 
     # ─── Persistence helpers ───────────────────────────────────────────────────
 
-    def _upsert_specifications(self, product: Product, specs: list[dict]):
+    def _upsert_specifications(self, product: Product, specs: list[dict]) -> list[int]:
         if self.replace_specifications:
             Specification.query.filter_by(product_id=product.id).delete()
 
@@ -444,6 +484,7 @@ class HardwareImportService:
             spec.key: spec
             for spec in Specification.query.filter_by(product_id=product.id).all()
         }
+        spec_ids: list[int] = []
 
         for index, spec in enumerate(specs):
             key = spec["key"]
@@ -453,15 +494,21 @@ class HardwareImportService:
                 row.value = spec["value"]
                 row.unit = spec.get("unit")
                 row.sort_order = spec.get("sort_order", index)
+                spec_ids.append(row.id)
             else:
-                db.session.add(Specification(
+                row = Specification(
                     product_id=product.id,
                     group_name=spec.get("group_name") or "General",
                     key=key,
                     value=spec["value"],
                     unit=spec.get("unit"),
                     sort_order=spec.get("sort_order", index),
-                ))
+                )
+                db.session.add(row)
+                db.session.flush()
+                spec_ids.append(row.id)
+
+        return spec_ids
 
     def _upsert_images(self, product: Product, images: list[dict]):
         if self.replace_images:
@@ -559,6 +606,8 @@ class HardwareImportService:
                 slug=slug,
             ).first()
 
+            result.is_new = existing is None
+
             if existing and self.mode == ImportMode.CREATE:
                 result.status = "skipped"
                 result.warnings.append("Product already exists (CREATE mode)")
@@ -647,12 +696,19 @@ class HardwareImportService:
                 result.actions.extend(["CREATE product", "CREATE specifications"])
                 logger.info("[CREATE] Product: %s", product_name)
 
-            self._upsert_specifications(product, normalized_specs)
+            spec_ids = self._upsert_specifications(product, normalized_specs)
             if validated_images:
                 self._upsert_images(product, validated_images)
                 result.actions.append("IMAGE primary/additional images processed")
                 logger.info("[IMAGE] Images processed for %s", product_name)
             self._upsert_benchmarks(product, benchmarks)
+
+            if source:
+                link = upsert_product_source(product.id, source)
+                if link:
+                    result.actions.append(f"PERSIST source: {source.get('name')}")
+                if spec_ids:
+                    upsert_specification_sources(spec_ids, source)
 
             result.product_id = product.id
             logger.info("[SUCCESS] %s", product_name)
@@ -664,8 +720,16 @@ class HardwareImportService:
             logger.error("[ERROR] %s — %s", product_name, exc)
             return result
 
-    def import_batch(self, records: list[dict]) -> ImportBatchResult:
-        batch = ImportBatchResult(total=len(records), dry_run=self.dry_run)
+    def import_batch(
+        self,
+        records: list[dict],
+        files_processed: int = 1,
+    ) -> ImportBatchResult:
+        batch = ImportBatchResult(
+            total=len(records),
+            dry_run=self.dry_run,
+            files_processed=files_processed,
+        )
 
         for record in records:
             savepoint = db.session.begin_nested()
@@ -674,7 +738,14 @@ class HardwareImportService:
             if detail.status == "error":
                 savepoint.rollback()
                 batch.errors += 1
+                batch.invalid_records += 1
             else:
+                batch.valid_records += 1
+                if detail.is_new:
+                    batch.new_records += 1
+                else:
+                    batch.existing_records += 1
+
                 if self.dry_run:
                     savepoint.rollback()
                 else:
@@ -719,6 +790,7 @@ def import_hardware(
     dry_run: bool = False,
     replace_specifications: bool = False,
     replace_images: bool = False,
+    files_processed: int = 1,
 ) -> ImportBatchResult:
     """Public API for importing hardware records."""
     if isinstance(mode, str):
@@ -730,7 +802,27 @@ def import_hardware(
         replace_images=replace_images,
     )
     normalized = [HardwareImportService.normalize_record(r) for r in records]
-    return service.import_batch(normalized)
+    return service.import_batch(normalized, files_processed=files_processed)
+
+
+def import_hardware_from_path(
+    path: str,
+    mode: ImportMode | str = ImportMode.UPSERT,
+    dry_run: bool = False,
+    replace_specifications: bool = False,
+    replace_images: bool = False,
+) -> ImportBatchResult:
+    """Load records from a file or directory and import them."""
+    records = HardwareImportService.load_records_from_file(path)
+    files_processed = HardwareImportService.count_import_files(path)
+    return import_hardware(
+        records,
+        mode=mode,
+        dry_run=dry_run,
+        replace_specifications=replace_specifications,
+        replace_images=replace_images,
+        files_processed=files_processed,
+    )
 
 
 def validate_import_records(records: list[dict]) -> ImportBatchResult:

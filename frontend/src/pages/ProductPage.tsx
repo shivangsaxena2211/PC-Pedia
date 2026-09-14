@@ -133,6 +133,9 @@ export default function ProductPage() {
         <TabsList>
           <TabsTrigger value="specs">Specifications</TabsTrigger>
           <TabsTrigger value="overview">Overview</TabsTrigger>
+          {product.sources && product.sources.length > 0 && (
+            <TabsTrigger value="sources">Sources</TabsTrigger>
+          )}
           {product.benchmarks && product.benchmarks.length > 0 && (
             <TabsTrigger value="benchmarks">Benchmarks</TabsTrigger>
           )}
@@ -171,6 +174,37 @@ export default function ProductPage() {
             </table>
           </div>
         </TabsContent>
+
+        {product.sources && product.sources.length > 0 && (
+          <TabsContent value="sources" className="mt-6">
+            <div className="space-y-4">
+              <h2 className="text-lg font-semibold">Data Sources</h2>
+              {product.sources.map((item) => (
+                <div key={item.id} className="rounded-lg border border-border p-4 bg-card">
+                  <p className="font-medium">{item.source?.name || 'Source'}</p>
+                  {item.notes && (
+                    <p className="text-sm text-muted-foreground mt-1">{item.notes}</p>
+                  )}
+                  {(item.source_url || item.source?.url) && (
+                    <a
+                      href={item.source_url || item.source?.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-sm text-primary hover:underline mt-2 inline-block"
+                    >
+                      View Source
+                    </a>
+                  )}
+                  {item.source_date && (
+                    <p className="text-xs text-muted-foreground mt-2">
+                      Last Verified: {formatDate(item.source_date)}
+                    </p>
+                  )}
+                </div>
+              ))}
+            </div>
+          </TabsContent>
+        )}
 
         {product.benchmarks && product.benchmarks.length > 0 && (
           <TabsContent value="benchmarks" className="mt-6">

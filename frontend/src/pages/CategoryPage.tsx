@@ -66,7 +66,7 @@ export default function CategoryPage() {
   }
 
   const listKeySpecs = categorySlug === 'cpu'
-    ? ['Cores', 'Threads', 'Base Clock', 'Socket', 'TDP']
+    ? ['Total Cores', 'Threads', 'Base Clock', 'Socket', 'TDP']
     : categorySlug === 'gpu'
       ? ['VRAM', 'CUDA Cores', 'TDP', 'Memory Type']
       : []

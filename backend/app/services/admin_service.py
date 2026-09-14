@@ -204,6 +204,10 @@ def create_product(data: dict):
     if data.get("images"):
         _save_product_images(product, data["images"])
 
+    if data.get("source"):
+        from app.services.source_service import upsert_product_source
+        upsert_product_source(product.id, data["source"])
+
     db.session.commit()
     return product
 
@@ -244,6 +248,10 @@ def update_product(product_id: int, data: dict):
 
     if "images" in data:
         _save_product_images(product, data["images"])
+
+    if data.get("source"):
+        from app.services.source_service import upsert_product_source
+        upsert_product_source(product.id, data["source"])
 
     db.session.commit()
     return product

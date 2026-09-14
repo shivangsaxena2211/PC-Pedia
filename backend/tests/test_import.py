@@ -30,9 +30,9 @@ CPU_RECORD = {
         "status": "active",
     },
     "specifications": [
-        {"group": "General", "key": "Socket", "value": "AM5"},
-        {"group": "Core Configuration", "key": "Cores", "value": "8"},
-        {"group": "Core Configuration", "key": "Threads", "value": "16"},
+        {"group": "Socket", "key": "socket", "value": "AM5"},
+        {"group": "Core Configuration", "key": "cores", "value": "8"},
+        {"group": "Core Configuration", "key": "threads", "value": "16"},
     ],
     "images": [],
 }
@@ -73,9 +73,9 @@ def import_catalog(app):
 
         for cat, specs in (
             (cpu, [
-                ("General", "Socket", "string"),
-                ("Core Configuration", "Cores", "integer"),
-                ("Core Configuration", "Threads", "integer"),
+                ("Socket", "socket", "string"),
+                ("Core Configuration", "cores", "integer"),
+                ("Core Configuration", "threads", "integer"),
             ]),
             (gpu, [
                 ("General", "Architecture", "string"),
@@ -163,7 +163,7 @@ def test_invalid_specification_type(import_catalog):
             "name": "Invalid Spec CPU",
         },
         "specifications": [
-            {"group": "Core Configuration", "key": "Cores", "value": "eight"},
+            {"group": "Core Configuration", "key": "cores", "value": "eight"},
         ],
     }
     result = import_hardware([bad_record], mode=ImportMode.UPSERT)
@@ -265,7 +265,7 @@ def test_transaction_isolation_between_records(import_catalog):
             "name": "Isolation Bad CPU",
         },
         "specifications": [
-            {"group": "Core Configuration", "key": "Cores", "value": "not-a-number"},
+            {"group": "Core Configuration", "key": "cores", "value": "not-a-number"},
         ],
     }
     result = import_hardware([bad, good], mode=ImportMode.UPSERT)
@@ -280,14 +280,14 @@ def test_specifications_merge_without_replace(import_catalog):
     partial = {
         **CPU_RECORD,
         "specifications": [
-            {"group": "General", "key": "Socket", "value": "AM5"},
+            {"group": "Socket", "key": "socket", "value": "AM5"},
         ],
     }
     import_hardware([partial], mode=ImportMode.UPSERT)
     product = Product.query.filter_by(slug="ryzen-7-7800x3d-import-test").first()
     keys = {spec.key for spec in product.specifications}
-    assert "Cores" in keys
-    assert "Threads" in keys
+    assert "cores" in keys
+    assert "threads" in keys
 
 
 def test_image_import_adds_product_image(import_catalog):
@@ -322,12 +322,12 @@ def test_csv_row_conversion():
         "generation": "Ryzen 7000",
         "name": "CSV CPU",
         "slug": "csv-cpu",
-        "spec_Cores": "8",
-        "spec_Socket": "AM5",
+        "spec_cores": "8",
+        "spec_socket": "AM5",
     }
     record = HardwareImportService.csv_row_to_record(row)
     assert record["product"]["name"] == "CSV CPU"
-    assert any(spec["key"] == "Cores" for spec in record["specifications"])
+    assert any(spec["key"] == "cores" for spec in record["specifications"])
 
 
 def test_admin_import_validate_endpoint(client, import_catalog):

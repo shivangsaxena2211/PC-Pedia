@@ -13,6 +13,7 @@ from app.models import (
     Product,
     Specification,
     ProductImage,
+    ProductSource,
     SpecificationDefinition,
 )
 from app.utils.helpers import parse_int
@@ -87,6 +88,7 @@ def _product_detail_options():
         joinedload(Product.specifications),
         joinedload(Product.images),
         joinedload(Product.benchmarks),
+        joinedload(Product.product_sources).joinedload(ProductSource.source),
     ]
 
 
@@ -107,11 +109,29 @@ def _batch_load_quick_specs(product_ids: list[int], limit: int = QUICK_SPEC_LIMI
         .all()
     )
 
+    category_ids = {
+        row.category_id
+        for row in Product.query.filter(Product.id.in_(product_ids)).all()
+    }
+    definitions = SpecificationDefinition.query.filter(
+        SpecificationDefinition.category_id.in_(category_ids)
+    ).all()
+    def_map = {(d.category_id, d.key): d for d in definitions}
+
     result: dict[int, dict] = defaultdict(dict)
+    product_categories = {
+        p.id: p.category_id for p in Product.query.filter(Product.id.in_(product_ids)).all()
+    }
     for spec in specs:
         bucket = result[spec.product_id]
-        if len(bucket) < limit:
-            bucket[spec.key] = spec.value
+        if len(bucket) >= limit:
+            continue
+        defn = def_map.get((product_categories.get(spec.product_id), spec.key))
+        label = defn.display_name if defn else spec.key
+        value = spec.value
+        if spec.unit:
+            value = f"{value} {spec.unit}"
+        bucket[label] = value
     return result
 
 

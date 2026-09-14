@@ -40,7 +40,7 @@ MANUFACTURERS = [
 
 # Taxonomy: (category_slug, manufacturer, family, series, [generations])
 CPU_TAXONOMY = [
-    ("cpu", "Intel", "Core Ultra", "Core Ultra", ["Series 1"]),
+    ("cpu", "Intel", "Core Ultra", "Core Ultra", ["Series 1", "Series 2"]),
     ("cpu", "Intel", "Core", "Core", [
         "14th Generation", "13th Generation", "12th Generation", "11th Generation",
         "10th Generation", "9th Generation", "8th Generation", "7th Generation",
@@ -109,12 +109,12 @@ DEMO_PRODUCTS = [
             "name": "Intel Core i9-14900K", "slug": "core-i9-14900k",
             "release_date": "2023-10-17", "is_popular": True,
             "specifications": [
-                {"group_name": "General", "key": "Socket", "value": "LGA 1700"},
-                {"group_name": "General", "key": "Architecture", "value": "Raptor Lake Refresh"},
-                {"group_name": "Core Configuration", "key": "Cores", "value": "24"},
-                {"group_name": "Core Configuration", "key": "Threads", "value": "32"},
-                {"group_name": "Clock Speeds", "key": "Boost Clock", "value": "6.0", "unit": "GHz"},
-                {"group_name": "Power", "key": "TDP", "value": "125", "unit": "W"},
+                {"group_name": "Socket", "key": "socket", "value": "LGA 1700"},
+                {"group_name": "General", "key": "architecture", "value": "Raptor Lake Refresh"},
+                {"group_name": "Core Configuration", "key": "cores", "value": "24"},
+                {"group_name": "Core Configuration", "key": "threads", "value": "32"},
+                {"group_name": "Clock Speeds", "key": "boost_clock", "value": "6.0", "unit": "GHz"},
+                {"group_name": "Power", "key": "tdp", "value": "125", "unit": "W"},
             ],
         },
     },
@@ -125,10 +125,10 @@ DEMO_PRODUCTS = [
             "name": "Intel Core i7-14700K", "slug": "core-i7-14700k",
             "release_date": "2023-10-17", "is_popular": True,
             "specifications": [
-                {"group_name": "General", "key": "Socket", "value": "LGA 1700"},
-                {"group_name": "Core Configuration", "key": "Cores", "value": "20"},
-                {"group_name": "Core Configuration", "key": "Threads", "value": "28"},
-                {"group_name": "Power", "key": "TDP", "value": "125", "unit": "W"},
+                {"group_name": "Socket", "key": "socket", "value": "LGA 1700"},
+                {"group_name": "Core Configuration", "key": "cores", "value": "20"},
+                {"group_name": "Core Configuration", "key": "threads", "value": "28"},
+                {"group_name": "Power", "key": "tdp", "value": "125", "unit": "W"},
             ],
         },
     },
@@ -139,12 +139,13 @@ DEMO_PRODUCTS = [
             "name": "AMD Ryzen 7 7800X3D", "slug": "ryzen-7-7800x3d",
             "release_date": "2023-04-06", "is_popular": True,
             "specifications": [
-                {"group_name": "General", "key": "Socket", "value": "AM5"},
-                {"group_name": "General", "key": "Architecture", "value": "Zen 4"},
-                {"group_name": "Core Configuration", "key": "Cores", "value": "8"},
-                {"group_name": "Core Configuration", "key": "Threads", "value": "16"},
-                {"group_name": "Cache", "key": "L3 Cache", "value": "96", "unit": "MB"},
-                {"group_name": "Power", "key": "TDP", "value": "120", "unit": "W"},
+                {"group_name": "Socket", "key": "socket", "value": "AM5"},
+                {"group_name": "General", "key": "architecture", "value": "Zen 4"},
+                {"group_name": "Core Configuration", "key": "cores", "value": "8"},
+                {"group_name": "Core Configuration", "key": "threads", "value": "16"},
+                {"group_name": "Cache", "key": "l3_cache", "value": "96", "unit": "MB"},
+                {"group_name": "Cache", "key": "v_cache", "value": "64", "unit": "MB"},
+                {"group_name": "Power", "key": "tdp", "value": "120", "unit": "W"},
             ],
         },
     },
@@ -155,10 +156,10 @@ DEMO_PRODUCTS = [
             "name": "AMD Ryzen 9 9950X", "slug": "ryzen-9-9950x",
             "release_date": "2024-08-15", "is_popular": True,
             "specifications": [
-                {"group_name": "General", "key": "Socket", "value": "AM5"},
-                {"group_name": "Core Configuration", "key": "Cores", "value": "16"},
-                {"group_name": "Core Configuration", "key": "Threads", "value": "32"},
-                {"group_name": "Power", "key": "TDP", "value": "170", "unit": "W"},
+                {"group_name": "Socket", "key": "socket", "value": "AM5"},
+                {"group_name": "Core Configuration", "key": "cores", "value": "16"},
+                {"group_name": "Core Configuration", "key": "threads", "value": "32"},
+                {"group_name": "Power", "key": "tdp", "value": "170", "unit": "W"},
             ],
         },
     },
@@ -410,7 +411,16 @@ def seed_spec_definitions():
             existing = SpecificationDefinition.query.filter_by(
                 category_id=cat.id, key=key
             ).first()
-            if not existing:
+            if existing:
+                existing.group_name = group
+                existing.display_name = display
+                existing.data_type = dtype
+                existing.unit = unit
+                existing.filterable = filt
+                existing.comparable = comp
+                existing.required = req
+                existing.display_order = order
+            else:
                 db.session.add(SpecificationDefinition(
                     category_id=cat.id, group_name=group, key=key,
                     display_name=display, data_type=dtype, unit=unit,
@@ -490,10 +500,11 @@ def seed(reset=False):
         print(f"  Generations: {Generation.query.count()}")
         print(f"  Products: {Product.query.count()}")
         print(f"  Spec Definitions: {SpecificationDefinition.query.count()}")
-        print(f"  Import: created={len(result.created)}, updated={len(result.updated)}, errors={len(result.errors)}")
-        if result.errors:
-            for err in result.errors[:5]:
-                print(f"    Error: {err}")
+        if result:
+            print(f"  Import: created={result.created}, updated={result.updated}, errors={result.errors}")
+            for detail in result.details:
+                if detail.errors:
+                    print(f"    Error: {detail.product}: {'; '.join(detail.errors)}")
 
 
 if __name__ == "__main__":
