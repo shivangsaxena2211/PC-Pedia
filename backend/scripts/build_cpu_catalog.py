@@ -22,9 +22,11 @@ BACKEND_ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(BACKEND_ROOT))
 
 from app.catalog.catalog_validation import validate_catalog_records
-from data.catalog.cpu.verified_intel_12th_gen import INTEL_12TH_GEN_DESKTOP
-from data.catalog.cpu.verified_intel_13th_gen import INTEL_13TH_GEN_DESKTOP
-from data.catalog.cpu.verified_intel_14th_gen import INTEL_14TH_GEN_DESKTOP, VERIFIED_DATE
+from data.catalog.cpu.verified_intel_10th_gen import INTEL_10TH_GEN_DESKTOP, VERIFIED_DATE as VERIFIED_DATE_10
+from data.catalog.cpu.verified_intel_11th_gen import INTEL_11TH_GEN_DESKTOP, VERIFIED_DATE as VERIFIED_DATE_11
+from data.catalog.cpu.verified_intel_12th_gen import INTEL_12TH_GEN_DESKTOP, VERIFIED_DATE as VERIFIED_DATE_12
+from data.catalog.cpu.verified_intel_13th_gen import INTEL_13TH_GEN_DESKTOP, VERIFIED_DATE as VERIFIED_DATE_13
+from data.catalog.cpu.verified_intel_14th_gen import INTEL_14TH_GEN_DESKTOP, VERIFIED_DATE as VERIFIED_DATE_14
 
 CATALOG_ROOT = BACKEND_ROOT / "data" / "catalog" / "cpu"
 HEADERS = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"}
@@ -146,6 +148,7 @@ def build_intel_record(
     generation: str,
     architecture: str,
     gen_short: str,
+    verified_date: str,
 ) -> dict:
     model = entry["model"]
     sku = entry["sku"]
@@ -177,7 +180,7 @@ def build_intel_record(
         "source": {
             "name": "Intel ARK",
             "url": _intel_ark_url(sku),
-            "date": VERIFIED_DATE,
+            "date": verified_date,
             "notes": "Specifications verified against Intel ARK product specification page.",
         },
         "product": {
@@ -199,9 +202,22 @@ def build_intel_record(
     return record
 
 
-def build_intel_batch(entries: list[dict], *, generation: str, architecture: str, gen_short: str) -> list[dict]:
+def build_intel_batch(
+    entries: list[dict],
+    *,
+    generation: str,
+    architecture: str,
+    gen_short: str,
+    verified_date: str,
+) -> list[dict]:
     records = [
-        build_intel_record(entry, generation=generation, architecture=architecture, gen_short=gen_short)
+        build_intel_record(
+            entry,
+            generation=generation,
+            architecture=architecture,
+            gen_short=gen_short,
+            verified_date=verified_date,
+        )
         for entry in entries
     ]
     records.sort(key=lambda row: row["product"]["slug"])
@@ -346,7 +362,7 @@ def build_amd_record(slug: str) -> dict:
         "source": {
             "name": "AMD Official Product Page",
             "url": url,
-            "date": VERIFIED_DATE,
+            "date": VERIFIED_DATE_14,
             "notes": "Specifications verified against AMD official product information.",
         },
         "product": {
@@ -408,23 +424,42 @@ def build_all(fetch_amd: bool = False):
         generation="14th Generation",
         architecture="Raptor Lake Refresh",
         gen_short="14th Gen",
+        verified_date=VERIFIED_DATE_14,
     )
     intel_13 = build_intel_batch(
         INTEL_13TH_GEN_DESKTOP,
         generation="13th Generation",
         architecture="Raptor Lake",
         gen_short="13th Gen",
+        verified_date=VERIFIED_DATE_13,
     )
     intel_12 = build_intel_batch(
         INTEL_12TH_GEN_DESKTOP,
         generation="12th Generation",
         architecture="Alder Lake",
         gen_short="12th Gen",
+        verified_date=VERIFIED_DATE_12,
+    )
+    intel_11 = build_intel_batch(
+        INTEL_11TH_GEN_DESKTOP,
+        generation="11th Generation",
+        architecture="Rocket Lake",
+        gen_short="11th Gen",
+        verified_date=VERIFIED_DATE_11,
+    )
+    intel_10 = build_intel_batch(
+        INTEL_10TH_GEN_DESKTOP,
+        generation="10th Generation",
+        architecture="Comet Lake",
+        gen_short="10th Gen",
+        verified_date=VERIFIED_DATE_10,
     )
 
     write_catalog(CATALOG_ROOT / "intel" / "core" / "14th-gen" / "desktop.json", intel_14)
     write_catalog(CATALOG_ROOT / "intel" / "core" / "13th-gen" / "desktop.json", intel_13)
     write_catalog(CATALOG_ROOT / "intel" / "core" / "12th-gen" / "desktop.json", intel_12)
+    write_catalog(CATALOG_ROOT / "intel" / "core" / "11th-gen" / "desktop.json", intel_11)
+    write_catalog(CATALOG_ROOT / "intel" / "core" / "10th-gen" / "desktop.json", intel_10)
 
     if fetch_amd:
         amd_records = []

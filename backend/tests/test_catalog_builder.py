@@ -25,6 +25,8 @@ def test_intel_batches_have_unique_slugs():
         CATALOG_ROOT / "intel" / "core" / "14th-gen" / "desktop.json",
         CATALOG_ROOT / "intel" / "core" / "13th-gen" / "desktop.json",
         CATALOG_ROOT / "intel" / "core" / "12th-gen" / "desktop.json",
+        CATALOG_ROOT / "intel" / "core" / "11th-gen" / "desktop.json",
+        CATALOG_ROOT / "intel" / "core" / "10th-gen" / "desktop.json",
     ]
     all_slugs = []
     for path in files:
