@@ -313,6 +313,98 @@ def test_intel_11th_gen_product_detail(client, cpu_setup):
     assert payload.get("related_products") is not None
 
 
+def test_intel_9th_gen_batch_import(cpu_setup):
+    result = import_hardware_from_path(
+        "data/catalog/cpu/intel/core/9th-gen/desktop.json",
+        mode=ImportMode.UPSERT,
+    )
+    assert result.errors == 0
+    assert result.created + result.updated >= 26
+    assert Product.query.filter_by(slug="intel-core-i9-9900k").first() is not None
+
+
+def test_intel_8th_gen_batch_import(cpu_setup):
+    result = import_hardware_from_path(
+        "data/catalog/cpu/intel/core/8th-gen/desktop.json",
+        mode=ImportMode.UPSERT,
+    )
+    assert result.errors == 0
+    assert result.created + result.updated >= 15
+    assert Product.query.filter_by(slug="intel-core-i7-8700k").first() is not None
+
+
+def test_intel_8th_and_9th_gen_taxonomy(cpu_setup):
+    for generation in ("8th Generation", "9th Generation"):
+        record = {
+            "category": "CPU",
+            "manufacturer": "Intel",
+            "family": "Core",
+            "series": "Core",
+            "generation": generation,
+            "product": {
+                "name": f"Taxonomy Intel {generation}",
+                "slug": f"taxonomy-intel-{generation.split()[0].lower()}-gen",
+            },
+            "specifications": [{"group": "Socket", "key": "socket", "value": "LGA 1151"}],
+            "images": [],
+        }
+        result = import_hardware([record], mode=ImportMode.UPSERT)
+        assert result.errors == 0
+
+
+def test_intel_9th_gen_search(client, cpu_setup):
+    import_hardware_from_path(
+        "data/catalog/cpu/intel/core/9th-gen/desktop.json",
+        mode=ImportMode.UPSERT,
+    )
+    for query in ("9900K", "9700K", "9600K"):
+        response = client.get(f"/api/search?q={query}")
+        assert response.status_code == 200
+        results = response.get_json()
+        items = results.get("items", results.get("data", []))
+        assert any(query.replace("K", "") in item.get("name", "").replace("-", "") for item in items)
+
+
+def test_intel_8th_gen_search(client, cpu_setup):
+    import_hardware_from_path(
+        "data/catalog/cpu/intel/core/8th-gen/desktop.json",
+        mode=ImportMode.UPSERT,
+    )
+    for query in ("8700K", "8600K"):
+        response = client.get(f"/api/search?q={query}")
+        assert response.status_code == 200
+        results = response.get_json()
+        items = results.get("items", results.get("data", []))
+        assert any(query.replace("K", "") in item.get("name", "").replace("-", "") for item in items)
+
+
+def test_intel_9th_gen_product_detail(client, cpu_setup):
+    import_hardware_from_path(
+        "data/catalog/cpu/intel/core/9th-gen/desktop.json",
+        mode=ImportMode.UPSERT,
+    )
+    response = client.get("/api/products/cpu/intel/intel-core-i9-9900k")
+    assert response.status_code == 200
+    payload = response.get_json()
+    assert payload["name"] == "Intel Core i9-9900K"
+    assert payload.get("generation") == "9th Generation"
+    assert len(payload.get("sources", [])) >= 1
+    assert payload.get("related_products") is not None
+
+
+def test_intel_8th_gen_product_detail(client, cpu_setup):
+    import_hardware_from_path(
+        "data/catalog/cpu/intel/core/8th-gen/desktop.json",
+        mode=ImportMode.UPSERT,
+    )
+    response = client.get("/api/products/cpu/intel/intel-core-i7-8700k")
+    assert response.status_code == 200
+    payload = response.get_json()
+    assert payload["name"] == "Intel Core i7-8700K"
+    assert payload.get("generation") == "8th Generation"
+    assert len(payload.get("sources", [])) >= 1
+
+
 def test_intel_10th_gen_product_detail(client, cpu_setup):
     import_hardware_from_path(
         "data/catalog/cpu/intel/core/10th-gen/desktop.json",

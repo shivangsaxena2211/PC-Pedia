@@ -1,0 +1,2672 @@
+[
+  {
+    "category": "CPU",
+    "manufacturer": "Intel",
+    "family": "Core",
+    "series": "Core",
+    "generation": "8th Generation",
+    "architecture": "Coffee Lake",
+    "source": {
+      "name": "Intel ARK",
+      "url": "https://www.intel.com/content/www/us/en/products/sku/126688/specifications.html",
+      "date": "2026-09-15",
+      "notes": "Specifications verified against Intel ARK product specification page."
+    },
+    "product": {
+      "name": "Intel Core i3-8100",
+      "slug": "intel-core-i3-8100",
+      "description": "8th Gen Intel Core desktop processor with 4 cores and 4 threads.",
+      "release_date": "2017-10-01",
+      "status": "active",
+      "is_popular": false,
+      "architecture": "Coffee Lake"
+    },
+    "images": [],
+    "specifications": [
+      {
+        "group": "Features",
+        "key": "aes",
+        "value": "true"
+      },
+      {
+        "group": "General",
+        "key": "architecture",
+        "value": "Coffee Lake"
+      },
+      {
+        "group": "Features",
+        "key": "avx2",
+        "value": "true"
+      },
+      {
+        "group": "Clock Speeds",
+        "key": "base_clock",
+        "value": "3.60",
+        "unit": "GHz"
+      },
+      {
+        "group": "Core Configuration",
+        "key": "cores",
+        "value": "4"
+      },
+      {
+        "group": "Memory",
+        "key": "ecc_support",
+        "value": "false"
+      },
+      {
+        "group": "General",
+        "key": "generation",
+        "value": "8th Generation"
+      },
+      {
+        "group": "Graphics",
+        "key": "graphics_base_clock",
+        "value": "350",
+        "unit": "MHz"
+      },
+      {
+        "group": "Graphics",
+        "key": "graphics_max_clock",
+        "value": "1100",
+        "unit": "MHz"
+      },
+      {
+        "group": "Graphics",
+        "key": "graphics_model",
+        "value": "Intel UHD Graphics 630"
+      },
+      {
+        "group": "Graphics",
+        "key": "integrated_graphics",
+        "value": "true"
+      },
+      {
+        "group": "Features",
+        "key": "intel_turbo_boost",
+        "value": "true"
+      },
+      {
+        "group": "Cache",
+        "key": "l3_cache",
+        "value": "6",
+        "unit": "MB"
+      },
+      {
+        "group": "General",
+        "key": "market_segment",
+        "value": "Desktop"
+      },
+      {
+        "group": "Memory",
+        "key": "max_memory",
+        "value": "64",
+        "unit": "GB"
+      },
+      {
+        "group": "Memory",
+        "key": "max_memory_speed",
+        "value": "2400",
+        "unit": "MT/s"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_channels",
+        "value": "2"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_type",
+        "value": "DDR4-2400"
+      },
+      {
+        "group": "General",
+        "key": "microarchitecture",
+        "value": "Coffee Lake"
+      },
+      {
+        "group": "Features",
+        "key": "overclocking_support",
+        "value": "false"
+      },
+      {
+        "group": "PCI Express",
+        "key": "pcie_lanes",
+        "value": "16"
+      },
+      {
+        "group": "PCI Express",
+        "key": "pcie_version",
+        "value": "3.0"
+      },
+      {
+        "group": "General",
+        "key": "process_node",
+        "value": "14 nm"
+      },
+      {
+        "group": "General",
+        "key": "product_family",
+        "value": "Core"
+      },
+      {
+        "group": "Socket",
+        "key": "socket",
+        "value": "LGA 1151"
+      },
+      {
+        "group": "Power",
+        "key": "tdp",
+        "value": "65",
+        "unit": "W"
+      },
+      {
+        "group": "Core Configuration",
+        "key": "threads",
+        "value": "4"
+      },
+      {
+        "group": "Features",
+        "key": "virtualization",
+        "value": "true"
+      }
+    ],
+    "benchmarks": []
+  },
+  {
+    "category": "CPU",
+    "manufacturer": "Intel",
+    "family": "Core",
+    "series": "Core",
+    "generation": "8th Generation",
+    "architecture": "Coffee Lake",
+    "source": {
+      "name": "Intel ARK",
+      "url": "https://www.intel.com/content/www/us/en/products/sku/129944/specifications.html",
+      "date": "2026-09-15",
+      "notes": "Specifications verified against Intel ARK product specification page."
+    },
+    "product": {
+      "name": "Intel Core i3-8100T",
+      "slug": "intel-core-i3-8100t",
+      "description": "8th Gen Intel Core desktop processor with 4 cores and 4 threads.",
+      "release_date": "2018-04-01",
+      "status": "active",
+      "is_popular": false,
+      "architecture": "Coffee Lake"
+    },
+    "images": [],
+    "specifications": [
+      {
+        "group": "Features",
+        "key": "aes",
+        "value": "true"
+      },
+      {
+        "group": "General",
+        "key": "architecture",
+        "value": "Coffee Lake"
+      },
+      {
+        "group": "Features",
+        "key": "avx2",
+        "value": "true"
+      },
+      {
+        "group": "Clock Speeds",
+        "key": "base_clock",
+        "value": "3.10",
+        "unit": "GHz"
+      },
+      {
+        "group": "Core Configuration",
+        "key": "cores",
+        "value": "4"
+      },
+      {
+        "group": "Memory",
+        "key": "ecc_support",
+        "value": "false"
+      },
+      {
+        "group": "General",
+        "key": "generation",
+        "value": "8th Generation"
+      },
+      {
+        "group": "Graphics",
+        "key": "graphics_base_clock",
+        "value": "350",
+        "unit": "MHz"
+      },
+      {
+        "group": "Graphics",
+        "key": "graphics_max_clock",
+        "value": "1100",
+        "unit": "MHz"
+      },
+      {
+        "group": "Graphics",
+        "key": "graphics_model",
+        "value": "Intel UHD Graphics 630"
+      },
+      {
+        "group": "Graphics",
+        "key": "integrated_graphics",
+        "value": "true"
+      },
+      {
+        "group": "Features",
+        "key": "intel_turbo_boost",
+        "value": "true"
+      },
+      {
+        "group": "Cache",
+        "key": "l3_cache",
+        "value": "6",
+        "unit": "MB"
+      },
+      {
+        "group": "General",
+        "key": "market_segment",
+        "value": "Desktop"
+      },
+      {
+        "group": "Memory",
+        "key": "max_memory",
+        "value": "64",
+        "unit": "GB"
+      },
+      {
+        "group": "Memory",
+        "key": "max_memory_speed",
+        "value": "2400",
+        "unit": "MT/s"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_channels",
+        "value": "2"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_type",
+        "value": "DDR4-2400"
+      },
+      {
+        "group": "General",
+        "key": "microarchitecture",
+        "value": "Coffee Lake"
+      },
+      {
+        "group": "Features",
+        "key": "overclocking_support",
+        "value": "false"
+      },
+      {
+        "group": "PCI Express",
+        "key": "pcie_lanes",
+        "value": "16"
+      },
+      {
+        "group": "PCI Express",
+        "key": "pcie_version",
+        "value": "3.0"
+      },
+      {
+        "group": "General",
+        "key": "process_node",
+        "value": "14 nm"
+      },
+      {
+        "group": "General",
+        "key": "product_family",
+        "value": "Core"
+      },
+      {
+        "group": "Socket",
+        "key": "socket",
+        "value": "LGA 1151"
+      },
+      {
+        "group": "Power",
+        "key": "tdp",
+        "value": "35",
+        "unit": "W"
+      },
+      {
+        "group": "Core Configuration",
+        "key": "threads",
+        "value": "4"
+      },
+      {
+        "group": "Features",
+        "key": "virtualization",
+        "value": "true"
+      }
+    ],
+    "benchmarks": []
+  },
+  {
+    "category": "CPU",
+    "manufacturer": "Intel",
+    "family": "Core",
+    "series": "Core",
+    "generation": "8th Generation",
+    "architecture": "Coffee Lake",
+    "source": {
+      "name": "Intel ARK",
+      "url": "https://www.intel.com/content/www/us/en/products/sku/129942/specifications.html",
+      "date": "2026-09-15",
+      "notes": "Specifications verified against Intel ARK product specification page."
+    },
+    "product": {
+      "name": "Intel Core i3-8300",
+      "slug": "intel-core-i3-8300",
+      "description": "8th Gen Intel Core desktop processor with 4 cores and 4 threads.",
+      "release_date": "2018-04-01",
+      "status": "active",
+      "is_popular": false,
+      "architecture": "Coffee Lake"
+    },
+    "images": [],
+    "specifications": [
+      {
+        "group": "Features",
+        "key": "aes",
+        "value": "true"
+      },
+      {
+        "group": "General",
+        "key": "architecture",
+        "value": "Coffee Lake"
+      },
+      {
+        "group": "Features",
+        "key": "avx2",
+        "value": "true"
+      },
+      {
+        "group": "Clock Speeds",
+        "key": "base_clock",
+        "value": "3.70",
+        "unit": "GHz"
+      },
+      {
+        "group": "Core Configuration",
+        "key": "cores",
+        "value": "4"
+      },
+      {
+        "group": "Memory",
+        "key": "ecc_support",
+        "value": "false"
+      },
+      {
+        "group": "General",
+        "key": "generation",
+        "value": "8th Generation"
+      },
+      {
+        "group": "Graphics",
+        "key": "graphics_base_clock",
+        "value": "350",
+        "unit": "MHz"
+      },
+      {
+        "group": "Graphics",
+        "key": "graphics_max_clock",
+        "value": "1150",
+        "unit": "MHz"
+      },
+      {
+        "group": "Graphics",
+        "key": "graphics_model",
+        "value": "Intel UHD Graphics 630"
+      },
+      {
+        "group": "Graphics",
+        "key": "integrated_graphics",
+        "value": "true"
+      },
+      {
+        "group": "Features",
+        "key": "intel_turbo_boost",
+        "value": "true"
+      },
+      {
+        "group": "Cache",
+        "key": "l3_cache",
+        "value": "8",
+        "unit": "MB"
+      },
+      {
+        "group": "General",
+        "key": "market_segment",
+        "value": "Desktop"
+      },
+      {
+        "group": "Memory",
+        "key": "max_memory",
+        "value": "64",
+        "unit": "GB"
+      },
+      {
+        "group": "Memory",
+        "key": "max_memory_speed",
+        "value": "2400",
+        "unit": "MT/s"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_channels",
+        "value": "2"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_type",
+        "value": "DDR4-2400"
+      },
+      {
+        "group": "General",
+        "key": "microarchitecture",
+        "value": "Coffee Lake"
+      },
+      {
+        "group": "Features",
+        "key": "overclocking_support",
+        "value": "false"
+      },
+      {
+        "group": "PCI Express",
+        "key": "pcie_lanes",
+        "value": "16"
+      },
+      {
+        "group": "PCI Express",
+        "key": "pcie_version",
+        "value": "3.0"
+      },
+      {
+        "group": "General",
+        "key": "process_node",
+        "value": "14 nm"
+      },
+      {
+        "group": "General",
+        "key": "product_family",
+        "value": "Core"
+      },
+      {
+        "group": "Socket",
+        "key": "socket",
+        "value": "LGA 1151"
+      },
+      {
+        "group": "Power",
+        "key": "tdp",
+        "value": "62",
+        "unit": "W"
+      },
+      {
+        "group": "Core Configuration",
+        "key": "threads",
+        "value": "4"
+      },
+      {
+        "group": "Features",
+        "key": "virtualization",
+        "value": "true"
+      }
+    ],
+    "benchmarks": []
+  },
+  {
+    "category": "CPU",
+    "manufacturer": "Intel",
+    "family": "Core",
+    "series": "Core",
+    "generation": "8th Generation",
+    "architecture": "Coffee Lake",
+    "source": {
+      "name": "Intel ARK",
+      "url": "https://www.intel.com/content/www/us/en/products/sku/129943/specifications.html",
+      "date": "2026-09-15",
+      "notes": "Specifications verified against Intel ARK product specification page."
+    },
+    "product": {
+      "name": "Intel Core i3-8300T",
+      "slug": "intel-core-i3-8300t",
+      "description": "8th Gen Intel Core desktop processor with 4 cores and 4 threads.",
+      "release_date": "2018-04-01",
+      "status": "active",
+      "is_popular": false,
+      "architecture": "Coffee Lake"
+    },
+    "images": [],
+    "specifications": [
+      {
+        "group": "Features",
+        "key": "aes",
+        "value": "true"
+      },
+      {
+        "group": "General",
+        "key": "architecture",
+        "value": "Coffee Lake"
+      },
+      {
+        "group": "Features",
+        "key": "avx2",
+        "value": "true"
+      },
+      {
+        "group": "Clock Speeds",
+        "key": "base_clock",
+        "value": "3.20",
+        "unit": "GHz"
+      },
+      {
+        "group": "Core Configuration",
+        "key": "cores",
+        "value": "4"
+      },
+      {
+        "group": "Memory",
+        "key": "ecc_support",
+        "value": "false"
+      },
+      {
+        "group": "General",
+        "key": "generation",
+        "value": "8th Generation"
+      },
+      {
+        "group": "Graphics",
+        "key": "graphics_base_clock",
+        "value": "350",
+        "unit": "MHz"
+      },
+      {
+        "group": "Graphics",
+        "key": "graphics_max_clock",
+        "value": "1100",
+        "unit": "MHz"
+      },
+      {
+        "group": "Graphics",
+        "key": "graphics_model",
+        "value": "Intel UHD Graphics 630"
+      },
+      {
+        "group": "Graphics",
+        "key": "integrated_graphics",
+        "value": "true"
+      },
+      {
+        "group": "Features",
+        "key": "intel_turbo_boost",
+        "value": "true"
+      },
+      {
+        "group": "Cache",
+        "key": "l3_cache",
+        "value": "8",
+        "unit": "MB"
+      },
+      {
+        "group": "General",
+        "key": "market_segment",
+        "value": "Desktop"
+      },
+      {
+        "group": "Memory",
+        "key": "max_memory",
+        "value": "64",
+        "unit": "GB"
+      },
+      {
+        "group": "Memory",
+        "key": "max_memory_speed",
+        "value": "2400",
+        "unit": "MT/s"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_channels",
+        "value": "2"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_type",
+        "value": "DDR4-2400"
+      },
+      {
+        "group": "General",
+        "key": "microarchitecture",
+        "value": "Coffee Lake"
+      },
+      {
+        "group": "Features",
+        "key": "overclocking_support",
+        "value": "false"
+      },
+      {
+        "group": "PCI Express",
+        "key": "pcie_lanes",
+        "value": "16"
+      },
+      {
+        "group": "PCI Express",
+        "key": "pcie_version",
+        "value": "3.0"
+      },
+      {
+        "group": "General",
+        "key": "process_node",
+        "value": "14 nm"
+      },
+      {
+        "group": "General",
+        "key": "product_family",
+        "value": "Core"
+      },
+      {
+        "group": "Socket",
+        "key": "socket",
+        "value": "LGA 1151"
+      },
+      {
+        "group": "Power",
+        "key": "tdp",
+        "value": "35",
+        "unit": "W"
+      },
+      {
+        "group": "Core Configuration",
+        "key": "threads",
+        "value": "4"
+      },
+      {
+        "group": "Features",
+        "key": "virtualization",
+        "value": "true"
+      }
+    ],
+    "benchmarks": []
+  },
+  {
+    "category": "CPU",
+    "manufacturer": "Intel",
+    "family": "Core",
+    "series": "Core",
+    "generation": "8th Generation",
+    "architecture": "Coffee Lake",
+    "source": {
+      "name": "Intel ARK",
+      "url": "https://www.intel.com/content/www/us/en/products/sku/126689/specifications.html",
+      "date": "2026-09-15",
+      "notes": "Specifications verified against Intel ARK product specification page."
+    },
+    "product": {
+      "name": "Intel Core i3-8350K",
+      "slug": "intel-core-i3-8350k",
+      "description": "8th Gen Intel Core desktop processor with 4 cores and 4 threads.",
+      "release_date": "2017-10-01",
+      "status": "active",
+      "is_popular": false,
+      "architecture": "Coffee Lake"
+    },
+    "images": [],
+    "specifications": [
+      {
+        "group": "Features",
+        "key": "aes",
+        "value": "true"
+      },
+      {
+        "group": "General",
+        "key": "architecture",
+        "value": "Coffee Lake"
+      },
+      {
+        "group": "Features",
+        "key": "avx2",
+        "value": "true"
+      },
+      {
+        "group": "Clock Speeds",
+        "key": "base_clock",
+        "value": "4.00",
+        "unit": "GHz"
+      },
+      {
+        "group": "Core Configuration",
+        "key": "cores",
+        "value": "4"
+      },
+      {
+        "group": "Memory",
+        "key": "ecc_support",
+        "value": "false"
+      },
+      {
+        "group": "General",
+        "key": "generation",
+        "value": "8th Generation"
+      },
+      {
+        "group": "Graphics",
+        "key": "graphics_base_clock",
+        "value": "350",
+        "unit": "MHz"
+      },
+      {
+        "group": "Graphics",
+        "key": "graphics_max_clock",
+        "value": "1150",
+        "unit": "MHz"
+      },
+      {
+        "group": "Graphics",
+        "key": "graphics_model",
+        "value": "Intel UHD Graphics 630"
+      },
+      {
+        "group": "Graphics",
+        "key": "integrated_graphics",
+        "value": "true"
+      },
+      {
+        "group": "Features",
+        "key": "intel_turbo_boost",
+        "value": "true"
+      },
+      {
+        "group": "Cache",
+        "key": "l3_cache",
+        "value": "8",
+        "unit": "MB"
+      },
+      {
+        "group": "General",
+        "key": "market_segment",
+        "value": "Desktop"
+      },
+      {
+        "group": "Memory",
+        "key": "max_memory",
+        "value": "64",
+        "unit": "GB"
+      },
+      {
+        "group": "Memory",
+        "key": "max_memory_speed",
+        "value": "2400",
+        "unit": "MT/s"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_channels",
+        "value": "2"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_type",
+        "value": "DDR4-2400"
+      },
+      {
+        "group": "General",
+        "key": "microarchitecture",
+        "value": "Coffee Lake"
+      },
+      {
+        "group": "Features",
+        "key": "overclocking_support",
+        "value": "true"
+      },
+      {
+        "group": "PCI Express",
+        "key": "pcie_lanes",
+        "value": "16"
+      },
+      {
+        "group": "PCI Express",
+        "key": "pcie_version",
+        "value": "3.0"
+      },
+      {
+        "group": "General",
+        "key": "process_node",
+        "value": "14 nm"
+      },
+      {
+        "group": "General",
+        "key": "product_family",
+        "value": "Core"
+      },
+      {
+        "group": "Socket",
+        "key": "socket",
+        "value": "LGA 1151"
+      },
+      {
+        "group": "Power",
+        "key": "tdp",
+        "value": "91",
+        "unit": "W"
+      },
+      {
+        "group": "Core Configuration",
+        "key": "threads",
+        "value": "4"
+      },
+      {
+        "group": "Features",
+        "key": "virtualization",
+        "value": "true"
+      }
+    ],
+    "benchmarks": []
+  },
+  {
+    "category": "CPU",
+    "manufacturer": "Intel",
+    "family": "Core",
+    "series": "Core",
+    "generation": "8th Generation",
+    "architecture": "Coffee Lake",
+    "source": {
+      "name": "Intel ARK",
+      "url": "https://www.intel.com/content/www/us/en/products/sku/126687/specifications.html",
+      "date": "2026-09-15",
+      "notes": "Specifications verified against Intel ARK product specification page."
+    },
+    "product": {
+      "name": "Intel Core i5-8400",
+      "slug": "intel-core-i5-8400",
+      "description": "8th Gen Intel Core desktop processor with 6 cores and 6 threads.",
+      "release_date": "2017-10-01",
+      "status": "active",
+      "is_popular": false,
+      "architecture": "Coffee Lake"
+    },
+    "images": [],
+    "specifications": [
+      {
+        "group": "Features",
+        "key": "aes",
+        "value": "true"
+      },
+      {
+        "group": "General",
+        "key": "architecture",
+        "value": "Coffee Lake"
+      },
+      {
+        "group": "Features",
+        "key": "avx2",
+        "value": "true"
+      },
+      {
+        "group": "Clock Speeds",
+        "key": "base_clock",
+        "value": "2.80",
+        "unit": "GHz"
+      },
+      {
+        "group": "Clock Speeds",
+        "key": "boost_clock",
+        "value": "4.00",
+        "unit": "GHz"
+      },
+      {
+        "group": "Core Configuration",
+        "key": "cores",
+        "value": "6"
+      },
+      {
+        "group": "Memory",
+        "key": "ecc_support",
+        "value": "false"
+      },
+      {
+        "group": "General",
+        "key": "generation",
+        "value": "8th Generation"
+      },
+      {
+        "group": "Graphics",
+        "key": "graphics_base_clock",
+        "value": "350",
+        "unit": "MHz"
+      },
+      {
+        "group": "Graphics",
+        "key": "graphics_max_clock",
+        "value": "1050",
+        "unit": "MHz"
+      },
+      {
+        "group": "Graphics",
+        "key": "graphics_model",
+        "value": "Intel UHD Graphics 630"
+      },
+      {
+        "group": "Graphics",
+        "key": "integrated_graphics",
+        "value": "true"
+      },
+      {
+        "group": "Features",
+        "key": "intel_turbo_boost",
+        "value": "true"
+      },
+      {
+        "group": "Cache",
+        "key": "l3_cache",
+        "value": "9",
+        "unit": "MB"
+      },
+      {
+        "group": "General",
+        "key": "market_segment",
+        "value": "Desktop"
+      },
+      {
+        "group": "Memory",
+        "key": "max_memory",
+        "value": "128",
+        "unit": "GB"
+      },
+      {
+        "group": "Memory",
+        "key": "max_memory_speed",
+        "value": "2666",
+        "unit": "MT/s"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_channels",
+        "value": "2"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_type",
+        "value": "DDR4-2666"
+      },
+      {
+        "group": "General",
+        "key": "microarchitecture",
+        "value": "Coffee Lake"
+      },
+      {
+        "group": "Features",
+        "key": "overclocking_support",
+        "value": "false"
+      },
+      {
+        "group": "PCI Express",
+        "key": "pcie_lanes",
+        "value": "16"
+      },
+      {
+        "group": "PCI Express",
+        "key": "pcie_version",
+        "value": "3.0"
+      },
+      {
+        "group": "General",
+        "key": "process_node",
+        "value": "14 nm"
+      },
+      {
+        "group": "General",
+        "key": "product_family",
+        "value": "Core"
+      },
+      {
+        "group": "Socket",
+        "key": "socket",
+        "value": "LGA 1151"
+      },
+      {
+        "group": "Power",
+        "key": "tdp",
+        "value": "65",
+        "unit": "W"
+      },
+      {
+        "group": "Core Configuration",
+        "key": "threads",
+        "value": "6"
+      },
+      {
+        "group": "Features",
+        "key": "virtualization",
+        "value": "true"
+      }
+    ],
+    "benchmarks": []
+  },
+  {
+    "category": "CPU",
+    "manufacturer": "Intel",
+    "family": "Core",
+    "series": "Core",
+    "generation": "8th Generation",
+    "architecture": "Coffee Lake",
+    "source": {
+      "name": "Intel ARK",
+      "url": "https://www.intel.com/content/www/us/en/products/sku/129940/specifications.html",
+      "date": "2026-09-15",
+      "notes": "Specifications verified against Intel ARK product specification page."
+    },
+    "product": {
+      "name": "Intel Core i5-8400T",
+      "slug": "intel-core-i5-8400t",
+      "description": "8th Gen Intel Core desktop processor with 6 cores and 6 threads.",
+      "release_date": "2018-04-01",
+      "status": "active",
+      "is_popular": false,
+      "architecture": "Coffee Lake"
+    },
+    "images": [],
+    "specifications": [
+      {
+        "group": "Features",
+        "key": "aes",
+        "value": "true"
+      },
+      {
+        "group": "General",
+        "key": "architecture",
+        "value": "Coffee Lake"
+      },
+      {
+        "group": "Features",
+        "key": "avx2",
+        "value": "true"
+      },
+      {
+        "group": "Clock Speeds",
+        "key": "base_clock",
+        "value": "1.70",
+        "unit": "GHz"
+      },
+      {
+        "group": "Clock Speeds",
+        "key": "boost_clock",
+        "value": "3.30",
+        "unit": "GHz"
+      },
+      {
+        "group": "Core Configuration",
+        "key": "cores",
+        "value": "6"
+      },
+      {
+        "group": "Memory",
+        "key": "ecc_support",
+        "value": "false"
+      },
+      {
+        "group": "General",
+        "key": "generation",
+        "value": "8th Generation"
+      },
+      {
+        "group": "Graphics",
+        "key": "graphics_base_clock",
+        "value": "350",
+        "unit": "MHz"
+      },
+      {
+        "group": "Graphics",
+        "key": "graphics_max_clock",
+        "value": "1050",
+        "unit": "MHz"
+      },
+      {
+        "group": "Graphics",
+        "key": "graphics_model",
+        "value": "Intel UHD Graphics 630"
+      },
+      {
+        "group": "Graphics",
+        "key": "integrated_graphics",
+        "value": "true"
+      },
+      {
+        "group": "Features",
+        "key": "intel_turbo_boost",
+        "value": "true"
+      },
+      {
+        "group": "Cache",
+        "key": "l3_cache",
+        "value": "9",
+        "unit": "MB"
+      },
+      {
+        "group": "General",
+        "key": "market_segment",
+        "value": "Desktop"
+      },
+      {
+        "group": "Memory",
+        "key": "max_memory",
+        "value": "128",
+        "unit": "GB"
+      },
+      {
+        "group": "Memory",
+        "key": "max_memory_speed",
+        "value": "2666",
+        "unit": "MT/s"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_channels",
+        "value": "2"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_type",
+        "value": "DDR4-2666"
+      },
+      {
+        "group": "General",
+        "key": "microarchitecture",
+        "value": "Coffee Lake"
+      },
+      {
+        "group": "Features",
+        "key": "overclocking_support",
+        "value": "false"
+      },
+      {
+        "group": "PCI Express",
+        "key": "pcie_lanes",
+        "value": "16"
+      },
+      {
+        "group": "PCI Express",
+        "key": "pcie_version",
+        "value": "3.0"
+      },
+      {
+        "group": "General",
+        "key": "process_node",
+        "value": "14 nm"
+      },
+      {
+        "group": "General",
+        "key": "product_family",
+        "value": "Core"
+      },
+      {
+        "group": "Socket",
+        "key": "socket",
+        "value": "LGA 1151"
+      },
+      {
+        "group": "Power",
+        "key": "tdp",
+        "value": "35",
+        "unit": "W"
+      },
+      {
+        "group": "Core Configuration",
+        "key": "threads",
+        "value": "6"
+      },
+      {
+        "group": "Features",
+        "key": "virtualization",
+        "value": "true"
+      }
+    ],
+    "benchmarks": []
+  },
+  {
+    "category": "CPU",
+    "manufacturer": "Intel",
+    "family": "Core",
+    "series": "Core",
+    "generation": "8th Generation",
+    "architecture": "Coffee Lake",
+    "source": {
+      "name": "Intel ARK",
+      "url": "https://www.intel.com/content/www/us/en/products/sku/129939/specifications.html",
+      "date": "2026-09-15",
+      "notes": "Specifications verified against Intel ARK product specification page."
+    },
+    "product": {
+      "name": "Intel Core i5-8500",
+      "slug": "intel-core-i5-8500",
+      "description": "8th Gen Intel Core desktop processor with 6 cores and 6 threads.",
+      "release_date": "2018-04-01",
+      "status": "active",
+      "is_popular": false,
+      "architecture": "Coffee Lake"
+    },
+    "images": [],
+    "specifications": [
+      {
+        "group": "Features",
+        "key": "aes",
+        "value": "true"
+      },
+      {
+        "group": "General",
+        "key": "architecture",
+        "value": "Coffee Lake"
+      },
+      {
+        "group": "Features",
+        "key": "avx2",
+        "value": "true"
+      },
+      {
+        "group": "Clock Speeds",
+        "key": "base_clock",
+        "value": "3.00",
+        "unit": "GHz"
+      },
+      {
+        "group": "Clock Speeds",
+        "key": "boost_clock",
+        "value": "4.10",
+        "unit": "GHz"
+      },
+      {
+        "group": "Core Configuration",
+        "key": "cores",
+        "value": "6"
+      },
+      {
+        "group": "Memory",
+        "key": "ecc_support",
+        "value": "false"
+      },
+      {
+        "group": "General",
+        "key": "generation",
+        "value": "8th Generation"
+      },
+      {
+        "group": "Graphics",
+        "key": "graphics_base_clock",
+        "value": "350",
+        "unit": "MHz"
+      },
+      {
+        "group": "Graphics",
+        "key": "graphics_max_clock",
+        "value": "1100",
+        "unit": "MHz"
+      },
+      {
+        "group": "Graphics",
+        "key": "graphics_model",
+        "value": "Intel UHD Graphics 630"
+      },
+      {
+        "group": "Graphics",
+        "key": "integrated_graphics",
+        "value": "true"
+      },
+      {
+        "group": "Features",
+        "key": "intel_turbo_boost",
+        "value": "true"
+      },
+      {
+        "group": "Cache",
+        "key": "l3_cache",
+        "value": "9",
+        "unit": "MB"
+      },
+      {
+        "group": "General",
+        "key": "market_segment",
+        "value": "Desktop"
+      },
+      {
+        "group": "Memory",
+        "key": "max_memory",
+        "value": "128",
+        "unit": "GB"
+      },
+      {
+        "group": "Memory",
+        "key": "max_memory_speed",
+        "value": "2666",
+        "unit": "MT/s"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_channels",
+        "value": "2"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_type",
+        "value": "DDR4-2666"
+      },
+      {
+        "group": "General",
+        "key": "microarchitecture",
+        "value": "Coffee Lake"
+      },
+      {
+        "group": "Features",
+        "key": "overclocking_support",
+        "value": "false"
+      },
+      {
+        "group": "PCI Express",
+        "key": "pcie_lanes",
+        "value": "16"
+      },
+      {
+        "group": "PCI Express",
+        "key": "pcie_version",
+        "value": "3.0"
+      },
+      {
+        "group": "General",
+        "key": "process_node",
+        "value": "14 nm"
+      },
+      {
+        "group": "General",
+        "key": "product_family",
+        "value": "Core"
+      },
+      {
+        "group": "Socket",
+        "key": "socket",
+        "value": "LGA 1151"
+      },
+      {
+        "group": "Power",
+        "key": "tdp",
+        "value": "65",
+        "unit": "W"
+      },
+      {
+        "group": "Core Configuration",
+        "key": "threads",
+        "value": "6"
+      },
+      {
+        "group": "Features",
+        "key": "virtualization",
+        "value": "true"
+      }
+    ],
+    "benchmarks": []
+  },
+  {
+    "category": "CPU",
+    "manufacturer": "Intel",
+    "family": "Core",
+    "series": "Core",
+    "generation": "8th Generation",
+    "architecture": "Coffee Lake",
+    "source": {
+      "name": "Intel ARK",
+      "url": "https://www.intel.com/content/www/us/en/products/sku/129941/specifications.html",
+      "date": "2026-09-15",
+      "notes": "Specifications verified against Intel ARK product specification page."
+    },
+    "product": {
+      "name": "Intel Core i5-8500T",
+      "slug": "intel-core-i5-8500t",
+      "description": "8th Gen Intel Core desktop processor with 6 cores and 6 threads.",
+      "release_date": "2018-04-01",
+      "status": "active",
+      "is_popular": false,
+      "architecture": "Coffee Lake"
+    },
+    "images": [],
+    "specifications": [
+      {
+        "group": "Features",
+        "key": "aes",
+        "value": "true"
+      },
+      {
+        "group": "General",
+        "key": "architecture",
+        "value": "Coffee Lake"
+      },
+      {
+        "group": "Features",
+        "key": "avx2",
+        "value": "true"
+      },
+      {
+        "group": "Clock Speeds",
+        "key": "base_clock",
+        "value": "2.10",
+        "unit": "GHz"
+      },
+      {
+        "group": "Clock Speeds",
+        "key": "boost_clock",
+        "value": "3.50",
+        "unit": "GHz"
+      },
+      {
+        "group": "Core Configuration",
+        "key": "cores",
+        "value": "6"
+      },
+      {
+        "group": "Memory",
+        "key": "ecc_support",
+        "value": "false"
+      },
+      {
+        "group": "General",
+        "key": "generation",
+        "value": "8th Generation"
+      },
+      {
+        "group": "Graphics",
+        "key": "graphics_base_clock",
+        "value": "350",
+        "unit": "MHz"
+      },
+      {
+        "group": "Graphics",
+        "key": "graphics_max_clock",
+        "value": "1100",
+        "unit": "MHz"
+      },
+      {
+        "group": "Graphics",
+        "key": "graphics_model",
+        "value": "Intel UHD Graphics 630"
+      },
+      {
+        "group": "Graphics",
+        "key": "integrated_graphics",
+        "value": "true"
+      },
+      {
+        "group": "Features",
+        "key": "intel_turbo_boost",
+        "value": "true"
+      },
+      {
+        "group": "Cache",
+        "key": "l3_cache",
+        "value": "9",
+        "unit": "MB"
+      },
+      {
+        "group": "General",
+        "key": "market_segment",
+        "value": "Desktop"
+      },
+      {
+        "group": "Memory",
+        "key": "max_memory",
+        "value": "128",
+        "unit": "GB"
+      },
+      {
+        "group": "Memory",
+        "key": "max_memory_speed",
+        "value": "2666",
+        "unit": "MT/s"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_channels",
+        "value": "2"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_type",
+        "value": "DDR4-2666"
+      },
+      {
+        "group": "General",
+        "key": "microarchitecture",
+        "value": "Coffee Lake"
+      },
+      {
+        "group": "Features",
+        "key": "overclocking_support",
+        "value": "false"
+      },
+      {
+        "group": "PCI Express",
+        "key": "pcie_lanes",
+        "value": "16"
+      },
+      {
+        "group": "PCI Express",
+        "key": "pcie_version",
+        "value": "3.0"
+      },
+      {
+        "group": "General",
+        "key": "process_node",
+        "value": "14 nm"
+      },
+      {
+        "group": "General",
+        "key": "product_family",
+        "value": "Core"
+      },
+      {
+        "group": "Socket",
+        "key": "socket",
+        "value": "LGA 1151"
+      },
+      {
+        "group": "Power",
+        "key": "tdp",
+        "value": "35",
+        "unit": "W"
+      },
+      {
+        "group": "Core Configuration",
+        "key": "threads",
+        "value": "6"
+      },
+      {
+        "group": "Features",
+        "key": "virtualization",
+        "value": "true"
+      }
+    ],
+    "benchmarks": []
+  },
+  {
+    "category": "CPU",
+    "manufacturer": "Intel",
+    "family": "Core",
+    "series": "Core",
+    "generation": "8th Generation",
+    "architecture": "Coffee Lake",
+    "source": {
+      "name": "Intel ARK",
+      "url": "https://www.intel.com/content/www/us/en/products/sku/129937/specifications.html",
+      "date": "2026-09-15",
+      "notes": "Specifications verified against Intel ARK product specification page."
+    },
+    "product": {
+      "name": "Intel Core i5-8600",
+      "slug": "intel-core-i5-8600",
+      "description": "8th Gen Intel Core desktop processor with 6 cores and 6 threads.",
+      "release_date": "2018-04-01",
+      "status": "active",
+      "is_popular": false,
+      "architecture": "Coffee Lake"
+    },
+    "images": [],
+    "specifications": [
+      {
+        "group": "Features",
+        "key": "aes",
+        "value": "true"
+      },
+      {
+        "group": "General",
+        "key": "architecture",
+        "value": "Coffee Lake"
+      },
+      {
+        "group": "Features",
+        "key": "avx2",
+        "value": "true"
+      },
+      {
+        "group": "Clock Speeds",
+        "key": "base_clock",
+        "value": "3.10",
+        "unit": "GHz"
+      },
+      {
+        "group": "Clock Speeds",
+        "key": "boost_clock",
+        "value": "4.30",
+        "unit": "GHz"
+      },
+      {
+        "group": "Core Configuration",
+        "key": "cores",
+        "value": "6"
+      },
+      {
+        "group": "Memory",
+        "key": "ecc_support",
+        "value": "false"
+      },
+      {
+        "group": "General",
+        "key": "generation",
+        "value": "8th Generation"
+      },
+      {
+        "group": "Graphics",
+        "key": "graphics_base_clock",
+        "value": "350",
+        "unit": "MHz"
+      },
+      {
+        "group": "Graphics",
+        "key": "graphics_max_clock",
+        "value": "1150",
+        "unit": "MHz"
+      },
+      {
+        "group": "Graphics",
+        "key": "graphics_model",
+        "value": "Intel UHD Graphics 630"
+      },
+      {
+        "group": "Graphics",
+        "key": "integrated_graphics",
+        "value": "true"
+      },
+      {
+        "group": "Features",
+        "key": "intel_turbo_boost",
+        "value": "true"
+      },
+      {
+        "group": "Cache",
+        "key": "l3_cache",
+        "value": "9",
+        "unit": "MB"
+      },
+      {
+        "group": "General",
+        "key": "market_segment",
+        "value": "Desktop"
+      },
+      {
+        "group": "Memory",
+        "key": "max_memory",
+        "value": "128",
+        "unit": "GB"
+      },
+      {
+        "group": "Memory",
+        "key": "max_memory_speed",
+        "value": "2666",
+        "unit": "MT/s"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_channels",
+        "value": "2"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_type",
+        "value": "DDR4-2666"
+      },
+      {
+        "group": "General",
+        "key": "microarchitecture",
+        "value": "Coffee Lake"
+      },
+      {
+        "group": "Features",
+        "key": "overclocking_support",
+        "value": "false"
+      },
+      {
+        "group": "PCI Express",
+        "key": "pcie_lanes",
+        "value": "16"
+      },
+      {
+        "group": "PCI Express",
+        "key": "pcie_version",
+        "value": "3.0"
+      },
+      {
+        "group": "General",
+        "key": "process_node",
+        "value": "14 nm"
+      },
+      {
+        "group": "General",
+        "key": "product_family",
+        "value": "Core"
+      },
+      {
+        "group": "Socket",
+        "key": "socket",
+        "value": "LGA 1151"
+      },
+      {
+        "group": "Power",
+        "key": "tdp",
+        "value": "65",
+        "unit": "W"
+      },
+      {
+        "group": "Core Configuration",
+        "key": "threads",
+        "value": "6"
+      },
+      {
+        "group": "Features",
+        "key": "virtualization",
+        "value": "true"
+      }
+    ],
+    "benchmarks": []
+  },
+  {
+    "category": "CPU",
+    "manufacturer": "Intel",
+    "family": "Core",
+    "series": "Core",
+    "generation": "8th Generation",
+    "architecture": "Coffee Lake",
+    "source": {
+      "name": "Intel ARK",
+      "url": "https://www.intel.com/content/www/us/en/products/sku/126685/specifications.html",
+      "date": "2026-09-15",
+      "notes": "Specifications verified against Intel ARK product specification page."
+    },
+    "product": {
+      "name": "Intel Core i5-8600K",
+      "slug": "intel-core-i5-8600k",
+      "description": "8th Gen Intel Core desktop processor with 6 cores and 6 threads.",
+      "release_date": "2017-10-01",
+      "status": "active",
+      "is_popular": true,
+      "architecture": "Coffee Lake"
+    },
+    "images": [],
+    "specifications": [
+      {
+        "group": "Features",
+        "key": "aes",
+        "value": "true"
+      },
+      {
+        "group": "General",
+        "key": "architecture",
+        "value": "Coffee Lake"
+      },
+      {
+        "group": "Features",
+        "key": "avx2",
+        "value": "true"
+      },
+      {
+        "group": "Clock Speeds",
+        "key": "base_clock",
+        "value": "3.60",
+        "unit": "GHz"
+      },
+      {
+        "group": "Clock Speeds",
+        "key": "boost_clock",
+        "value": "4.30",
+        "unit": "GHz"
+      },
+      {
+        "group": "Core Configuration",
+        "key": "cores",
+        "value": "6"
+      },
+      {
+        "group": "Memory",
+        "key": "ecc_support",
+        "value": "false"
+      },
+      {
+        "group": "General",
+        "key": "generation",
+        "value": "8th Generation"
+      },
+      {
+        "group": "Graphics",
+        "key": "graphics_base_clock",
+        "value": "350",
+        "unit": "MHz"
+      },
+      {
+        "group": "Graphics",
+        "key": "graphics_max_clock",
+        "value": "1150",
+        "unit": "MHz"
+      },
+      {
+        "group": "Graphics",
+        "key": "graphics_model",
+        "value": "Intel UHD Graphics 630"
+      },
+      {
+        "group": "Graphics",
+        "key": "integrated_graphics",
+        "value": "true"
+      },
+      {
+        "group": "Features",
+        "key": "intel_turbo_boost",
+        "value": "true"
+      },
+      {
+        "group": "Cache",
+        "key": "l3_cache",
+        "value": "9",
+        "unit": "MB"
+      },
+      {
+        "group": "General",
+        "key": "market_segment",
+        "value": "Desktop"
+      },
+      {
+        "group": "Memory",
+        "key": "max_memory",
+        "value": "128",
+        "unit": "GB"
+      },
+      {
+        "group": "Memory",
+        "key": "max_memory_speed",
+        "value": "2666",
+        "unit": "MT/s"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_channels",
+        "value": "2"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_type",
+        "value": "DDR4-2666"
+      },
+      {
+        "group": "General",
+        "key": "microarchitecture",
+        "value": "Coffee Lake"
+      },
+      {
+        "group": "Features",
+        "key": "overclocking_support",
+        "value": "true"
+      },
+      {
+        "group": "PCI Express",
+        "key": "pcie_lanes",
+        "value": "16"
+      },
+      {
+        "group": "PCI Express",
+        "key": "pcie_version",
+        "value": "3.0"
+      },
+      {
+        "group": "General",
+        "key": "process_node",
+        "value": "14 nm"
+      },
+      {
+        "group": "General",
+        "key": "product_family",
+        "value": "Core"
+      },
+      {
+        "group": "Socket",
+        "key": "socket",
+        "value": "LGA 1151"
+      },
+      {
+        "group": "Power",
+        "key": "tdp",
+        "value": "95",
+        "unit": "W"
+      },
+      {
+        "group": "Core Configuration",
+        "key": "threads",
+        "value": "6"
+      },
+      {
+        "group": "Features",
+        "key": "virtualization",
+        "value": "true"
+      }
+    ],
+    "benchmarks": []
+  },
+  {
+    "category": "CPU",
+    "manufacturer": "Intel",
+    "family": "Core",
+    "series": "Core",
+    "generation": "8th Generation",
+    "architecture": "Coffee Lake",
+    "source": {
+      "name": "Intel ARK",
+      "url": "https://www.intel.com/content/www/us/en/products/sku/129938/specifications.html",
+      "date": "2026-09-15",
+      "notes": "Specifications verified against Intel ARK product specification page."
+    },
+    "product": {
+      "name": "Intel Core i5-8600T",
+      "slug": "intel-core-i5-8600t",
+      "description": "8th Gen Intel Core desktop processor with 6 cores and 6 threads.",
+      "release_date": "2018-04-01",
+      "status": "active",
+      "is_popular": false,
+      "architecture": "Coffee Lake"
+    },
+    "images": [],
+    "specifications": [
+      {
+        "group": "Features",
+        "key": "aes",
+        "value": "true"
+      },
+      {
+        "group": "General",
+        "key": "architecture",
+        "value": "Coffee Lake"
+      },
+      {
+        "group": "Features",
+        "key": "avx2",
+        "value": "true"
+      },
+      {
+        "group": "Clock Speeds",
+        "key": "base_clock",
+        "value": "2.30",
+        "unit": "GHz"
+      },
+      {
+        "group": "Clock Speeds",
+        "key": "boost_clock",
+        "value": "3.70",
+        "unit": "GHz"
+      },
+      {
+        "group": "Core Configuration",
+        "key": "cores",
+        "value": "6"
+      },
+      {
+        "group": "Memory",
+        "key": "ecc_support",
+        "value": "false"
+      },
+      {
+        "group": "General",
+        "key": "generation",
+        "value": "8th Generation"
+      },
+      {
+        "group": "Graphics",
+        "key": "graphics_base_clock",
+        "value": "350",
+        "unit": "MHz"
+      },
+      {
+        "group": "Graphics",
+        "key": "graphics_max_clock",
+        "value": "1150",
+        "unit": "MHz"
+      },
+      {
+        "group": "Graphics",
+        "key": "graphics_model",
+        "value": "Intel UHD Graphics 630"
+      },
+      {
+        "group": "Graphics",
+        "key": "integrated_graphics",
+        "value": "true"
+      },
+      {
+        "group": "Features",
+        "key": "intel_turbo_boost",
+        "value": "true"
+      },
+      {
+        "group": "Cache",
+        "key": "l3_cache",
+        "value": "9",
+        "unit": "MB"
+      },
+      {
+        "group": "General",
+        "key": "market_segment",
+        "value": "Desktop"
+      },
+      {
+        "group": "Memory",
+        "key": "max_memory",
+        "value": "128",
+        "unit": "GB"
+      },
+      {
+        "group": "Memory",
+        "key": "max_memory_speed",
+        "value": "2666",
+        "unit": "MT/s"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_channels",
+        "value": "2"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_type",
+        "value": "DDR4-2666"
+      },
+      {
+        "group": "General",
+        "key": "microarchitecture",
+        "value": "Coffee Lake"
+      },
+      {
+        "group": "Features",
+        "key": "overclocking_support",
+        "value": "false"
+      },
+      {
+        "group": "PCI Express",
+        "key": "pcie_lanes",
+        "value": "16"
+      },
+      {
+        "group": "PCI Express",
+        "key": "pcie_version",
+        "value": "3.0"
+      },
+      {
+        "group": "General",
+        "key": "process_node",
+        "value": "14 nm"
+      },
+      {
+        "group": "General",
+        "key": "product_family",
+        "value": "Core"
+      },
+      {
+        "group": "Socket",
+        "key": "socket",
+        "value": "LGA 1151"
+      },
+      {
+        "group": "Power",
+        "key": "tdp",
+        "value": "35",
+        "unit": "W"
+      },
+      {
+        "group": "Core Configuration",
+        "key": "threads",
+        "value": "6"
+      },
+      {
+        "group": "Features",
+        "key": "virtualization",
+        "value": "true"
+      }
+    ],
+    "benchmarks": []
+  },
+  {
+    "category": "CPU",
+    "manufacturer": "Intel",
+    "family": "Core",
+    "series": "Core",
+    "generation": "8th Generation",
+    "architecture": "Coffee Lake",
+    "source": {
+      "name": "Intel ARK",
+      "url": "https://www.intel.com/content/www/us/en/products/sku/126686/specifications.html",
+      "date": "2026-09-15",
+      "notes": "Specifications verified against Intel ARK product specification page."
+    },
+    "product": {
+      "name": "Intel Core i7-8700",
+      "slug": "intel-core-i7-8700",
+      "description": "8th Gen Intel Core desktop processor with 6 cores and 12 threads.",
+      "release_date": "2017-10-01",
+      "status": "active",
+      "is_popular": false,
+      "architecture": "Coffee Lake"
+    },
+    "images": [],
+    "specifications": [
+      {
+        "group": "Features",
+        "key": "aes",
+        "value": "true"
+      },
+      {
+        "group": "General",
+        "key": "architecture",
+        "value": "Coffee Lake"
+      },
+      {
+        "group": "Features",
+        "key": "avx2",
+        "value": "true"
+      },
+      {
+        "group": "Clock Speeds",
+        "key": "base_clock",
+        "value": "3.20",
+        "unit": "GHz"
+      },
+      {
+        "group": "Clock Speeds",
+        "key": "boost_clock",
+        "value": "4.60",
+        "unit": "GHz"
+      },
+      {
+        "group": "Core Configuration",
+        "key": "cores",
+        "value": "6"
+      },
+      {
+        "group": "Memory",
+        "key": "ecc_support",
+        "value": "false"
+      },
+      {
+        "group": "General",
+        "key": "generation",
+        "value": "8th Generation"
+      },
+      {
+        "group": "Graphics",
+        "key": "graphics_base_clock",
+        "value": "350",
+        "unit": "MHz"
+      },
+      {
+        "group": "Graphics",
+        "key": "graphics_max_clock",
+        "value": "1200",
+        "unit": "MHz"
+      },
+      {
+        "group": "Graphics",
+        "key": "graphics_model",
+        "value": "Intel UHD Graphics 630"
+      },
+      {
+        "group": "Graphics",
+        "key": "integrated_graphics",
+        "value": "true"
+      },
+      {
+        "group": "Features",
+        "key": "intel_turbo_boost",
+        "value": "true"
+      },
+      {
+        "group": "Cache",
+        "key": "l3_cache",
+        "value": "12",
+        "unit": "MB"
+      },
+      {
+        "group": "General",
+        "key": "market_segment",
+        "value": "Desktop"
+      },
+      {
+        "group": "Memory",
+        "key": "max_memory",
+        "value": "128",
+        "unit": "GB"
+      },
+      {
+        "group": "Memory",
+        "key": "max_memory_speed",
+        "value": "2666",
+        "unit": "MT/s"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_channels",
+        "value": "2"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_type",
+        "value": "DDR4-2666"
+      },
+      {
+        "group": "General",
+        "key": "microarchitecture",
+        "value": "Coffee Lake"
+      },
+      {
+        "group": "Features",
+        "key": "overclocking_support",
+        "value": "false"
+      },
+      {
+        "group": "PCI Express",
+        "key": "pcie_lanes",
+        "value": "16"
+      },
+      {
+        "group": "PCI Express",
+        "key": "pcie_version",
+        "value": "3.0"
+      },
+      {
+        "group": "General",
+        "key": "process_node",
+        "value": "14 nm"
+      },
+      {
+        "group": "General",
+        "key": "product_family",
+        "value": "Core"
+      },
+      {
+        "group": "Socket",
+        "key": "socket",
+        "value": "LGA 1151"
+      },
+      {
+        "group": "Power",
+        "key": "tdp",
+        "value": "65",
+        "unit": "W"
+      },
+      {
+        "group": "Core Configuration",
+        "key": "threads",
+        "value": "12"
+      },
+      {
+        "group": "Features",
+        "key": "virtualization",
+        "value": "true"
+      }
+    ],
+    "benchmarks": []
+  },
+  {
+    "category": "CPU",
+    "manufacturer": "Intel",
+    "family": "Core",
+    "series": "Core",
+    "generation": "8th Generation",
+    "architecture": "Coffee Lake",
+    "source": {
+      "name": "Intel ARK",
+      "url": "https://www.intel.com/content/www/us/en/products/sku/126684/specifications.html",
+      "date": "2026-09-15",
+      "notes": "Specifications verified against Intel ARK product specification page."
+    },
+    "product": {
+      "name": "Intel Core i7-8700K",
+      "slug": "intel-core-i7-8700k",
+      "description": "8th Gen Intel Core desktop processor with 6 cores and 12 threads.",
+      "release_date": "2017-10-01",
+      "status": "active",
+      "is_popular": true,
+      "architecture": "Coffee Lake"
+    },
+    "images": [],
+    "specifications": [
+      {
+        "group": "Features",
+        "key": "aes",
+        "value": "true"
+      },
+      {
+        "group": "General",
+        "key": "architecture",
+        "value": "Coffee Lake"
+      },
+      {
+        "group": "Features",
+        "key": "avx2",
+        "value": "true"
+      },
+      {
+        "group": "Clock Speeds",
+        "key": "base_clock",
+        "value": "3.70",
+        "unit": "GHz"
+      },
+      {
+        "group": "Clock Speeds",
+        "key": "boost_clock",
+        "value": "4.70",
+        "unit": "GHz"
+      },
+      {
+        "group": "Core Configuration",
+        "key": "cores",
+        "value": "6"
+      },
+      {
+        "group": "Memory",
+        "key": "ecc_support",
+        "value": "false"
+      },
+      {
+        "group": "General",
+        "key": "generation",
+        "value": "8th Generation"
+      },
+      {
+        "group": "Graphics",
+        "key": "graphics_base_clock",
+        "value": "350",
+        "unit": "MHz"
+      },
+      {
+        "group": "Graphics",
+        "key": "graphics_max_clock",
+        "value": "1200",
+        "unit": "MHz"
+      },
+      {
+        "group": "Graphics",
+        "key": "graphics_model",
+        "value": "Intel UHD Graphics 630"
+      },
+      {
+        "group": "Graphics",
+        "key": "integrated_graphics",
+        "value": "true"
+      },
+      {
+        "group": "Features",
+        "key": "intel_turbo_boost",
+        "value": "true"
+      },
+      {
+        "group": "Cache",
+        "key": "l3_cache",
+        "value": "12",
+        "unit": "MB"
+      },
+      {
+        "group": "General",
+        "key": "market_segment",
+        "value": "Desktop"
+      },
+      {
+        "group": "Memory",
+        "key": "max_memory",
+        "value": "128",
+        "unit": "GB"
+      },
+      {
+        "group": "Memory",
+        "key": "max_memory_speed",
+        "value": "2666",
+        "unit": "MT/s"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_channels",
+        "value": "2"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_type",
+        "value": "DDR4-2666"
+      },
+      {
+        "group": "General",
+        "key": "microarchitecture",
+        "value": "Coffee Lake"
+      },
+      {
+        "group": "Features",
+        "key": "overclocking_support",
+        "value": "true"
+      },
+      {
+        "group": "PCI Express",
+        "key": "pcie_lanes",
+        "value": "16"
+      },
+      {
+        "group": "PCI Express",
+        "key": "pcie_version",
+        "value": "3.0"
+      },
+      {
+        "group": "General",
+        "key": "process_node",
+        "value": "14 nm"
+      },
+      {
+        "group": "General",
+        "key": "product_family",
+        "value": "Core"
+      },
+      {
+        "group": "Socket",
+        "key": "socket",
+        "value": "LGA 1151"
+      },
+      {
+        "group": "Power",
+        "key": "tdp",
+        "value": "95",
+        "unit": "W"
+      },
+      {
+        "group": "Core Configuration",
+        "key": "threads",
+        "value": "12"
+      },
+      {
+        "group": "Features",
+        "key": "virtualization",
+        "value": "true"
+      }
+    ],
+    "benchmarks": []
+  },
+  {
+    "category": "CPU",
+    "manufacturer": "Intel",
+    "family": "Core",
+    "series": "Core",
+    "generation": "8th Generation",
+    "architecture": "Coffee Lake",
+    "source": {
+      "name": "Intel ARK",
+      "url": "https://www.intel.com/content/www/us/en/products/sku/129948/specifications.html",
+      "date": "2026-09-15",
+      "notes": "Specifications verified against Intel ARK product specification page."
+    },
+    "product": {
+      "name": "Intel Core i7-8700T",
+      "slug": "intel-core-i7-8700t",
+      "description": "8th Gen Intel Core desktop processor with 6 cores and 12 threads.",
+      "release_date": "2018-04-01",
+      "status": "active",
+      "is_popular": false,
+      "architecture": "Coffee Lake"
+    },
+    "images": [],
+    "specifications": [
+      {
+        "group": "Features",
+        "key": "aes",
+        "value": "true"
+      },
+      {
+        "group": "General",
+        "key": "architecture",
+        "value": "Coffee Lake"
+      },
+      {
+        "group": "Features",
+        "key": "avx2",
+        "value": "true"
+      },
+      {
+        "group": "Clock Speeds",
+        "key": "base_clock",
+        "value": "2.40",
+        "unit": "GHz"
+      },
+      {
+        "group": "Clock Speeds",
+        "key": "boost_clock",
+        "value": "4.00",
+        "unit": "GHz"
+      },
+      {
+        "group": "Core Configuration",
+        "key": "cores",
+        "value": "6"
+      },
+      {
+        "group": "Memory",
+        "key": "ecc_support",
+        "value": "false"
+      },
+      {
+        "group": "General",
+        "key": "generation",
+        "value": "8th Generation"
+      },
+      {
+        "group": "Graphics",
+        "key": "graphics_base_clock",
+        "value": "350",
+        "unit": "MHz"
+      },
+      {
+        "group": "Graphics",
+        "key": "graphics_max_clock",
+        "value": "1200",
+        "unit": "MHz"
+      },
+      {
+        "group": "Graphics",
+        "key": "graphics_model",
+        "value": "Intel UHD Graphics 630"
+      },
+      {
+        "group": "Graphics",
+        "key": "integrated_graphics",
+        "value": "true"
+      },
+      {
+        "group": "Features",
+        "key": "intel_turbo_boost",
+        "value": "true"
+      },
+      {
+        "group": "Cache",
+        "key": "l3_cache",
+        "value": "12",
+        "unit": "MB"
+      },
+      {
+        "group": "General",
+        "key": "market_segment",
+        "value": "Desktop"
+      },
+      {
+        "group": "Memory",
+        "key": "max_memory",
+        "value": "128",
+        "unit": "GB"
+      },
+      {
+        "group": "Memory",
+        "key": "max_memory_speed",
+        "value": "2666",
+        "unit": "MT/s"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_channels",
+        "value": "2"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_type",
+        "value": "DDR4-2666"
+      },
+      {
+        "group": "General",
+        "key": "microarchitecture",
+        "value": "Coffee Lake"
+      },
+      {
+        "group": "Features",
+        "key": "overclocking_support",
+        "value": "false"
+      },
+      {
+        "group": "PCI Express",
+        "key": "pcie_lanes",
+        "value": "16"
+      },
+      {
+        "group": "PCI Express",
+        "key": "pcie_version",
+        "value": "3.0"
+      },
+      {
+        "group": "General",
+        "key": "process_node",
+        "value": "14 nm"
+      },
+      {
+        "group": "General",
+        "key": "product_family",
+        "value": "Core"
+      },
+      {
+        "group": "Socket",
+        "key": "socket",
+        "value": "LGA 1151"
+      },
+      {
+        "group": "Power",
+        "key": "tdp",
+        "value": "35",
+        "unit": "W"
+      },
+      {
+        "group": "Core Configuration",
+        "key": "threads",
+        "value": "12"
+      },
+      {
+        "group": "Features",
+        "key": "virtualization",
+        "value": "true"
+      }
+    ],
+    "benchmarks": []
+  }
+]

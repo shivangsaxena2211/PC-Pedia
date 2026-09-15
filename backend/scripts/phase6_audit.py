@@ -39,6 +39,8 @@ def main():
         "12th Gen": ("12th Generation", CATALOG / "intel/core/12th-gen/desktop.json"),
         "11th Gen": ("11th Generation", CATALOG / "intel/core/11th-gen/desktop.json"),
         "10th Gen": ("10th Generation", CATALOG / "intel/core/10th-gen/desktop.json"),
+        "9th Gen": ("9th Generation", CATALOG / "intel/core/9th-gen/desktop.json"),
+        "8th Gen": ("8th Generation", CATALOG / "intel/core/8th-gen/desktop.json"),
         "Ryzen 7000": ("Ryzen 7000", CATALOG / "amd/ryzen/7000/desktop.json"),
     }
 

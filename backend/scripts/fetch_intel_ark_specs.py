@@ -92,7 +92,7 @@ def _parse_date(value: str | None) -> str | None:
 
 
 def fetch_sku(sku: int) -> dict | None:
-    response = requests.get(ark_url(sku), headers=HEADERS, timeout=30)
+    response = requests.get(ark_url(sku), headers=HEADERS, timeout=10)
     if response.status_code != 200:
         return None
     html = response.text
@@ -126,23 +126,31 @@ def fetch_sku(sku: int) -> dict | None:
     launch = _parse_date(_field(fields, "Launch Date"))
     socket = _field(fields, "Sockets Supported", "Socket")
     if socket and "FCLGA" in socket:
-        socket = "LGA 1200"
+        if "FCLGA14" in socket or "1200" in socket:
+            socket = "LGA 1200"
+        elif "FCLGA11" in socket or "1151" in socket:
+            socket = "LGA 1151"
 
     code_name = _field(fields, "Code Name") or ""
-    arch = "Rocket Lake" if "Rocket Lake" in code_name or "11th" in collection else None
-    if not arch and ("Comet Lake" in code_name or "10th" in collection):
+    arch = None
+    if "Rocket Lake" in code_name or "11th" in collection:
+        arch = "Rocket Lake"
+    elif "Comet Lake" in code_name or "10th" in collection:
         arch = "Comet Lake"
-    if not arch:
-        if "11th" in collection:
-            arch = "Rocket Lake"
-        elif "10th" in collection:
-            arch = "Comet Lake"
+    elif "9th" in collection:
+        arch = "Coffee Lake Refresh"
+    elif "8th" in collection:
+        arch = "Coffee Lake"
 
     gen = None
     if "11th" in collection:
         gen = "11th Generation"
     elif "10th" in collection:
         gen = "10th Generation"
+    elif "9th" in collection:
+        gen = "9th Generation"
+    elif "8th" in collection:
+        gen = "8th Generation"
 
     max_turbo = _parse_ghz(_field(fields, "Max Turbo Frequency"))
     tv_boost = _parse_ghz(_field(fields, "Intel® Thermal Velocity Boost Frequency"))
@@ -240,14 +248,18 @@ def scan_range(start: int, end: int, generation_hint: str) -> list[dict]:
 
 def main():
     if len(sys.argv) < 2:
-        print("Usage: python fetch_intel_ark_specs.py <sku> | scan11 | scan10")
+        print("Usage: python fetch_intel_ark_specs.py <sku> | scan11 | scan10 | scan9 | scan8")
         raise SystemExit(1)
 
     cmd = sys.argv[1]
     if cmd == "scan11":
         results = scan_range(212300, 212450, "11th")
     elif cmd == "scan10":
-        results = scan_range(199300, 199550, "10th")
+        results = scan_range(199250, 199550, "10th")
+    elif cmd == "scan9":
+        results = scan_range(193500, 194200, "9th")
+    elif cmd == "scan8":
+        results = scan_range(124800, 126200, "8th")
     else:
         results = [fetch_sku(int(cmd))]
 
