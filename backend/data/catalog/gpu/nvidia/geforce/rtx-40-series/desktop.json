@@ -1,0 +1,1163 @@
+[
+  {
+    "category": "GPU",
+    "manufacturer": "NVIDIA",
+    "family": "GeForce",
+    "series": "GeForce RTX",
+    "generation": "RTX 40 Series",
+    "architecture": "Ada Lovelace",
+    "source": {
+      "name": "NVIDIA official product specifications",
+      "url": "https://www.nvidia.com/en-us/geforce/graphics-cards/40-series/rtx-4090/",
+      "date": "2026-09-16",
+      "notes": "Specifications verified against NVIDIA GeForce product specification pages on nvidia.com."
+    },
+    "product": {
+      "name": "NVIDIA GeForce RTX 4090",
+      "slug": "nvidia-geforce-rtx-4090",
+      "description": "NVIDIA GeForce RTX 4090 desktop graphics card based on the Ada Lovelace architecture.",
+      "release_date": "2022-10-12",
+      "status": "active",
+      "is_popular": true,
+      "architecture": "Ada Lovelace"
+    },
+    "images": [],
+    "specifications": [
+      {
+        "group": "Identity",
+        "key": "architecture",
+        "value": "Ada Lovelace"
+      },
+      {
+        "group": "Clocks",
+        "key": "base_clock",
+        "value": "2230",
+        "unit": "MHz"
+      },
+      {
+        "group": "Clocks",
+        "key": "boost_clock",
+        "value": "2520",
+        "unit": "MHz"
+      },
+      {
+        "group": "Compute",
+        "key": "cuda_cores",
+        "value": "16384"
+      },
+      {
+        "group": "Interface",
+        "key": "display_outputs",
+        "value": "HDMI (2), 3x DisplayPort (3)"
+      },
+      {
+        "group": "Identity",
+        "key": "generation",
+        "value": "RTX 40 Series"
+      },
+      {
+        "group": "Physical",
+        "key": "height",
+        "value": "137",
+        "unit": "mm"
+      },
+      {
+        "group": "Identity",
+        "key": "launch_msrp",
+        "value": "1599",
+        "unit": "USD"
+      },
+      {
+        "group": "Physical",
+        "key": "length",
+        "value": "304",
+        "unit": "mm"
+      },
+      {
+        "group": "Identity",
+        "key": "market_segment",
+        "value": "desktop"
+      },
+      {
+        "group": "Interface",
+        "key": "maximum_displays",
+        "value": "4"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_bus_width",
+        "value": "384",
+        "unit": "bit"
+      },
+      {
+        "group": "Interface",
+        "key": "pci_express",
+        "value": "PCIe 4.0"
+      },
+      {
+        "group": "Physical",
+        "key": "power_connectors",
+        "value": "3x PCIe 8-pin cables (adapter in box) OR 450 W or greater PCIe Gen 5 cable"
+      },
+      {
+        "group": "Identity",
+        "key": "product_family",
+        "value": "GeForce"
+      },
+      {
+        "group": "Power",
+        "key": "recommended_psu",
+        "value": "850",
+        "unit": "W"
+      },
+      {
+        "group": "Physical",
+        "key": "slot_width",
+        "value": "3-Slot"
+      },
+      {
+        "group": "Power",
+        "key": "tbp",
+        "value": "450",
+        "unit": "W"
+      },
+      {
+        "group": "Memory",
+        "key": "vram_capacity",
+        "value": "24",
+        "unit": "GB"
+      },
+      {
+        "group": "Memory",
+        "key": "vram_type",
+        "value": "GDDR6X"
+      }
+    ],
+    "benchmarks": []
+  },
+  {
+    "category": "GPU",
+    "manufacturer": "NVIDIA",
+    "family": "GeForce",
+    "series": "GeForce RTX",
+    "generation": "RTX 40 Series",
+    "architecture": "Ada Lovelace",
+    "source": {
+      "name": "NVIDIA official product specifications",
+      "url": "https://www.nvidia.com/en-us/geforce/graphics-cards/40-series/rtx-4080/",
+      "date": "2026-09-16",
+      "notes": "Specifications verified against NVIDIA GeForce product specification pages on nvidia.com."
+    },
+    "product": {
+      "name": "NVIDIA GeForce RTX 4080 SUPER",
+      "slug": "nvidia-geforce-rtx-4080-super",
+      "description": "NVIDIA GeForce RTX 4080 SUPER desktop graphics card based on the Ada Lovelace architecture.",
+      "release_date": "2024-01-31",
+      "status": "active",
+      "is_popular": true,
+      "architecture": "Ada Lovelace"
+    },
+    "images": [],
+    "specifications": [
+      {
+        "group": "Identity",
+        "key": "architecture",
+        "value": "Ada Lovelace"
+      },
+      {
+        "group": "Clocks",
+        "key": "base_clock",
+        "value": "2290",
+        "unit": "MHz"
+      },
+      {
+        "group": "Clocks",
+        "key": "boost_clock",
+        "value": "2550",
+        "unit": "MHz"
+      },
+      {
+        "group": "Compute",
+        "key": "cuda_cores",
+        "value": "10240"
+      },
+      {
+        "group": "Interface",
+        "key": "display_outputs",
+        "value": "HDMI (2), 3x DisplayPort (3)"
+      },
+      {
+        "group": "Identity",
+        "key": "generation",
+        "value": "RTX 40 Series"
+      },
+      {
+        "group": "Physical",
+        "key": "height",
+        "value": "137",
+        "unit": "mm"
+      },
+      {
+        "group": "Identity",
+        "key": "launch_msrp",
+        "value": "999",
+        "unit": "USD"
+      },
+      {
+        "group": "Physical",
+        "key": "length",
+        "value": "304",
+        "unit": "mm"
+      },
+      {
+        "group": "Identity",
+        "key": "market_segment",
+        "value": "desktop"
+      },
+      {
+        "group": "Interface",
+        "key": "maximum_displays",
+        "value": "4"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_bus_width",
+        "value": "256",
+        "unit": "bit"
+      },
+      {
+        "group": "Interface",
+        "key": "pci_express",
+        "value": "PCIe 4.0"
+      },
+      {
+        "group": "Physical",
+        "key": "power_connectors",
+        "value": "3x PCIe 8-pin cables (adapter in box) OR 1x 450 W or greater PCIe Gen 5 cable"
+      },
+      {
+        "group": "Identity",
+        "key": "product_family",
+        "value": "GeForce"
+      },
+      {
+        "group": "Power",
+        "key": "recommended_psu",
+        "value": "750",
+        "unit": "W"
+      },
+      {
+        "group": "Physical",
+        "key": "slot_width",
+        "value": "3-Slot"
+      },
+      {
+        "group": "Power",
+        "key": "tbp",
+        "value": "320",
+        "unit": "W"
+      },
+      {
+        "group": "Memory",
+        "key": "vram_capacity",
+        "value": "16",
+        "unit": "GB"
+      },
+      {
+        "group": "Memory",
+        "key": "vram_type",
+        "value": "GDDR6X"
+      }
+    ],
+    "benchmarks": []
+  },
+  {
+    "category": "GPU",
+    "manufacturer": "NVIDIA",
+    "family": "GeForce",
+    "series": "GeForce RTX",
+    "generation": "RTX 40 Series",
+    "architecture": "Ada Lovelace",
+    "source": {
+      "name": "NVIDIA official product specifications",
+      "url": "https://www.nvidia.com/en-us/geforce/graphics-cards/40-series/rtx-4080/",
+      "date": "2026-09-16",
+      "notes": "Specifications verified against NVIDIA GeForce product specification pages on nvidia.com."
+    },
+    "product": {
+      "name": "NVIDIA GeForce RTX 4080",
+      "slug": "nvidia-geforce-rtx-4080",
+      "description": "NVIDIA GeForce RTX 4080 desktop graphics card based on the Ada Lovelace architecture.",
+      "release_date": "2022-11-16",
+      "status": "active",
+      "is_popular": false,
+      "architecture": "Ada Lovelace"
+    },
+    "images": [],
+    "specifications": [
+      {
+        "group": "Identity",
+        "key": "architecture",
+        "value": "Ada Lovelace"
+      },
+      {
+        "group": "Clocks",
+        "key": "base_clock",
+        "value": "2210",
+        "unit": "MHz"
+      },
+      {
+        "group": "Clocks",
+        "key": "boost_clock",
+        "value": "2510",
+        "unit": "MHz"
+      },
+      {
+        "group": "Compute",
+        "key": "cuda_cores",
+        "value": "9728"
+      },
+      {
+        "group": "Interface",
+        "key": "display_outputs",
+        "value": "HDMI (2), 3x DisplayPort (3)"
+      },
+      {
+        "group": "Identity",
+        "key": "generation",
+        "value": "RTX 40 Series"
+      },
+      {
+        "group": "Physical",
+        "key": "height",
+        "value": "137",
+        "unit": "mm"
+      },
+      {
+        "group": "Identity",
+        "key": "launch_msrp",
+        "value": "1199",
+        "unit": "USD"
+      },
+      {
+        "group": "Physical",
+        "key": "length",
+        "value": "304",
+        "unit": "mm"
+      },
+      {
+        "group": "Identity",
+        "key": "market_segment",
+        "value": "desktop"
+      },
+      {
+        "group": "Interface",
+        "key": "maximum_displays",
+        "value": "4"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_bus_width",
+        "value": "256",
+        "unit": "bit"
+      },
+      {
+        "group": "Interface",
+        "key": "pci_express",
+        "value": "PCIe 4.0"
+      },
+      {
+        "group": "Physical",
+        "key": "power_connectors",
+        "value": "3x PCIe 8-pin cables (adapter in box) OR 1x 450 W or greater PCIe Gen 5 cable"
+      },
+      {
+        "group": "Identity",
+        "key": "product_family",
+        "value": "GeForce"
+      },
+      {
+        "group": "Power",
+        "key": "recommended_psu",
+        "value": "750",
+        "unit": "W"
+      },
+      {
+        "group": "Physical",
+        "key": "slot_width",
+        "value": "3-Slot"
+      },
+      {
+        "group": "Power",
+        "key": "tbp",
+        "value": "320",
+        "unit": "W"
+      },
+      {
+        "group": "Memory",
+        "key": "vram_capacity",
+        "value": "16",
+        "unit": "GB"
+      },
+      {
+        "group": "Memory",
+        "key": "vram_type",
+        "value": "GDDR6X"
+      }
+    ],
+    "benchmarks": []
+  },
+  {
+    "category": "GPU",
+    "manufacturer": "NVIDIA",
+    "family": "GeForce",
+    "series": "GeForce RTX",
+    "generation": "RTX 40 Series",
+    "architecture": "Ada Lovelace",
+    "source": {
+      "name": "NVIDIA official product specifications",
+      "url": "https://www.nvidia.com/en-us/geforce/graphics-cards/40-series/rtx-4070-family/",
+      "date": "2026-09-16",
+      "notes": "Specifications verified against NVIDIA GeForce product specification pages on nvidia.com."
+    },
+    "product": {
+      "name": "NVIDIA GeForce RTX 4070 Ti SUPER",
+      "slug": "nvidia-geforce-rtx-4070-ti-super",
+      "description": "NVIDIA GeForce RTX 4070 Ti SUPER desktop graphics card based on the Ada Lovelace architecture.",
+      "release_date": "2024-01-24",
+      "status": "active",
+      "is_popular": true,
+      "architecture": "Ada Lovelace"
+    },
+    "images": [],
+    "specifications": [
+      {
+        "group": "Identity",
+        "key": "architecture",
+        "value": "Ada Lovelace"
+      },
+      {
+        "group": "Clocks",
+        "key": "base_clock",
+        "value": "2340",
+        "unit": "MHz"
+      },
+      {
+        "group": "Clocks",
+        "key": "boost_clock",
+        "value": "2610",
+        "unit": "MHz"
+      },
+      {
+        "group": "Compute",
+        "key": "cuda_cores",
+        "value": "8448"
+      },
+      {
+        "group": "Interface",
+        "key": "display_outputs",
+        "value": "HDMI (2), 3x DisplayPort (3)"
+      },
+      {
+        "group": "Identity",
+        "key": "generation",
+        "value": "RTX 40 Series"
+      },
+      {
+        "group": "Identity",
+        "key": "launch_msrp",
+        "value": "799",
+        "unit": "USD"
+      },
+      {
+        "group": "Identity",
+        "key": "market_segment",
+        "value": "desktop"
+      },
+      {
+        "group": "Interface",
+        "key": "maximum_displays",
+        "value": "4"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_bus_width",
+        "value": "256",
+        "unit": "bit"
+      },
+      {
+        "group": "Interface",
+        "key": "pci_express",
+        "value": "PCIe 4.0"
+      },
+      {
+        "group": "Physical",
+        "key": "power_connectors",
+        "value": "2x PCIe 8-pin cables (adapter in box) OR 300 W or greater PCIe Gen 5 cable"
+      },
+      {
+        "group": "Identity",
+        "key": "product_family",
+        "value": "GeForce"
+      },
+      {
+        "group": "Power",
+        "key": "recommended_psu",
+        "value": "700",
+        "unit": "W"
+      },
+      {
+        "group": "Power",
+        "key": "tbp",
+        "value": "285",
+        "unit": "W"
+      },
+      {
+        "group": "Memory",
+        "key": "vram_capacity",
+        "value": "16",
+        "unit": "GB"
+      },
+      {
+        "group": "Memory",
+        "key": "vram_type",
+        "value": "GDDR6X"
+      }
+    ],
+    "benchmarks": []
+  },
+  {
+    "category": "GPU",
+    "manufacturer": "NVIDIA",
+    "family": "GeForce",
+    "series": "GeForce RTX",
+    "generation": "RTX 40 Series",
+    "architecture": "Ada Lovelace",
+    "source": {
+      "name": "NVIDIA official product specifications",
+      "url": "https://www.nvidia.com/en-us/geforce/graphics-cards/40-series/rtx-4070-family/",
+      "date": "2026-09-16",
+      "notes": "Specifications verified against NVIDIA GeForce product specification pages on nvidia.com."
+    },
+    "product": {
+      "name": "NVIDIA GeForce RTX 4070 Ti",
+      "slug": "nvidia-geforce-rtx-4070-ti",
+      "description": "NVIDIA GeForce RTX 4070 Ti desktop graphics card based on the Ada Lovelace architecture.",
+      "release_date": "2023-01-05",
+      "status": "active",
+      "is_popular": false,
+      "architecture": "Ada Lovelace"
+    },
+    "images": [],
+    "specifications": [
+      {
+        "group": "Identity",
+        "key": "architecture",
+        "value": "Ada Lovelace"
+      },
+      {
+        "group": "Clocks",
+        "key": "base_clock",
+        "value": "2310",
+        "unit": "MHz"
+      },
+      {
+        "group": "Clocks",
+        "key": "boost_clock",
+        "value": "2610",
+        "unit": "MHz"
+      },
+      {
+        "group": "Compute",
+        "key": "cuda_cores",
+        "value": "7680"
+      },
+      {
+        "group": "Interface",
+        "key": "display_outputs",
+        "value": "HDMI (2), 3x DisplayPort (3)"
+      },
+      {
+        "group": "Identity",
+        "key": "generation",
+        "value": "RTX 40 Series"
+      },
+      {
+        "group": "Identity",
+        "key": "launch_msrp",
+        "value": "799",
+        "unit": "USD"
+      },
+      {
+        "group": "Identity",
+        "key": "market_segment",
+        "value": "desktop"
+      },
+      {
+        "group": "Interface",
+        "key": "maximum_displays",
+        "value": "4"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_bus_width",
+        "value": "192",
+        "unit": "bit"
+      },
+      {
+        "group": "Interface",
+        "key": "pci_express",
+        "value": "PCIe 4.0"
+      },
+      {
+        "group": "Physical",
+        "key": "power_connectors",
+        "value": "2x PCIe 8-pin cables (adapter in box) OR 300 W or greater PCIe Gen 5 cable"
+      },
+      {
+        "group": "Identity",
+        "key": "product_family",
+        "value": "GeForce"
+      },
+      {
+        "group": "Power",
+        "key": "recommended_psu",
+        "value": "700",
+        "unit": "W"
+      },
+      {
+        "group": "Power",
+        "key": "tbp",
+        "value": "285",
+        "unit": "W"
+      },
+      {
+        "group": "Memory",
+        "key": "vram_capacity",
+        "value": "12",
+        "unit": "GB"
+      },
+      {
+        "group": "Memory",
+        "key": "vram_type",
+        "value": "GDDR6X"
+      }
+    ],
+    "benchmarks": []
+  },
+  {
+    "category": "GPU",
+    "manufacturer": "NVIDIA",
+    "family": "GeForce",
+    "series": "GeForce RTX",
+    "generation": "RTX 40 Series",
+    "architecture": "Ada Lovelace",
+    "source": {
+      "name": "NVIDIA official product specifications",
+      "url": "https://www.nvidia.com/en-us/geforce/graphics-cards/40-series/rtx-4070-family/",
+      "date": "2026-09-16",
+      "notes": "Specifications verified against NVIDIA GeForce product specification pages on nvidia.com."
+    },
+    "product": {
+      "name": "NVIDIA GeForce RTX 4070 SUPER",
+      "slug": "nvidia-geforce-rtx-4070-super",
+      "description": "NVIDIA GeForce RTX 4070 SUPER desktop graphics card based on the Ada Lovelace architecture.",
+      "release_date": "2024-01-17",
+      "status": "active",
+      "is_popular": true,
+      "architecture": "Ada Lovelace"
+    },
+    "images": [],
+    "specifications": [
+      {
+        "group": "Identity",
+        "key": "architecture",
+        "value": "Ada Lovelace"
+      },
+      {
+        "group": "Clocks",
+        "key": "base_clock",
+        "value": "1980",
+        "unit": "MHz"
+      },
+      {
+        "group": "Clocks",
+        "key": "boost_clock",
+        "value": "2480",
+        "unit": "MHz"
+      },
+      {
+        "group": "Compute",
+        "key": "cuda_cores",
+        "value": "7168"
+      },
+      {
+        "group": "Interface",
+        "key": "display_outputs",
+        "value": "HDMI (2), 3x DisplayPort (3)"
+      },
+      {
+        "group": "Identity",
+        "key": "generation",
+        "value": "RTX 40 Series"
+      },
+      {
+        "group": "Physical",
+        "key": "height",
+        "value": "112",
+        "unit": "mm"
+      },
+      {
+        "group": "Identity",
+        "key": "launch_msrp",
+        "value": "599",
+        "unit": "USD"
+      },
+      {
+        "group": "Physical",
+        "key": "length",
+        "value": "244",
+        "unit": "mm"
+      },
+      {
+        "group": "Identity",
+        "key": "market_segment",
+        "value": "desktop"
+      },
+      {
+        "group": "Interface",
+        "key": "maximum_displays",
+        "value": "4"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_bus_width",
+        "value": "192",
+        "unit": "bit"
+      },
+      {
+        "group": "Interface",
+        "key": "pci_express",
+        "value": "PCIe 4.0"
+      },
+      {
+        "group": "Physical",
+        "key": "power_connectors",
+        "value": "2x PCIe 8-pin cables (adapter in box) OR 300 W or greater PCIe Gen 5 cable"
+      },
+      {
+        "group": "Identity",
+        "key": "product_family",
+        "value": "GeForce"
+      },
+      {
+        "group": "Power",
+        "key": "recommended_psu",
+        "value": "650",
+        "unit": "W"
+      },
+      {
+        "group": "Physical",
+        "key": "slot_width",
+        "value": "2-Slot"
+      },
+      {
+        "group": "Power",
+        "key": "tbp",
+        "value": "220",
+        "unit": "W"
+      },
+      {
+        "group": "Memory",
+        "key": "vram_capacity",
+        "value": "12",
+        "unit": "GB"
+      },
+      {
+        "group": "Memory",
+        "key": "vram_type",
+        "value": "GDDR6X"
+      }
+    ],
+    "benchmarks": []
+  },
+  {
+    "category": "GPU",
+    "manufacturer": "NVIDIA",
+    "family": "GeForce",
+    "series": "GeForce RTX",
+    "generation": "RTX 40 Series",
+    "architecture": "Ada Lovelace",
+    "source": {
+      "name": "NVIDIA official product specifications",
+      "url": "https://www.nvidia.com/en-us/geforce/graphics-cards/40-series/rtx-4070-family/",
+      "date": "2026-09-16",
+      "notes": "Specifications verified against NVIDIA GeForce product specification pages on nvidia.com."
+    },
+    "product": {
+      "name": "NVIDIA GeForce RTX 4070",
+      "slug": "nvidia-geforce-rtx-4070",
+      "description": "NVIDIA GeForce RTX 4070 desktop graphics card based on the Ada Lovelace architecture.",
+      "release_date": "2023-04-13",
+      "status": "active",
+      "is_popular": false,
+      "architecture": "Ada Lovelace"
+    },
+    "images": [],
+    "specifications": [
+      {
+        "group": "Identity",
+        "key": "architecture",
+        "value": "Ada Lovelace"
+      },
+      {
+        "group": "Clocks",
+        "key": "base_clock",
+        "value": "1920",
+        "unit": "MHz"
+      },
+      {
+        "group": "Clocks",
+        "key": "boost_clock",
+        "value": "2480",
+        "unit": "MHz"
+      },
+      {
+        "group": "Compute",
+        "key": "cuda_cores",
+        "value": "5888"
+      },
+      {
+        "group": "Interface",
+        "key": "display_outputs",
+        "value": "HDMI (2), 3x DisplayPort (3)"
+      },
+      {
+        "group": "Identity",
+        "key": "generation",
+        "value": "RTX 40 Series"
+      },
+      {
+        "group": "Physical",
+        "key": "height",
+        "value": "112",
+        "unit": "mm"
+      },
+      {
+        "group": "Identity",
+        "key": "launch_msrp",
+        "value": "599",
+        "unit": "USD"
+      },
+      {
+        "group": "Physical",
+        "key": "length",
+        "value": "244",
+        "unit": "mm"
+      },
+      {
+        "group": "Identity",
+        "key": "market_segment",
+        "value": "desktop"
+      },
+      {
+        "group": "Interface",
+        "key": "maximum_displays",
+        "value": "4"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_bus_width",
+        "value": "192",
+        "unit": "bit"
+      },
+      {
+        "group": "Interface",
+        "key": "pci_express",
+        "value": "PCIe 4.0"
+      },
+      {
+        "group": "Physical",
+        "key": "power_connectors",
+        "value": "2x PCIe 8-pin cables (adapter in box) OR 300 W or greater PCIe Gen 5 cable"
+      },
+      {
+        "group": "Identity",
+        "key": "product_family",
+        "value": "GeForce"
+      },
+      {
+        "group": "Power",
+        "key": "recommended_psu",
+        "value": "650",
+        "unit": "W"
+      },
+      {
+        "group": "Physical",
+        "key": "slot_width",
+        "value": "2-Slot"
+      },
+      {
+        "group": "Power",
+        "key": "tbp",
+        "value": "200",
+        "unit": "W"
+      },
+      {
+        "group": "Memory",
+        "key": "vram_capacity",
+        "value": "12",
+        "unit": "GB"
+      }
+    ],
+    "benchmarks": []
+  },
+  {
+    "category": "GPU",
+    "manufacturer": "NVIDIA",
+    "family": "GeForce",
+    "series": "GeForce RTX",
+    "generation": "RTX 40 Series",
+    "architecture": "Ada Lovelace",
+    "source": {
+      "name": "NVIDIA official product specifications",
+      "url": "https://www.nvidia.com/en-us/geforce/graphics-cards/40-series/rtx-4060/",
+      "date": "2026-09-16",
+      "notes": "Specifications verified against NVIDIA GeForce product specification pages on nvidia.com."
+    },
+    "product": {
+      "name": "NVIDIA GeForce RTX 4060 Ti",
+      "slug": "nvidia-geforce-rtx-4060-ti",
+      "description": "NVIDIA GeForce RTX 4060 Ti desktop graphics card based on the Ada Lovelace architecture.",
+      "release_date": "2023-05-24",
+      "status": "active",
+      "is_popular": false,
+      "architecture": "Ada Lovelace"
+    },
+    "images": [],
+    "specifications": [
+      {
+        "group": "Identity",
+        "key": "architecture",
+        "value": "Ada Lovelace"
+      },
+      {
+        "group": "Clocks",
+        "key": "base_clock",
+        "value": "2310",
+        "unit": "MHz"
+      },
+      {
+        "group": "Clocks",
+        "key": "boost_clock",
+        "value": "2540",
+        "unit": "MHz"
+      },
+      {
+        "group": "Compute",
+        "key": "cuda_cores",
+        "value": "4352"
+      },
+      {
+        "group": "Interface",
+        "key": "display_outputs",
+        "value": "HDMI (2), 3x DisplayPort (3)"
+      },
+      {
+        "group": "Identity",
+        "key": "generation",
+        "value": "RTX 40 Series"
+      },
+      {
+        "group": "Physical",
+        "key": "height",
+        "value": "112",
+        "unit": "mm"
+      },
+      {
+        "group": "Identity",
+        "key": "launch_msrp",
+        "value": "399",
+        "unit": "USD"
+      },
+      {
+        "group": "Physical",
+        "key": "length",
+        "value": "244",
+        "unit": "mm"
+      },
+      {
+        "group": "Identity",
+        "key": "market_segment",
+        "value": "desktop"
+      },
+      {
+        "group": "Interface",
+        "key": "maximum_displays",
+        "value": "4"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_bus_width",
+        "value": "128",
+        "unit": "bit"
+      },
+      {
+        "group": "Interface",
+        "key": "pci_express",
+        "value": "PCIe 4.0"
+      },
+      {
+        "group": "Physical",
+        "key": "power_connectors",
+        "value": "1x PCIe 8-pin cables (adapter in box) OR 300 W or greater PCIe Gen 5 cable"
+      },
+      {
+        "group": "Identity",
+        "key": "product_family",
+        "value": "GeForce"
+      },
+      {
+        "group": "Power",
+        "key": "recommended_psu",
+        "value": "550",
+        "unit": "W"
+      },
+      {
+        "group": "Physical",
+        "key": "slot_width",
+        "value": "2-Slot"
+      },
+      {
+        "group": "Memory",
+        "key": "vram_type",
+        "value": "GDDR6"
+      }
+    ],
+    "benchmarks": []
+  },
+  {
+    "category": "GPU",
+    "manufacturer": "NVIDIA",
+    "family": "GeForce",
+    "series": "GeForce RTX",
+    "generation": "RTX 40 Series",
+    "architecture": "Ada Lovelace",
+    "source": {
+      "name": "NVIDIA official product specifications",
+      "url": "https://www.nvidia.com/en-us/geforce/graphics-cards/40-series/rtx-4060/",
+      "date": "2026-09-16",
+      "notes": "Specifications verified against NVIDIA GeForce product specification pages on nvidia.com."
+    },
+    "product": {
+      "name": "NVIDIA GeForce RTX 4060",
+      "slug": "nvidia-geforce-rtx-4060",
+      "description": "NVIDIA GeForce RTX 4060 desktop graphics card based on the Ada Lovelace architecture.",
+      "release_date": "2023-06-29",
+      "status": "active",
+      "is_popular": false,
+      "architecture": "Ada Lovelace"
+    },
+    "images": [],
+    "specifications": [
+      {
+        "group": "Identity",
+        "key": "architecture",
+        "value": "Ada Lovelace"
+      },
+      {
+        "group": "Clocks",
+        "key": "base_clock",
+        "value": "1830",
+        "unit": "MHz"
+      },
+      {
+        "group": "Clocks",
+        "key": "boost_clock",
+        "value": "2460",
+        "unit": "MHz"
+      },
+      {
+        "group": "Compute",
+        "key": "cuda_cores",
+        "value": "3072"
+      },
+      {
+        "group": "Interface",
+        "key": "display_outputs",
+        "value": "HDMI (2), 3x DisplayPort (3)"
+      },
+      {
+        "group": "Identity",
+        "key": "generation",
+        "value": "RTX 40 Series"
+      },
+      {
+        "group": "Identity",
+        "key": "launch_msrp",
+        "value": "299",
+        "unit": "USD"
+      },
+      {
+        "group": "Identity",
+        "key": "market_segment",
+        "value": "desktop"
+      },
+      {
+        "group": "Interface",
+        "key": "maximum_displays",
+        "value": "4"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_bus_width",
+        "value": "128",
+        "unit": "bit"
+      },
+      {
+        "group": "Interface",
+        "key": "pci_express",
+        "value": "PCIe 4.0"
+      },
+      {
+        "group": "Physical",
+        "key": "power_connectors",
+        "value": "1x PCIe 8-pin cables (adapter in box) OR 300 W or greater PCIe Gen 5 cable"
+      },
+      {
+        "group": "Identity",
+        "key": "product_family",
+        "value": "GeForce"
+      },
+      {
+        "group": "Power",
+        "key": "recommended_psu",
+        "value": "550",
+        "unit": "W"
+      },
+      {
+        "group": "Physical",
+        "key": "slot_width",
+        "value": "2-Slot"
+      },
+      {
+        "group": "Power",
+        "key": "tbp",
+        "value": "115",
+        "unit": "W"
+      },
+      {
+        "group": "Memory",
+        "key": "vram_capacity",
+        "value": "8",
+        "unit": "GB"
+      },
+      {
+        "group": "Memory",
+        "key": "vram_type",
+        "value": "GDDR6"
+      }
+    ],
+    "benchmarks": []
+  }
+]

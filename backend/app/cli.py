@@ -8,7 +8,10 @@ import sys
 from app import create_app
 from app import db
 from app.services.import_service import import_hardware_from_path
-from app.services.product_reconciliation_service import reconcile_legacy_cpu_slugs
+from app.services.product_reconciliation_service import (
+    reconcile_legacy_cpu_slugs,
+    reconcile_legacy_gpu_slugs,
+)
 
 
 def _configure_logging(verbose: bool):
@@ -38,16 +41,35 @@ def _print_result(result: dict):
         print("Dry run complete — no database changes were committed.")
 
 
+def _print_reconciliation(result, *, dry_run: bool) -> None:
+    prefix = "Dry-run reconciliation" if dry_run else "Reconciliation"
+    print(
+        f"{prefix}: merged={result.merged} renamed={result.renamed} "
+        f"skipped={result.skipped} errors={len(result.errors)}"
+    )
+    for action in result.actions:
+        print(f"  {action}")
+    for err in result.errors:
+        print(f"  ERROR: {err}")
+
+
 def cmd_reconcile_cpus(args) -> int:
     app = create_app()
     with app.app_context():
         result = reconcile_legacy_cpu_slugs(dry_run=args.dry_run)
-        print(
-            f"Reconciliation: merged={result.merged} renamed={result.renamed} "
-            f"skipped={result.skipped} errors={len(result.errors)}"
-        )
-        for action in result.actions:
-            print(f"  {action}")
+        _print_reconciliation(result, dry_run=args.dry_run)
+        for error in result.errors:
+            print(f"  ERROR: {error}", file=sys.stderr)
+        if args.dry_run:
+            db.session.rollback()
+        return 1 if result.errors else 0
+
+
+def cmd_reconcile_gpus(args) -> int:
+    app = create_app()
+    with app.app_context():
+        result = reconcile_legacy_gpu_slugs(dry_run=args.dry_run)
+        _print_reconciliation(result, dry_run=args.dry_run)
         for error in result.errors:
             print(f"  ERROR: {error}", file=sys.stderr)
         if args.dry_run:
@@ -119,6 +141,17 @@ def build_parser() -> argparse.ArgumentParser:
         help="Preview reconciliation without modifying the database",
     )
     reconcile_parser.set_defaults(func=cmd_reconcile_cpus)
+
+    reconcile_gpu_parser = subparsers.add_parser(
+        "reconcile-gpus",
+        help="Merge legacy seed GPU slugs into canonical catalog slugs",
+    )
+    reconcile_gpu_parser.add_argument(
+        "--dry-run",
+        action="store_true",
+        help="Preview reconciliation without modifying the database",
+    )
+    reconcile_gpu_parser.set_defaults(func=cmd_reconcile_gpus)
 
     return parser
 

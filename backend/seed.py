@@ -102,35 +102,10 @@ OTHER_TAXONOMY = [
 ]
 
 # CPU demo products are imported from verified catalog JSON (data/catalog/cpu/).
-# Seed only creates non-CPU demo products to avoid duplicate slug conflicts.
+# NVIDIA RTX 40 demo products are imported from verified catalog JSON
+# (data/catalog/gpu/nvidia/geforce/rtx-40-series/). Seed only creates
+# non-catalog demo products to avoid duplicate slug conflicts.
 DEMO_PRODUCTS = [
-    {
-        "category": "gpu", "manufacturer": "NVIDIA", "family": "GeForce", "series": "GeForce RTX",
-        "generation": "RTX 40 Series", "architecture": "Ada Lovelace",
-        "product": {
-            "name": "NVIDIA GeForce RTX 4090", "slug": "rtx-4090",
-            "release_date": "2022-10-12", "is_popular": True,
-            "specifications": [
-                {"group_name": "General", "key": "Architecture", "value": "Ada Lovelace"},
-                {"group_name": "Compute", "key": "CUDA Cores", "value": "16384"},
-                {"group_name": "Memory", "key": "VRAM", "value": "24", "unit": "GB"},
-                {"group_name": "Power", "key": "TDP", "value": "450", "unit": "W"},
-            ],
-        },
-    },
-    {
-        "category": "gpu", "manufacturer": "NVIDIA", "family": "GeForce", "series": "GeForce RTX",
-        "generation": "RTX 40 Series", "architecture": "Ada Lovelace",
-        "product": {
-            "name": "NVIDIA GeForce RTX 4070 SUPER", "slug": "rtx-4070-super",
-            "release_date": "2024-01-17", "is_popular": True,
-            "specifications": [
-                {"group_name": "Compute", "key": "CUDA Cores", "value": "7168"},
-                {"group_name": "Memory", "key": "VRAM", "value": "12", "unit": "GB"},
-                {"group_name": "Power", "key": "TDP", "value": "220", "unit": "W"},
-            ],
-        },
-    },
     {
         "category": "gpu", "manufacturer": "AMD", "family": "Radeon RX", "series": "Radeon RX",
         "generation": "RX 7000 Series", "architecture": "RDNA 3",

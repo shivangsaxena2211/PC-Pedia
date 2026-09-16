@@ -1,6 +1,8 @@
 # GPU Catalog Data
 
-Infrastructure for verified GPU import batches. **Phase 1 contains no product JSON files.**
+Infrastructure for verified GPU import batches.
+
+**Phase 2:** NVIDIA GeForce RTX 40 Series desktop catalog in `nvidia/geforce/rtx-40-series/desktop.json`.
 
 ## Structure
 
@@ -83,13 +85,18 @@ Authoritative sources for the verified catalog:
 
 Third-party sites are not authoritative unless explicitly approved in a later phase.
 
-## Import (future)
+## Import
 
 ```bash
 cd backend
+python scripts/build_gpu_catalog.py
 python scripts/build_gpu_catalog.py --validate
-python -m app.cli import-data data/catalog/gpu/nvidia/geforce/ --dry-run
-python -m app.cli import-data data/catalog/gpu/ --mode=upsert
+python scripts/build_gpu_catalog.py --dry-run
+python -m app.cli import-data data/catalog/gpu/nvidia/geforce/rtx-40-series/desktop.json --dry-run
+python -m app.cli import-data data/catalog/gpu/nvidia/geforce/rtx-40-series/desktop.json --mode=upsert
+python -m app.cli reconcile-gpus
 ```
+
+Legacy seed NVIDIA demo slugs (`rtx-4090`, `rtx-4070-super`) are merged into canonical catalog slugs via `reconcile-gpus`. AMD/Intel demo GPUs without a verified catalog entry are left in place until those catalogs are imported.
 
 See `schema.json` for the record shape.

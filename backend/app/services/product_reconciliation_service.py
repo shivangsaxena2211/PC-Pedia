@@ -6,6 +6,7 @@ from dataclasses import dataclass, field
 
 from app import db
 from app.data.cpu_slug_policy import LEGACY_CPU_SLUG_MAP
+from app.data.gpu_slug_policy import LEGACY_GPU_SLUG_MAP
 from app.models import Benchmark, Product, ProductImage, ProductSource, Specification
 
 
@@ -58,11 +59,15 @@ def _merge_specifications(demo: Product, canonical: Product):
         canonical_keys.add(key)
 
 
-def reconcile_legacy_cpu_slugs(dry_run: bool = False) -> ReconciliationResult:
-    """Merge or rename legacy demo CPU slugs into canonical catalog slugs."""
+def _reconcile_legacy_slug_map(
+    slug_map: dict[str, str],
+    *,
+    dry_run: bool = False,
+) -> ReconciliationResult:
+    """Merge or rename legacy demo slugs into canonical catalog slugs."""
     result = ReconciliationResult()
 
-    for legacy_slug, canonical_slug in LEGACY_CPU_SLUG_MAP.items():
+    for legacy_slug, canonical_slug in slug_map.items():
         demo = Product.query.filter_by(slug=legacy_slug).first()
         if not demo:
             result.skipped += 1
@@ -108,3 +113,13 @@ def reconcile_legacy_cpu_slugs(dry_run: bool = False) -> ReconciliationResult:
         db.session.commit()
 
     return result
+
+
+def reconcile_legacy_cpu_slugs(dry_run: bool = False) -> ReconciliationResult:
+    """Merge or rename legacy demo CPU slugs into canonical catalog slugs."""
+    return _reconcile_legacy_slug_map(LEGACY_CPU_SLUG_MAP, dry_run=dry_run)
+
+
+def reconcile_legacy_gpu_slugs(dry_run: bool = False) -> ReconciliationResult:
+    """Merge or rename legacy demo GPU slugs into canonical catalog slugs."""
+    return _reconcile_legacy_slug_map(LEGACY_GPU_SLUG_MAP, dry_run=dry_run)
