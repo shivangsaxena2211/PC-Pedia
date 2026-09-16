@@ -43,8 +43,13 @@ export default function HeroSection({ productCount, loading }: HeroSectionProps)
         <div className="hw-stack">
           <div className="hw-core">
             <div className="hw-core-inner">
-              <div className="lbl">PC</div>
-              <div className="val">encyclopedia</div>
+              <img
+                className="hw-core-logo"
+                src="/images/pc-pedia-logo.png"
+                alt=""
+                width={140}
+                height={88}
+              />
             </div>
           </div>
           <div className="tag-float" style={{ top: '6%', left: '2%', animationDelay: '0s' }}>

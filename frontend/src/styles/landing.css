@@ -453,8 +453,14 @@ html {
   display:flex; align-items:center; justify-content:center;
   flex-direction:column; gap:4px;
 }
-.landing-page .hw-core-inner .lbl{ font-family:var(--font-display); font-weight:700; font-size:1.3rem; letter-spacing:.04em; }
-.landing-page .hw-core-inner .val{ font-family:var(--font-mono); font-size:.7rem; color:var(--muted); }
+.landing-page .hw-core-logo{
+  width: min(72%, 140px);
+  height: auto;
+  display:block;
+  object-fit: contain;
+  pointer-events: none;
+  user-select: none;
+}
 @keyframes spin-slow{ to{ transform: translate(-50%,-50%) rotate(360deg); } }
 .landing-page .hw-core .hw-core-inner{ animation: counter-spin-slow 14s linear infinite; }
 @keyframes counter-spin-slow{ from{ transform: rotate(0deg);} to{ transform: rotate(-360deg);} }
