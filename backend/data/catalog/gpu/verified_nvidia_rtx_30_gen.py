@@ -1,0 +1,256 @@
+"""
+Verified NVIDIA GeForce RTX 30 Series desktop GPU specifications.
+
+Sources: official NVIDIA GeForce 30 Series product specification pages and
+GeForce News / Newsroom launch articles on nvidia.com.
+
+Integer RT core / tensor core counts are omitted because NVIDIA documents
+generation labels (2nd/3rd gen), not discrete core counts.
+
+Ambiguous slash-valued fields on the official series table (e.g. RTX 3080
+10GB/12GB, RTX 3060 8GB/12GB) are omitted rather than split into unverified
+separate products.
+"""
+
+VERIFIED_DATE = "2026-09-16"
+
+SERIES_URL = "https://www.nvidia.com/en-us/geforce/graphics-cards/30-series/"
+
+_COMMON = {
+    "architecture": "Ampere",
+    "generation": "RTX 30 Series",
+    "product_family": "GeForce",
+    "market_segment": "desktop",
+    "pci_express": "PCIe 4.0",
+}
+
+NVIDIA_RTX_30_DESKTOP = [
+    {
+        "model": "RTX 3090 Ti",
+        "release_date": "2022-03-29",
+        "launch_msrp": "1999",
+        "is_popular": True,
+        "source_url": "https://www.nvidia.com/en-us/geforce/graphics-cards/30-series/rtx-3090/",
+        "specs": {
+            **_COMMON,
+            "cuda_cores": "10752",
+            "base_clock": "1560",
+            "boost_clock": "1860",
+            "vram_capacity": "24",
+            "vram_type": "GDDR6X",
+            "memory_bus_width": "384",
+            "tbp": "450",
+            "recommended_psu": "850",
+            "display_outputs": "HDMI (3), 3x DisplayPort (4)",
+            "maximum_displays": "4",
+            "power_connectors": "3x PCIe 8-pin cables (adapter in box) OR 450W or greater PCIe Gen 5 cable",
+            "length": "313",
+            "height": "138",
+            "slot_width": "3-Slot",
+        },
+    },
+    {
+        "model": "RTX 3090",
+        "release_date": "2020-09-24",
+        "launch_msrp": "1499",
+        "is_popular": True,
+        "source_url": "https://www.nvidia.com/en-us/geforce/graphics-cards/30-series/rtx-3090/",
+        "specs": {
+            **_COMMON,
+            "cuda_cores": "10496",
+            "base_clock": "1400",
+            "boost_clock": "1700",
+            "vram_capacity": "24",
+            "vram_type": "GDDR6X",
+            "memory_bus_width": "384",
+            "tbp": "350",
+            "recommended_psu": "750",
+            "display_outputs": "HDMI (3), 3x DisplayPort (4)",
+            "maximum_displays": "4",
+            "power_connectors": "2x PCIe 8-pin (adapter to 1x 12-pin included)",
+            "length": "313",
+            "height": "138",
+            "slot_width": "3-Slot",
+        },
+    },
+    {
+        "model": "RTX 3080 Ti",
+        "release_date": "2021-06-03",
+        "launch_msrp": "1199",
+        "is_popular": True,
+        "source_url": "https://www.nvidia.com/en-us/geforce/graphics-cards/30-series/rtx-3080/",
+        "specs": {
+            **_COMMON,
+            "cuda_cores": "10240",
+            "base_clock": "1370",
+            "boost_clock": "1670",
+            "vram_capacity": "12",
+            "vram_type": "GDDR6X",
+            "memory_bus_width": "384",
+            "tbp": "350",
+            "recommended_psu": "750",
+            "display_outputs": "HDMI (3), 3x DisplayPort (4)",
+            "maximum_displays": "4",
+            "power_connectors": "2x PCIe 8-pin (adapter to 1x 12-pin included)",
+            "length": "285",
+            "height": "112",
+            "slot_width": "2-Slot",
+        },
+    },
+    {
+        # Official series table lists dual 10GB/12GB values under one RTX 3080 column.
+        # Ambiguous fields omitted; do not invent separate 10GB/12GB catalog products.
+        "model": "RTX 3080",
+        "release_date": "2020-09-17",
+        "launch_msrp": "699",
+        "is_popular": True,
+        "source_url": "https://www.nvidia.com/en-us/geforce/graphics-cards/30-series/rtx-3080/",
+        "specs": {
+            **_COMMON,
+            "boost_clock": "1710",
+            "vram_type": "GDDR6X",
+            "recommended_psu": "750",
+            "display_outputs": "HDMI (3), 3x DisplayPort (4)",
+            "maximum_displays": "4",
+            "power_connectors": "2x PCIe 8-pin (adapter to 1x 12-pin included)",
+            "length": "285",
+            "height": "112",
+            "slot_width": "2-Slot",
+        },
+    },
+    {
+        "model": "RTX 3070 Ti",
+        "release_date": "2021-06-10",
+        "launch_msrp": "599",
+        "is_popular": False,
+        "source_url": "https://www.nvidia.com/en-us/geforce/graphics-cards/30-series/rtx-3070-3070ti/",
+        "specs": {
+            **_COMMON,
+            "cuda_cores": "6144",
+            "base_clock": "1580",
+            "boost_clock": "1770",
+            "vram_capacity": "8",
+            "vram_type": "GDDR6X",
+            "memory_bus_width": "256",
+            "tbp": "290",
+            "recommended_psu": "750",
+            "display_outputs": "HDMI (3), 3x DisplayPort (4)",
+            "maximum_displays": "4",
+            "power_connectors": "2x PCIe 8-pin (adapter to 1x 12-pin included)",
+            "length": "267",
+            "height": "112",
+            "slot_width": "2-Slot",
+        },
+    },
+    {
+        "model": "RTX 3070",
+        "release_date": "2020-10-29",
+        "launch_msrp": "499",
+        "is_popular": True,
+        "source_url": "https://www.nvidia.com/en-us/geforce/graphics-cards/30-series/rtx-3070-3070ti/",
+        "specs": {
+            **_COMMON,
+            "cuda_cores": "5888",
+            "base_clock": "1500",
+            "boost_clock": "1730",
+            "vram_capacity": "8",
+            "vram_type": "GDDR6",
+            "memory_bus_width": "256",
+            "tbp": "220",
+            "recommended_psu": "650",
+            "display_outputs": "HDMI (3), 3x DisplayPort (4)",
+            "maximum_displays": "4",
+            "power_connectors": "1x PCIe 8-pin (adapter to 1x 12-pin included)",
+            "length": "242",
+            "height": "112",
+            "slot_width": "2-Slot",
+        },
+    },
+    {
+        # Series table lists GDDR6 / GDDR6X; omit vram_type.
+        "model": "RTX 3060 Ti",
+        "release_date": "2020-12-02",
+        "launch_msrp": "399",
+        "is_popular": True,
+        "source_url": "https://www.nvidia.com/en-us/geforce/graphics-cards/30-series/rtx-3060-ti/",
+        "specs": {
+            **_COMMON,
+            "cuda_cores": "4864",
+            "base_clock": "1410",
+            "boost_clock": "1670",
+            "vram_capacity": "8",
+            "memory_bus_width": "256",
+            "tbp": "200",
+            "recommended_psu": "600",
+            "display_outputs": "HDMI (3), 3x DisplayPort (4)",
+            "maximum_displays": "4",
+            "power_connectors": "1x PCIe 8-pin (adapter to 1x 12-pin included)",
+            "length": "242",
+            "height": "112",
+            "slot_width": "2-Slot",
+        },
+    },
+    {
+        # Series table lists 12GB/8GB and 192-bit/128-bit; omit those fields.
+        "model": "RTX 3060",
+        "release_date": "2021-02-25",
+        "launch_msrp": "329",
+        "is_popular": True,
+        "source_url": SERIES_URL,
+        "specs": {
+            **_COMMON,
+            "cuda_cores": "3584",
+            "base_clock": "1320",
+            "boost_clock": "1780",
+            "vram_type": "GDDR6",
+            "tbp": "170",
+            "recommended_psu": "550",
+            "display_outputs": "HDMI (3), 3x DisplayPort (4)",
+            "maximum_displays": "4",
+            "power_connectors": "1x PCIe 8-pin",
+        },
+    },
+    {
+        # NVIDIA lists retail 8GB and 6GB as separate columns. Footnote OEM
+        # variant (different clocks/cores) is excluded.
+        "model": "RTX 3050 8GB",
+        "release_date": "2022-01-27",
+        "launch_msrp": "249",
+        "is_popular": False,
+        "source_url": "https://www.nvidia.com/en-us/geforce/graphics-cards/30-series/rtx-3050/",
+        "specs": {
+            **_COMMON,
+            "cuda_cores": "2560",
+            "base_clock": "1550",
+            "boost_clock": "1780",
+            "vram_capacity": "8",
+            "vram_type": "GDDR6",
+            "memory_bus_width": "128",
+            "tbp": "130",
+            "recommended_psu": "550",
+            "display_outputs": "HDMI (3), 2x DisplayPort (4)",
+            "maximum_displays": "4",
+            "power_connectors": "1x PCIe 8-pin",
+        },
+    },
+    {
+        # Official news documents availability; no launch MSRP stated.
+        "model": "RTX 3050 6GB",
+        "release_date": "2024-02-02",
+        "is_popular": False,
+        "source_url": "https://www.nvidia.com/en-us/geforce/graphics-cards/30-series/rtx-3050/",
+        "specs": {
+            **_COMMON,
+            "cuda_cores": "2304",
+            "base_clock": "1040",
+            "boost_clock": "1470",
+            "vram_capacity": "6",
+            "vram_type": "GDDR6",
+            "memory_bus_width": "96",
+            "tbp": "70",
+            "recommended_psu": "300",
+            "display_outputs": "HDMI (3), 2x DisplayPort (4)",
+            "maximum_displays": "4",
+        },
+    },
+]

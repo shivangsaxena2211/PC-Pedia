@@ -20,7 +20,11 @@ sys.path.insert(0, str(BACKEND_ROOT))
 from app.catalog.catalog_validation import validate_catalog_records
 from data.catalog.gpu.verified_nvidia_rtx_40_gen import (
     NVIDIA_RTX_40_DESKTOP,
-    VERIFIED_DATE,
+    VERIFIED_DATE as VERIFIED_DATE_40,
+)
+from data.catalog.gpu.verified_nvidia_rtx_30_gen import (
+    NVIDIA_RTX_30_DESKTOP,
+    VERIFIED_DATE as VERIFIED_DATE_30,
 )
 
 CATALOG_ROOT = BACKEND_ROOT / "data" / "catalog" / "gpu"
@@ -110,24 +114,28 @@ def _specs_from_dict(specs: dict) -> list[dict]:
     return entries
 
 
-def build_nvidia_record(entry: dict) -> dict:
+def build_nvidia_record(entry: dict, *, verified_date: str) -> dict:
     model = entry["model"]
     specs = dict(entry["specs"])
-    specs["launch_msrp"] = entry["launch_msrp"]
+    if entry.get("launch_msrp") is not None:
+        specs["launch_msrp"] = entry["launch_msrp"]
 
+    generation = specs.get("generation", "RTX Series")
+    architecture = specs.get("architecture", "")
     name = f"NVIDIA GeForce {model}"
     slug = _model_slug(model)
+    arch_phrase = f" based on the {architecture} architecture" if architecture else ""
     record = {
         "category": "GPU",
         "manufacturer": "NVIDIA",
         "family": "GeForce",
         "series": "GeForce RTX",
-        "generation": "RTX 40 Series",
-        "architecture": specs.get("architecture", "Ada Lovelace"),
+        "generation": generation,
+        "architecture": architecture,
         "source": {
             "name": "NVIDIA official product specifications",
             "url": entry["source_url"],
-            "date": VERIFIED_DATE,
+            "date": verified_date,
             "notes": (
                 "Specifications verified against NVIDIA GeForce product "
                 "specification pages on nvidia.com."
@@ -137,13 +145,12 @@ def build_nvidia_record(entry: dict) -> dict:
             "name": name,
             "slug": slug,
             "description": (
-                f"NVIDIA GeForce {model} desktop graphics card based on the "
-                f"Ada Lovelace architecture."
+                f"NVIDIA GeForce {model} desktop graphics card{arch_phrase}."
             ),
             "release_date": entry["release_date"],
             "status": "active",
             "is_popular": entry.get("is_popular", False),
-            "architecture": specs.get("architecture", "Ada Lovelace"),
+            "architecture": architecture or None,
         },
         "images": [],
         "specifications": _specs_from_dict(specs),
@@ -156,7 +163,17 @@ def build_nvidia_record(entry: dict) -> dict:
 
 
 def build_rtx_40_desktop_batch() -> list[dict]:
-    return [build_nvidia_record(entry) for entry in NVIDIA_RTX_40_DESKTOP]
+    return [
+        build_nvidia_record(entry, verified_date=VERIFIED_DATE_40)
+        for entry in NVIDIA_RTX_40_DESKTOP
+    ]
+
+
+def build_rtx_30_desktop_batch() -> list[dict]:
+    return [
+        build_nvidia_record(entry, verified_date=VERIFIED_DATE_30)
+        for entry in NVIDIA_RTX_30_DESKTOP
+    ]
 
 
 def write_catalog(path: Path, records: list[dict]) -> None:
@@ -226,11 +243,14 @@ def dry_run_import(root: Path = CATALOG_ROOT) -> int:
 
 
 def build_all() -> None:
-    records = build_rtx_40_desktop_batch()
-    output = (
-        CATALOG_ROOT / "nvidia" / "geforce" / "rtx-40-series" / "desktop.json"
+    write_catalog(
+        CATALOG_ROOT / "nvidia" / "geforce" / "rtx-40-series" / "desktop.json",
+        build_rtx_40_desktop_batch(),
     )
-    write_catalog(output, records)
+    write_catalog(
+        CATALOG_ROOT / "nvidia" / "geforce" / "rtx-30-series" / "desktop.json",
+        build_rtx_30_desktop_batch(),
+    )
 
 
 def main() -> int:

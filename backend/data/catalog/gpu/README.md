@@ -3,6 +3,7 @@
 Infrastructure for verified GPU import batches.
 
 **Phase 2:** NVIDIA GeForce RTX 40 Series desktop catalog in `nvidia/geforce/rtx-40-series/desktop.json`.
+**Phase 3:** NVIDIA GeForce RTX 30 Series desktop catalog in `nvidia/geforce/rtx-30-series/desktop.json`.
 
 ## Structure
 
@@ -94,6 +95,7 @@ python scripts/build_gpu_catalog.py --validate
 python scripts/build_gpu_catalog.py --dry-run
 python -m app.cli import-data data/catalog/gpu/nvidia/geforce/rtx-40-series/desktop.json --dry-run
 python -m app.cli import-data data/catalog/gpu/nvidia/geforce/rtx-40-series/desktop.json --mode=upsert
+python -m app.cli import-data data/catalog/gpu/nvidia/geforce/rtx-30-series/desktop.json --mode=upsert
 python -m app.cli reconcile-gpus
 ```
 

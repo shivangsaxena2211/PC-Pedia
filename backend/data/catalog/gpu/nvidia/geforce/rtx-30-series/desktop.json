@@ -1,0 +1,1254 @@
+[
+  {
+    "category": "GPU",
+    "manufacturer": "NVIDIA",
+    "family": "GeForce",
+    "series": "GeForce RTX",
+    "generation": "RTX 30 Series",
+    "architecture": "Ampere",
+    "source": {
+      "name": "NVIDIA official product specifications",
+      "url": "https://www.nvidia.com/en-us/geforce/graphics-cards/30-series/rtx-3090/",
+      "date": "2026-09-16",
+      "notes": "Specifications verified against NVIDIA GeForce product specification pages on nvidia.com."
+    },
+    "product": {
+      "name": "NVIDIA GeForce RTX 3090 Ti",
+      "slug": "nvidia-geforce-rtx-3090-ti",
+      "description": "NVIDIA GeForce RTX 3090 Ti desktop graphics card based on the Ampere architecture.",
+      "release_date": "2022-03-29",
+      "status": "active",
+      "is_popular": true,
+      "architecture": "Ampere"
+    },
+    "images": [],
+    "specifications": [
+      {
+        "group": "Identity",
+        "key": "architecture",
+        "value": "Ampere"
+      },
+      {
+        "group": "Clocks",
+        "key": "base_clock",
+        "value": "1560",
+        "unit": "MHz"
+      },
+      {
+        "group": "Clocks",
+        "key": "boost_clock",
+        "value": "1860",
+        "unit": "MHz"
+      },
+      {
+        "group": "Compute",
+        "key": "cuda_cores",
+        "value": "10752"
+      },
+      {
+        "group": "Interface",
+        "key": "display_outputs",
+        "value": "HDMI (3), 3x DisplayPort (4)"
+      },
+      {
+        "group": "Identity",
+        "key": "generation",
+        "value": "RTX 30 Series"
+      },
+      {
+        "group": "Physical",
+        "key": "height",
+        "value": "138",
+        "unit": "mm"
+      },
+      {
+        "group": "Identity",
+        "key": "launch_msrp",
+        "value": "1999",
+        "unit": "USD"
+      },
+      {
+        "group": "Physical",
+        "key": "length",
+        "value": "313",
+        "unit": "mm"
+      },
+      {
+        "group": "Identity",
+        "key": "market_segment",
+        "value": "desktop"
+      },
+      {
+        "group": "Interface",
+        "key": "maximum_displays",
+        "value": "4"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_bus_width",
+        "value": "384",
+        "unit": "bit"
+      },
+      {
+        "group": "Interface",
+        "key": "pci_express",
+        "value": "PCIe 4.0"
+      },
+      {
+        "group": "Physical",
+        "key": "power_connectors",
+        "value": "3x PCIe 8-pin cables (adapter in box) OR 450W or greater PCIe Gen 5 cable"
+      },
+      {
+        "group": "Identity",
+        "key": "product_family",
+        "value": "GeForce"
+      },
+      {
+        "group": "Power",
+        "key": "recommended_psu",
+        "value": "850",
+        "unit": "W"
+      },
+      {
+        "group": "Physical",
+        "key": "slot_width",
+        "value": "3-Slot"
+      },
+      {
+        "group": "Power",
+        "key": "tbp",
+        "value": "450",
+        "unit": "W"
+      },
+      {
+        "group": "Memory",
+        "key": "vram_capacity",
+        "value": "24",
+        "unit": "GB"
+      },
+      {
+        "group": "Memory",
+        "key": "vram_type",
+        "value": "GDDR6X"
+      }
+    ],
+    "benchmarks": []
+  },
+  {
+    "category": "GPU",
+    "manufacturer": "NVIDIA",
+    "family": "GeForce",
+    "series": "GeForce RTX",
+    "generation": "RTX 30 Series",
+    "architecture": "Ampere",
+    "source": {
+      "name": "NVIDIA official product specifications",
+      "url": "https://www.nvidia.com/en-us/geforce/graphics-cards/30-series/rtx-3090/",
+      "date": "2026-09-16",
+      "notes": "Specifications verified against NVIDIA GeForce product specification pages on nvidia.com."
+    },
+    "product": {
+      "name": "NVIDIA GeForce RTX 3090",
+      "slug": "nvidia-geforce-rtx-3090",
+      "description": "NVIDIA GeForce RTX 3090 desktop graphics card based on the Ampere architecture.",
+      "release_date": "2020-09-24",
+      "status": "active",
+      "is_popular": true,
+      "architecture": "Ampere"
+    },
+    "images": [],
+    "specifications": [
+      {
+        "group": "Identity",
+        "key": "architecture",
+        "value": "Ampere"
+      },
+      {
+        "group": "Clocks",
+        "key": "base_clock",
+        "value": "1400",
+        "unit": "MHz"
+      },
+      {
+        "group": "Clocks",
+        "key": "boost_clock",
+        "value": "1700",
+        "unit": "MHz"
+      },
+      {
+        "group": "Compute",
+        "key": "cuda_cores",
+        "value": "10496"
+      },
+      {
+        "group": "Interface",
+        "key": "display_outputs",
+        "value": "HDMI (3), 3x DisplayPort (4)"
+      },
+      {
+        "group": "Identity",
+        "key": "generation",
+        "value": "RTX 30 Series"
+      },
+      {
+        "group": "Physical",
+        "key": "height",
+        "value": "138",
+        "unit": "mm"
+      },
+      {
+        "group": "Identity",
+        "key": "launch_msrp",
+        "value": "1499",
+        "unit": "USD"
+      },
+      {
+        "group": "Physical",
+        "key": "length",
+        "value": "313",
+        "unit": "mm"
+      },
+      {
+        "group": "Identity",
+        "key": "market_segment",
+        "value": "desktop"
+      },
+      {
+        "group": "Interface",
+        "key": "maximum_displays",
+        "value": "4"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_bus_width",
+        "value": "384",
+        "unit": "bit"
+      },
+      {
+        "group": "Interface",
+        "key": "pci_express",
+        "value": "PCIe 4.0"
+      },
+      {
+        "group": "Physical",
+        "key": "power_connectors",
+        "value": "2x PCIe 8-pin (adapter to 1x 12-pin included)"
+      },
+      {
+        "group": "Identity",
+        "key": "product_family",
+        "value": "GeForce"
+      },
+      {
+        "group": "Power",
+        "key": "recommended_psu",
+        "value": "750",
+        "unit": "W"
+      },
+      {
+        "group": "Physical",
+        "key": "slot_width",
+        "value": "3-Slot"
+      },
+      {
+        "group": "Power",
+        "key": "tbp",
+        "value": "350",
+        "unit": "W"
+      },
+      {
+        "group": "Memory",
+        "key": "vram_capacity",
+        "value": "24",
+        "unit": "GB"
+      },
+      {
+        "group": "Memory",
+        "key": "vram_type",
+        "value": "GDDR6X"
+      }
+    ],
+    "benchmarks": []
+  },
+  {
+    "category": "GPU",
+    "manufacturer": "NVIDIA",
+    "family": "GeForce",
+    "series": "GeForce RTX",
+    "generation": "RTX 30 Series",
+    "architecture": "Ampere",
+    "source": {
+      "name": "NVIDIA official product specifications",
+      "url": "https://www.nvidia.com/en-us/geforce/graphics-cards/30-series/rtx-3080/",
+      "date": "2026-09-16",
+      "notes": "Specifications verified against NVIDIA GeForce product specification pages on nvidia.com."
+    },
+    "product": {
+      "name": "NVIDIA GeForce RTX 3080 Ti",
+      "slug": "nvidia-geforce-rtx-3080-ti",
+      "description": "NVIDIA GeForce RTX 3080 Ti desktop graphics card based on the Ampere architecture.",
+      "release_date": "2021-06-03",
+      "status": "active",
+      "is_popular": true,
+      "architecture": "Ampere"
+    },
+    "images": [],
+    "specifications": [
+      {
+        "group": "Identity",
+        "key": "architecture",
+        "value": "Ampere"
+      },
+      {
+        "group": "Clocks",
+        "key": "base_clock",
+        "value": "1370",
+        "unit": "MHz"
+      },
+      {
+        "group": "Clocks",
+        "key": "boost_clock",
+        "value": "1670",
+        "unit": "MHz"
+      },
+      {
+        "group": "Compute",
+        "key": "cuda_cores",
+        "value": "10240"
+      },
+      {
+        "group": "Interface",
+        "key": "display_outputs",
+        "value": "HDMI (3), 3x DisplayPort (4)"
+      },
+      {
+        "group": "Identity",
+        "key": "generation",
+        "value": "RTX 30 Series"
+      },
+      {
+        "group": "Physical",
+        "key": "height",
+        "value": "112",
+        "unit": "mm"
+      },
+      {
+        "group": "Identity",
+        "key": "launch_msrp",
+        "value": "1199",
+        "unit": "USD"
+      },
+      {
+        "group": "Physical",
+        "key": "length",
+        "value": "285",
+        "unit": "mm"
+      },
+      {
+        "group": "Identity",
+        "key": "market_segment",
+        "value": "desktop"
+      },
+      {
+        "group": "Interface",
+        "key": "maximum_displays",
+        "value": "4"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_bus_width",
+        "value": "384",
+        "unit": "bit"
+      },
+      {
+        "group": "Interface",
+        "key": "pci_express",
+        "value": "PCIe 4.0"
+      },
+      {
+        "group": "Physical",
+        "key": "power_connectors",
+        "value": "2x PCIe 8-pin (adapter to 1x 12-pin included)"
+      },
+      {
+        "group": "Identity",
+        "key": "product_family",
+        "value": "GeForce"
+      },
+      {
+        "group": "Power",
+        "key": "recommended_psu",
+        "value": "750",
+        "unit": "W"
+      },
+      {
+        "group": "Physical",
+        "key": "slot_width",
+        "value": "2-Slot"
+      },
+      {
+        "group": "Power",
+        "key": "tbp",
+        "value": "350",
+        "unit": "W"
+      },
+      {
+        "group": "Memory",
+        "key": "vram_capacity",
+        "value": "12",
+        "unit": "GB"
+      },
+      {
+        "group": "Memory",
+        "key": "vram_type",
+        "value": "GDDR6X"
+      }
+    ],
+    "benchmarks": []
+  },
+  {
+    "category": "GPU",
+    "manufacturer": "NVIDIA",
+    "family": "GeForce",
+    "series": "GeForce RTX",
+    "generation": "RTX 30 Series",
+    "architecture": "Ampere",
+    "source": {
+      "name": "NVIDIA official product specifications",
+      "url": "https://www.nvidia.com/en-us/geforce/graphics-cards/30-series/rtx-3080/",
+      "date": "2026-09-16",
+      "notes": "Specifications verified against NVIDIA GeForce product specification pages on nvidia.com."
+    },
+    "product": {
+      "name": "NVIDIA GeForce RTX 3080",
+      "slug": "nvidia-geforce-rtx-3080",
+      "description": "NVIDIA GeForce RTX 3080 desktop graphics card based on the Ampere architecture.",
+      "release_date": "2020-09-17",
+      "status": "active",
+      "is_popular": true,
+      "architecture": "Ampere"
+    },
+    "images": [],
+    "specifications": [
+      {
+        "group": "Identity",
+        "key": "architecture",
+        "value": "Ampere"
+      },
+      {
+        "group": "Clocks",
+        "key": "boost_clock",
+        "value": "1710",
+        "unit": "MHz"
+      },
+      {
+        "group": "Interface",
+        "key": "display_outputs",
+        "value": "HDMI (3), 3x DisplayPort (4)"
+      },
+      {
+        "group": "Identity",
+        "key": "generation",
+        "value": "RTX 30 Series"
+      },
+      {
+        "group": "Physical",
+        "key": "height",
+        "value": "112",
+        "unit": "mm"
+      },
+      {
+        "group": "Identity",
+        "key": "launch_msrp",
+        "value": "699",
+        "unit": "USD"
+      },
+      {
+        "group": "Physical",
+        "key": "length",
+        "value": "285",
+        "unit": "mm"
+      },
+      {
+        "group": "Identity",
+        "key": "market_segment",
+        "value": "desktop"
+      },
+      {
+        "group": "Interface",
+        "key": "maximum_displays",
+        "value": "4"
+      },
+      {
+        "group": "Interface",
+        "key": "pci_express",
+        "value": "PCIe 4.0"
+      },
+      {
+        "group": "Physical",
+        "key": "power_connectors",
+        "value": "2x PCIe 8-pin (adapter to 1x 12-pin included)"
+      },
+      {
+        "group": "Identity",
+        "key": "product_family",
+        "value": "GeForce"
+      },
+      {
+        "group": "Power",
+        "key": "recommended_psu",
+        "value": "750",
+        "unit": "W"
+      },
+      {
+        "group": "Physical",
+        "key": "slot_width",
+        "value": "2-Slot"
+      },
+      {
+        "group": "Memory",
+        "key": "vram_type",
+        "value": "GDDR6X"
+      }
+    ],
+    "benchmarks": []
+  },
+  {
+    "category": "GPU",
+    "manufacturer": "NVIDIA",
+    "family": "GeForce",
+    "series": "GeForce RTX",
+    "generation": "RTX 30 Series",
+    "architecture": "Ampere",
+    "source": {
+      "name": "NVIDIA official product specifications",
+      "url": "https://www.nvidia.com/en-us/geforce/graphics-cards/30-series/rtx-3070-3070ti/",
+      "date": "2026-09-16",
+      "notes": "Specifications verified against NVIDIA GeForce product specification pages on nvidia.com."
+    },
+    "product": {
+      "name": "NVIDIA GeForce RTX 3070 Ti",
+      "slug": "nvidia-geforce-rtx-3070-ti",
+      "description": "NVIDIA GeForce RTX 3070 Ti desktop graphics card based on the Ampere architecture.",
+      "release_date": "2021-06-10",
+      "status": "active",
+      "is_popular": false,
+      "architecture": "Ampere"
+    },
+    "images": [],
+    "specifications": [
+      {
+        "group": "Identity",
+        "key": "architecture",
+        "value": "Ampere"
+      },
+      {
+        "group": "Clocks",
+        "key": "base_clock",
+        "value": "1580",
+        "unit": "MHz"
+      },
+      {
+        "group": "Clocks",
+        "key": "boost_clock",
+        "value": "1770",
+        "unit": "MHz"
+      },
+      {
+        "group": "Compute",
+        "key": "cuda_cores",
+        "value": "6144"
+      },
+      {
+        "group": "Interface",
+        "key": "display_outputs",
+        "value": "HDMI (3), 3x DisplayPort (4)"
+      },
+      {
+        "group": "Identity",
+        "key": "generation",
+        "value": "RTX 30 Series"
+      },
+      {
+        "group": "Physical",
+        "key": "height",
+        "value": "112",
+        "unit": "mm"
+      },
+      {
+        "group": "Identity",
+        "key": "launch_msrp",
+        "value": "599",
+        "unit": "USD"
+      },
+      {
+        "group": "Physical",
+        "key": "length",
+        "value": "267",
+        "unit": "mm"
+      },
+      {
+        "group": "Identity",
+        "key": "market_segment",
+        "value": "desktop"
+      },
+      {
+        "group": "Interface",
+        "key": "maximum_displays",
+        "value": "4"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_bus_width",
+        "value": "256",
+        "unit": "bit"
+      },
+      {
+        "group": "Interface",
+        "key": "pci_express",
+        "value": "PCIe 4.0"
+      },
+      {
+        "group": "Physical",
+        "key": "power_connectors",
+        "value": "2x PCIe 8-pin (adapter to 1x 12-pin included)"
+      },
+      {
+        "group": "Identity",
+        "key": "product_family",
+        "value": "GeForce"
+      },
+      {
+        "group": "Power",
+        "key": "recommended_psu",
+        "value": "750",
+        "unit": "W"
+      },
+      {
+        "group": "Physical",
+        "key": "slot_width",
+        "value": "2-Slot"
+      },
+      {
+        "group": "Power",
+        "key": "tbp",
+        "value": "290",
+        "unit": "W"
+      },
+      {
+        "group": "Memory",
+        "key": "vram_capacity",
+        "value": "8",
+        "unit": "GB"
+      },
+      {
+        "group": "Memory",
+        "key": "vram_type",
+        "value": "GDDR6X"
+      }
+    ],
+    "benchmarks": []
+  },
+  {
+    "category": "GPU",
+    "manufacturer": "NVIDIA",
+    "family": "GeForce",
+    "series": "GeForce RTX",
+    "generation": "RTX 30 Series",
+    "architecture": "Ampere",
+    "source": {
+      "name": "NVIDIA official product specifications",
+      "url": "https://www.nvidia.com/en-us/geforce/graphics-cards/30-series/rtx-3070-3070ti/",
+      "date": "2026-09-16",
+      "notes": "Specifications verified against NVIDIA GeForce product specification pages on nvidia.com."
+    },
+    "product": {
+      "name": "NVIDIA GeForce RTX 3070",
+      "slug": "nvidia-geforce-rtx-3070",
+      "description": "NVIDIA GeForce RTX 3070 desktop graphics card based on the Ampere architecture.",
+      "release_date": "2020-10-29",
+      "status": "active",
+      "is_popular": true,
+      "architecture": "Ampere"
+    },
+    "images": [],
+    "specifications": [
+      {
+        "group": "Identity",
+        "key": "architecture",
+        "value": "Ampere"
+      },
+      {
+        "group": "Clocks",
+        "key": "base_clock",
+        "value": "1500",
+        "unit": "MHz"
+      },
+      {
+        "group": "Clocks",
+        "key": "boost_clock",
+        "value": "1730",
+        "unit": "MHz"
+      },
+      {
+        "group": "Compute",
+        "key": "cuda_cores",
+        "value": "5888"
+      },
+      {
+        "group": "Interface",
+        "key": "display_outputs",
+        "value": "HDMI (3), 3x DisplayPort (4)"
+      },
+      {
+        "group": "Identity",
+        "key": "generation",
+        "value": "RTX 30 Series"
+      },
+      {
+        "group": "Physical",
+        "key": "height",
+        "value": "112",
+        "unit": "mm"
+      },
+      {
+        "group": "Identity",
+        "key": "launch_msrp",
+        "value": "499",
+        "unit": "USD"
+      },
+      {
+        "group": "Physical",
+        "key": "length",
+        "value": "242",
+        "unit": "mm"
+      },
+      {
+        "group": "Identity",
+        "key": "market_segment",
+        "value": "desktop"
+      },
+      {
+        "group": "Interface",
+        "key": "maximum_displays",
+        "value": "4"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_bus_width",
+        "value": "256",
+        "unit": "bit"
+      },
+      {
+        "group": "Interface",
+        "key": "pci_express",
+        "value": "PCIe 4.0"
+      },
+      {
+        "group": "Physical",
+        "key": "power_connectors",
+        "value": "1x PCIe 8-pin (adapter to 1x 12-pin included)"
+      },
+      {
+        "group": "Identity",
+        "key": "product_family",
+        "value": "GeForce"
+      },
+      {
+        "group": "Power",
+        "key": "recommended_psu",
+        "value": "650",
+        "unit": "W"
+      },
+      {
+        "group": "Physical",
+        "key": "slot_width",
+        "value": "2-Slot"
+      },
+      {
+        "group": "Power",
+        "key": "tbp",
+        "value": "220",
+        "unit": "W"
+      },
+      {
+        "group": "Memory",
+        "key": "vram_capacity",
+        "value": "8",
+        "unit": "GB"
+      },
+      {
+        "group": "Memory",
+        "key": "vram_type",
+        "value": "GDDR6"
+      }
+    ],
+    "benchmarks": []
+  },
+  {
+    "category": "GPU",
+    "manufacturer": "NVIDIA",
+    "family": "GeForce",
+    "series": "GeForce RTX",
+    "generation": "RTX 30 Series",
+    "architecture": "Ampere",
+    "source": {
+      "name": "NVIDIA official product specifications",
+      "url": "https://www.nvidia.com/en-us/geforce/graphics-cards/30-series/rtx-3060-ti/",
+      "date": "2026-09-16",
+      "notes": "Specifications verified against NVIDIA GeForce product specification pages on nvidia.com."
+    },
+    "product": {
+      "name": "NVIDIA GeForce RTX 3060 Ti",
+      "slug": "nvidia-geforce-rtx-3060-ti",
+      "description": "NVIDIA GeForce RTX 3060 Ti desktop graphics card based on the Ampere architecture.",
+      "release_date": "2020-12-02",
+      "status": "active",
+      "is_popular": true,
+      "architecture": "Ampere"
+    },
+    "images": [],
+    "specifications": [
+      {
+        "group": "Identity",
+        "key": "architecture",
+        "value": "Ampere"
+      },
+      {
+        "group": "Clocks",
+        "key": "base_clock",
+        "value": "1410",
+        "unit": "MHz"
+      },
+      {
+        "group": "Clocks",
+        "key": "boost_clock",
+        "value": "1670",
+        "unit": "MHz"
+      },
+      {
+        "group": "Compute",
+        "key": "cuda_cores",
+        "value": "4864"
+      },
+      {
+        "group": "Interface",
+        "key": "display_outputs",
+        "value": "HDMI (3), 3x DisplayPort (4)"
+      },
+      {
+        "group": "Identity",
+        "key": "generation",
+        "value": "RTX 30 Series"
+      },
+      {
+        "group": "Physical",
+        "key": "height",
+        "value": "112",
+        "unit": "mm"
+      },
+      {
+        "group": "Identity",
+        "key": "launch_msrp",
+        "value": "399",
+        "unit": "USD"
+      },
+      {
+        "group": "Physical",
+        "key": "length",
+        "value": "242",
+        "unit": "mm"
+      },
+      {
+        "group": "Identity",
+        "key": "market_segment",
+        "value": "desktop"
+      },
+      {
+        "group": "Interface",
+        "key": "maximum_displays",
+        "value": "4"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_bus_width",
+        "value": "256",
+        "unit": "bit"
+      },
+      {
+        "group": "Interface",
+        "key": "pci_express",
+        "value": "PCIe 4.0"
+      },
+      {
+        "group": "Physical",
+        "key": "power_connectors",
+        "value": "1x PCIe 8-pin (adapter to 1x 12-pin included)"
+      },
+      {
+        "group": "Identity",
+        "key": "product_family",
+        "value": "GeForce"
+      },
+      {
+        "group": "Power",
+        "key": "recommended_psu",
+        "value": "600",
+        "unit": "W"
+      },
+      {
+        "group": "Physical",
+        "key": "slot_width",
+        "value": "2-Slot"
+      },
+      {
+        "group": "Power",
+        "key": "tbp",
+        "value": "200",
+        "unit": "W"
+      },
+      {
+        "group": "Memory",
+        "key": "vram_capacity",
+        "value": "8",
+        "unit": "GB"
+      }
+    ],
+    "benchmarks": []
+  },
+  {
+    "category": "GPU",
+    "manufacturer": "NVIDIA",
+    "family": "GeForce",
+    "series": "GeForce RTX",
+    "generation": "RTX 30 Series",
+    "architecture": "Ampere",
+    "source": {
+      "name": "NVIDIA official product specifications",
+      "url": "https://www.nvidia.com/en-us/geforce/graphics-cards/30-series/",
+      "date": "2026-09-16",
+      "notes": "Specifications verified against NVIDIA GeForce product specification pages on nvidia.com."
+    },
+    "product": {
+      "name": "NVIDIA GeForce RTX 3060",
+      "slug": "nvidia-geforce-rtx-3060",
+      "description": "NVIDIA GeForce RTX 3060 desktop graphics card based on the Ampere architecture.",
+      "release_date": "2021-02-25",
+      "status": "active",
+      "is_popular": true,
+      "architecture": "Ampere"
+    },
+    "images": [],
+    "specifications": [
+      {
+        "group": "Identity",
+        "key": "architecture",
+        "value": "Ampere"
+      },
+      {
+        "group": "Clocks",
+        "key": "base_clock",
+        "value": "1320",
+        "unit": "MHz"
+      },
+      {
+        "group": "Clocks",
+        "key": "boost_clock",
+        "value": "1780",
+        "unit": "MHz"
+      },
+      {
+        "group": "Compute",
+        "key": "cuda_cores",
+        "value": "3584"
+      },
+      {
+        "group": "Interface",
+        "key": "display_outputs",
+        "value": "HDMI (3), 3x DisplayPort (4)"
+      },
+      {
+        "group": "Identity",
+        "key": "generation",
+        "value": "RTX 30 Series"
+      },
+      {
+        "group": "Identity",
+        "key": "launch_msrp",
+        "value": "329",
+        "unit": "USD"
+      },
+      {
+        "group": "Identity",
+        "key": "market_segment",
+        "value": "desktop"
+      },
+      {
+        "group": "Interface",
+        "key": "maximum_displays",
+        "value": "4"
+      },
+      {
+        "group": "Interface",
+        "key": "pci_express",
+        "value": "PCIe 4.0"
+      },
+      {
+        "group": "Physical",
+        "key": "power_connectors",
+        "value": "1x PCIe 8-pin"
+      },
+      {
+        "group": "Identity",
+        "key": "product_family",
+        "value": "GeForce"
+      },
+      {
+        "group": "Power",
+        "key": "recommended_psu",
+        "value": "550",
+        "unit": "W"
+      },
+      {
+        "group": "Power",
+        "key": "tbp",
+        "value": "170",
+        "unit": "W"
+      },
+      {
+        "group": "Memory",
+        "key": "vram_type",
+        "value": "GDDR6"
+      }
+    ],
+    "benchmarks": []
+  },
+  {
+    "category": "GPU",
+    "manufacturer": "NVIDIA",
+    "family": "GeForce",
+    "series": "GeForce RTX",
+    "generation": "RTX 30 Series",
+    "architecture": "Ampere",
+    "source": {
+      "name": "NVIDIA official product specifications",
+      "url": "https://www.nvidia.com/en-us/geforce/graphics-cards/30-series/rtx-3050/",
+      "date": "2026-09-16",
+      "notes": "Specifications verified against NVIDIA GeForce product specification pages on nvidia.com."
+    },
+    "product": {
+      "name": "NVIDIA GeForce RTX 3050 8GB",
+      "slug": "nvidia-geforce-rtx-3050-8gb",
+      "description": "NVIDIA GeForce RTX 3050 8GB desktop graphics card based on the Ampere architecture.",
+      "release_date": "2022-01-27",
+      "status": "active",
+      "is_popular": false,
+      "architecture": "Ampere"
+    },
+    "images": [],
+    "specifications": [
+      {
+        "group": "Identity",
+        "key": "architecture",
+        "value": "Ampere"
+      },
+      {
+        "group": "Clocks",
+        "key": "base_clock",
+        "value": "1550",
+        "unit": "MHz"
+      },
+      {
+        "group": "Clocks",
+        "key": "boost_clock",
+        "value": "1780",
+        "unit": "MHz"
+      },
+      {
+        "group": "Compute",
+        "key": "cuda_cores",
+        "value": "2560"
+      },
+      {
+        "group": "Interface",
+        "key": "display_outputs",
+        "value": "HDMI (3), 2x DisplayPort (4)"
+      },
+      {
+        "group": "Identity",
+        "key": "generation",
+        "value": "RTX 30 Series"
+      },
+      {
+        "group": "Identity",
+        "key": "launch_msrp",
+        "value": "249",
+        "unit": "USD"
+      },
+      {
+        "group": "Identity",
+        "key": "market_segment",
+        "value": "desktop"
+      },
+      {
+        "group": "Interface",
+        "key": "maximum_displays",
+        "value": "4"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_bus_width",
+        "value": "128",
+        "unit": "bit"
+      },
+      {
+        "group": "Interface",
+        "key": "pci_express",
+        "value": "PCIe 4.0"
+      },
+      {
+        "group": "Physical",
+        "key": "power_connectors",
+        "value": "1x PCIe 8-pin"
+      },
+      {
+        "group": "Identity",
+        "key": "product_family",
+        "value": "GeForce"
+      },
+      {
+        "group": "Power",
+        "key": "recommended_psu",
+        "value": "550",
+        "unit": "W"
+      },
+      {
+        "group": "Power",
+        "key": "tbp",
+        "value": "130",
+        "unit": "W"
+      },
+      {
+        "group": "Memory",
+        "key": "vram_capacity",
+        "value": "8",
+        "unit": "GB"
+      },
+      {
+        "group": "Memory",
+        "key": "vram_type",
+        "value": "GDDR6"
+      }
+    ],
+    "benchmarks": []
+  },
+  {
+    "category": "GPU",
+    "manufacturer": "NVIDIA",
+    "family": "GeForce",
+    "series": "GeForce RTX",
+    "generation": "RTX 30 Series",
+    "architecture": "Ampere",
+    "source": {
+      "name": "NVIDIA official product specifications",
+      "url": "https://www.nvidia.com/en-us/geforce/graphics-cards/30-series/rtx-3050/",
+      "date": "2026-09-16",
+      "notes": "Specifications verified against NVIDIA GeForce product specification pages on nvidia.com."
+    },
+    "product": {
+      "name": "NVIDIA GeForce RTX 3050 6GB",
+      "slug": "nvidia-geforce-rtx-3050-6gb",
+      "description": "NVIDIA GeForce RTX 3050 6GB desktop graphics card based on the Ampere architecture.",
+      "release_date": "2024-02-02",
+      "status": "active",
+      "is_popular": false,
+      "architecture": "Ampere"
+    },
+    "images": [],
+    "specifications": [
+      {
+        "group": "Identity",
+        "key": "architecture",
+        "value": "Ampere"
+      },
+      {
+        "group": "Clocks",
+        "key": "base_clock",
+        "value": "1040",
+        "unit": "MHz"
+      },
+      {
+        "group": "Clocks",
+        "key": "boost_clock",
+        "value": "1470",
+        "unit": "MHz"
+      },
+      {
+        "group": "Compute",
+        "key": "cuda_cores",
+        "value": "2304"
+      },
+      {
+        "group": "Interface",
+        "key": "display_outputs",
+        "value": "HDMI (3), 2x DisplayPort (4)"
+      },
+      {
+        "group": "Identity",
+        "key": "generation",
+        "value": "RTX 30 Series"
+      },
+      {
+        "group": "Identity",
+        "key": "market_segment",
+        "value": "desktop"
+      },
+      {
+        "group": "Interface",
+        "key": "maximum_displays",
+        "value": "4"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_bus_width",
+        "value": "96",
+        "unit": "bit"
+      },
+      {
+        "group": "Interface",
+        "key": "pci_express",
+        "value": "PCIe 4.0"
+      },
+      {
+        "group": "Identity",
+        "key": "product_family",
+        "value": "GeForce"
+      },
+      {
+        "group": "Power",
+        "key": "recommended_psu",
+        "value": "300",
+        "unit": "W"
+      },
+      {
+        "group": "Power",
+        "key": "tbp",
+        "value": "70",
+        "unit": "W"
+      },
+      {
+        "group": "Memory",
+        "key": "vram_capacity",
+        "value": "6",
+        "unit": "GB"
+      },
+      {
+        "group": "Memory",
+        "key": "vram_type",
+        "value": "GDDR6"
+      }
+    ],
+    "benchmarks": []
+  }
+]
