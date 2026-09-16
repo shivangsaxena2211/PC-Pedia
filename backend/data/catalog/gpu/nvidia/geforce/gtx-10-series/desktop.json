@@ -1,0 +1,1246 @@
+[
+  {
+    "category": "GPU",
+    "manufacturer": "NVIDIA",
+    "family": "GeForce",
+    "series": "GeForce GTX",
+    "generation": "GTX 10 Series",
+    "architecture": "Pascal",
+    "source": {
+      "name": "NVIDIA official product specifications",
+      "url": "https://www.nvidia.com/en-us/geforce/news/nvidia-geforce-gtx-1080-ti/",
+      "date": "2026-09-16",
+      "notes": "Specifications verified against NVIDIA GeForce product specification pages on nvidia.com."
+    },
+    "product": {
+      "name": "NVIDIA GeForce GTX 1080 Ti",
+      "slug": "nvidia-geforce-gtx-1080-ti",
+      "description": "NVIDIA GeForce GTX 1080 Ti desktop graphics card based on the Pascal architecture.",
+      "release_date": "2017-03-10",
+      "status": "active",
+      "is_popular": true,
+      "architecture": "Pascal"
+    },
+    "images": [],
+    "specifications": [
+      {
+        "group": "Identity",
+        "key": "architecture",
+        "value": "Pascal"
+      },
+      {
+        "group": "Clocks",
+        "key": "base_clock",
+        "value": "1480",
+        "unit": "MHz"
+      },
+      {
+        "group": "Clocks",
+        "key": "boost_clock",
+        "value": "1582",
+        "unit": "MHz"
+      },
+      {
+        "group": "Compute",
+        "key": "cuda_cores",
+        "value": "3584"
+      },
+      {
+        "group": "Interface",
+        "key": "display_outputs",
+        "value": "DP 1.4, HDMI 2.0b"
+      },
+      {
+        "group": "Identity",
+        "key": "generation",
+        "value": "GTX 10 Series"
+      },
+      {
+        "group": "Physical",
+        "key": "height",
+        "value": "111",
+        "unit": "mm"
+      },
+      {
+        "group": "Identity",
+        "key": "launch_msrp",
+        "value": "699",
+        "unit": "USD"
+      },
+      {
+        "group": "Physical",
+        "key": "length",
+        "value": "267",
+        "unit": "mm"
+      },
+      {
+        "group": "Identity",
+        "key": "market_segment",
+        "value": "desktop"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_bandwidth",
+        "value": "484",
+        "unit": "GB/s"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_bus_width",
+        "value": "352",
+        "unit": "bit"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_speed",
+        "value": "11",
+        "unit": "Gbps"
+      },
+      {
+        "group": "Interface",
+        "key": "pci_express",
+        "value": "PCIe 3.0"
+      },
+      {
+        "group": "Physical",
+        "key": "power_connectors",
+        "value": "1x PCIe 6-pin + 1x PCIe 8-pin"
+      },
+      {
+        "group": "Identity",
+        "key": "product_family",
+        "value": "GeForce"
+      },
+      {
+        "group": "Power",
+        "key": "recommended_psu",
+        "value": "600",
+        "unit": "W"
+      },
+      {
+        "group": "Physical",
+        "key": "slot_width",
+        "value": "2-Slot"
+      },
+      {
+        "group": "Power",
+        "key": "tbp",
+        "value": "250",
+        "unit": "W"
+      },
+      {
+        "group": "Memory",
+        "key": "vram_capacity",
+        "value": "11",
+        "unit": "GB"
+      },
+      {
+        "group": "Memory",
+        "key": "vram_type",
+        "value": "GDDR5X"
+      }
+    ],
+    "benchmarks": []
+  },
+  {
+    "category": "GPU",
+    "manufacturer": "NVIDIA",
+    "family": "GeForce",
+    "series": "GeForce GTX",
+    "generation": "GTX 10 Series",
+    "architecture": "Pascal",
+    "source": {
+      "name": "NVIDIA official product specifications",
+      "url": "https://www.nvidia.com/en-us/geforce/news/geforce-gtx-1080-gaming-perfected/",
+      "date": "2026-09-16",
+      "notes": "Specifications verified against NVIDIA GeForce product specification pages on nvidia.com."
+    },
+    "product": {
+      "name": "NVIDIA GeForce GTX 1080",
+      "slug": "nvidia-geforce-gtx-1080",
+      "description": "NVIDIA GeForce GTX 1080 desktop graphics card based on the Pascal architecture.",
+      "release_date": "2016-05-27",
+      "status": "active",
+      "is_popular": true,
+      "architecture": "Pascal"
+    },
+    "images": [],
+    "specifications": [
+      {
+        "group": "Identity",
+        "key": "architecture",
+        "value": "Pascal"
+      },
+      {
+        "group": "Clocks",
+        "key": "base_clock",
+        "value": "1607",
+        "unit": "MHz"
+      },
+      {
+        "group": "Clocks",
+        "key": "boost_clock",
+        "value": "1733",
+        "unit": "MHz"
+      },
+      {
+        "group": "Compute",
+        "key": "cuda_cores",
+        "value": "2560"
+      },
+      {
+        "group": "Interface",
+        "key": "display_outputs",
+        "value": "DP 1.4, HDMI 2.0b, DL-DVI"
+      },
+      {
+        "group": "Identity",
+        "key": "generation",
+        "value": "GTX 10 Series"
+      },
+      {
+        "group": "Physical",
+        "key": "height",
+        "value": "111",
+        "unit": "mm"
+      },
+      {
+        "group": "Identity",
+        "key": "launch_msrp",
+        "value": "599",
+        "unit": "USD"
+      },
+      {
+        "group": "Physical",
+        "key": "length",
+        "value": "267",
+        "unit": "mm"
+      },
+      {
+        "group": "Identity",
+        "key": "market_segment",
+        "value": "desktop"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_bandwidth",
+        "value": "320",
+        "unit": "GB/s"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_bus_width",
+        "value": "256",
+        "unit": "bit"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_speed",
+        "value": "10",
+        "unit": "Gbps"
+      },
+      {
+        "group": "Interface",
+        "key": "pci_express",
+        "value": "PCIe 3.0"
+      },
+      {
+        "group": "Physical",
+        "key": "power_connectors",
+        "value": "1x PCIe 8-pin"
+      },
+      {
+        "group": "Identity",
+        "key": "product_family",
+        "value": "GeForce"
+      },
+      {
+        "group": "Power",
+        "key": "recommended_psu",
+        "value": "500",
+        "unit": "W"
+      },
+      {
+        "group": "Physical",
+        "key": "slot_width",
+        "value": "2-Slot"
+      },
+      {
+        "group": "Power",
+        "key": "tbp",
+        "value": "180",
+        "unit": "W"
+      },
+      {
+        "group": "Memory",
+        "key": "vram_capacity",
+        "value": "8",
+        "unit": "GB"
+      },
+      {
+        "group": "Memory",
+        "key": "vram_type",
+        "value": "GDDR5X"
+      }
+    ],
+    "benchmarks": []
+  },
+  {
+    "category": "GPU",
+    "manufacturer": "NVIDIA",
+    "family": "GeForce",
+    "series": "GeForce GTX",
+    "generation": "GTX 10 Series",
+    "architecture": "Pascal",
+    "source": {
+      "name": "NVIDIA official product specifications",
+      "url": "https://www.nvidia.com/en-us/geforce/news/nvidia-geforce-gtx-1070-ti/",
+      "date": "2026-09-16",
+      "notes": "Specifications verified against NVIDIA GeForce product specification pages on nvidia.com."
+    },
+    "product": {
+      "name": "NVIDIA GeForce GTX 1070 Ti",
+      "slug": "nvidia-geforce-gtx-1070-ti",
+      "description": "NVIDIA GeForce GTX 1070 Ti desktop graphics card based on the Pascal architecture.",
+      "release_date": "2017-11-02",
+      "status": "active",
+      "is_popular": true,
+      "architecture": "Pascal"
+    },
+    "images": [],
+    "specifications": [
+      {
+        "group": "Identity",
+        "key": "architecture",
+        "value": "Pascal"
+      },
+      {
+        "group": "Clocks",
+        "key": "base_clock",
+        "value": "1607",
+        "unit": "MHz"
+      },
+      {
+        "group": "Clocks",
+        "key": "boost_clock",
+        "value": "1683",
+        "unit": "MHz"
+      },
+      {
+        "group": "Compute",
+        "key": "cuda_cores",
+        "value": "2432"
+      },
+      {
+        "group": "Interface",
+        "key": "display_outputs",
+        "value": "DP 1.4, HDMI 2.0b, DL-DVI"
+      },
+      {
+        "group": "Identity",
+        "key": "generation",
+        "value": "GTX 10 Series"
+      },
+      {
+        "group": "Physical",
+        "key": "height",
+        "value": "111",
+        "unit": "mm"
+      },
+      {
+        "group": "Identity",
+        "key": "launch_msrp",
+        "value": "449",
+        "unit": "USD"
+      },
+      {
+        "group": "Physical",
+        "key": "length",
+        "value": "267",
+        "unit": "mm"
+      },
+      {
+        "group": "Identity",
+        "key": "market_segment",
+        "value": "desktop"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_bandwidth",
+        "value": "256",
+        "unit": "GB/s"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_bus_width",
+        "value": "256",
+        "unit": "bit"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_speed",
+        "value": "8",
+        "unit": "Gbps"
+      },
+      {
+        "group": "Interface",
+        "key": "pci_express",
+        "value": "PCIe 3.0"
+      },
+      {
+        "group": "Physical",
+        "key": "power_connectors",
+        "value": "1x PCIe 8-pin"
+      },
+      {
+        "group": "Identity",
+        "key": "product_family",
+        "value": "GeForce"
+      },
+      {
+        "group": "Power",
+        "key": "recommended_psu",
+        "value": "500",
+        "unit": "W"
+      },
+      {
+        "group": "Physical",
+        "key": "slot_width",
+        "value": "2-Slot"
+      },
+      {
+        "group": "Power",
+        "key": "tbp",
+        "value": "180",
+        "unit": "W"
+      },
+      {
+        "group": "Memory",
+        "key": "vram_capacity",
+        "value": "8",
+        "unit": "GB"
+      },
+      {
+        "group": "Memory",
+        "key": "vram_type",
+        "value": "GDDR5"
+      }
+    ],
+    "benchmarks": []
+  },
+  {
+    "category": "GPU",
+    "manufacturer": "NVIDIA",
+    "family": "GeForce",
+    "series": "GeForce GTX",
+    "generation": "GTX 10 Series",
+    "architecture": "Pascal",
+    "source": {
+      "name": "NVIDIA official product specifications",
+      "url": "https://www.nvidia.com/en-us/geforce/news/geforce-gtx-1070/",
+      "date": "2026-09-16",
+      "notes": "Specifications verified against NVIDIA GeForce product specification pages on nvidia.com."
+    },
+    "product": {
+      "name": "NVIDIA GeForce GTX 1070",
+      "slug": "nvidia-geforce-gtx-1070",
+      "description": "NVIDIA GeForce GTX 1070 desktop graphics card based on the Pascal architecture.",
+      "release_date": "2016-06-10",
+      "status": "active",
+      "is_popular": true,
+      "architecture": "Pascal"
+    },
+    "images": [],
+    "specifications": [
+      {
+        "group": "Identity",
+        "key": "architecture",
+        "value": "Pascal"
+      },
+      {
+        "group": "Clocks",
+        "key": "base_clock",
+        "value": "1506",
+        "unit": "MHz"
+      },
+      {
+        "group": "Clocks",
+        "key": "boost_clock",
+        "value": "1683",
+        "unit": "MHz"
+      },
+      {
+        "group": "Compute",
+        "key": "cuda_cores",
+        "value": "1920"
+      },
+      {
+        "group": "Interface",
+        "key": "display_outputs",
+        "value": "DP 1.4, HDMI 2.0b, DL-DVI"
+      },
+      {
+        "group": "Identity",
+        "key": "generation",
+        "value": "GTX 10 Series"
+      },
+      {
+        "group": "Physical",
+        "key": "height",
+        "value": "111",
+        "unit": "mm"
+      },
+      {
+        "group": "Identity",
+        "key": "launch_msrp",
+        "value": "379",
+        "unit": "USD"
+      },
+      {
+        "group": "Physical",
+        "key": "length",
+        "value": "267",
+        "unit": "mm"
+      },
+      {
+        "group": "Identity",
+        "key": "market_segment",
+        "value": "desktop"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_bandwidth",
+        "value": "256",
+        "unit": "GB/s"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_bus_width",
+        "value": "256",
+        "unit": "bit"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_speed",
+        "value": "8",
+        "unit": "Gbps"
+      },
+      {
+        "group": "Interface",
+        "key": "pci_express",
+        "value": "PCIe 3.0"
+      },
+      {
+        "group": "Physical",
+        "key": "power_connectors",
+        "value": "1x PCIe 8-pin"
+      },
+      {
+        "group": "Identity",
+        "key": "product_family",
+        "value": "GeForce"
+      },
+      {
+        "group": "Power",
+        "key": "recommended_psu",
+        "value": "500",
+        "unit": "W"
+      },
+      {
+        "group": "Physical",
+        "key": "slot_width",
+        "value": "2-Slot"
+      },
+      {
+        "group": "Power",
+        "key": "tbp",
+        "value": "150",
+        "unit": "W"
+      },
+      {
+        "group": "Memory",
+        "key": "vram_capacity",
+        "value": "8",
+        "unit": "GB"
+      },
+      {
+        "group": "Memory",
+        "key": "vram_type",
+        "value": "GDDR5"
+      }
+    ],
+    "benchmarks": []
+  },
+  {
+    "category": "GPU",
+    "manufacturer": "NVIDIA",
+    "family": "GeForce",
+    "series": "GeForce GTX",
+    "generation": "GTX 10 Series",
+    "architecture": "Pascal",
+    "source": {
+      "name": "NVIDIA official product specifications",
+      "url": "https://www.nvidia.com/en-us/geforce/news/nvidia-geforce-gtx-1060/",
+      "date": "2026-09-16",
+      "notes": "Specifications verified against NVIDIA GeForce product specification pages on nvidia.com."
+    },
+    "product": {
+      "name": "NVIDIA GeForce GTX 1060 6GB",
+      "slug": "nvidia-geforce-gtx-1060-6gb",
+      "description": "NVIDIA GeForce GTX 1060 6GB desktop graphics card based on the Pascal architecture.",
+      "release_date": "2016-07-19",
+      "status": "active",
+      "is_popular": true,
+      "architecture": "Pascal"
+    },
+    "images": [],
+    "specifications": [
+      {
+        "group": "Identity",
+        "key": "architecture",
+        "value": "Pascal"
+      },
+      {
+        "group": "Clocks",
+        "key": "base_clock",
+        "value": "1506",
+        "unit": "MHz"
+      },
+      {
+        "group": "Clocks",
+        "key": "boost_clock",
+        "value": "1708",
+        "unit": "MHz"
+      },
+      {
+        "group": "Compute",
+        "key": "cuda_cores",
+        "value": "1280"
+      },
+      {
+        "group": "Interface",
+        "key": "display_outputs",
+        "value": "DP 1.4, HDMI 2.0b, Dual Link-DVI"
+      },
+      {
+        "group": "Identity",
+        "key": "generation",
+        "value": "GTX 10 Series"
+      },
+      {
+        "group": "Physical",
+        "key": "height",
+        "value": "111",
+        "unit": "mm"
+      },
+      {
+        "group": "Identity",
+        "key": "launch_msrp",
+        "value": "249",
+        "unit": "USD"
+      },
+      {
+        "group": "Physical",
+        "key": "length",
+        "value": "249",
+        "unit": "mm"
+      },
+      {
+        "group": "Identity",
+        "key": "market_segment",
+        "value": "desktop"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_bandwidth",
+        "value": "192",
+        "unit": "GB/s"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_bus_width",
+        "value": "192",
+        "unit": "bit"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_speed",
+        "value": "8",
+        "unit": "Gbps"
+      },
+      {
+        "group": "Interface",
+        "key": "pci_express",
+        "value": "PCIe 3.0"
+      },
+      {
+        "group": "Physical",
+        "key": "power_connectors",
+        "value": "1x PCIe 6-pin"
+      },
+      {
+        "group": "Identity",
+        "key": "product_family",
+        "value": "GeForce"
+      },
+      {
+        "group": "Power",
+        "key": "recommended_psu",
+        "value": "400",
+        "unit": "W"
+      },
+      {
+        "group": "Physical",
+        "key": "slot_width",
+        "value": "2-Slot"
+      },
+      {
+        "group": "Power",
+        "key": "tbp",
+        "value": "120",
+        "unit": "W"
+      },
+      {
+        "group": "Memory",
+        "key": "vram_capacity",
+        "value": "6",
+        "unit": "GB"
+      },
+      {
+        "group": "Memory",
+        "key": "vram_type",
+        "value": "GDDR5"
+      }
+    ],
+    "benchmarks": []
+  },
+  {
+    "category": "GPU",
+    "manufacturer": "NVIDIA",
+    "family": "GeForce",
+    "series": "GeForce GTX",
+    "generation": "GTX 10 Series",
+    "architecture": "Pascal",
+    "source": {
+      "name": "NVIDIA official product specifications",
+      "url": "https://www.nvidia.com/en-gb/geforce/10-series/10-series-specs/",
+      "date": "2026-09-16",
+      "notes": "Specifications verified against NVIDIA GeForce product specification pages on nvidia.com."
+    },
+    "product": {
+      "name": "NVIDIA GeForce GTX 1060 3GB",
+      "slug": "nvidia-geforce-gtx-1060-3gb",
+      "description": "NVIDIA GeForce GTX 1060 3GB desktop graphics card based on the Pascal architecture.",
+      "status": "active",
+      "is_popular": false,
+      "architecture": "Pascal"
+    },
+    "images": [],
+    "specifications": [
+      {
+        "group": "Identity",
+        "key": "architecture",
+        "value": "Pascal"
+      },
+      {
+        "group": "Clocks",
+        "key": "base_clock",
+        "value": "1506",
+        "unit": "MHz"
+      },
+      {
+        "group": "Clocks",
+        "key": "boost_clock",
+        "value": "1708",
+        "unit": "MHz"
+      },
+      {
+        "group": "Compute",
+        "key": "cuda_cores",
+        "value": "1152"
+      },
+      {
+        "group": "Interface",
+        "key": "display_outputs",
+        "value": "DP 1.4, HDMI 2.0b, Dual Link-DVI"
+      },
+      {
+        "group": "Identity",
+        "key": "generation",
+        "value": "GTX 10 Series"
+      },
+      {
+        "group": "Physical",
+        "key": "height",
+        "value": "111",
+        "unit": "mm"
+      },
+      {
+        "group": "Physical",
+        "key": "length",
+        "value": "249",
+        "unit": "mm"
+      },
+      {
+        "group": "Identity",
+        "key": "market_segment",
+        "value": "desktop"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_bandwidth",
+        "value": "192",
+        "unit": "GB/s"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_bus_width",
+        "value": "192",
+        "unit": "bit"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_speed",
+        "value": "8",
+        "unit": "Gbps"
+      },
+      {
+        "group": "Interface",
+        "key": "pci_express",
+        "value": "PCIe 3.0"
+      },
+      {
+        "group": "Physical",
+        "key": "power_connectors",
+        "value": "1x PCIe 6-pin"
+      },
+      {
+        "group": "Identity",
+        "key": "product_family",
+        "value": "GeForce"
+      },
+      {
+        "group": "Power",
+        "key": "recommended_psu",
+        "value": "400",
+        "unit": "W"
+      },
+      {
+        "group": "Physical",
+        "key": "slot_width",
+        "value": "2-Slot"
+      },
+      {
+        "group": "Power",
+        "key": "tbp",
+        "value": "120",
+        "unit": "W"
+      },
+      {
+        "group": "Memory",
+        "key": "vram_capacity",
+        "value": "3",
+        "unit": "GB"
+      },
+      {
+        "group": "Memory",
+        "key": "vram_type",
+        "value": "GDDR5"
+      }
+    ],
+    "benchmarks": []
+  },
+  {
+    "category": "GPU",
+    "manufacturer": "NVIDIA",
+    "family": "GeForce",
+    "series": "GeForce GTX",
+    "generation": "GTX 10 Series",
+    "architecture": "Pascal",
+    "source": {
+      "name": "NVIDIA official product specifications",
+      "url": "https://www.nvidia.com/en-gb/geforce/10-series/10-series-specs/",
+      "date": "2026-09-16",
+      "notes": "Specifications verified against NVIDIA GeForce product specification pages on nvidia.com."
+    },
+    "product": {
+      "name": "NVIDIA GeForce GTX 1050 Ti",
+      "slug": "nvidia-geforce-gtx-1050-ti",
+      "description": "NVIDIA GeForce GTX 1050 Ti desktop graphics card based on the Pascal architecture.",
+      "status": "active",
+      "is_popular": true,
+      "architecture": "Pascal"
+    },
+    "images": [],
+    "specifications": [
+      {
+        "group": "Identity",
+        "key": "architecture",
+        "value": "Pascal"
+      },
+      {
+        "group": "Clocks",
+        "key": "base_clock",
+        "value": "1290",
+        "unit": "MHz"
+      },
+      {
+        "group": "Clocks",
+        "key": "boost_clock",
+        "value": "1392",
+        "unit": "MHz"
+      },
+      {
+        "group": "Compute",
+        "key": "cuda_cores",
+        "value": "768"
+      },
+      {
+        "group": "Interface",
+        "key": "display_outputs",
+        "value": "DP 1.4, HDMI 2.0b, Dual Link-DVI"
+      },
+      {
+        "group": "Identity",
+        "key": "generation",
+        "value": "GTX 10 Series"
+      },
+      {
+        "group": "Physical",
+        "key": "height",
+        "value": "111",
+        "unit": "mm"
+      },
+      {
+        "group": "Physical",
+        "key": "length",
+        "value": "145",
+        "unit": "mm"
+      },
+      {
+        "group": "Identity",
+        "key": "market_segment",
+        "value": "desktop"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_bandwidth",
+        "value": "112",
+        "unit": "GB/s"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_bus_width",
+        "value": "128",
+        "unit": "bit"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_speed",
+        "value": "7",
+        "unit": "Gbps"
+      },
+      {
+        "group": "Interface",
+        "key": "pci_express",
+        "value": "PCIe 3.0"
+      },
+      {
+        "group": "Identity",
+        "key": "product_family",
+        "value": "GeForce"
+      },
+      {
+        "group": "Power",
+        "key": "recommended_psu",
+        "value": "300",
+        "unit": "W"
+      },
+      {
+        "group": "Physical",
+        "key": "slot_width",
+        "value": "2-Slot"
+      },
+      {
+        "group": "Power",
+        "key": "tbp",
+        "value": "75",
+        "unit": "W"
+      },
+      {
+        "group": "Memory",
+        "key": "vram_capacity",
+        "value": "4",
+        "unit": "GB"
+      },
+      {
+        "group": "Memory",
+        "key": "vram_type",
+        "value": "GDDR5"
+      }
+    ],
+    "benchmarks": []
+  },
+  {
+    "category": "GPU",
+    "manufacturer": "NVIDIA",
+    "family": "GeForce",
+    "series": "GeForce GTX",
+    "generation": "GTX 10 Series",
+    "architecture": "Pascal",
+    "source": {
+      "name": "NVIDIA official product specifications",
+      "url": "https://www.nvidia.com/en-gb/geforce/10-series/10-series-specs/",
+      "date": "2026-09-16",
+      "notes": "Specifications verified against NVIDIA GeForce product specification pages on nvidia.com."
+    },
+    "product": {
+      "name": "NVIDIA GeForce GTX 1050 2GB",
+      "slug": "nvidia-geforce-gtx-1050-2gb",
+      "description": "NVIDIA GeForce GTX 1050 2GB desktop graphics card based on the Pascal architecture.",
+      "status": "active",
+      "is_popular": false,
+      "architecture": "Pascal"
+    },
+    "images": [],
+    "specifications": [
+      {
+        "group": "Identity",
+        "key": "architecture",
+        "value": "Pascal"
+      },
+      {
+        "group": "Clocks",
+        "key": "base_clock",
+        "value": "1354",
+        "unit": "MHz"
+      },
+      {
+        "group": "Clocks",
+        "key": "boost_clock",
+        "value": "1455",
+        "unit": "MHz"
+      },
+      {
+        "group": "Compute",
+        "key": "cuda_cores",
+        "value": "640"
+      },
+      {
+        "group": "Interface",
+        "key": "display_outputs",
+        "value": "DP 1.4, HDMI 2.0b, Dual Link-DVI"
+      },
+      {
+        "group": "Identity",
+        "key": "generation",
+        "value": "GTX 10 Series"
+      },
+      {
+        "group": "Physical",
+        "key": "height",
+        "value": "111",
+        "unit": "mm"
+      },
+      {
+        "group": "Physical",
+        "key": "length",
+        "value": "145",
+        "unit": "mm"
+      },
+      {
+        "group": "Identity",
+        "key": "market_segment",
+        "value": "desktop"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_bandwidth",
+        "value": "112",
+        "unit": "GB/s"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_bus_width",
+        "value": "128",
+        "unit": "bit"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_speed",
+        "value": "7",
+        "unit": "Gbps"
+      },
+      {
+        "group": "Interface",
+        "key": "pci_express",
+        "value": "PCIe 3.0"
+      },
+      {
+        "group": "Identity",
+        "key": "product_family",
+        "value": "GeForce"
+      },
+      {
+        "group": "Power",
+        "key": "recommended_psu",
+        "value": "300",
+        "unit": "W"
+      },
+      {
+        "group": "Physical",
+        "key": "slot_width",
+        "value": "2-Slot"
+      },
+      {
+        "group": "Power",
+        "key": "tbp",
+        "value": "75",
+        "unit": "W"
+      },
+      {
+        "group": "Memory",
+        "key": "vram_capacity",
+        "value": "2",
+        "unit": "GB"
+      },
+      {
+        "group": "Memory",
+        "key": "vram_type",
+        "value": "GDDR5"
+      }
+    ],
+    "benchmarks": []
+  },
+  {
+    "category": "GPU",
+    "manufacturer": "NVIDIA",
+    "family": "GeForce",
+    "series": "GeForce GTX",
+    "generation": "GTX 10 Series",
+    "architecture": "Pascal",
+    "source": {
+      "name": "NVIDIA official product specifications",
+      "url": "https://www.nvidia.com/en-gb/geforce/10-series/10-series-specs/",
+      "date": "2026-09-16",
+      "notes": "Specifications verified against NVIDIA GeForce product specification pages on nvidia.com."
+    },
+    "product": {
+      "name": "NVIDIA GeForce GTX 1050 3GB",
+      "slug": "nvidia-geforce-gtx-1050-3gb",
+      "description": "NVIDIA GeForce GTX 1050 3GB desktop graphics card based on the Pascal architecture.",
+      "status": "active",
+      "is_popular": false,
+      "architecture": "Pascal"
+    },
+    "images": [],
+    "specifications": [
+      {
+        "group": "Identity",
+        "key": "architecture",
+        "value": "Pascal"
+      },
+      {
+        "group": "Clocks",
+        "key": "base_clock",
+        "value": "1392",
+        "unit": "MHz"
+      },
+      {
+        "group": "Clocks",
+        "key": "boost_clock",
+        "value": "1518",
+        "unit": "MHz"
+      },
+      {
+        "group": "Compute",
+        "key": "cuda_cores",
+        "value": "768"
+      },
+      {
+        "group": "Interface",
+        "key": "display_outputs",
+        "value": "DP 1.4, HDMI 2.0b, Dual Link-DVI"
+      },
+      {
+        "group": "Identity",
+        "key": "generation",
+        "value": "GTX 10 Series"
+      },
+      {
+        "group": "Physical",
+        "key": "height",
+        "value": "111",
+        "unit": "mm"
+      },
+      {
+        "group": "Physical",
+        "key": "length",
+        "value": "145",
+        "unit": "mm"
+      },
+      {
+        "group": "Identity",
+        "key": "market_segment",
+        "value": "desktop"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_bandwidth",
+        "value": "84",
+        "unit": "GB/s"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_bus_width",
+        "value": "96",
+        "unit": "bit"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_speed",
+        "value": "7",
+        "unit": "Gbps"
+      },
+      {
+        "group": "Interface",
+        "key": "pci_express",
+        "value": "PCIe 3.0"
+      },
+      {
+        "group": "Identity",
+        "key": "product_family",
+        "value": "GeForce"
+      },
+      {
+        "group": "Power",
+        "key": "recommended_psu",
+        "value": "300",
+        "unit": "W"
+      },
+      {
+        "group": "Physical",
+        "key": "slot_width",
+        "value": "2-Slot"
+      },
+      {
+        "group": "Power",
+        "key": "tbp",
+        "value": "75",
+        "unit": "W"
+      },
+      {
+        "group": "Memory",
+        "key": "vram_capacity",
+        "value": "3",
+        "unit": "GB"
+      },
+      {
+        "group": "Memory",
+        "key": "vram_type",
+        "value": "GDDR5"
+      }
+    ],
+    "benchmarks": []
+  }
+]

@@ -34,6 +34,10 @@ from data.catalog.gpu.verified_nvidia_gtx_16_gen import (
     NVIDIA_GTX_16_DESKTOP,
     VERIFIED_DATE as VERIFIED_DATE_16,
 )
+from data.catalog.gpu.verified_nvidia_gtx_10_gen import (
+    NVIDIA_GTX_10_DESKTOP,
+    VERIFIED_DATE as VERIFIED_DATE_10,
+)
 
 CATALOG_ROOT = BACKEND_ROOT / "data" / "catalog" / "gpu"
 
@@ -202,6 +206,13 @@ def build_gtx_16_desktop_batch() -> list[dict]:
     ]
 
 
+def build_gtx_10_desktop_batch() -> list[dict]:
+    return [
+        build_nvidia_record(entry, verified_date=VERIFIED_DATE_10)
+        for entry in NVIDIA_GTX_10_DESKTOP
+    ]
+
+
 def write_catalog(path: Path, records: list[dict]) -> None:
     errors, warnings = validate_catalog_records(records)
     if errors:
@@ -284,6 +295,10 @@ def build_all() -> None:
     write_catalog(
         CATALOG_ROOT / "nvidia" / "geforce" / "gtx-16-series" / "desktop.json",
         build_gtx_16_desktop_batch(),
+    )
+    write_catalog(
+        CATALOG_ROOT / "nvidia" / "geforce" / "gtx-10-series" / "desktop.json",
+        build_gtx_10_desktop_batch(),
     )
 
 
