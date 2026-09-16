@@ -1,0 +1,18 @@
+Phase 9 exclusion log (Intel Core 4th/5th Gen desktop catalog)
+
+Included:
+- 5th Gen Broadwell desktop Core: 2 (i5-5675C, i7-5775C)
+- 4th Gen Haswell / Haswell Refresh desktop Core: 49
+
+Excluded categories / candidates:
+- Pentium G-series (e.g. G3420, G3220, G3220T) — not Core family
+- Celeron — not Core family
+- Intel Core X-series / HEDT (e.g. i7-4930K, i7-5820K, i7-5930K) — LGA2011, not LGA1150 desktop Core
+- Xeon — out of phase scope
+- Embedded TE-suffix SKUs — excluded by policy
+- Mobile / BGA R-series Broadwell (e.g. i7-5775R / i5-5675R if encountered) — not LGA1150 desktop socket
+- Transient ARK fetch timeouts during scan (88029, 88042, 88051, 81234) — retried adjacent known Core SKUs; no additional Core desktop SKUs confirmed in those IDs
+
+Notes:
+- Broadwell desktop Core market was intentionally tiny; only the unlocked C-series LGA1150 SKUs exist on Intel ARK.
+- Haswell coverage includes i3/i5/i7 desktop S/T/K variants verified on Intel ARK with Vertical Segment = Desktop and Sockets Supported = FCLGA1150 / LGA 1150.

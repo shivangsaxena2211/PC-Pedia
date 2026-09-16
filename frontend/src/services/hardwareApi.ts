@@ -31,8 +31,9 @@ export interface ProductQueryParams {
 
 // ─── Categories & Taxonomy ───────────────────────────────────────────────────
 
-export async function getCategories(): Promise<Category[]> {
-  const { data } = await api.get('/categories')
+export async function getCategories(includeCounts = false): Promise<Category[]> {
+  const params = includeCounts ? { counts: 'true' } : undefined
+  const { data } = await api.get('/categories', { params })
   return data.data
 }
 

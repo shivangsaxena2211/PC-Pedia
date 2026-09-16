@@ -37,7 +37,7 @@ export default function FilterPanel({ filters, state, onChange, onReset }: Filte
     filters?.filterable_specifications ?? []
 
   return (
-    <div className="space-y-4 p-4 rounded-lg border border-border bg-card">
+    <div className="space-y-5 p-5 rounded-lg border border-border bg-card">
       <h3 className="font-semibold text-sm">Filters</h3>
 
       <div className="relative">
@@ -51,7 +51,7 @@ export default function FilterPanel({ filters, state, onChange, onReset }: Filte
       </div>
 
       <div>
-        <label className="text-xs text-muted-foreground mb-1.5 block">Manufacturer</label>
+        <label className="text-xs text-muted-foreground mb-2 block">Manufacturer</label>
         <Select value={state.manufacturer} onChange={(e) => update('manufacturer', e.target.value)}>
           <option value="">All Manufacturers</option>
           {filters?.manufacturers.map((m) => (
@@ -62,7 +62,7 @@ export default function FilterPanel({ filters, state, onChange, onReset }: Filte
 
       {filters?.families && filters.families.length > 0 && (
         <div>
-          <label className="text-xs text-muted-foreground mb-1.5 block">Family</label>
+          <label className="text-xs text-muted-foreground mb-2 block">Family</label>
           <Select value={state.family} onChange={(e) => update('family', e.target.value)}>
             <option value="">All Families</option>
             {filters.families.map((f) => (
@@ -73,7 +73,7 @@ export default function FilterPanel({ filters, state, onChange, onReset }: Filte
       )}
 
       <div>
-        <label className="text-xs text-muted-foreground mb-1.5 block">Series</label>
+        <label className="text-xs text-muted-foreground mb-2 block">Series</label>
         <Select value={state.series} onChange={(e) => update('series', e.target.value)}>
           <option value="">All Series</option>
           {filters?.series.map((s) => (
@@ -83,7 +83,7 @@ export default function FilterPanel({ filters, state, onChange, onReset }: Filte
       </div>
 
       <div>
-        <label className="text-xs text-muted-foreground mb-1.5 block">Generation</label>
+        <label className="text-xs text-muted-foreground mb-2 block">Generation</label>
         <Select value={state.generation} onChange={(e) => update('generation', e.target.value)}>
           <option value="">All Generations</option>
           {filters?.generations.map((g) => (
@@ -93,13 +93,13 @@ export default function FilterPanel({ filters, state, onChange, onReset }: Filte
       </div>
 
       {filterableSpecs.length > 0 && (
-        <div className="border-t border-border pt-4 space-y-3">
+        <div className="border-t border-border pt-5 space-y-4">
           <h4 className="text-xs font-semibold text-muted-foreground uppercase tracking-wider">
             Specifications
           </h4>
           {filterableSpecs.map((spec) => (
             <div key={spec.key}>
-              <label className="text-xs text-muted-foreground mb-1.5 block">
+              <label className="text-xs text-muted-foreground mb-2 block">
                 {spec.display_name}
               </label>
               <Input
@@ -113,7 +113,7 @@ export default function FilterPanel({ filters, state, onChange, onReset }: Filte
       )}
 
       <div>
-        <label className="text-xs text-muted-foreground mb-1.5 block">Sort By</label>
+        <label className="text-xs text-muted-foreground mb-2 block">Sort By</label>
         <Select value={state.sort} onChange={(e) => update('sort', e.target.value)}>
           <option value="-release_date">Release Date (Newest)</option>
           <option value="release_date">Release Date (Oldest)</option>
@@ -123,7 +123,7 @@ export default function FilterPanel({ filters, state, onChange, onReset }: Filte
         </Select>
       </div>
 
-      <Button variant="outline" size="sm" onClick={onReset} className="w-full">
+      <Button variant="outline" onClick={onReset} className="w-full">
         Reset Filters
       </Button>
     </div>

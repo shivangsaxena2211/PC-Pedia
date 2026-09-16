@@ -29,13 +29,13 @@ export default function Navbar() {
           <span className="hidden sm:inline">PC PEDIA</span>
         </Link>
 
-        <div className="hidden lg:flex items-center gap-1 overflow-x-auto">
+        <div className="hidden lg:flex items-center gap-4 overflow-x-auto">
           {STATIC_NAV.map((item) => (
             <Link
               key={item.path}
               to={item.path}
               className={cn(
-                'px-2.5 py-2 text-xs font-medium tracking-wide transition-colors rounded-md whitespace-nowrap',
+                'px-4 py-2.5 text-sm font-medium tracking-wide transition-colors rounded-md whitespace-nowrap',
                 isActive(item.path)
                   ? 'text-primary bg-primary/10'
                   : 'text-muted-foreground hover:text-foreground hover:bg-secondary',
@@ -49,7 +49,7 @@ export default function Navbar() {
               key={cat.slug}
               to={getCategoryPath(cat.slug)}
               className={cn(
-                'px-2.5 py-2 text-xs font-medium tracking-wide transition-colors rounded-md whitespace-nowrap',
+                'px-4 py-2.5 text-sm font-medium tracking-wide transition-colors rounded-md whitespace-nowrap',
                 isActive(getCategoryPath(cat.slug))
                   ? 'text-primary bg-primary/10'
                   : 'text-muted-foreground hover:text-foreground hover:bg-secondary',
@@ -63,7 +63,7 @@ export default function Navbar() {
         <div className="flex items-center gap-2">
           <button
             onClick={() => setSearchOpen(!searchOpen)}
-            className="p-2 rounded-md text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
+            className="p-2.5 rounded-md text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
             aria-label="Search"
           >
             <Search className="h-5 w-5" />
@@ -86,14 +86,14 @@ export default function Navbar() {
 
       {mobileOpen && (
         <div className="lg:hidden border-t border-border bg-background max-h-[70vh] overflow-y-auto">
-          <div className="flex flex-col p-4 gap-1">
+          <div className="flex flex-col p-4 gap-2">
             {STATIC_NAV.map((item) => (
               <Link
                 key={item.path}
                 to={item.path}
                 onClick={() => setMobileOpen(false)}
                 className={cn(
-                  'px-3 py-2.5 text-sm font-medium rounded-md transition-colors',
+                  'px-4 py-3 text-sm font-medium rounded-md transition-colors',
                   isActive(item.path)
                     ? 'text-primary bg-primary/10'
                     : 'text-muted-foreground hover:text-foreground hover:bg-secondary',
@@ -108,7 +108,7 @@ export default function Navbar() {
                 to={getCategoryPath(cat.slug)}
                 onClick={() => setMobileOpen(false)}
                 className={cn(
-                  'px-3 py-2.5 text-sm font-medium rounded-md transition-colors',
+                  'px-4 py-3 text-sm font-medium rounded-md transition-colors',
                   isActive(getCategoryPath(cat.slug))
                     ? 'text-primary bg-primary/10'
                     : 'text-muted-foreground hover:text-foreground hover:bg-secondary',

@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import MainLayout from '@/layouts/MainLayout'
-import HomePage from '@/pages/HomePage'
+import LandingPage from '@/pages/LandingPage'
 import CategoryPage from '@/pages/CategoryPage'
 import ProductPage from '@/pages/ProductPage'
 import ComparePage from '@/pages/ComparePage'
@@ -16,8 +16,8 @@ export default function App() {
   return (
     <BrowserRouter>
       <Routes>
+        <Route path="/" element={<LandingPage />} />
         <Route element={<MainLayout />}>
-          <Route path="/" element={<HomePage />} />
           <Route path="/compare" element={<ComparePage />} />
           <Route path="/admin" element={<AdminLayout />}>
             <Route index element={<AdminDashboard />} />

@@ -50,3 +50,190 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: var(--color-muted-foreground);
 }
+
+.catalog-table th {
+  padding: 12px 16px;
+  white-space: nowrap;
+}
+
+.catalog-table td {
+  padding: 14px 16px;
+  line-height: 1.5;
+  vertical-align: middle;
+}
+
+.catalog-table tbody tr {
+  min-height: 52px;
+}
+
+.catalog-table tbody tr.catalog-table-row:hover {
+  background-color: color-mix(in srgb, var(--color-primary) 8%, transparent);
+}
+
+.catalog-table th:first-child,
+.catalog-table td:first-child {
+  min-width: 220px;
+}
+
+.catalog-table th:not(:first-child),
+.catalog-table td:not(:first-child) {
+  min-width: 96px;
+}
+
+/* Product detail page spacing (scoped — does not affect landing page) */
+.product-page .product-breadcrumbs {
+  gap: 0.625rem;
+  margin-bottom: 1.75rem;
+}
+
+.product-page .product-breadcrumbs > span {
+  gap: 0.625rem;
+}
+
+.product-page .product-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.625rem;
+  margin-bottom: 1.5rem;
+}
+
+.product-page .product-manufacturer {
+  margin-bottom: 1rem;
+}
+
+.product-page .product-title {
+  margin-bottom: 1.25rem;
+  line-height: 1.2;
+}
+
+.product-page .product-metadata {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 2rem;
+  row-gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.product-page .product-description {
+  margin-bottom: 2rem;
+  line-height: 1.7;
+}
+
+.product-page .product-quick-specs {
+  padding: 1.5rem 1.75rem;
+}
+
+.product-page .product-quick-specs-title {
+  margin-bottom: 1.25rem;
+}
+
+.product-page .product-quick-specs-grid {
+  column-gap: 2.75rem;
+  row-gap: 1.75rem;
+}
+
+.product-page .product-quick-spec-value {
+  margin-top: 0.5rem;
+}
+
+.product-page .product-actions {
+  gap: 0.875rem;
+}
+
+.product-page .product-tabs-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  padding: 0.5rem;
+  height: auto;
+}
+
+.product-page .product-tabs-list [role='tab'] {
+  padding: 0.75rem 1.25rem;
+  min-height: 2.75rem;
+}
+
+.product-page .product-spec-group {
+  margin-bottom: 2rem;
+}
+
+.product-page .product-spec-group:last-child {
+  margin-bottom: 0;
+}
+
+.product-page .product-spec-group-title {
+  margin-top: 0;
+  margin-bottom: 0.875rem;
+}
+
+.product-page .product-spec-label,
+.product-page .product-spec-value {
+  padding: 0.875rem 1rem;
+  line-height: 1.5;
+  vertical-align: middle;
+}
+
+.product-page .product-spec-value {
+  overflow-wrap: anywhere;
+  word-break: normal;
+}
+
+.product-page .product-spec-table tbody tr {
+  min-height: 48px;
+}
+
+.product-page .product-sources {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.product-page .product-source-card + .product-source-card {
+  margin-top: 0;
+}
+
+/* Hardware listing cards (CPU catalog and related products) */
+.hardware-card-spec-value {
+  overflow-wrap: anywhere;
+  word-break: normal;
+}
+
+@media (max-width: 480px) {
+  .hardware-card-spec-row {
+    flex-wrap: wrap;
+    align-items: flex-start;
+    row-gap: 0.25rem;
+  }
+
+  .hardware-card-spec-value {
+    max-width: 100%;
+    text-align: left;
+  }
+}
+
+@media (max-width: 640px) {
+  .product-page .product-hero {
+    gap: 2rem;
+  }
+
+  .product-page .product-quick-specs {
+    padding: 1.25rem 1.375rem;
+  }
+
+  .product-page .product-related {
+    margin-top: 2.5rem;
+    padding-top: 1.75rem;
+  }
+
+  .product-page .product-badges {
+    margin-bottom: 1.25rem;
+  }
+
+  .product-page .product-manufacturer {
+    margin-bottom: 0.75rem;
+  }
+
+  .product-page .product-title {
+    margin-bottom: 1rem;
+  }
+}

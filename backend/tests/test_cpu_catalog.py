@@ -438,8 +438,30 @@ def test_intel_6th_gen_batch_import(cpu_setup):
     assert Product.query.filter_by(slug="intel-core-i7-6700k").first() is not None
 
 
-def test_intel_6th_through_14th_gen_taxonomy(cpu_setup):
+def test_intel_5th_gen_batch_import(cpu_setup):
+    result = import_hardware_from_path(
+        "data/catalog/cpu/intel/core/5th-gen/desktop.json",
+        mode=ImportMode.UPSERT,
+    )
+    assert result.errors == 0
+    assert result.created + result.updated >= 2
+    assert Product.query.filter_by(slug="intel-core-i7-5775c").first() is not None
+
+
+def test_intel_4th_gen_batch_import(cpu_setup):
+    result = import_hardware_from_path(
+        "data/catalog/cpu/intel/core/4th-gen/desktop.json",
+        mode=ImportMode.UPSERT,
+    )
+    assert result.errors == 0
+    assert result.created + result.updated >= 49
+    assert Product.query.filter_by(slug="intel-core-i7-4770k").first() is not None
+
+
+def test_intel_4th_through_14th_gen_taxonomy(cpu_setup):
     for generation in (
+        "4th Generation",
+        "5th Generation",
         "6th Generation",
         "7th Generation",
         "8th Generation",
@@ -460,7 +482,7 @@ def test_intel_6th_through_14th_gen_taxonomy(cpu_setup):
                 "name": f"Taxonomy Intel {generation}",
                 "slug": f"taxonomy-intel-{generation.split()[0].lower()}-gen",
             },
-            "specifications": [{"group": "Socket", "key": "socket", "value": "LGA 1151"}],
+            "specifications": [{"group": "Socket", "key": "socket", "value": "LGA 1150"}],
             "images": [],
         }
         result = import_hardware([record], mode=ImportMode.UPSERT)
@@ -486,6 +508,32 @@ def test_intel_6th_gen_search(client, cpu_setup):
         mode=ImportMode.UPSERT,
     )
     for query in ("6700K", "6600K", "6700"):
+        response = client.get(f"/api/search?q={query}")
+        assert response.status_code == 200
+        results = response.get_json()
+        items = results.get("items", results.get("data", []))
+        assert any(query.replace("K", "") in item.get("name", "").replace("-", "") for item in items)
+
+
+def test_intel_5th_gen_search(client, cpu_setup):
+    import_hardware_from_path(
+        "data/catalog/cpu/intel/core/5th-gen/desktop.json",
+        mode=ImportMode.UPSERT,
+    )
+    for query in ("5775C", "5675C"):
+        response = client.get(f"/api/search?q={query}")
+        assert response.status_code == 200
+        results = response.get_json()
+        items = results.get("items", results.get("data", []))
+        assert any(query in item.get("name", "").replace("-", "") for item in items)
+
+
+def test_intel_4th_gen_search(client, cpu_setup):
+    import_hardware_from_path(
+        "data/catalog/cpu/intel/core/4th-gen/desktop.json",
+        mode=ImportMode.UPSERT,
+    )
+    for query in ("4770K", "4790K", "4690K"):
         response = client.get(f"/api/search?q={query}")
         assert response.status_code == 200
         results = response.get_json()
@@ -520,17 +568,48 @@ def test_intel_6th_gen_product_detail(client, cpu_setup):
     assert len(payload.get("sources", [])) >= 1
 
 
+def test_intel_5th_gen_product_detail(client, cpu_setup):
+    import_hardware_from_path(
+        "data/catalog/cpu/intel/core/5th-gen/desktop.json",
+        mode=ImportMode.UPSERT,
+    )
+    response = client.get("/api/products/cpu/intel/intel-core-i7-5775c")
+    assert response.status_code == 200
+    payload = response.get_json()
+    assert payload["name"] == "Intel Core i7-5775C"
+    assert payload.get("generation") == "5th Generation"
+    assert len(payload.get("sources", [])) >= 1
+    assert any("intel.com" in (s.get("source_url") or s.get("source", {}).get("url") or "") for s in payload.get("sources", []))
+
+
+def test_intel_4th_gen_product_detail(client, cpu_setup):
+    import_hardware_from_path(
+        "data/catalog/cpu/intel/core/4th-gen/desktop.json",
+        mode=ImportMode.UPSERT,
+    )
+    response = client.get("/api/products/cpu/intel/intel-core-i7-4770k")
+    assert response.status_code == 200
+    payload = response.get_json()
+    assert payload["name"] == "Intel Core i7-4770K"
+    assert payload.get("generation") == "4th Generation"
+    assert len(payload.get("sources", [])) >= 1
+
+
 def test_historical_intel_cpu_specs_do_not_require_modern_fields(cpu_setup):
-    """6th/7th Gen CPUs use traditional core counts without P/E-core or turbo power fields."""
-    import_hardware_from_path(
+    """4th–7th Gen CPUs use traditional core counts without P/E-core or turbo power fields."""
+    for path in (
+        "data/catalog/cpu/intel/core/4th-gen/desktop.json",
+        "data/catalog/cpu/intel/core/5th-gen/desktop.json",
         "data/catalog/cpu/intel/core/6th-gen/desktop.json",
-        mode=ImportMode.UPSERT,
-    )
-    import_hardware_from_path(
         "data/catalog/cpu/intel/core/7th-gen/desktop.json",
-        mode=ImportMode.UPSERT,
-    )
-    for slug in ("intel-core-i7-6700k", "intel-core-i7-7700k"):
+    ):
+        import_hardware_from_path(path, mode=ImportMode.UPSERT)
+    for slug in (
+        "intel-core-i7-4770k",
+        "intel-core-i7-5775c",
+        "intel-core-i7-6700k",
+        "intel-core-i7-7700k",
+    ):
         product = Product.query.filter_by(slug=slug).first()
         assert product is not None
         spec_keys = {spec.key for spec in product.specifications}
@@ -539,3 +618,27 @@ def test_historical_intel_cpu_specs_do_not_require_modern_fields(cpu_setup):
         assert "p_cores" not in spec_keys
         assert "e_cores" not in spec_keys
         assert "max_turbo_power" not in spec_keys
+
+
+def test_intel_4th_5th_gen_desktop_filtering(client, cpu_setup):
+    import_hardware_from_path(
+        "data/catalog/cpu/intel/core/4th-gen/desktop.json",
+        mode=ImportMode.UPSERT,
+    )
+    import_hardware_from_path(
+        "data/catalog/cpu/intel/core/5th-gen/desktop.json",
+        mode=ImportMode.UPSERT,
+    )
+    response = client.get("/api/products?category=cpu&generation=4th-generation&limit=100")
+    assert response.status_code == 200
+    payload = response.get_json()
+    items = payload.get("data", payload.get("items", []))
+    assert len(items) >= 40
+    assert all("4th" in (item.get("generation") or "") for item in items)
+
+    response = client.get("/api/products?category=cpu&generation=5th-generation&limit=50")
+    assert response.status_code == 200
+    payload = response.get_json()
+    items = payload.get("data", payload.get("items", []))
+    assert len(items) >= 2
+    assert all("5th" in (item.get("generation") or "") for item in items)

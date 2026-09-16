@@ -22,6 +22,8 @@ BACKEND_ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(BACKEND_ROOT))
 
 from app.catalog.catalog_validation import validate_catalog_records
+from data.catalog.cpu.verified_intel_4th_gen import INTEL_4TH_GEN_DESKTOP, VERIFIED_DATE as VERIFIED_DATE_4
+from data.catalog.cpu.verified_intel_5th_gen import INTEL_5TH_GEN_DESKTOP, VERIFIED_DATE as VERIFIED_DATE_5
 from data.catalog.cpu.verified_intel_6th_gen import INTEL_6TH_GEN_DESKTOP, VERIFIED_DATE as VERIFIED_DATE_6
 from data.catalog.cpu.verified_intel_7th_gen import INTEL_7TH_GEN_DESKTOP, VERIFIED_DATE as VERIFIED_DATE_7
 from data.catalog.cpu.verified_intel_8th_gen import INTEL_8TH_GEN_DESKTOP, VERIFIED_DATE as VERIFIED_DATE_8
@@ -486,6 +488,20 @@ def build_all(fetch_amd: bool = False):
         gen_short="6th Gen",
         verified_date=VERIFIED_DATE_6,
     )
+    intel_5 = build_intel_batch(
+        INTEL_5TH_GEN_DESKTOP,
+        generation="5th Generation",
+        architecture="Broadwell",
+        gen_short="5th Gen",
+        verified_date=VERIFIED_DATE_5,
+    )
+    intel_4 = build_intel_batch(
+        INTEL_4TH_GEN_DESKTOP,
+        generation="4th Generation",
+        architecture="Haswell",
+        gen_short="4th Gen",
+        verified_date=VERIFIED_DATE_4,
+    )
 
     write_catalog(CATALOG_ROOT / "intel" / "core" / "14th-gen" / "desktop.json", intel_14)
     write_catalog(CATALOG_ROOT / "intel" / "core" / "13th-gen" / "desktop.json", intel_13)
@@ -496,6 +512,8 @@ def build_all(fetch_amd: bool = False):
     write_catalog(CATALOG_ROOT / "intel" / "core" / "8th-gen" / "desktop.json", intel_8)
     write_catalog(CATALOG_ROOT / "intel" / "core" / "7th-gen" / "desktop.json", intel_7)
     write_catalog(CATALOG_ROOT / "intel" / "core" / "6th-gen" / "desktop.json", intel_6)
+    write_catalog(CATALOG_ROOT / "intel" / "core" / "5th-gen" / "desktop.json", intel_5)
+    write_catalog(CATALOG_ROOT / "intel" / "core" / "4th-gen" / "desktop.json", intel_4)
 
     if fetch_amd:
         amd_records = []

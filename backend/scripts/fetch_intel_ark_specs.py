@@ -117,8 +117,11 @@ def fetch_sku(sku: int) -> dict | None:
 
     cores = _field(fields, "# of Cores", "Total Cores")
     threads = _field(fields, "# of Threads", "Total Threads")
-    if not cores or not threads:
+    if not cores:
         return None
+    # Older non-HT SKUs may omit thread count on ARK; treat threads == cores.
+    if not threads:
+        threads = cores
 
     graphics = _field(fields, "GPU Name", "Processor Graphics")
     has_igpu = bool(graphics and "none" not in graphics.lower() and "discrete" not in graphics.lower())
@@ -126,10 +129,20 @@ def fetch_sku(sku: int) -> dict | None:
     launch = _parse_date(_field(fields, "Launch Date"))
     socket = _field(fields, "Sockets Supported", "Socket")
     if socket:
-        if "FCLGA14" in socket and "1200" in socket:
+        if "1150" in socket:
+            socket = "LGA 1150"
+        elif "1200" in socket:
             socket = "LGA 1200"
-        elif "FCLGA11" in socket or "1151" in socket or "FC-LGA14C" in socket:
+        elif "1151" in socket:
             socket = "LGA 1151"
+        elif "2011" in socket:
+            socket = "LGA 2011"
+        elif "FC-LGA14C" in socket or "FCLGA14C" in socket:
+            # Same package name spans LGA1150 (4th/5th) and LGA1151 (6th/7th)
+            if "5th" in collection or "4th" in collection:
+                socket = "LGA 1150"
+            elif "7th" in collection or "6th" in collection:
+                socket = "LGA 1151"
 
     code_name = _field(fields, "Code Name") or ""
     arch = None
@@ -145,6 +158,10 @@ def fetch_sku(sku: int) -> dict | None:
         arch = "Kaby Lake"
     elif "6th" in collection:
         arch = "Skylake"
+    elif "5th" in collection or "Broadwell" in code_name:
+        arch = "Broadwell"
+    elif "4th" in collection or "Haswell" in code_name:
+        arch = "Haswell"
 
     gen = None
     if "11th" in collection:
@@ -159,6 +176,10 @@ def fetch_sku(sku: int) -> dict | None:
         gen = "7th Generation"
     elif "6th" in collection:
         gen = "6th Generation"
+    elif "5th" in collection:
+        gen = "5th Generation"
+    elif "4th" in collection:
+        gen = "4th Generation"
 
     max_turbo = _parse_ghz(_field(fields, "Max Turbo Frequency"))
     tv_boost = _parse_ghz(_field(fields, "Intel® Thermal Velocity Boost Frequency"))
@@ -256,7 +277,7 @@ def scan_range(start: int, end: int, generation_hint: str) -> list[dict]:
 
 def main():
     if len(sys.argv) < 2:
-        print("Usage: python fetch_intel_ark_specs.py <sku> | scan11 | scan10 | scan9 | scan8")
+        print("Usage: python fetch_intel_ark_specs.py <sku> | scan11 | scan10 | scan9 | scan8 | scan5 | scan4")
         raise SystemExit(1)
 
     cmd = sys.argv[1]
@@ -268,6 +289,10 @@ def main():
         results = scan_range(193500, 194200, "9th")
     elif cmd == "scan8":
         results = scan_range(124800, 126200, "8th")
+    elif cmd == "scan5":
+        results = scan_range(84900, 88100, "5th")
+    elif cmd == "scan4":
+        results = scan_range(74800, 81000, "4th")
     else:
         results = [fetch_sku(int(cmd))]
 

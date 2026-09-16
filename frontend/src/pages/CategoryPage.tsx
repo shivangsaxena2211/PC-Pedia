@@ -1,5 +1,5 @@
-import { useState, useMemo } from 'react'
-import { useLocation } from 'react-router-dom'
+import { useState, useMemo, useEffect } from 'react'
+import { useLocation, useSearchParams } from 'react-router-dom'
 import { useCategories } from '@/hooks/useCategories'
 import { useProducts } from '@/hooks/useProducts'
 import { useCompare } from '@/hooks/useCompare'
@@ -25,12 +25,24 @@ const DEFAULT_FILTERS: FilterState = {
 
 export default function CategoryPage() {
   const location = useLocation()
+  const [searchParams] = useSearchParams()
   const categorySlug = location.pathname.replace('/', '')
   const { categories } = useCategories()
   const category = categories.find((c) => c.slug === categorySlug)
   const [filters, setFilters] = useState<FilterState>(DEFAULT_FILTERS)
   const [page, setPage] = useState(1)
   const { addToCompare } = useCompare()
+
+  useEffect(() => {
+    const generation = searchParams.get('generation')
+    const manufacturer = searchParams.get('manufacturer')
+    if (!generation && !manufacturer) return
+    setFilters((current) => ({
+      ...current,
+      generation: generation ?? current.generation,
+      manufacturer: manufacturer ?? current.manufacturer,
+    }))
+  }, [searchParams])
 
   const queryParams = useMemo((): ProductQueryParams => {
     const params: ProductQueryParams = {
@@ -104,22 +116,25 @@ export default function CategoryPage() {
               </p>
 
               {listKeySpecs.length > 0 && (
-                <div className="hidden md:block rounded-lg border border-border overflow-hidden mb-4">
-                  <table className="w-full text-sm">
-                    <thead className="bg-muted">
+                <div className="hidden md:block rounded-lg border border-border overflow-x-auto mb-6">
+                  <table className="catalog-table w-full text-sm">
+                    <thead className="bg-muted/80">
                       <tr>
-                        <th className="px-4 py-2 text-left font-medium">Product</th>
+                        <th className="text-left font-medium">Product</th>
                         {listKeySpecs.map((k) => (
-                          <th key={k} className="px-4 py-2 text-left font-medium">{k}</th>
+                          <th key={k} className="text-left font-medium">{k}</th>
                         ))}
                       </tr>
                     </thead>
                     <tbody>
                       {data.data.map((product, i) => (
-                        <tr key={product.id} className={i % 2 === 0 ? 'bg-card' : 'bg-muted/20'}>
-                          <td className="px-4 py-2 font-medium">{product.name}</td>
+                        <tr
+                          key={product.id}
+                          className={`catalog-table-row ${i % 2 === 0 ? 'bg-card' : 'bg-muted/20'}`}
+                        >
+                          <td className="font-medium">{product.name}</td>
                           {listKeySpecs.map((k) => (
-                            <td key={k} className="px-4 py-2 text-muted-foreground">
+                            <td key={k} className="text-muted-foreground">
                               {product.quick_specs?.[k] ?? '—'}
                             </td>
                           ))}
@@ -130,7 +145,7 @@ export default function CategoryPage() {
                 </div>
               )}
 
-              <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-4">
+              <div className="hardware-card-grid grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-x-5 gap-y-6">
                 {data.data.map((product) => (
                   <ProductCard key={product.id} product={product} onCompare={handleCompare} />
                 ))}

@@ -1,0 +1,362 @@
+[
+  {
+    "category": "CPU",
+    "manufacturer": "Intel",
+    "family": "Core",
+    "series": "Core",
+    "generation": "5th Generation",
+    "architecture": "Broadwell",
+    "source": {
+      "name": "Intel ARK",
+      "url": "https://www.intel.com/content/www/us/en/products/sku/88095/specifications.html",
+      "date": "2026-09-16",
+      "notes": "Specifications verified against Intel ARK product specification page."
+    },
+    "product": {
+      "name": "Intel Core i5-5675C",
+      "slug": "intel-core-i5-5675c",
+      "description": "5th Gen Intel Core desktop processor with 4 cores and 4 threads.",
+      "release_date": "2015-04-01",
+      "status": "active",
+      "is_popular": true,
+      "architecture": "Broadwell"
+    },
+    "images": [],
+    "specifications": [
+      {
+        "group": "Features",
+        "key": "aes",
+        "value": "true"
+      },
+      {
+        "group": "General",
+        "key": "architecture",
+        "value": "Broadwell"
+      },
+      {
+        "group": "Features",
+        "key": "avx2",
+        "value": "true"
+      },
+      {
+        "group": "Clock Speeds",
+        "key": "base_clock",
+        "value": "3.10",
+        "unit": "GHz"
+      },
+      {
+        "group": "Clock Speeds",
+        "key": "boost_clock",
+        "value": "3.60",
+        "unit": "GHz"
+      },
+      {
+        "group": "Core Configuration",
+        "key": "cores",
+        "value": "4"
+      },
+      {
+        "group": "Memory",
+        "key": "ecc_support",
+        "value": "false"
+      },
+      {
+        "group": "General",
+        "key": "generation",
+        "value": "5th Generation"
+      },
+      {
+        "group": "Graphics",
+        "key": "graphics_base_clock",
+        "value": "300",
+        "unit": "MHz"
+      },
+      {
+        "group": "Graphics",
+        "key": "graphics_max_clock",
+        "value": "1100",
+        "unit": "MHz"
+      },
+      {
+        "group": "Graphics",
+        "key": "graphics_model",
+        "value": "Intel Iris Pro Graphics 6200"
+      },
+      {
+        "group": "Graphics",
+        "key": "integrated_graphics",
+        "value": "true"
+      },
+      {
+        "group": "Features",
+        "key": "intel_turbo_boost",
+        "value": "true"
+      },
+      {
+        "group": "Cache",
+        "key": "l3_cache",
+        "value": "4",
+        "unit": "MB"
+      },
+      {
+        "group": "General",
+        "key": "market_segment",
+        "value": "Desktop"
+      },
+      {
+        "group": "Memory",
+        "key": "max_memory",
+        "value": "32",
+        "unit": "GB"
+      },
+      {
+        "group": "Memory",
+        "key": "max_memory_speed",
+        "value": "1333",
+        "unit": "MT/s"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_channels",
+        "value": "2"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_type",
+        "value": "DDR3L-1333/1600 @ 1.5V"
+      },
+      {
+        "group": "General",
+        "key": "microarchitecture",
+        "value": "Broadwell"
+      },
+      {
+        "group": "Features",
+        "key": "overclocking_support",
+        "value": "true"
+      },
+      {
+        "group": "PCI Express",
+        "key": "pcie_lanes",
+        "value": "16"
+      },
+      {
+        "group": "PCI Express",
+        "key": "pcie_version",
+        "value": "3.0"
+      },
+      {
+        "group": "General",
+        "key": "process_node",
+        "value": "14 nm"
+      },
+      {
+        "group": "General",
+        "key": "product_family",
+        "value": "Core"
+      },
+      {
+        "group": "Socket",
+        "key": "socket",
+        "value": "LGA 1150"
+      },
+      {
+        "group": "Power",
+        "key": "tdp",
+        "value": "65",
+        "unit": "W"
+      },
+      {
+        "group": "Core Configuration",
+        "key": "threads",
+        "value": "4"
+      },
+      {
+        "group": "Features",
+        "key": "virtualization",
+        "value": "true"
+      }
+    ],
+    "benchmarks": []
+  },
+  {
+    "category": "CPU",
+    "manufacturer": "Intel",
+    "family": "Core",
+    "series": "Core",
+    "generation": "5th Generation",
+    "architecture": "Broadwell",
+    "source": {
+      "name": "Intel ARK",
+      "url": "https://www.intel.com/content/www/us/en/products/sku/88040/specifications.html",
+      "date": "2026-09-16",
+      "notes": "Specifications verified against Intel ARK product specification page."
+    },
+    "product": {
+      "name": "Intel Core i7-5775C",
+      "slug": "intel-core-i7-5775c",
+      "description": "5th Gen Intel Core desktop processor with 4 cores and 8 threads.",
+      "release_date": "2015-04-01",
+      "status": "active",
+      "is_popular": true,
+      "architecture": "Broadwell"
+    },
+    "images": [],
+    "specifications": [
+      {
+        "group": "Features",
+        "key": "aes",
+        "value": "true"
+      },
+      {
+        "group": "General",
+        "key": "architecture",
+        "value": "Broadwell"
+      },
+      {
+        "group": "Features",
+        "key": "avx2",
+        "value": "true"
+      },
+      {
+        "group": "Clock Speeds",
+        "key": "base_clock",
+        "value": "3.30",
+        "unit": "GHz"
+      },
+      {
+        "group": "Clock Speeds",
+        "key": "boost_clock",
+        "value": "3.70",
+        "unit": "GHz"
+      },
+      {
+        "group": "Core Configuration",
+        "key": "cores",
+        "value": "4"
+      },
+      {
+        "group": "Memory",
+        "key": "ecc_support",
+        "value": "false"
+      },
+      {
+        "group": "General",
+        "key": "generation",
+        "value": "5th Generation"
+      },
+      {
+        "group": "Graphics",
+        "key": "graphics_base_clock",
+        "value": "300",
+        "unit": "MHz"
+      },
+      {
+        "group": "Graphics",
+        "key": "graphics_max_clock",
+        "value": "1150",
+        "unit": "MHz"
+      },
+      {
+        "group": "Graphics",
+        "key": "graphics_model",
+        "value": "Intel Iris Pro Graphics 6200"
+      },
+      {
+        "group": "Graphics",
+        "key": "integrated_graphics",
+        "value": "true"
+      },
+      {
+        "group": "Features",
+        "key": "intel_turbo_boost",
+        "value": "true"
+      },
+      {
+        "group": "Cache",
+        "key": "l3_cache",
+        "value": "6",
+        "unit": "MB"
+      },
+      {
+        "group": "General",
+        "key": "market_segment",
+        "value": "Desktop"
+      },
+      {
+        "group": "Memory",
+        "key": "max_memory",
+        "value": "32",
+        "unit": "GB"
+      },
+      {
+        "group": "Memory",
+        "key": "max_memory_speed",
+        "value": "1333",
+        "unit": "MT/s"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_channels",
+        "value": "2"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_type",
+        "value": "DDR3L-1333/1600 @ 1.5V"
+      },
+      {
+        "group": "General",
+        "key": "microarchitecture",
+        "value": "Broadwell"
+      },
+      {
+        "group": "Features",
+        "key": "overclocking_support",
+        "value": "true"
+      },
+      {
+        "group": "PCI Express",
+        "key": "pcie_lanes",
+        "value": "16"
+      },
+      {
+        "group": "PCI Express",
+        "key": "pcie_version",
+        "value": "3.0"
+      },
+      {
+        "group": "General",
+        "key": "process_node",
+        "value": "14 nm"
+      },
+      {
+        "group": "General",
+        "key": "product_family",
+        "value": "Core"
+      },
+      {
+        "group": "Socket",
+        "key": "socket",
+        "value": "LGA 1150"
+      },
+      {
+        "group": "Power",
+        "key": "tdp",
+        "value": "65",
+        "unit": "W"
+      },
+      {
+        "group": "Core Configuration",
+        "key": "threads",
+        "value": "8"
+      },
+      {
+        "group": "Features",
+        "key": "virtualization",
+        "value": "true"
+      }
+    ],
+    "benchmarks": []
+  }
+]
