@@ -146,7 +146,7 @@ export default function LandingSidebar({
           <Settings aria-hidden="true" />
           {!collapsed && <span>Settings</span>}
         </span>
-        <Link to="/cpu" className="nav-item" onClick={onNavigate}>
+        <Link to="/about" className="nav-item" onClick={onNavigate}>
           <Info aria-hidden="true" />
           {!collapsed && <span>About PC PEDIA</span>}
         </Link>

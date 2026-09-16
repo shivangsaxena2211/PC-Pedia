@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import MainLayout from '@/layouts/MainLayout'
 import LandingPage from '@/pages/LandingPage'
+import AboutPage from '@/pages/AboutPage'
 import CategoryPage from '@/pages/CategoryPage'
 import ProductPage from '@/pages/ProductPage'
 import ComparePage from '@/pages/ComparePage'
@@ -17,6 +18,7 @@ export default function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<LandingPage />} />
+        <Route path="/about" element={<AboutPage />} />
         <Route element={<MainLayout />}>
           <Route path="/compare" element={<ComparePage />} />
           <Route path="/admin" element={<AdminLayout />}>
