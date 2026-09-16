@@ -1,0 +1,2852 @@
+[
+  {
+    "category": "CPU",
+    "manufacturer": "Intel",
+    "family": "Core",
+    "series": "Core",
+    "generation": "6th Generation",
+    "architecture": "Skylake",
+    "source": {
+      "name": "Intel ARK",
+      "url": "https://www.intel.com/content/www/us/en/products/sku/90729/specifications.html",
+      "date": "2026-09-15",
+      "notes": "Specifications verified against Intel ARK product specification page."
+    },
+    "product": {
+      "name": "Intel Core i3-6100",
+      "slug": "intel-core-i3-6100",
+      "description": "6th Gen Intel Core desktop processor with 2 cores and 4 threads.",
+      "release_date": "2015-07-01",
+      "status": "active",
+      "is_popular": false,
+      "architecture": "Skylake"
+    },
+    "images": [],
+    "specifications": [
+      {
+        "group": "Features",
+        "key": "aes",
+        "value": "true"
+      },
+      {
+        "group": "General",
+        "key": "architecture",
+        "value": "Skylake"
+      },
+      {
+        "group": "Features",
+        "key": "avx2",
+        "value": "true"
+      },
+      {
+        "group": "Clock Speeds",
+        "key": "base_clock",
+        "value": "3.70",
+        "unit": "GHz"
+      },
+      {
+        "group": "Core Configuration",
+        "key": "cores",
+        "value": "2"
+      },
+      {
+        "group": "Memory",
+        "key": "ecc_support",
+        "value": "false"
+      },
+      {
+        "group": "General",
+        "key": "generation",
+        "value": "6th Generation"
+      },
+      {
+        "group": "Graphics",
+        "key": "graphics_base_clock",
+        "value": "350",
+        "unit": "MHz"
+      },
+      {
+        "group": "Graphics",
+        "key": "graphics_max_clock",
+        "value": "1050",
+        "unit": "MHz"
+      },
+      {
+        "group": "Graphics",
+        "key": "graphics_model",
+        "value": "Intel HD Graphics 530"
+      },
+      {
+        "group": "Graphics",
+        "key": "integrated_graphics",
+        "value": "true"
+      },
+      {
+        "group": "Features",
+        "key": "intel_turbo_boost",
+        "value": "true"
+      },
+      {
+        "group": "Cache",
+        "key": "l3_cache",
+        "value": "3",
+        "unit": "MB"
+      },
+      {
+        "group": "General",
+        "key": "market_segment",
+        "value": "Desktop"
+      },
+      {
+        "group": "Memory",
+        "key": "max_memory",
+        "value": "64",
+        "unit": "GB"
+      },
+      {
+        "group": "Memory",
+        "key": "max_memory_speed",
+        "value": "1866",
+        "unit": "MT/s"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_channels",
+        "value": "2"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_type",
+        "value": "DDR4-1866/2133, DDR3L-1333/1600 @ 1.35V"
+      },
+      {
+        "group": "General",
+        "key": "microarchitecture",
+        "value": "Skylake"
+      },
+      {
+        "group": "Features",
+        "key": "overclocking_support",
+        "value": "false"
+      },
+      {
+        "group": "PCI Express",
+        "key": "pcie_lanes",
+        "value": "16"
+      },
+      {
+        "group": "PCI Express",
+        "key": "pcie_version",
+        "value": "3.0"
+      },
+      {
+        "group": "General",
+        "key": "process_node",
+        "value": "14 nm"
+      },
+      {
+        "group": "General",
+        "key": "product_family",
+        "value": "Core"
+      },
+      {
+        "group": "Socket",
+        "key": "socket",
+        "value": "LGA 1151"
+      },
+      {
+        "group": "Power",
+        "key": "tdp",
+        "value": "51",
+        "unit": "W"
+      },
+      {
+        "group": "Core Configuration",
+        "key": "threads",
+        "value": "4"
+      },
+      {
+        "group": "Features",
+        "key": "virtualization",
+        "value": "true"
+      }
+    ],
+    "benchmarks": []
+  },
+  {
+    "category": "CPU",
+    "manufacturer": "Intel",
+    "family": "Core",
+    "series": "Core",
+    "generation": "6th Generation",
+    "architecture": "Skylake",
+    "source": {
+      "name": "Intel ARK",
+      "url": "https://www.intel.com/content/www/us/en/products/sku/90734/specifications.html",
+      "date": "2026-09-15",
+      "notes": "Specifications verified against Intel ARK product specification page."
+    },
+    "product": {
+      "name": "Intel Core i3-6100T",
+      "slug": "intel-core-i3-6100t",
+      "description": "6th Gen Intel Core desktop processor with 2 cores and 4 threads.",
+      "release_date": "2015-07-01",
+      "status": "active",
+      "is_popular": false,
+      "architecture": "Skylake"
+    },
+    "images": [],
+    "specifications": [
+      {
+        "group": "Features",
+        "key": "aes",
+        "value": "true"
+      },
+      {
+        "group": "General",
+        "key": "architecture",
+        "value": "Skylake"
+      },
+      {
+        "group": "Features",
+        "key": "avx2",
+        "value": "true"
+      },
+      {
+        "group": "Clock Speeds",
+        "key": "base_clock",
+        "value": "3.20",
+        "unit": "GHz"
+      },
+      {
+        "group": "Core Configuration",
+        "key": "cores",
+        "value": "2"
+      },
+      {
+        "group": "Memory",
+        "key": "ecc_support",
+        "value": "false"
+      },
+      {
+        "group": "General",
+        "key": "generation",
+        "value": "6th Generation"
+      },
+      {
+        "group": "Graphics",
+        "key": "graphics_base_clock",
+        "value": "350",
+        "unit": "MHz"
+      },
+      {
+        "group": "Graphics",
+        "key": "graphics_max_clock",
+        "value": "950",
+        "unit": "MHz"
+      },
+      {
+        "group": "Graphics",
+        "key": "graphics_model",
+        "value": "Intel HD Graphics 530"
+      },
+      {
+        "group": "Graphics",
+        "key": "integrated_graphics",
+        "value": "true"
+      },
+      {
+        "group": "Features",
+        "key": "intel_turbo_boost",
+        "value": "true"
+      },
+      {
+        "group": "Cache",
+        "key": "l3_cache",
+        "value": "3",
+        "unit": "MB"
+      },
+      {
+        "group": "General",
+        "key": "market_segment",
+        "value": "Desktop"
+      },
+      {
+        "group": "Memory",
+        "key": "max_memory",
+        "value": "64",
+        "unit": "GB"
+      },
+      {
+        "group": "Memory",
+        "key": "max_memory_speed",
+        "value": "1866",
+        "unit": "MT/s"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_channels",
+        "value": "2"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_type",
+        "value": "DDR4-1866/2133, DDR3L-1333/1600 @ 1.35V"
+      },
+      {
+        "group": "General",
+        "key": "microarchitecture",
+        "value": "Skylake"
+      },
+      {
+        "group": "Features",
+        "key": "overclocking_support",
+        "value": "false"
+      },
+      {
+        "group": "PCI Express",
+        "key": "pcie_lanes",
+        "value": "16"
+      },
+      {
+        "group": "PCI Express",
+        "key": "pcie_version",
+        "value": "3.0"
+      },
+      {
+        "group": "General",
+        "key": "process_node",
+        "value": "14 nm"
+      },
+      {
+        "group": "General",
+        "key": "product_family",
+        "value": "Core"
+      },
+      {
+        "group": "Socket",
+        "key": "socket",
+        "value": "LGA 1151"
+      },
+      {
+        "group": "Power",
+        "key": "tdp",
+        "value": "35",
+        "unit": "W"
+      },
+      {
+        "group": "Core Configuration",
+        "key": "threads",
+        "value": "4"
+      },
+      {
+        "group": "Features",
+        "key": "virtualization",
+        "value": "true"
+      }
+    ],
+    "benchmarks": []
+  },
+  {
+    "category": "CPU",
+    "manufacturer": "Intel",
+    "family": "Core",
+    "series": "Core",
+    "generation": "6th Generation",
+    "architecture": "Skylake",
+    "source": {
+      "name": "Intel ARK",
+      "url": "https://www.intel.com/content/www/us/en/products/sku/90731/specifications.html",
+      "date": "2026-09-15",
+      "notes": "Specifications verified against Intel ARK product specification page."
+    },
+    "product": {
+      "name": "Intel Core i3-6300",
+      "slug": "intel-core-i3-6300",
+      "description": "6th Gen Intel Core desktop processor with 2 cores and 4 threads.",
+      "release_date": "2015-07-01",
+      "status": "active",
+      "is_popular": false,
+      "architecture": "Skylake"
+    },
+    "images": [],
+    "specifications": [
+      {
+        "group": "Features",
+        "key": "aes",
+        "value": "true"
+      },
+      {
+        "group": "General",
+        "key": "architecture",
+        "value": "Skylake"
+      },
+      {
+        "group": "Features",
+        "key": "avx2",
+        "value": "true"
+      },
+      {
+        "group": "Clock Speeds",
+        "key": "base_clock",
+        "value": "3.80",
+        "unit": "GHz"
+      },
+      {
+        "group": "Core Configuration",
+        "key": "cores",
+        "value": "2"
+      },
+      {
+        "group": "Memory",
+        "key": "ecc_support",
+        "value": "false"
+      },
+      {
+        "group": "General",
+        "key": "generation",
+        "value": "6th Generation"
+      },
+      {
+        "group": "Graphics",
+        "key": "graphics_base_clock",
+        "value": "350",
+        "unit": "MHz"
+      },
+      {
+        "group": "Graphics",
+        "key": "graphics_max_clock",
+        "value": "1150",
+        "unit": "MHz"
+      },
+      {
+        "group": "Graphics",
+        "key": "graphics_model",
+        "value": "Intel HD Graphics 530"
+      },
+      {
+        "group": "Graphics",
+        "key": "integrated_graphics",
+        "value": "true"
+      },
+      {
+        "group": "Features",
+        "key": "intel_turbo_boost",
+        "value": "true"
+      },
+      {
+        "group": "Cache",
+        "key": "l3_cache",
+        "value": "4",
+        "unit": "MB"
+      },
+      {
+        "group": "General",
+        "key": "market_segment",
+        "value": "Desktop"
+      },
+      {
+        "group": "Memory",
+        "key": "max_memory",
+        "value": "64",
+        "unit": "GB"
+      },
+      {
+        "group": "Memory",
+        "key": "max_memory_speed",
+        "value": "1866",
+        "unit": "MT/s"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_channels",
+        "value": "2"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_type",
+        "value": "DDR4-1866/2133, DDR3L-1333/1600 @ 1.35V"
+      },
+      {
+        "group": "General",
+        "key": "microarchitecture",
+        "value": "Skylake"
+      },
+      {
+        "group": "Features",
+        "key": "overclocking_support",
+        "value": "false"
+      },
+      {
+        "group": "PCI Express",
+        "key": "pcie_lanes",
+        "value": "16"
+      },
+      {
+        "group": "PCI Express",
+        "key": "pcie_version",
+        "value": "3.0"
+      },
+      {
+        "group": "General",
+        "key": "process_node",
+        "value": "14 nm"
+      },
+      {
+        "group": "General",
+        "key": "product_family",
+        "value": "Core"
+      },
+      {
+        "group": "Socket",
+        "key": "socket",
+        "value": "LGA 1151"
+      },
+      {
+        "group": "Power",
+        "key": "tdp",
+        "value": "51",
+        "unit": "W"
+      },
+      {
+        "group": "Core Configuration",
+        "key": "threads",
+        "value": "4"
+      },
+      {
+        "group": "Features",
+        "key": "virtualization",
+        "value": "true"
+      }
+    ],
+    "benchmarks": []
+  },
+  {
+    "category": "CPU",
+    "manufacturer": "Intel",
+    "family": "Core",
+    "series": "Core",
+    "generation": "6th Generation",
+    "architecture": "Skylake",
+    "source": {
+      "name": "Intel ARK",
+      "url": "https://www.intel.com/content/www/us/en/products/sku/90728/specifications.html",
+      "date": "2026-09-15",
+      "notes": "Specifications verified against Intel ARK product specification page."
+    },
+    "product": {
+      "name": "Intel Core i3-6300T",
+      "slug": "intel-core-i3-6300t",
+      "description": "6th Gen Intel Core desktop processor with 2 cores and 4 threads.",
+      "release_date": "2015-07-01",
+      "status": "active",
+      "is_popular": false,
+      "architecture": "Skylake"
+    },
+    "images": [],
+    "specifications": [
+      {
+        "group": "Features",
+        "key": "aes",
+        "value": "true"
+      },
+      {
+        "group": "General",
+        "key": "architecture",
+        "value": "Skylake"
+      },
+      {
+        "group": "Features",
+        "key": "avx2",
+        "value": "true"
+      },
+      {
+        "group": "Clock Speeds",
+        "key": "base_clock",
+        "value": "3.30",
+        "unit": "GHz"
+      },
+      {
+        "group": "Core Configuration",
+        "key": "cores",
+        "value": "2"
+      },
+      {
+        "group": "Memory",
+        "key": "ecc_support",
+        "value": "false"
+      },
+      {
+        "group": "General",
+        "key": "generation",
+        "value": "6th Generation"
+      },
+      {
+        "group": "Graphics",
+        "key": "graphics_base_clock",
+        "value": "350",
+        "unit": "MHz"
+      },
+      {
+        "group": "Graphics",
+        "key": "graphics_max_clock",
+        "value": "950",
+        "unit": "MHz"
+      },
+      {
+        "group": "Graphics",
+        "key": "graphics_model",
+        "value": "Intel HD Graphics 530"
+      },
+      {
+        "group": "Graphics",
+        "key": "integrated_graphics",
+        "value": "true"
+      },
+      {
+        "group": "Features",
+        "key": "intel_turbo_boost",
+        "value": "true"
+      },
+      {
+        "group": "Cache",
+        "key": "l3_cache",
+        "value": "4",
+        "unit": "MB"
+      },
+      {
+        "group": "General",
+        "key": "market_segment",
+        "value": "Desktop"
+      },
+      {
+        "group": "Memory",
+        "key": "max_memory",
+        "value": "64",
+        "unit": "GB"
+      },
+      {
+        "group": "Memory",
+        "key": "max_memory_speed",
+        "value": "1866",
+        "unit": "MT/s"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_channels",
+        "value": "2"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_type",
+        "value": "DDR4-1866/2133, DDR3L-1333/1600 @ 1.35V"
+      },
+      {
+        "group": "General",
+        "key": "microarchitecture",
+        "value": "Skylake"
+      },
+      {
+        "group": "Features",
+        "key": "overclocking_support",
+        "value": "false"
+      },
+      {
+        "group": "PCI Express",
+        "key": "pcie_lanes",
+        "value": "16"
+      },
+      {
+        "group": "PCI Express",
+        "key": "pcie_version",
+        "value": "3.0"
+      },
+      {
+        "group": "General",
+        "key": "process_node",
+        "value": "14 nm"
+      },
+      {
+        "group": "General",
+        "key": "product_family",
+        "value": "Core"
+      },
+      {
+        "group": "Socket",
+        "key": "socket",
+        "value": "LGA 1151"
+      },
+      {
+        "group": "Power",
+        "key": "tdp",
+        "value": "35",
+        "unit": "W"
+      },
+      {
+        "group": "Core Configuration",
+        "key": "threads",
+        "value": "4"
+      },
+      {
+        "group": "Features",
+        "key": "virtualization",
+        "value": "true"
+      }
+    ],
+    "benchmarks": []
+  },
+  {
+    "category": "CPU",
+    "manufacturer": "Intel",
+    "family": "Core",
+    "series": "Core",
+    "generation": "6th Generation",
+    "architecture": "Skylake",
+    "source": {
+      "name": "Intel ARK",
+      "url": "https://www.intel.com/content/www/us/en/products/sku/90733/specifications.html",
+      "date": "2026-09-15",
+      "notes": "Specifications verified against Intel ARK product specification page."
+    },
+    "product": {
+      "name": "Intel Core i3-6320",
+      "slug": "intel-core-i3-6320",
+      "description": "6th Gen Intel Core desktop processor with 2 cores and 4 threads.",
+      "release_date": "2015-07-01",
+      "status": "active",
+      "is_popular": false,
+      "architecture": "Skylake"
+    },
+    "images": [],
+    "specifications": [
+      {
+        "group": "Features",
+        "key": "aes",
+        "value": "true"
+      },
+      {
+        "group": "General",
+        "key": "architecture",
+        "value": "Skylake"
+      },
+      {
+        "group": "Features",
+        "key": "avx2",
+        "value": "true"
+      },
+      {
+        "group": "Clock Speeds",
+        "key": "base_clock",
+        "value": "3.90",
+        "unit": "GHz"
+      },
+      {
+        "group": "Core Configuration",
+        "key": "cores",
+        "value": "2"
+      },
+      {
+        "group": "Memory",
+        "key": "ecc_support",
+        "value": "false"
+      },
+      {
+        "group": "General",
+        "key": "generation",
+        "value": "6th Generation"
+      },
+      {
+        "group": "Graphics",
+        "key": "graphics_base_clock",
+        "value": "350",
+        "unit": "MHz"
+      },
+      {
+        "group": "Graphics",
+        "key": "graphics_max_clock",
+        "value": "1150",
+        "unit": "MHz"
+      },
+      {
+        "group": "Graphics",
+        "key": "graphics_model",
+        "value": "Intel HD Graphics 530"
+      },
+      {
+        "group": "Graphics",
+        "key": "integrated_graphics",
+        "value": "true"
+      },
+      {
+        "group": "Features",
+        "key": "intel_turbo_boost",
+        "value": "true"
+      },
+      {
+        "group": "Cache",
+        "key": "l3_cache",
+        "value": "4",
+        "unit": "MB"
+      },
+      {
+        "group": "General",
+        "key": "market_segment",
+        "value": "Desktop"
+      },
+      {
+        "group": "Memory",
+        "key": "max_memory",
+        "value": "64",
+        "unit": "GB"
+      },
+      {
+        "group": "Memory",
+        "key": "max_memory_speed",
+        "value": "1866",
+        "unit": "MT/s"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_channels",
+        "value": "2"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_type",
+        "value": "DDR4-1866/2133, DDR3L-1333/1600 @ 1.35V"
+      },
+      {
+        "group": "General",
+        "key": "microarchitecture",
+        "value": "Skylake"
+      },
+      {
+        "group": "Features",
+        "key": "overclocking_support",
+        "value": "false"
+      },
+      {
+        "group": "PCI Express",
+        "key": "pcie_lanes",
+        "value": "16"
+      },
+      {
+        "group": "PCI Express",
+        "key": "pcie_version",
+        "value": "3.0"
+      },
+      {
+        "group": "General",
+        "key": "process_node",
+        "value": "14 nm"
+      },
+      {
+        "group": "General",
+        "key": "product_family",
+        "value": "Core"
+      },
+      {
+        "group": "Socket",
+        "key": "socket",
+        "value": "LGA 1151"
+      },
+      {
+        "group": "Power",
+        "key": "tdp",
+        "value": "51",
+        "unit": "W"
+      },
+      {
+        "group": "Core Configuration",
+        "key": "threads",
+        "value": "4"
+      },
+      {
+        "group": "Features",
+        "key": "virtualization",
+        "value": "true"
+      }
+    ],
+    "benchmarks": []
+  },
+  {
+    "category": "CPU",
+    "manufacturer": "Intel",
+    "family": "Core",
+    "series": "Core",
+    "generation": "6th Generation",
+    "architecture": "Skylake",
+    "source": {
+      "name": "Intel ARK",
+      "url": "https://www.intel.com/content/www/us/en/products/sku/88185/specifications.html",
+      "date": "2026-09-15",
+      "notes": "Specifications verified against Intel ARK product specification page."
+    },
+    "product": {
+      "name": "Intel Core i5-6400",
+      "slug": "intel-core-i5-6400",
+      "description": "6th Gen Intel Core desktop processor with 4 cores and 4 threads.",
+      "release_date": "2015-07-01",
+      "status": "active",
+      "is_popular": false,
+      "architecture": "Skylake"
+    },
+    "images": [],
+    "specifications": [
+      {
+        "group": "Features",
+        "key": "aes",
+        "value": "true"
+      },
+      {
+        "group": "General",
+        "key": "architecture",
+        "value": "Skylake"
+      },
+      {
+        "group": "Features",
+        "key": "avx2",
+        "value": "true"
+      },
+      {
+        "group": "Clock Speeds",
+        "key": "base_clock",
+        "value": "2.70",
+        "unit": "GHz"
+      },
+      {
+        "group": "Clock Speeds",
+        "key": "boost_clock",
+        "value": "3.30",
+        "unit": "GHz"
+      },
+      {
+        "group": "Core Configuration",
+        "key": "cores",
+        "value": "4"
+      },
+      {
+        "group": "Memory",
+        "key": "ecc_support",
+        "value": "false"
+      },
+      {
+        "group": "General",
+        "key": "generation",
+        "value": "6th Generation"
+      },
+      {
+        "group": "Graphics",
+        "key": "graphics_base_clock",
+        "value": "350",
+        "unit": "MHz"
+      },
+      {
+        "group": "Graphics",
+        "key": "graphics_max_clock",
+        "value": "950",
+        "unit": "MHz"
+      },
+      {
+        "group": "Graphics",
+        "key": "graphics_model",
+        "value": "Intel HD Graphics 530"
+      },
+      {
+        "group": "Graphics",
+        "key": "integrated_graphics",
+        "value": "true"
+      },
+      {
+        "group": "Features",
+        "key": "intel_turbo_boost",
+        "value": "true"
+      },
+      {
+        "group": "Cache",
+        "key": "l3_cache",
+        "value": "6",
+        "unit": "MB"
+      },
+      {
+        "group": "General",
+        "key": "market_segment",
+        "value": "Desktop"
+      },
+      {
+        "group": "Memory",
+        "key": "max_memory",
+        "value": "64",
+        "unit": "GB"
+      },
+      {
+        "group": "Memory",
+        "key": "max_memory_speed",
+        "value": "1866",
+        "unit": "MT/s"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_channels",
+        "value": "2"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_type",
+        "value": "DDR4-1866/2133, DDR3L-1333/1600 @ 1.35V"
+      },
+      {
+        "group": "General",
+        "key": "microarchitecture",
+        "value": "Skylake"
+      },
+      {
+        "group": "Features",
+        "key": "overclocking_support",
+        "value": "false"
+      },
+      {
+        "group": "PCI Express",
+        "key": "pcie_lanes",
+        "value": "16"
+      },
+      {
+        "group": "PCI Express",
+        "key": "pcie_version",
+        "value": "3.0"
+      },
+      {
+        "group": "General",
+        "key": "process_node",
+        "value": "14 nm"
+      },
+      {
+        "group": "General",
+        "key": "product_family",
+        "value": "Core"
+      },
+      {
+        "group": "Socket",
+        "key": "socket",
+        "value": "LGA 1151"
+      },
+      {
+        "group": "Power",
+        "key": "tdp",
+        "value": "65",
+        "unit": "W"
+      },
+      {
+        "group": "Core Configuration",
+        "key": "threads",
+        "value": "4"
+      },
+      {
+        "group": "Features",
+        "key": "virtualization",
+        "value": "true"
+      }
+    ],
+    "benchmarks": []
+  },
+  {
+    "category": "CPU",
+    "manufacturer": "Intel",
+    "family": "Core",
+    "series": "Core",
+    "generation": "6th Generation",
+    "architecture": "Skylake",
+    "source": {
+      "name": "Intel ARK",
+      "url": "https://www.intel.com/content/www/us/en/products/sku/88187/specifications.html",
+      "date": "2026-09-15",
+      "notes": "Specifications verified against Intel ARK product specification page."
+    },
+    "product": {
+      "name": "Intel Core i5-6400T",
+      "slug": "intel-core-i5-6400t",
+      "description": "6th Gen Intel Core desktop processor with 4 cores and 4 threads.",
+      "release_date": "2015-07-01",
+      "status": "active",
+      "is_popular": false,
+      "architecture": "Skylake"
+    },
+    "images": [],
+    "specifications": [
+      {
+        "group": "Features",
+        "key": "aes",
+        "value": "true"
+      },
+      {
+        "group": "General",
+        "key": "architecture",
+        "value": "Skylake"
+      },
+      {
+        "group": "Features",
+        "key": "avx2",
+        "value": "true"
+      },
+      {
+        "group": "Clock Speeds",
+        "key": "base_clock",
+        "value": "2.20",
+        "unit": "GHz"
+      },
+      {
+        "group": "Clock Speeds",
+        "key": "boost_clock",
+        "value": "2.80",
+        "unit": "GHz"
+      },
+      {
+        "group": "Core Configuration",
+        "key": "cores",
+        "value": "4"
+      },
+      {
+        "group": "Memory",
+        "key": "ecc_support",
+        "value": "false"
+      },
+      {
+        "group": "General",
+        "key": "generation",
+        "value": "6th Generation"
+      },
+      {
+        "group": "Graphics",
+        "key": "graphics_base_clock",
+        "value": "350",
+        "unit": "MHz"
+      },
+      {
+        "group": "Graphics",
+        "key": "graphics_max_clock",
+        "value": "950",
+        "unit": "MHz"
+      },
+      {
+        "group": "Graphics",
+        "key": "graphics_model",
+        "value": "Intel HD Graphics 530"
+      },
+      {
+        "group": "Graphics",
+        "key": "integrated_graphics",
+        "value": "true"
+      },
+      {
+        "group": "Features",
+        "key": "intel_turbo_boost",
+        "value": "true"
+      },
+      {
+        "group": "Cache",
+        "key": "l3_cache",
+        "value": "6",
+        "unit": "MB"
+      },
+      {
+        "group": "General",
+        "key": "market_segment",
+        "value": "Desktop"
+      },
+      {
+        "group": "Memory",
+        "key": "max_memory",
+        "value": "64",
+        "unit": "GB"
+      },
+      {
+        "group": "Memory",
+        "key": "max_memory_speed",
+        "value": "1866",
+        "unit": "MT/s"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_channels",
+        "value": "2"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_type",
+        "value": "DDR4-1866/2133, DDR3L-1333/1600 @ 1.35V"
+      },
+      {
+        "group": "General",
+        "key": "microarchitecture",
+        "value": "Skylake"
+      },
+      {
+        "group": "Features",
+        "key": "overclocking_support",
+        "value": "false"
+      },
+      {
+        "group": "PCI Express",
+        "key": "pcie_lanes",
+        "value": "16"
+      },
+      {
+        "group": "PCI Express",
+        "key": "pcie_version",
+        "value": "3.0"
+      },
+      {
+        "group": "General",
+        "key": "process_node",
+        "value": "14 nm"
+      },
+      {
+        "group": "General",
+        "key": "product_family",
+        "value": "Core"
+      },
+      {
+        "group": "Socket",
+        "key": "socket",
+        "value": "LGA 1151"
+      },
+      {
+        "group": "Power",
+        "key": "tdp",
+        "value": "35",
+        "unit": "W"
+      },
+      {
+        "group": "Core Configuration",
+        "key": "threads",
+        "value": "4"
+      },
+      {
+        "group": "Features",
+        "key": "virtualization",
+        "value": "true"
+      }
+    ],
+    "benchmarks": []
+  },
+  {
+    "category": "CPU",
+    "manufacturer": "Intel",
+    "family": "Core",
+    "series": "Core",
+    "generation": "6th Generation",
+    "architecture": "Skylake",
+    "source": {
+      "name": "Intel ARK",
+      "url": "https://www.intel.com/content/www/us/en/products/sku/93277/specifications.html",
+      "date": "2026-09-15",
+      "notes": "Specifications verified against Intel ARK product specification page."
+    },
+    "product": {
+      "name": "Intel Core i5-6402P",
+      "slug": "intel-core-i5-6402p",
+      "description": "6th Gen Intel Core desktop processor with 4 cores and 4 threads.",
+      "release_date": "2015-10-01",
+      "status": "active",
+      "is_popular": false,
+      "architecture": "Skylake"
+    },
+    "images": [],
+    "specifications": [
+      {
+        "group": "Features",
+        "key": "aes",
+        "value": "true"
+      },
+      {
+        "group": "General",
+        "key": "architecture",
+        "value": "Skylake"
+      },
+      {
+        "group": "Features",
+        "key": "avx2",
+        "value": "true"
+      },
+      {
+        "group": "Clock Speeds",
+        "key": "base_clock",
+        "value": "2.80",
+        "unit": "GHz"
+      },
+      {
+        "group": "Clock Speeds",
+        "key": "boost_clock",
+        "value": "3.40",
+        "unit": "GHz"
+      },
+      {
+        "group": "Core Configuration",
+        "key": "cores",
+        "value": "4"
+      },
+      {
+        "group": "Memory",
+        "key": "ecc_support",
+        "value": "false"
+      },
+      {
+        "group": "General",
+        "key": "generation",
+        "value": "6th Generation"
+      },
+      {
+        "group": "Graphics",
+        "key": "graphics_base_clock",
+        "value": "350",
+        "unit": "MHz"
+      },
+      {
+        "group": "Graphics",
+        "key": "graphics_max_clock",
+        "value": "950",
+        "unit": "MHz"
+      },
+      {
+        "group": "Graphics",
+        "key": "graphics_model",
+        "value": "Intel HD Graphics 510"
+      },
+      {
+        "group": "Graphics",
+        "key": "integrated_graphics",
+        "value": "true"
+      },
+      {
+        "group": "Features",
+        "key": "intel_turbo_boost",
+        "value": "true"
+      },
+      {
+        "group": "Cache",
+        "key": "l3_cache",
+        "value": "6",
+        "unit": "MB"
+      },
+      {
+        "group": "General",
+        "key": "market_segment",
+        "value": "Desktop"
+      },
+      {
+        "group": "Memory",
+        "key": "max_memory",
+        "value": "64",
+        "unit": "GB"
+      },
+      {
+        "group": "Memory",
+        "key": "max_memory_speed",
+        "value": "1866",
+        "unit": "MT/s"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_channels",
+        "value": "2"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_type",
+        "value": "DDR4-1866/2133, DDR3L-1333/1600 @ 1.35V"
+      },
+      {
+        "group": "General",
+        "key": "microarchitecture",
+        "value": "Skylake"
+      },
+      {
+        "group": "Features",
+        "key": "overclocking_support",
+        "value": "false"
+      },
+      {
+        "group": "PCI Express",
+        "key": "pcie_lanes",
+        "value": "16"
+      },
+      {
+        "group": "PCI Express",
+        "key": "pcie_version",
+        "value": "3.0"
+      },
+      {
+        "group": "General",
+        "key": "process_node",
+        "value": "14 nm"
+      },
+      {
+        "group": "General",
+        "key": "product_family",
+        "value": "Core"
+      },
+      {
+        "group": "Socket",
+        "key": "socket",
+        "value": "LGA 1151"
+      },
+      {
+        "group": "Power",
+        "key": "tdp",
+        "value": "65",
+        "unit": "W"
+      },
+      {
+        "group": "Core Configuration",
+        "key": "threads",
+        "value": "4"
+      },
+      {
+        "group": "Features",
+        "key": "virtualization",
+        "value": "true"
+      }
+    ],
+    "benchmarks": []
+  },
+  {
+    "category": "CPU",
+    "manufacturer": "Intel",
+    "family": "Core",
+    "series": "Core",
+    "generation": "6th Generation",
+    "architecture": "Skylake",
+    "source": {
+      "name": "Intel ARK",
+      "url": "https://www.intel.com/content/www/us/en/products/sku/88184/specifications.html",
+      "date": "2026-09-15",
+      "notes": "Specifications verified against Intel ARK product specification page."
+    },
+    "product": {
+      "name": "Intel Core i5-6500",
+      "slug": "intel-core-i5-6500",
+      "description": "6th Gen Intel Core desktop processor with 4 cores and 4 threads.",
+      "release_date": "2015-07-01",
+      "status": "active",
+      "is_popular": false,
+      "architecture": "Skylake"
+    },
+    "images": [],
+    "specifications": [
+      {
+        "group": "Features",
+        "key": "aes",
+        "value": "true"
+      },
+      {
+        "group": "General",
+        "key": "architecture",
+        "value": "Skylake"
+      },
+      {
+        "group": "Features",
+        "key": "avx2",
+        "value": "true"
+      },
+      {
+        "group": "Clock Speeds",
+        "key": "base_clock",
+        "value": "3.20",
+        "unit": "GHz"
+      },
+      {
+        "group": "Clock Speeds",
+        "key": "boost_clock",
+        "value": "3.60",
+        "unit": "GHz"
+      },
+      {
+        "group": "Core Configuration",
+        "key": "cores",
+        "value": "4"
+      },
+      {
+        "group": "Memory",
+        "key": "ecc_support",
+        "value": "false"
+      },
+      {
+        "group": "General",
+        "key": "generation",
+        "value": "6th Generation"
+      },
+      {
+        "group": "Graphics",
+        "key": "graphics_base_clock",
+        "value": "350",
+        "unit": "MHz"
+      },
+      {
+        "group": "Graphics",
+        "key": "graphics_max_clock",
+        "value": "1050",
+        "unit": "MHz"
+      },
+      {
+        "group": "Graphics",
+        "key": "graphics_model",
+        "value": "Intel HD Graphics 530"
+      },
+      {
+        "group": "Graphics",
+        "key": "integrated_graphics",
+        "value": "true"
+      },
+      {
+        "group": "Features",
+        "key": "intel_turbo_boost",
+        "value": "true"
+      },
+      {
+        "group": "Cache",
+        "key": "l3_cache",
+        "value": "6",
+        "unit": "MB"
+      },
+      {
+        "group": "General",
+        "key": "market_segment",
+        "value": "Desktop"
+      },
+      {
+        "group": "Memory",
+        "key": "max_memory",
+        "value": "64",
+        "unit": "GB"
+      },
+      {
+        "group": "Memory",
+        "key": "max_memory_speed",
+        "value": "1866",
+        "unit": "MT/s"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_channels",
+        "value": "2"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_type",
+        "value": "DDR4-1866/2133, DDR3L-1333/1600 @ 1.35V"
+      },
+      {
+        "group": "General",
+        "key": "microarchitecture",
+        "value": "Skylake"
+      },
+      {
+        "group": "Features",
+        "key": "overclocking_support",
+        "value": "false"
+      },
+      {
+        "group": "PCI Express",
+        "key": "pcie_lanes",
+        "value": "16"
+      },
+      {
+        "group": "PCI Express",
+        "key": "pcie_version",
+        "value": "3.0"
+      },
+      {
+        "group": "General",
+        "key": "process_node",
+        "value": "14 nm"
+      },
+      {
+        "group": "General",
+        "key": "product_family",
+        "value": "Core"
+      },
+      {
+        "group": "Socket",
+        "key": "socket",
+        "value": "LGA 1151"
+      },
+      {
+        "group": "Power",
+        "key": "tdp",
+        "value": "65",
+        "unit": "W"
+      },
+      {
+        "group": "Core Configuration",
+        "key": "threads",
+        "value": "4"
+      },
+      {
+        "group": "Features",
+        "key": "virtualization",
+        "value": "true"
+      }
+    ],
+    "benchmarks": []
+  },
+  {
+    "category": "CPU",
+    "manufacturer": "Intel",
+    "family": "Core",
+    "series": "Core",
+    "generation": "6th Generation",
+    "architecture": "Skylake",
+    "source": {
+      "name": "Intel ARK",
+      "url": "https://www.intel.com/content/www/us/en/products/sku/88183/specifications.html",
+      "date": "2026-09-15",
+      "notes": "Specifications verified against Intel ARK product specification page."
+    },
+    "product": {
+      "name": "Intel Core i5-6500T",
+      "slug": "intel-core-i5-6500t",
+      "description": "6th Gen Intel Core desktop processor with 4 cores and 4 threads.",
+      "release_date": "2015-07-01",
+      "status": "active",
+      "is_popular": false,
+      "architecture": "Skylake"
+    },
+    "images": [],
+    "specifications": [
+      {
+        "group": "Features",
+        "key": "aes",
+        "value": "true"
+      },
+      {
+        "group": "General",
+        "key": "architecture",
+        "value": "Skylake"
+      },
+      {
+        "group": "Features",
+        "key": "avx2",
+        "value": "true"
+      },
+      {
+        "group": "Clock Speeds",
+        "key": "base_clock",
+        "value": "2.50",
+        "unit": "GHz"
+      },
+      {
+        "group": "Clock Speeds",
+        "key": "boost_clock",
+        "value": "3.10",
+        "unit": "GHz"
+      },
+      {
+        "group": "Core Configuration",
+        "key": "cores",
+        "value": "4"
+      },
+      {
+        "group": "Memory",
+        "key": "ecc_support",
+        "value": "false"
+      },
+      {
+        "group": "General",
+        "key": "generation",
+        "value": "6th Generation"
+      },
+      {
+        "group": "Graphics",
+        "key": "graphics_base_clock",
+        "value": "350",
+        "unit": "MHz"
+      },
+      {
+        "group": "Graphics",
+        "key": "graphics_max_clock",
+        "value": "1100",
+        "unit": "MHz"
+      },
+      {
+        "group": "Graphics",
+        "key": "graphics_model",
+        "value": "Intel HD Graphics 530"
+      },
+      {
+        "group": "Graphics",
+        "key": "integrated_graphics",
+        "value": "true"
+      },
+      {
+        "group": "Features",
+        "key": "intel_turbo_boost",
+        "value": "true"
+      },
+      {
+        "group": "Cache",
+        "key": "l3_cache",
+        "value": "6",
+        "unit": "MB"
+      },
+      {
+        "group": "General",
+        "key": "market_segment",
+        "value": "Desktop"
+      },
+      {
+        "group": "Memory",
+        "key": "max_memory",
+        "value": "64",
+        "unit": "GB"
+      },
+      {
+        "group": "Memory",
+        "key": "max_memory_speed",
+        "value": "1866",
+        "unit": "MT/s"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_channels",
+        "value": "2"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_type",
+        "value": "DDR4-1866/2133, DDR3L-1333/1600 @ 1.35V"
+      },
+      {
+        "group": "General",
+        "key": "microarchitecture",
+        "value": "Skylake"
+      },
+      {
+        "group": "Features",
+        "key": "overclocking_support",
+        "value": "false"
+      },
+      {
+        "group": "PCI Express",
+        "key": "pcie_lanes",
+        "value": "16"
+      },
+      {
+        "group": "PCI Express",
+        "key": "pcie_version",
+        "value": "3.0"
+      },
+      {
+        "group": "General",
+        "key": "process_node",
+        "value": "14 nm"
+      },
+      {
+        "group": "General",
+        "key": "product_family",
+        "value": "Core"
+      },
+      {
+        "group": "Socket",
+        "key": "socket",
+        "value": "LGA 1151"
+      },
+      {
+        "group": "Power",
+        "key": "tdp",
+        "value": "35",
+        "unit": "W"
+      },
+      {
+        "group": "Core Configuration",
+        "key": "threads",
+        "value": "4"
+      },
+      {
+        "group": "Features",
+        "key": "virtualization",
+        "value": "true"
+      }
+    ],
+    "benchmarks": []
+  },
+  {
+    "category": "CPU",
+    "manufacturer": "Intel",
+    "family": "Core",
+    "series": "Core",
+    "generation": "6th Generation",
+    "architecture": "Skylake",
+    "source": {
+      "name": "Intel ARK",
+      "url": "https://www.intel.com/content/www/us/en/products/sku/88188/specifications.html",
+      "date": "2026-09-15",
+      "notes": "Specifications verified against Intel ARK product specification page."
+    },
+    "product": {
+      "name": "Intel Core i5-6600",
+      "slug": "intel-core-i5-6600",
+      "description": "6th Gen Intel Core desktop processor with 4 cores and 4 threads.",
+      "release_date": "2015-07-01",
+      "status": "active",
+      "is_popular": false,
+      "architecture": "Skylake"
+    },
+    "images": [],
+    "specifications": [
+      {
+        "group": "Features",
+        "key": "aes",
+        "value": "true"
+      },
+      {
+        "group": "General",
+        "key": "architecture",
+        "value": "Skylake"
+      },
+      {
+        "group": "Features",
+        "key": "avx2",
+        "value": "true"
+      },
+      {
+        "group": "Clock Speeds",
+        "key": "base_clock",
+        "value": "3.30",
+        "unit": "GHz"
+      },
+      {
+        "group": "Clock Speeds",
+        "key": "boost_clock",
+        "value": "3.90",
+        "unit": "GHz"
+      },
+      {
+        "group": "Core Configuration",
+        "key": "cores",
+        "value": "4"
+      },
+      {
+        "group": "Memory",
+        "key": "ecc_support",
+        "value": "false"
+      },
+      {
+        "group": "General",
+        "key": "generation",
+        "value": "6th Generation"
+      },
+      {
+        "group": "Graphics",
+        "key": "graphics_base_clock",
+        "value": "350",
+        "unit": "MHz"
+      },
+      {
+        "group": "Graphics",
+        "key": "graphics_max_clock",
+        "value": "1150",
+        "unit": "MHz"
+      },
+      {
+        "group": "Graphics",
+        "key": "graphics_model",
+        "value": "Intel HD Graphics 530"
+      },
+      {
+        "group": "Graphics",
+        "key": "integrated_graphics",
+        "value": "true"
+      },
+      {
+        "group": "Features",
+        "key": "intel_turbo_boost",
+        "value": "true"
+      },
+      {
+        "group": "Cache",
+        "key": "l3_cache",
+        "value": "6",
+        "unit": "MB"
+      },
+      {
+        "group": "General",
+        "key": "market_segment",
+        "value": "Desktop"
+      },
+      {
+        "group": "Memory",
+        "key": "max_memory",
+        "value": "64",
+        "unit": "GB"
+      },
+      {
+        "group": "Memory",
+        "key": "max_memory_speed",
+        "value": "1866",
+        "unit": "MT/s"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_channels",
+        "value": "2"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_type",
+        "value": "DDR4-1866/2133, DDR3L-1333/1600 @ 1.35V"
+      },
+      {
+        "group": "General",
+        "key": "microarchitecture",
+        "value": "Skylake"
+      },
+      {
+        "group": "Features",
+        "key": "overclocking_support",
+        "value": "false"
+      },
+      {
+        "group": "PCI Express",
+        "key": "pcie_lanes",
+        "value": "16"
+      },
+      {
+        "group": "PCI Express",
+        "key": "pcie_version",
+        "value": "3.0"
+      },
+      {
+        "group": "General",
+        "key": "process_node",
+        "value": "14 nm"
+      },
+      {
+        "group": "General",
+        "key": "product_family",
+        "value": "Core"
+      },
+      {
+        "group": "Socket",
+        "key": "socket",
+        "value": "LGA 1151"
+      },
+      {
+        "group": "Power",
+        "key": "tdp",
+        "value": "65",
+        "unit": "W"
+      },
+      {
+        "group": "Core Configuration",
+        "key": "threads",
+        "value": "4"
+      },
+      {
+        "group": "Features",
+        "key": "virtualization",
+        "value": "true"
+      }
+    ],
+    "benchmarks": []
+  },
+  {
+    "category": "CPU",
+    "manufacturer": "Intel",
+    "family": "Core",
+    "series": "Core",
+    "generation": "6th Generation",
+    "architecture": "Skylake",
+    "source": {
+      "name": "Intel ARK",
+      "url": "https://www.intel.com/content/www/us/en/products/sku/88191/specifications.html",
+      "date": "2026-09-15",
+      "notes": "Specifications verified against Intel ARK product specification page."
+    },
+    "product": {
+      "name": "Intel Core i5-6600K",
+      "slug": "intel-core-i5-6600k",
+      "description": "6th Gen Intel Core desktop processor with 4 cores and 4 threads.",
+      "release_date": "2015-07-01",
+      "status": "active",
+      "is_popular": true,
+      "architecture": "Skylake"
+    },
+    "images": [],
+    "specifications": [
+      {
+        "group": "Features",
+        "key": "aes",
+        "value": "true"
+      },
+      {
+        "group": "General",
+        "key": "architecture",
+        "value": "Skylake"
+      },
+      {
+        "group": "Features",
+        "key": "avx2",
+        "value": "true"
+      },
+      {
+        "group": "Clock Speeds",
+        "key": "base_clock",
+        "value": "3.50",
+        "unit": "GHz"
+      },
+      {
+        "group": "Clock Speeds",
+        "key": "boost_clock",
+        "value": "3.90",
+        "unit": "GHz"
+      },
+      {
+        "group": "Core Configuration",
+        "key": "cores",
+        "value": "4"
+      },
+      {
+        "group": "Memory",
+        "key": "ecc_support",
+        "value": "false"
+      },
+      {
+        "group": "General",
+        "key": "generation",
+        "value": "6th Generation"
+      },
+      {
+        "group": "Graphics",
+        "key": "graphics_base_clock",
+        "value": "350",
+        "unit": "MHz"
+      },
+      {
+        "group": "Graphics",
+        "key": "graphics_max_clock",
+        "value": "1150",
+        "unit": "MHz"
+      },
+      {
+        "group": "Graphics",
+        "key": "graphics_model",
+        "value": "Intel HD Graphics 530"
+      },
+      {
+        "group": "Graphics",
+        "key": "integrated_graphics",
+        "value": "true"
+      },
+      {
+        "group": "Features",
+        "key": "intel_turbo_boost",
+        "value": "true"
+      },
+      {
+        "group": "Cache",
+        "key": "l3_cache",
+        "value": "6",
+        "unit": "MB"
+      },
+      {
+        "group": "General",
+        "key": "market_segment",
+        "value": "Desktop"
+      },
+      {
+        "group": "Memory",
+        "key": "max_memory",
+        "value": "64",
+        "unit": "GB"
+      },
+      {
+        "group": "Memory",
+        "key": "max_memory_speed",
+        "value": "1866",
+        "unit": "MT/s"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_channels",
+        "value": "2"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_type",
+        "value": "DDR4-1866/2133, DDR3L-1333/1600 @ 1.35V"
+      },
+      {
+        "group": "General",
+        "key": "microarchitecture",
+        "value": "Skylake"
+      },
+      {
+        "group": "Features",
+        "key": "overclocking_support",
+        "value": "true"
+      },
+      {
+        "group": "PCI Express",
+        "key": "pcie_lanes",
+        "value": "16"
+      },
+      {
+        "group": "PCI Express",
+        "key": "pcie_version",
+        "value": "3.0"
+      },
+      {
+        "group": "General",
+        "key": "process_node",
+        "value": "14 nm"
+      },
+      {
+        "group": "General",
+        "key": "product_family",
+        "value": "Core"
+      },
+      {
+        "group": "Socket",
+        "key": "socket",
+        "value": "LGA 1151"
+      },
+      {
+        "group": "Power",
+        "key": "tdp",
+        "value": "91",
+        "unit": "W"
+      },
+      {
+        "group": "Core Configuration",
+        "key": "threads",
+        "value": "4"
+      },
+      {
+        "group": "Features",
+        "key": "virtualization",
+        "value": "true"
+      }
+    ],
+    "benchmarks": []
+  },
+  {
+    "category": "CPU",
+    "manufacturer": "Intel",
+    "family": "Core",
+    "series": "Core",
+    "generation": "6th Generation",
+    "architecture": "Skylake",
+    "source": {
+      "name": "Intel ARK",
+      "url": "https://www.intel.com/content/www/us/en/products/sku/88189/specifications.html",
+      "date": "2026-09-15",
+      "notes": "Specifications verified against Intel ARK product specification page."
+    },
+    "product": {
+      "name": "Intel Core i5-6600T",
+      "slug": "intel-core-i5-6600t",
+      "description": "6th Gen Intel Core desktop processor with 4 cores and 4 threads.",
+      "release_date": "2015-07-01",
+      "status": "active",
+      "is_popular": false,
+      "architecture": "Skylake"
+    },
+    "images": [],
+    "specifications": [
+      {
+        "group": "Features",
+        "key": "aes",
+        "value": "true"
+      },
+      {
+        "group": "General",
+        "key": "architecture",
+        "value": "Skylake"
+      },
+      {
+        "group": "Features",
+        "key": "avx2",
+        "value": "true"
+      },
+      {
+        "group": "Clock Speeds",
+        "key": "base_clock",
+        "value": "2.70",
+        "unit": "GHz"
+      },
+      {
+        "group": "Clock Speeds",
+        "key": "boost_clock",
+        "value": "3.50",
+        "unit": "GHz"
+      },
+      {
+        "group": "Core Configuration",
+        "key": "cores",
+        "value": "4"
+      },
+      {
+        "group": "Memory",
+        "key": "ecc_support",
+        "value": "false"
+      },
+      {
+        "group": "General",
+        "key": "generation",
+        "value": "6th Generation"
+      },
+      {
+        "group": "Graphics",
+        "key": "graphics_base_clock",
+        "value": "350",
+        "unit": "MHz"
+      },
+      {
+        "group": "Graphics",
+        "key": "graphics_max_clock",
+        "value": "1100",
+        "unit": "MHz"
+      },
+      {
+        "group": "Graphics",
+        "key": "graphics_model",
+        "value": "Intel HD Graphics 530"
+      },
+      {
+        "group": "Graphics",
+        "key": "integrated_graphics",
+        "value": "true"
+      },
+      {
+        "group": "Features",
+        "key": "intel_turbo_boost",
+        "value": "true"
+      },
+      {
+        "group": "Cache",
+        "key": "l3_cache",
+        "value": "6",
+        "unit": "MB"
+      },
+      {
+        "group": "General",
+        "key": "market_segment",
+        "value": "Desktop"
+      },
+      {
+        "group": "Memory",
+        "key": "max_memory",
+        "value": "64",
+        "unit": "GB"
+      },
+      {
+        "group": "Memory",
+        "key": "max_memory_speed",
+        "value": "1866",
+        "unit": "MT/s"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_channels",
+        "value": "2"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_type",
+        "value": "DDR4-1866/2133, DDR3L-1333/1600 @ 1.35V"
+      },
+      {
+        "group": "General",
+        "key": "microarchitecture",
+        "value": "Skylake"
+      },
+      {
+        "group": "Features",
+        "key": "overclocking_support",
+        "value": "false"
+      },
+      {
+        "group": "PCI Express",
+        "key": "pcie_lanes",
+        "value": "16"
+      },
+      {
+        "group": "PCI Express",
+        "key": "pcie_version",
+        "value": "3.0"
+      },
+      {
+        "group": "General",
+        "key": "process_node",
+        "value": "14 nm"
+      },
+      {
+        "group": "General",
+        "key": "product_family",
+        "value": "Core"
+      },
+      {
+        "group": "Socket",
+        "key": "socket",
+        "value": "LGA 1151"
+      },
+      {
+        "group": "Power",
+        "key": "tdp",
+        "value": "35",
+        "unit": "W"
+      },
+      {
+        "group": "Core Configuration",
+        "key": "threads",
+        "value": "4"
+      },
+      {
+        "group": "Features",
+        "key": "virtualization",
+        "value": "true"
+      }
+    ],
+    "benchmarks": []
+  },
+  {
+    "category": "CPU",
+    "manufacturer": "Intel",
+    "family": "Core",
+    "series": "Core",
+    "generation": "6th Generation",
+    "architecture": "Skylake",
+    "source": {
+      "name": "Intel ARK",
+      "url": "https://www.intel.com/content/www/us/en/products/sku/88196/specifications.html",
+      "date": "2026-09-15",
+      "notes": "Specifications verified against Intel ARK product specification page."
+    },
+    "product": {
+      "name": "Intel Core i7-6700",
+      "slug": "intel-core-i7-6700",
+      "description": "6th Gen Intel Core desktop processor with 4 cores and 8 threads.",
+      "release_date": "2015-07-01",
+      "status": "active",
+      "is_popular": false,
+      "architecture": "Skylake"
+    },
+    "images": [],
+    "specifications": [
+      {
+        "group": "Features",
+        "key": "aes",
+        "value": "true"
+      },
+      {
+        "group": "General",
+        "key": "architecture",
+        "value": "Skylake"
+      },
+      {
+        "group": "Features",
+        "key": "avx2",
+        "value": "true"
+      },
+      {
+        "group": "Clock Speeds",
+        "key": "base_clock",
+        "value": "3.40",
+        "unit": "GHz"
+      },
+      {
+        "group": "Clock Speeds",
+        "key": "boost_clock",
+        "value": "4.00",
+        "unit": "GHz"
+      },
+      {
+        "group": "Core Configuration",
+        "key": "cores",
+        "value": "4"
+      },
+      {
+        "group": "Memory",
+        "key": "ecc_support",
+        "value": "false"
+      },
+      {
+        "group": "General",
+        "key": "generation",
+        "value": "6th Generation"
+      },
+      {
+        "group": "Graphics",
+        "key": "graphics_base_clock",
+        "value": "350",
+        "unit": "MHz"
+      },
+      {
+        "group": "Graphics",
+        "key": "graphics_max_clock",
+        "value": "1150",
+        "unit": "MHz"
+      },
+      {
+        "group": "Graphics",
+        "key": "graphics_model",
+        "value": "Intel HD Graphics 530"
+      },
+      {
+        "group": "Graphics",
+        "key": "integrated_graphics",
+        "value": "true"
+      },
+      {
+        "group": "Features",
+        "key": "intel_turbo_boost",
+        "value": "true"
+      },
+      {
+        "group": "Cache",
+        "key": "l3_cache",
+        "value": "8",
+        "unit": "MB"
+      },
+      {
+        "group": "General",
+        "key": "market_segment",
+        "value": "Desktop"
+      },
+      {
+        "group": "Memory",
+        "key": "max_memory",
+        "value": "64",
+        "unit": "GB"
+      },
+      {
+        "group": "Memory",
+        "key": "max_memory_speed",
+        "value": "1866",
+        "unit": "MT/s"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_channels",
+        "value": "2"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_type",
+        "value": "DDR4-1866/2133, DDR3L-1333/1600 @ 1.35V"
+      },
+      {
+        "group": "General",
+        "key": "microarchitecture",
+        "value": "Skylake"
+      },
+      {
+        "group": "Features",
+        "key": "overclocking_support",
+        "value": "false"
+      },
+      {
+        "group": "PCI Express",
+        "key": "pcie_lanes",
+        "value": "16"
+      },
+      {
+        "group": "PCI Express",
+        "key": "pcie_version",
+        "value": "3.0"
+      },
+      {
+        "group": "General",
+        "key": "process_node",
+        "value": "14 nm"
+      },
+      {
+        "group": "General",
+        "key": "product_family",
+        "value": "Core"
+      },
+      {
+        "group": "Socket",
+        "key": "socket",
+        "value": "LGA 1151"
+      },
+      {
+        "group": "Power",
+        "key": "tdp",
+        "value": "65",
+        "unit": "W"
+      },
+      {
+        "group": "Core Configuration",
+        "key": "threads",
+        "value": "8"
+      },
+      {
+        "group": "Features",
+        "key": "virtualization",
+        "value": "true"
+      }
+    ],
+    "benchmarks": []
+  },
+  {
+    "category": "CPU",
+    "manufacturer": "Intel",
+    "family": "Core",
+    "series": "Core",
+    "generation": "6th Generation",
+    "architecture": "Skylake",
+    "source": {
+      "name": "Intel ARK",
+      "url": "https://www.intel.com/content/www/us/en/products/sku/88195/specifications.html",
+      "date": "2026-09-15",
+      "notes": "Specifications verified against Intel ARK product specification page."
+    },
+    "product": {
+      "name": "Intel Core i7-6700K",
+      "slug": "intel-core-i7-6700k",
+      "description": "6th Gen Intel Core desktop processor with 4 cores and 8 threads.",
+      "release_date": "2015-07-01",
+      "status": "active",
+      "is_popular": true,
+      "architecture": "Skylake"
+    },
+    "images": [],
+    "specifications": [
+      {
+        "group": "Features",
+        "key": "aes",
+        "value": "true"
+      },
+      {
+        "group": "General",
+        "key": "architecture",
+        "value": "Skylake"
+      },
+      {
+        "group": "Features",
+        "key": "avx2",
+        "value": "true"
+      },
+      {
+        "group": "Clock Speeds",
+        "key": "base_clock",
+        "value": "4.00",
+        "unit": "GHz"
+      },
+      {
+        "group": "Clock Speeds",
+        "key": "boost_clock",
+        "value": "4.20",
+        "unit": "GHz"
+      },
+      {
+        "group": "Core Configuration",
+        "key": "cores",
+        "value": "4"
+      },
+      {
+        "group": "Memory",
+        "key": "ecc_support",
+        "value": "false"
+      },
+      {
+        "group": "General",
+        "key": "generation",
+        "value": "6th Generation"
+      },
+      {
+        "group": "Graphics",
+        "key": "graphics_base_clock",
+        "value": "350",
+        "unit": "MHz"
+      },
+      {
+        "group": "Graphics",
+        "key": "graphics_max_clock",
+        "value": "1150",
+        "unit": "MHz"
+      },
+      {
+        "group": "Graphics",
+        "key": "graphics_model",
+        "value": "Intel HD Graphics 530"
+      },
+      {
+        "group": "Graphics",
+        "key": "integrated_graphics",
+        "value": "true"
+      },
+      {
+        "group": "Features",
+        "key": "intel_turbo_boost",
+        "value": "true"
+      },
+      {
+        "group": "Cache",
+        "key": "l3_cache",
+        "value": "8",
+        "unit": "MB"
+      },
+      {
+        "group": "General",
+        "key": "market_segment",
+        "value": "Desktop"
+      },
+      {
+        "group": "Memory",
+        "key": "max_memory",
+        "value": "64",
+        "unit": "GB"
+      },
+      {
+        "group": "Memory",
+        "key": "max_memory_speed",
+        "value": "1866",
+        "unit": "MT/s"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_channels",
+        "value": "2"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_type",
+        "value": "DDR4-1866/2133, DDR3L-1333/1600 @ 1.35V"
+      },
+      {
+        "group": "General",
+        "key": "microarchitecture",
+        "value": "Skylake"
+      },
+      {
+        "group": "Features",
+        "key": "overclocking_support",
+        "value": "true"
+      },
+      {
+        "group": "PCI Express",
+        "key": "pcie_lanes",
+        "value": "16"
+      },
+      {
+        "group": "PCI Express",
+        "key": "pcie_version",
+        "value": "3.0"
+      },
+      {
+        "group": "General",
+        "key": "process_node",
+        "value": "14 nm"
+      },
+      {
+        "group": "General",
+        "key": "product_family",
+        "value": "Core"
+      },
+      {
+        "group": "Socket",
+        "key": "socket",
+        "value": "LGA 1151"
+      },
+      {
+        "group": "Power",
+        "key": "tdp",
+        "value": "91",
+        "unit": "W"
+      },
+      {
+        "group": "Core Configuration",
+        "key": "threads",
+        "value": "8"
+      },
+      {
+        "group": "Features",
+        "key": "virtualization",
+        "value": "true"
+      }
+    ],
+    "benchmarks": []
+  },
+  {
+    "category": "CPU",
+    "manufacturer": "Intel",
+    "family": "Core",
+    "series": "Core",
+    "generation": "6th Generation",
+    "architecture": "Skylake",
+    "source": {
+      "name": "Intel ARK",
+      "url": "https://www.intel.com/content/www/us/en/products/sku/88200/specifications.html",
+      "date": "2026-09-15",
+      "notes": "Specifications verified against Intel ARK product specification page."
+    },
+    "product": {
+      "name": "Intel Core i7-6700T",
+      "slug": "intel-core-i7-6700t",
+      "description": "6th Gen Intel Core desktop processor with 4 cores and 8 threads.",
+      "release_date": "2015-07-01",
+      "status": "active",
+      "is_popular": false,
+      "architecture": "Skylake"
+    },
+    "images": [],
+    "specifications": [
+      {
+        "group": "Features",
+        "key": "aes",
+        "value": "true"
+      },
+      {
+        "group": "General",
+        "key": "architecture",
+        "value": "Skylake"
+      },
+      {
+        "group": "Features",
+        "key": "avx2",
+        "value": "true"
+      },
+      {
+        "group": "Clock Speeds",
+        "key": "base_clock",
+        "value": "2.80",
+        "unit": "GHz"
+      },
+      {
+        "group": "Clock Speeds",
+        "key": "boost_clock",
+        "value": "3.60",
+        "unit": "GHz"
+      },
+      {
+        "group": "Core Configuration",
+        "key": "cores",
+        "value": "4"
+      },
+      {
+        "group": "Memory",
+        "key": "ecc_support",
+        "value": "false"
+      },
+      {
+        "group": "General",
+        "key": "generation",
+        "value": "6th Generation"
+      },
+      {
+        "group": "Graphics",
+        "key": "graphics_base_clock",
+        "value": "350",
+        "unit": "MHz"
+      },
+      {
+        "group": "Graphics",
+        "key": "graphics_max_clock",
+        "value": "1100",
+        "unit": "MHz"
+      },
+      {
+        "group": "Graphics",
+        "key": "graphics_model",
+        "value": "Intel HD Graphics 530"
+      },
+      {
+        "group": "Graphics",
+        "key": "integrated_graphics",
+        "value": "true"
+      },
+      {
+        "group": "Features",
+        "key": "intel_turbo_boost",
+        "value": "true"
+      },
+      {
+        "group": "Cache",
+        "key": "l3_cache",
+        "value": "8",
+        "unit": "MB"
+      },
+      {
+        "group": "General",
+        "key": "market_segment",
+        "value": "Desktop"
+      },
+      {
+        "group": "Memory",
+        "key": "max_memory",
+        "value": "64",
+        "unit": "GB"
+      },
+      {
+        "group": "Memory",
+        "key": "max_memory_speed",
+        "value": "1866",
+        "unit": "MT/s"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_channels",
+        "value": "2"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_type",
+        "value": "DDR4-1866/2133, DDR3L-1333/1600 @ 1.35V"
+      },
+      {
+        "group": "General",
+        "key": "microarchitecture",
+        "value": "Skylake"
+      },
+      {
+        "group": "Features",
+        "key": "overclocking_support",
+        "value": "false"
+      },
+      {
+        "group": "PCI Express",
+        "key": "pcie_lanes",
+        "value": "16"
+      },
+      {
+        "group": "PCI Express",
+        "key": "pcie_version",
+        "value": "3.0"
+      },
+      {
+        "group": "General",
+        "key": "process_node",
+        "value": "14 nm"
+      },
+      {
+        "group": "General",
+        "key": "product_family",
+        "value": "Core"
+      },
+      {
+        "group": "Socket",
+        "key": "socket",
+        "value": "LGA 1151"
+      },
+      {
+        "group": "Power",
+        "key": "tdp",
+        "value": "35",
+        "unit": "W"
+      },
+      {
+        "group": "Core Configuration",
+        "key": "threads",
+        "value": "8"
+      },
+      {
+        "group": "Features",
+        "key": "virtualization",
+        "value": "true"
+      }
+    ],
+    "benchmarks": []
+  }
+]

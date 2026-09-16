@@ -416,3 +416,126 @@ def test_intel_10th_gen_product_detail(client, cpu_setup):
     assert payload["name"] == "Intel Core i9-10900K"
     assert payload.get("generation") == "10th Generation"
     assert len(payload.get("sources", [])) >= 1
+
+
+def test_intel_7th_gen_batch_import(cpu_setup):
+    result = import_hardware_from_path(
+        "data/catalog/cpu/intel/core/7th-gen/desktop.json",
+        mode=ImportMode.UPSERT,
+    )
+    assert result.errors == 0
+    assert result.created + result.updated >= 18
+    assert Product.query.filter_by(slug="intel-core-i7-7700k").first() is not None
+
+
+def test_intel_6th_gen_batch_import(cpu_setup):
+    result = import_hardware_from_path(
+        "data/catalog/cpu/intel/core/6th-gen/desktop.json",
+        mode=ImportMode.UPSERT,
+    )
+    assert result.errors == 0
+    assert result.created + result.updated >= 16
+    assert Product.query.filter_by(slug="intel-core-i7-6700k").first() is not None
+
+
+def test_intel_6th_through_14th_gen_taxonomy(cpu_setup):
+    for generation in (
+        "6th Generation",
+        "7th Generation",
+        "8th Generation",
+        "9th Generation",
+        "10th Generation",
+        "11th Generation",
+        "12th Generation",
+        "13th Generation",
+        "14th Generation",
+    ):
+        record = {
+            "category": "CPU",
+            "manufacturer": "Intel",
+            "family": "Core",
+            "series": "Core",
+            "generation": generation,
+            "product": {
+                "name": f"Taxonomy Intel {generation}",
+                "slug": f"taxonomy-intel-{generation.split()[0].lower()}-gen",
+            },
+            "specifications": [{"group": "Socket", "key": "socket", "value": "LGA 1151"}],
+            "images": [],
+        }
+        result = import_hardware([record], mode=ImportMode.UPSERT)
+        assert result.errors == 0
+
+
+def test_intel_7th_gen_search(client, cpu_setup):
+    import_hardware_from_path(
+        "data/catalog/cpu/intel/core/7th-gen/desktop.json",
+        mode=ImportMode.UPSERT,
+    )
+    for query in ("7700K", "7600K", "7700"):
+        response = client.get(f"/api/search?q={query}")
+        assert response.status_code == 200
+        results = response.get_json()
+        items = results.get("items", results.get("data", []))
+        assert any(query.replace("K", "") in item.get("name", "").replace("-", "") for item in items)
+
+
+def test_intel_6th_gen_search(client, cpu_setup):
+    import_hardware_from_path(
+        "data/catalog/cpu/intel/core/6th-gen/desktop.json",
+        mode=ImportMode.UPSERT,
+    )
+    for query in ("6700K", "6600K", "6700"):
+        response = client.get(f"/api/search?q={query}")
+        assert response.status_code == 200
+        results = response.get_json()
+        items = results.get("items", results.get("data", []))
+        assert any(query.replace("K", "") in item.get("name", "").replace("-", "") for item in items)
+
+
+def test_intel_7th_gen_product_detail(client, cpu_setup):
+    import_hardware_from_path(
+        "data/catalog/cpu/intel/core/7th-gen/desktop.json",
+        mode=ImportMode.UPSERT,
+    )
+    response = client.get("/api/products/cpu/intel/intel-core-i7-7700k")
+    assert response.status_code == 200
+    payload = response.get_json()
+    assert payload["name"] == "Intel Core i7-7700K"
+    assert payload.get("generation") == "7th Generation"
+    assert len(payload.get("sources", [])) >= 1
+    assert payload.get("related_products") is not None
+
+
+def test_intel_6th_gen_product_detail(client, cpu_setup):
+    import_hardware_from_path(
+        "data/catalog/cpu/intel/core/6th-gen/desktop.json",
+        mode=ImportMode.UPSERT,
+    )
+    response = client.get("/api/products/cpu/intel/intel-core-i7-6700k")
+    assert response.status_code == 200
+    payload = response.get_json()
+    assert payload["name"] == "Intel Core i7-6700K"
+    assert payload.get("generation") == "6th Generation"
+    assert len(payload.get("sources", [])) >= 1
+
+
+def test_historical_intel_cpu_specs_do_not_require_modern_fields(cpu_setup):
+    """6th/7th Gen CPUs use traditional core counts without P/E-core or turbo power fields."""
+    import_hardware_from_path(
+        "data/catalog/cpu/intel/core/6th-gen/desktop.json",
+        mode=ImportMode.UPSERT,
+    )
+    import_hardware_from_path(
+        "data/catalog/cpu/intel/core/7th-gen/desktop.json",
+        mode=ImportMode.UPSERT,
+    )
+    for slug in ("intel-core-i7-6700k", "intel-core-i7-7700k"):
+        product = Product.query.filter_by(slug=slug).first()
+        assert product is not None
+        spec_keys = {spec.key for spec in product.specifications}
+        assert "cores" in spec_keys
+        assert "threads" in spec_keys
+        assert "p_cores" not in spec_keys
+        assert "e_cores" not in spec_keys
+        assert "max_turbo_power" not in spec_keys

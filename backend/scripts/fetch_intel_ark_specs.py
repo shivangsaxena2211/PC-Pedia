@@ -125,10 +125,10 @@ def fetch_sku(sku: int) -> dict | None:
 
     launch = _parse_date(_field(fields, "Launch Date"))
     socket = _field(fields, "Sockets Supported", "Socket")
-    if socket and "FCLGA" in socket:
-        if "FCLGA14" in socket or "1200" in socket:
+    if socket:
+        if "FCLGA14" in socket and "1200" in socket:
             socket = "LGA 1200"
-        elif "FCLGA11" in socket or "1151" in socket:
+        elif "FCLGA11" in socket or "1151" in socket or "FC-LGA14C" in socket:
             socket = "LGA 1151"
 
     code_name = _field(fields, "Code Name") or ""
@@ -141,6 +141,10 @@ def fetch_sku(sku: int) -> dict | None:
         arch = "Coffee Lake Refresh"
     elif "8th" in collection:
         arch = "Coffee Lake"
+    elif "7th" in collection:
+        arch = "Kaby Lake"
+    elif "6th" in collection:
+        arch = "Skylake"
 
     gen = None
     if "11th" in collection:
@@ -151,6 +155,10 @@ def fetch_sku(sku: int) -> dict | None:
         gen = "9th Generation"
     elif "8th" in collection:
         gen = "8th Generation"
+    elif "7th" in collection:
+        gen = "7th Generation"
+    elif "6th" in collection:
+        gen = "6th Generation"
 
     max_turbo = _parse_ghz(_field(fields, "Max Turbo Frequency"))
     tv_boost = _parse_ghz(_field(fields, "Intel® Thermal Velocity Boost Frequency"))
