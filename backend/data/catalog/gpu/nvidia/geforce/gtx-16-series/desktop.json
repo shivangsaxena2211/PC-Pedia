@@ -1,0 +1,906 @@
+[
+  {
+    "category": "GPU",
+    "manufacturer": "NVIDIA",
+    "family": "GeForce",
+    "series": "GeForce GTX",
+    "generation": "GTX 16 Series",
+    "architecture": "Turing",
+    "source": {
+      "name": "NVIDIA official product specifications",
+      "url": "https://www.nvidia.com/en-us/geforce/graphics-cards/gtx-1660-ti/",
+      "date": "2026-09-16",
+      "notes": "Specifications verified against NVIDIA GeForce product specification pages on nvidia.com."
+    },
+    "product": {
+      "name": "NVIDIA GeForce GTX 1660 Ti",
+      "slug": "nvidia-geforce-gtx-1660-ti",
+      "description": "NVIDIA GeForce GTX 1660 Ti desktop graphics card based on the Turing architecture.",
+      "release_date": "2019-02-22",
+      "status": "active",
+      "is_popular": true,
+      "architecture": "Turing"
+    },
+    "images": [],
+    "specifications": [
+      {
+        "group": "Identity",
+        "key": "architecture",
+        "value": "Turing"
+      },
+      {
+        "group": "Clocks",
+        "key": "base_clock",
+        "value": "1500",
+        "unit": "MHz"
+      },
+      {
+        "group": "Clocks",
+        "key": "boost_clock",
+        "value": "1770",
+        "unit": "MHz"
+      },
+      {
+        "group": "Compute",
+        "key": "cuda_cores",
+        "value": "1536"
+      },
+      {
+        "group": "Interface",
+        "key": "display_outputs",
+        "value": "DP 1.4a, HDMI 2.0b, DL-DVI-D"
+      },
+      {
+        "group": "Identity",
+        "key": "generation",
+        "value": "GTX 16 Series"
+      },
+      {
+        "group": "Physical",
+        "key": "height",
+        "value": "111",
+        "unit": "mm"
+      },
+      {
+        "group": "Identity",
+        "key": "launch_msrp",
+        "value": "279",
+        "unit": "USD"
+      },
+      {
+        "group": "Physical",
+        "key": "length",
+        "value": "145",
+        "unit": "mm"
+      },
+      {
+        "group": "Identity",
+        "key": "market_segment",
+        "value": "desktop"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_bus_width",
+        "value": "192",
+        "unit": "bit"
+      },
+      {
+        "group": "Interface",
+        "key": "pci_express",
+        "value": "PCIe 3.0"
+      },
+      {
+        "group": "Physical",
+        "key": "power_connectors",
+        "value": "1x PCIe 8-pin"
+      },
+      {
+        "group": "Identity",
+        "key": "product_family",
+        "value": "GeForce"
+      },
+      {
+        "group": "Power",
+        "key": "recommended_psu",
+        "value": "450",
+        "unit": "W"
+      },
+      {
+        "group": "Physical",
+        "key": "slot_width",
+        "value": "2-Slot"
+      },
+      {
+        "group": "Power",
+        "key": "tbp",
+        "value": "120",
+        "unit": "W"
+      },
+      {
+        "group": "Memory",
+        "key": "vram_capacity",
+        "value": "6",
+        "unit": "GB"
+      },
+      {
+        "group": "Memory",
+        "key": "vram_type",
+        "value": "GDDR6"
+      }
+    ],
+    "benchmarks": []
+  },
+  {
+    "category": "GPU",
+    "manufacturer": "NVIDIA",
+    "family": "GeForce",
+    "series": "GeForce GTX",
+    "generation": "GTX 16 Series",
+    "architecture": "Turing",
+    "source": {
+      "name": "NVIDIA official product specifications",
+      "url": "https://www.nvidia.com/en-us/geforce/news/nvidia-geforce-gtx-1660-super-1650-super/",
+      "date": "2026-09-16",
+      "notes": "Specifications verified against NVIDIA GeForce product specification pages on nvidia.com."
+    },
+    "product": {
+      "name": "NVIDIA GeForce GTX 1660 SUPER",
+      "slug": "nvidia-geforce-gtx-1660-super",
+      "description": "NVIDIA GeForce GTX 1660 SUPER desktop graphics card based on the Turing architecture.",
+      "release_date": "2019-10-29",
+      "status": "active",
+      "is_popular": true,
+      "architecture": "Turing"
+    },
+    "images": [],
+    "specifications": [
+      {
+        "group": "Identity",
+        "key": "architecture",
+        "value": "Turing"
+      },
+      {
+        "group": "Clocks",
+        "key": "base_clock",
+        "value": "1530",
+        "unit": "MHz"
+      },
+      {
+        "group": "Clocks",
+        "key": "boost_clock",
+        "value": "1785",
+        "unit": "MHz"
+      },
+      {
+        "group": "Compute",
+        "key": "cuda_cores",
+        "value": "1408"
+      },
+      {
+        "group": "Interface",
+        "key": "display_outputs",
+        "value": "DP 1.4a, HDMI 2.0b, DL-DVI-D"
+      },
+      {
+        "group": "Identity",
+        "key": "generation",
+        "value": "GTX 16 Series"
+      },
+      {
+        "group": "Physical",
+        "key": "height",
+        "value": "111",
+        "unit": "mm"
+      },
+      {
+        "group": "Identity",
+        "key": "launch_msrp",
+        "value": "229",
+        "unit": "USD"
+      },
+      {
+        "group": "Physical",
+        "key": "length",
+        "value": "145",
+        "unit": "mm"
+      },
+      {
+        "group": "Identity",
+        "key": "market_segment",
+        "value": "desktop"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_bus_width",
+        "value": "192",
+        "unit": "bit"
+      },
+      {
+        "group": "Interface",
+        "key": "pci_express",
+        "value": "PCIe 3.0"
+      },
+      {
+        "group": "Physical",
+        "key": "power_connectors",
+        "value": "1x PCIe 8-pin"
+      },
+      {
+        "group": "Identity",
+        "key": "product_family",
+        "value": "GeForce"
+      },
+      {
+        "group": "Power",
+        "key": "recommended_psu",
+        "value": "450",
+        "unit": "W"
+      },
+      {
+        "group": "Physical",
+        "key": "slot_width",
+        "value": "2-Slot"
+      },
+      {
+        "group": "Power",
+        "key": "tbp",
+        "value": "125",
+        "unit": "W"
+      },
+      {
+        "group": "Memory",
+        "key": "vram_capacity",
+        "value": "6",
+        "unit": "GB"
+      },
+      {
+        "group": "Memory",
+        "key": "vram_type",
+        "value": "GDDR6"
+      }
+    ],
+    "benchmarks": []
+  },
+  {
+    "category": "GPU",
+    "manufacturer": "NVIDIA",
+    "family": "GeForce",
+    "series": "GeForce GTX",
+    "generation": "GTX 16 Series",
+    "architecture": "Turing",
+    "source": {
+      "name": "NVIDIA official product specifications",
+      "url": "https://www.nvidia.com/en-us/geforce/news/nvidia-geforce-gtx-1660/",
+      "date": "2026-09-16",
+      "notes": "Specifications verified against NVIDIA GeForce product specification pages on nvidia.com."
+    },
+    "product": {
+      "name": "NVIDIA GeForce GTX 1660",
+      "slug": "nvidia-geforce-gtx-1660",
+      "description": "NVIDIA GeForce GTX 1660 desktop graphics card based on the Turing architecture.",
+      "release_date": "2019-03-14",
+      "status": "active",
+      "is_popular": true,
+      "architecture": "Turing"
+    },
+    "images": [],
+    "specifications": [
+      {
+        "group": "Identity",
+        "key": "architecture",
+        "value": "Turing"
+      },
+      {
+        "group": "Clocks",
+        "key": "base_clock",
+        "value": "1530",
+        "unit": "MHz"
+      },
+      {
+        "group": "Clocks",
+        "key": "boost_clock",
+        "value": "1785",
+        "unit": "MHz"
+      },
+      {
+        "group": "Compute",
+        "key": "cuda_cores",
+        "value": "1408"
+      },
+      {
+        "group": "Interface",
+        "key": "display_outputs",
+        "value": "DP 1.4a, HDMI 2.0b, DL-DVI-D"
+      },
+      {
+        "group": "Identity",
+        "key": "generation",
+        "value": "GTX 16 Series"
+      },
+      {
+        "group": "Physical",
+        "key": "height",
+        "value": "111",
+        "unit": "mm"
+      },
+      {
+        "group": "Identity",
+        "key": "launch_msrp",
+        "value": "219",
+        "unit": "USD"
+      },
+      {
+        "group": "Physical",
+        "key": "length",
+        "value": "145",
+        "unit": "mm"
+      },
+      {
+        "group": "Identity",
+        "key": "market_segment",
+        "value": "desktop"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_bus_width",
+        "value": "192",
+        "unit": "bit"
+      },
+      {
+        "group": "Interface",
+        "key": "pci_express",
+        "value": "PCIe 3.0"
+      },
+      {
+        "group": "Physical",
+        "key": "power_connectors",
+        "value": "1x PCIe 8-pin"
+      },
+      {
+        "group": "Identity",
+        "key": "product_family",
+        "value": "GeForce"
+      },
+      {
+        "group": "Power",
+        "key": "recommended_psu",
+        "value": "450",
+        "unit": "W"
+      },
+      {
+        "group": "Physical",
+        "key": "slot_width",
+        "value": "2-Slot"
+      },
+      {
+        "group": "Power",
+        "key": "tbp",
+        "value": "120",
+        "unit": "W"
+      },
+      {
+        "group": "Memory",
+        "key": "vram_capacity",
+        "value": "6",
+        "unit": "GB"
+      },
+      {
+        "group": "Memory",
+        "key": "vram_type",
+        "value": "GDDR5"
+      }
+    ],
+    "benchmarks": []
+  },
+  {
+    "category": "GPU",
+    "manufacturer": "NVIDIA",
+    "family": "GeForce",
+    "series": "GeForce GTX",
+    "generation": "GTX 16 Series",
+    "architecture": "Turing",
+    "source": {
+      "name": "NVIDIA official product specifications",
+      "url": "https://www.nvidia.com/en-us/geforce/news/nvidia-geforce-gtx-1660-super-1650-super/",
+      "date": "2026-09-16",
+      "notes": "Specifications verified against NVIDIA GeForce product specification pages on nvidia.com."
+    },
+    "product": {
+      "name": "NVIDIA GeForce GTX 1650 SUPER",
+      "slug": "nvidia-geforce-gtx-1650-super",
+      "description": "NVIDIA GeForce GTX 1650 SUPER desktop graphics card based on the Turing architecture.",
+      "release_date": "2019-11-22",
+      "status": "active",
+      "is_popular": true,
+      "architecture": "Turing"
+    },
+    "images": [],
+    "specifications": [
+      {
+        "group": "Identity",
+        "key": "architecture",
+        "value": "Turing"
+      },
+      {
+        "group": "Clocks",
+        "key": "base_clock",
+        "value": "1530",
+        "unit": "MHz"
+      },
+      {
+        "group": "Clocks",
+        "key": "boost_clock",
+        "value": "1725",
+        "unit": "MHz"
+      },
+      {
+        "group": "Compute",
+        "key": "cuda_cores",
+        "value": "1280"
+      },
+      {
+        "group": "Interface",
+        "key": "display_outputs",
+        "value": "DP 1.4a, HDMI 2.0b, DL-DVI-D"
+      },
+      {
+        "group": "Identity",
+        "key": "generation",
+        "value": "GTX 16 Series"
+      },
+      {
+        "group": "Physical",
+        "key": "height",
+        "value": "115",
+        "unit": "mm"
+      },
+      {
+        "group": "Identity",
+        "key": "launch_msrp",
+        "value": "159",
+        "unit": "USD"
+      },
+      {
+        "group": "Physical",
+        "key": "length",
+        "value": "160",
+        "unit": "mm"
+      },
+      {
+        "group": "Identity",
+        "key": "market_segment",
+        "value": "desktop"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_bus_width",
+        "value": "128",
+        "unit": "bit"
+      },
+      {
+        "group": "Interface",
+        "key": "pci_express",
+        "value": "PCIe 3.0"
+      },
+      {
+        "group": "Physical",
+        "key": "power_connectors",
+        "value": "1x PCIe 6-pin"
+      },
+      {
+        "group": "Identity",
+        "key": "product_family",
+        "value": "GeForce"
+      },
+      {
+        "group": "Power",
+        "key": "recommended_psu",
+        "value": "350",
+        "unit": "W"
+      },
+      {
+        "group": "Physical",
+        "key": "slot_width",
+        "value": "2-Slot"
+      },
+      {
+        "group": "Power",
+        "key": "tbp",
+        "value": "100",
+        "unit": "W"
+      },
+      {
+        "group": "Memory",
+        "key": "vram_capacity",
+        "value": "4",
+        "unit": "GB"
+      },
+      {
+        "group": "Memory",
+        "key": "vram_type",
+        "value": "GDDR6"
+      }
+    ],
+    "benchmarks": []
+  },
+  {
+    "category": "GPU",
+    "manufacturer": "NVIDIA",
+    "family": "GeForce",
+    "series": "GeForce GTX",
+    "generation": "GTX 16 Series",
+    "architecture": "Turing",
+    "source": {
+      "name": "NVIDIA official product specifications",
+      "url": "https://nvidianews.nvidia.com/news/nvidia-supercharges-record-80-gaming-laptop-models-with-turing-powered-gtx-16-series-gpus",
+      "date": "2026-09-16",
+      "notes": "Specifications verified against NVIDIA GeForce product specification pages on nvidia.com."
+    },
+    "product": {
+      "name": "NVIDIA GeForce GTX 1650",
+      "slug": "nvidia-geforce-gtx-1650",
+      "description": "NVIDIA GeForce GTX 1650 desktop graphics card based on the Turing architecture.",
+      "release_date": "2019-04-23",
+      "status": "active",
+      "is_popular": true,
+      "architecture": "Turing"
+    },
+    "images": [],
+    "specifications": [
+      {
+        "group": "Identity",
+        "key": "architecture",
+        "value": "Turing"
+      },
+      {
+        "group": "Clocks",
+        "key": "base_clock",
+        "value": "1485",
+        "unit": "MHz"
+      },
+      {
+        "group": "Clocks",
+        "key": "boost_clock",
+        "value": "1665",
+        "unit": "MHz"
+      },
+      {
+        "group": "Compute",
+        "key": "cuda_cores",
+        "value": "896"
+      },
+      {
+        "group": "Interface",
+        "key": "display_outputs",
+        "value": "HDMI 2.0b, DL-DVI-D"
+      },
+      {
+        "group": "Identity",
+        "key": "generation",
+        "value": "GTX 16 Series"
+      },
+      {
+        "group": "Physical",
+        "key": "height",
+        "value": "111",
+        "unit": "mm"
+      },
+      {
+        "group": "Identity",
+        "key": "launch_msrp",
+        "value": "149",
+        "unit": "USD"
+      },
+      {
+        "group": "Physical",
+        "key": "length",
+        "value": "130",
+        "unit": "mm"
+      },
+      {
+        "group": "Identity",
+        "key": "market_segment",
+        "value": "desktop"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_bus_width",
+        "value": "128",
+        "unit": "bit"
+      },
+      {
+        "group": "Interface",
+        "key": "pci_express",
+        "value": "PCIe 3.0"
+      },
+      {
+        "group": "Physical",
+        "key": "power_connectors",
+        "value": "1x PCIe 6-pin"
+      },
+      {
+        "group": "Identity",
+        "key": "product_family",
+        "value": "GeForce"
+      },
+      {
+        "group": "Power",
+        "key": "recommended_psu",
+        "value": "300",
+        "unit": "W"
+      },
+      {
+        "group": "Physical",
+        "key": "slot_width",
+        "value": "2-Slot"
+      },
+      {
+        "group": "Power",
+        "key": "tbp",
+        "value": "75",
+        "unit": "W"
+      },
+      {
+        "group": "Memory",
+        "key": "vram_capacity",
+        "value": "4",
+        "unit": "GB"
+      },
+      {
+        "group": "Memory",
+        "key": "vram_type",
+        "value": "GDDR5"
+      }
+    ],
+    "benchmarks": []
+  },
+  {
+    "category": "GPU",
+    "manufacturer": "NVIDIA",
+    "family": "GeForce",
+    "series": "GeForce GTX",
+    "generation": "GTX 16 Series",
+    "architecture": "Turing",
+    "source": {
+      "name": "NVIDIA official product specifications",
+      "url": "https://www.nvidia.com/en-us/geforce/graphics-cards/gtx-1650/",
+      "date": "2026-09-16",
+      "notes": "Specifications verified against NVIDIA GeForce product specification pages on nvidia.com."
+    },
+    "product": {
+      "name": "NVIDIA GeForce GTX 1650 GDDR6",
+      "slug": "nvidia-geforce-gtx-1650-gddr6",
+      "description": "NVIDIA GeForce GTX 1650 GDDR6 desktop graphics card based on the Turing architecture.",
+      "status": "active",
+      "is_popular": false,
+      "architecture": "Turing"
+    },
+    "images": [],
+    "specifications": [
+      {
+        "group": "Identity",
+        "key": "architecture",
+        "value": "Turing"
+      },
+      {
+        "group": "Clocks",
+        "key": "base_clock",
+        "value": "1410",
+        "unit": "MHz"
+      },
+      {
+        "group": "Clocks",
+        "key": "boost_clock",
+        "value": "1590",
+        "unit": "MHz"
+      },
+      {
+        "group": "Compute",
+        "key": "cuda_cores",
+        "value": "896"
+      },
+      {
+        "group": "Interface",
+        "key": "display_outputs",
+        "value": "HDMI 2.0b, DL-DVI-D, DP 1.4a"
+      },
+      {
+        "group": "Identity",
+        "key": "generation",
+        "value": "GTX 16 Series"
+      },
+      {
+        "group": "Physical",
+        "key": "height",
+        "value": "111",
+        "unit": "mm"
+      },
+      {
+        "group": "Physical",
+        "key": "length",
+        "value": "145",
+        "unit": "mm"
+      },
+      {
+        "group": "Identity",
+        "key": "market_segment",
+        "value": "desktop"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_bus_width",
+        "value": "128",
+        "unit": "bit"
+      },
+      {
+        "group": "Interface",
+        "key": "pci_express",
+        "value": "PCIe 3.0"
+      },
+      {
+        "group": "Physical",
+        "key": "power_connectors",
+        "value": "1x PCIe 6-pin"
+      },
+      {
+        "group": "Identity",
+        "key": "product_family",
+        "value": "GeForce"
+      },
+      {
+        "group": "Power",
+        "key": "recommended_psu",
+        "value": "300",
+        "unit": "W"
+      },
+      {
+        "group": "Physical",
+        "key": "slot_width",
+        "value": "2-Slot"
+      },
+      {
+        "group": "Power",
+        "key": "tbp",
+        "value": "75",
+        "unit": "W"
+      },
+      {
+        "group": "Memory",
+        "key": "vram_capacity",
+        "value": "4",
+        "unit": "GB"
+      },
+      {
+        "group": "Memory",
+        "key": "vram_type",
+        "value": "GDDR6"
+      }
+    ],
+    "benchmarks": []
+  },
+  {
+    "category": "GPU",
+    "manufacturer": "NVIDIA",
+    "family": "GeForce",
+    "series": "GeForce GTX",
+    "generation": "GTX 16 Series",
+    "architecture": "Turing",
+    "source": {
+      "name": "NVIDIA official product specifications",
+      "url": "https://www.nvidia.com/en-us/geforce/news/f1-22-rtxon-game-ready-driver/",
+      "date": "2026-09-16",
+      "notes": "Specifications verified against NVIDIA GeForce product specification pages on nvidia.com."
+    },
+    "product": {
+      "name": "NVIDIA GeForce GTX 1630",
+      "slug": "nvidia-geforce-gtx-1630",
+      "description": "NVIDIA GeForce GTX 1630 desktop graphics card based on the Turing architecture.",
+      "release_date": "2022-06-28",
+      "status": "active",
+      "is_popular": false,
+      "architecture": "Turing"
+    },
+    "images": [],
+    "specifications": [
+      {
+        "group": "Identity",
+        "key": "architecture",
+        "value": "Turing"
+      },
+      {
+        "group": "Clocks",
+        "key": "base_clock",
+        "value": "1740",
+        "unit": "MHz"
+      },
+      {
+        "group": "Clocks",
+        "key": "boost_clock",
+        "value": "1785",
+        "unit": "MHz"
+      },
+      {
+        "group": "Compute",
+        "key": "cuda_cores",
+        "value": "512"
+      },
+      {
+        "group": "Interface",
+        "key": "display_outputs",
+        "value": "HDMI 2.0b, DL-DVI-D, DP 1.4a"
+      },
+      {
+        "group": "Identity",
+        "key": "generation",
+        "value": "GTX 16 Series"
+      },
+      {
+        "group": "Physical",
+        "key": "height",
+        "value": "111",
+        "unit": "mm"
+      },
+      {
+        "group": "Physical",
+        "key": "length",
+        "value": "145",
+        "unit": "mm"
+      },
+      {
+        "group": "Identity",
+        "key": "market_segment",
+        "value": "desktop"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_bus_width",
+        "value": "64",
+        "unit": "bit"
+      },
+      {
+        "group": "Interface",
+        "key": "pci_express",
+        "value": "PCIe 3.0"
+      },
+      {
+        "group": "Physical",
+        "key": "power_connectors",
+        "value": "1x PCIe 6-pin"
+      },
+      {
+        "group": "Identity",
+        "key": "product_family",
+        "value": "GeForce"
+      },
+      {
+        "group": "Power",
+        "key": "recommended_psu",
+        "value": "300",
+        "unit": "W"
+      },
+      {
+        "group": "Physical",
+        "key": "slot_width",
+        "value": "2-Slot"
+      },
+      {
+        "group": "Power",
+        "key": "tbp",
+        "value": "75",
+        "unit": "W"
+      },
+      {
+        "group": "Memory",
+        "key": "vram_capacity",
+        "value": "4",
+        "unit": "GB"
+      },
+      {
+        "group": "Memory",
+        "key": "vram_type",
+        "value": "GDDR6"
+      }
+    ],
+    "benchmarks": []
+  }
+]

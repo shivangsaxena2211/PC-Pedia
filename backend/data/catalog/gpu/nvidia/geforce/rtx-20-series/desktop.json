@@ -1,0 +1,1082 @@
+[
+  {
+    "category": "GPU",
+    "manufacturer": "NVIDIA",
+    "family": "GeForce",
+    "series": "GeForce RTX",
+    "generation": "RTX 20 Series",
+    "architecture": "Turing",
+    "source": {
+      "name": "NVIDIA official product specifications",
+      "url": "https://www.nvidia.com/en-us/geforce/graphics-cards/rtx-2080-ti/",
+      "date": "2026-09-16",
+      "notes": "Specifications verified against NVIDIA GeForce product specification pages on nvidia.com."
+    },
+    "product": {
+      "name": "NVIDIA GeForce RTX 2080 Ti",
+      "slug": "nvidia-geforce-rtx-2080-ti",
+      "description": "NVIDIA GeForce RTX 2080 Ti desktop graphics card based on the Turing architecture.",
+      "release_date": "2018-09-20",
+      "status": "active",
+      "is_popular": true,
+      "architecture": "Turing"
+    },
+    "images": [],
+    "specifications": [
+      {
+        "group": "Identity",
+        "key": "architecture",
+        "value": "Turing"
+      },
+      {
+        "group": "Clocks",
+        "key": "base_clock",
+        "value": "1350",
+        "unit": "MHz"
+      },
+      {
+        "group": "Clocks",
+        "key": "boost_clock",
+        "value": "1640",
+        "unit": "MHz"
+      },
+      {
+        "group": "Compute",
+        "key": "cuda_cores",
+        "value": "4352"
+      },
+      {
+        "group": "Interface",
+        "key": "display_outputs",
+        "value": "DisplayPort (2), HDMI, USB Type-C"
+      },
+      {
+        "group": "Identity",
+        "key": "generation",
+        "value": "RTX 20 Series"
+      },
+      {
+        "group": "Physical",
+        "key": "height",
+        "value": "116",
+        "unit": "mm"
+      },
+      {
+        "group": "Identity",
+        "key": "launch_msrp",
+        "value": "999",
+        "unit": "USD"
+      },
+      {
+        "group": "Physical",
+        "key": "length",
+        "value": "267",
+        "unit": "mm"
+      },
+      {
+        "group": "Identity",
+        "key": "market_segment",
+        "value": "desktop"
+      },
+      {
+        "group": "Interface",
+        "key": "maximum_displays",
+        "value": "4"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_bus_width",
+        "value": "352",
+        "unit": "bit"
+      },
+      {
+        "group": "Interface",
+        "key": "pci_express",
+        "value": "PCIe 3.0"
+      },
+      {
+        "group": "Physical",
+        "key": "power_connectors",
+        "value": "2x PCIe 8-pin"
+      },
+      {
+        "group": "Identity",
+        "key": "product_family",
+        "value": "GeForce"
+      },
+      {
+        "group": "Power",
+        "key": "recommended_psu",
+        "value": "650",
+        "unit": "W"
+      },
+      {
+        "group": "Physical",
+        "key": "slot_width",
+        "value": "2-Slot"
+      },
+      {
+        "group": "Power",
+        "key": "tbp",
+        "value": "260",
+        "unit": "W"
+      },
+      {
+        "group": "Memory",
+        "key": "vram_capacity",
+        "value": "11",
+        "unit": "GB"
+      },
+      {
+        "group": "Memory",
+        "key": "vram_type",
+        "value": "GDDR6"
+      }
+    ],
+    "benchmarks": []
+  },
+  {
+    "category": "GPU",
+    "manufacturer": "NVIDIA",
+    "family": "GeForce",
+    "series": "GeForce RTX",
+    "generation": "RTX 20 Series",
+    "architecture": "Turing",
+    "source": {
+      "name": "NVIDIA official product specifications",
+      "url": "https://www.nvidia.com/en-us/geforce/news/geforce-rtx-20-series-super-gpus/",
+      "date": "2026-09-16",
+      "notes": "Specifications verified against NVIDIA GeForce product specification pages on nvidia.com."
+    },
+    "product": {
+      "name": "NVIDIA GeForce RTX 2080 SUPER",
+      "slug": "nvidia-geforce-rtx-2080-super",
+      "description": "NVIDIA GeForce RTX 2080 SUPER desktop graphics card based on the Turing architecture.",
+      "release_date": "2019-07-23",
+      "status": "active",
+      "is_popular": true,
+      "architecture": "Turing"
+    },
+    "images": [],
+    "specifications": [
+      {
+        "group": "Identity",
+        "key": "architecture",
+        "value": "Turing"
+      },
+      {
+        "group": "Clocks",
+        "key": "base_clock",
+        "value": "1650",
+        "unit": "MHz"
+      },
+      {
+        "group": "Clocks",
+        "key": "boost_clock",
+        "value": "1820",
+        "unit": "MHz"
+      },
+      {
+        "group": "Compute",
+        "key": "cuda_cores",
+        "value": "3072"
+      },
+      {
+        "group": "Interface",
+        "key": "display_outputs",
+        "value": "DisplayPort (2), HDMI"
+      },
+      {
+        "group": "Identity",
+        "key": "generation",
+        "value": "RTX 20 Series"
+      },
+      {
+        "group": "Physical",
+        "key": "height",
+        "value": "116",
+        "unit": "mm"
+      },
+      {
+        "group": "Identity",
+        "key": "launch_msrp",
+        "value": "699",
+        "unit": "USD"
+      },
+      {
+        "group": "Physical",
+        "key": "length",
+        "value": "267",
+        "unit": "mm"
+      },
+      {
+        "group": "Identity",
+        "key": "market_segment",
+        "value": "desktop"
+      },
+      {
+        "group": "Interface",
+        "key": "maximum_displays",
+        "value": "4"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_bus_width",
+        "value": "256",
+        "unit": "bit"
+      },
+      {
+        "group": "Interface",
+        "key": "pci_express",
+        "value": "PCIe 3.0"
+      },
+      {
+        "group": "Physical",
+        "key": "power_connectors",
+        "value": "1x PCIe 6-pin + 1x PCIe 8-pin"
+      },
+      {
+        "group": "Identity",
+        "key": "product_family",
+        "value": "GeForce"
+      },
+      {
+        "group": "Power",
+        "key": "recommended_psu",
+        "value": "650",
+        "unit": "W"
+      },
+      {
+        "group": "Physical",
+        "key": "slot_width",
+        "value": "2-Slot"
+      },
+      {
+        "group": "Power",
+        "key": "tbp",
+        "value": "250",
+        "unit": "W"
+      },
+      {
+        "group": "Memory",
+        "key": "vram_capacity",
+        "value": "8",
+        "unit": "GB"
+      },
+      {
+        "group": "Memory",
+        "key": "vram_type",
+        "value": "GDDR6"
+      }
+    ],
+    "benchmarks": []
+  },
+  {
+    "category": "GPU",
+    "manufacturer": "NVIDIA",
+    "family": "GeForce",
+    "series": "GeForce RTX",
+    "generation": "RTX 20 Series",
+    "architecture": "Turing",
+    "source": {
+      "name": "NVIDIA official product specifications",
+      "url": "https://www.nvidia.com/en-us/geforce/graphics-cards/rtx-2080/",
+      "date": "2026-09-16",
+      "notes": "Specifications verified against NVIDIA GeForce product specification pages on nvidia.com."
+    },
+    "product": {
+      "name": "NVIDIA GeForce RTX 2080",
+      "slug": "nvidia-geforce-rtx-2080",
+      "description": "NVIDIA GeForce RTX 2080 desktop graphics card based on the Turing architecture.",
+      "release_date": "2018-09-20",
+      "status": "active",
+      "is_popular": true,
+      "architecture": "Turing"
+    },
+    "images": [],
+    "specifications": [
+      {
+        "group": "Identity",
+        "key": "architecture",
+        "value": "Turing"
+      },
+      {
+        "group": "Clocks",
+        "key": "base_clock",
+        "value": "1520",
+        "unit": "MHz"
+      },
+      {
+        "group": "Clocks",
+        "key": "boost_clock",
+        "value": "1800",
+        "unit": "MHz"
+      },
+      {
+        "group": "Compute",
+        "key": "cuda_cores",
+        "value": "2944"
+      },
+      {
+        "group": "Interface",
+        "key": "display_outputs",
+        "value": "DisplayPort (2), HDMI, USB Type-C"
+      },
+      {
+        "group": "Identity",
+        "key": "generation",
+        "value": "RTX 20 Series"
+      },
+      {
+        "group": "Physical",
+        "key": "height",
+        "value": "116",
+        "unit": "mm"
+      },
+      {
+        "group": "Identity",
+        "key": "launch_msrp",
+        "value": "699",
+        "unit": "USD"
+      },
+      {
+        "group": "Physical",
+        "key": "length",
+        "value": "267",
+        "unit": "mm"
+      },
+      {
+        "group": "Identity",
+        "key": "market_segment",
+        "value": "desktop"
+      },
+      {
+        "group": "Interface",
+        "key": "maximum_displays",
+        "value": "4"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_bus_width",
+        "value": "256",
+        "unit": "bit"
+      },
+      {
+        "group": "Interface",
+        "key": "pci_express",
+        "value": "PCIe 3.0"
+      },
+      {
+        "group": "Physical",
+        "key": "power_connectors",
+        "value": "1x PCIe 6-pin + 1x PCIe 8-pin"
+      },
+      {
+        "group": "Identity",
+        "key": "product_family",
+        "value": "GeForce"
+      },
+      {
+        "group": "Power",
+        "key": "recommended_psu",
+        "value": "650",
+        "unit": "W"
+      },
+      {
+        "group": "Physical",
+        "key": "slot_width",
+        "value": "2-Slot"
+      },
+      {
+        "group": "Power",
+        "key": "tbp",
+        "value": "225",
+        "unit": "W"
+      },
+      {
+        "group": "Memory",
+        "key": "vram_capacity",
+        "value": "8",
+        "unit": "GB"
+      },
+      {
+        "group": "Memory",
+        "key": "vram_type",
+        "value": "GDDR6"
+      }
+    ],
+    "benchmarks": []
+  },
+  {
+    "category": "GPU",
+    "manufacturer": "NVIDIA",
+    "family": "GeForce",
+    "series": "GeForce RTX",
+    "generation": "RTX 20 Series",
+    "architecture": "Turing",
+    "source": {
+      "name": "NVIDIA official product specifications",
+      "url": "https://www.nvidia.com/en-us/geforce/graphics-cards/rtx-2070-super/",
+      "date": "2026-09-16",
+      "notes": "Specifications verified against NVIDIA GeForce product specification pages on nvidia.com."
+    },
+    "product": {
+      "name": "NVIDIA GeForce RTX 2070 SUPER",
+      "slug": "nvidia-geforce-rtx-2070-super",
+      "description": "NVIDIA GeForce RTX 2070 SUPER desktop graphics card based on the Turing architecture.",
+      "release_date": "2019-07-09",
+      "status": "active",
+      "is_popular": true,
+      "architecture": "Turing"
+    },
+    "images": [],
+    "specifications": [
+      {
+        "group": "Identity",
+        "key": "architecture",
+        "value": "Turing"
+      },
+      {
+        "group": "Clocks",
+        "key": "base_clock",
+        "value": "1605",
+        "unit": "MHz"
+      },
+      {
+        "group": "Clocks",
+        "key": "boost_clock",
+        "value": "1770",
+        "unit": "MHz"
+      },
+      {
+        "group": "Compute",
+        "key": "cuda_cores",
+        "value": "2560"
+      },
+      {
+        "group": "Interface",
+        "key": "display_outputs",
+        "value": "DisplayPort (2), HDMI"
+      },
+      {
+        "group": "Identity",
+        "key": "generation",
+        "value": "RTX 20 Series"
+      },
+      {
+        "group": "Physical",
+        "key": "height",
+        "value": "116",
+        "unit": "mm"
+      },
+      {
+        "group": "Identity",
+        "key": "launch_msrp",
+        "value": "499",
+        "unit": "USD"
+      },
+      {
+        "group": "Physical",
+        "key": "length",
+        "value": "267",
+        "unit": "mm"
+      },
+      {
+        "group": "Identity",
+        "key": "market_segment",
+        "value": "desktop"
+      },
+      {
+        "group": "Interface",
+        "key": "maximum_displays",
+        "value": "4"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_bus_width",
+        "value": "256",
+        "unit": "bit"
+      },
+      {
+        "group": "Interface",
+        "key": "pci_express",
+        "value": "PCIe 3.0"
+      },
+      {
+        "group": "Physical",
+        "key": "power_connectors",
+        "value": "1x PCIe 6-pin + 1x PCIe 8-pin"
+      },
+      {
+        "group": "Identity",
+        "key": "product_family",
+        "value": "GeForce"
+      },
+      {
+        "group": "Power",
+        "key": "recommended_psu",
+        "value": "650",
+        "unit": "W"
+      },
+      {
+        "group": "Physical",
+        "key": "slot_width",
+        "value": "2-Slot"
+      },
+      {
+        "group": "Power",
+        "key": "tbp",
+        "value": "215",
+        "unit": "W"
+      },
+      {
+        "group": "Memory",
+        "key": "vram_capacity",
+        "value": "8",
+        "unit": "GB"
+      },
+      {
+        "group": "Memory",
+        "key": "vram_type",
+        "value": "GDDR6"
+      }
+    ],
+    "benchmarks": []
+  },
+  {
+    "category": "GPU",
+    "manufacturer": "NVIDIA",
+    "family": "GeForce",
+    "series": "GeForce RTX",
+    "generation": "RTX 20 Series",
+    "architecture": "Turing",
+    "source": {
+      "name": "NVIDIA official product specifications",
+      "url": "https://www.nvidia.com/en-us/geforce/graphics-cards/rtx-2070-2070-super/",
+      "date": "2026-09-16",
+      "notes": "Specifications verified against NVIDIA GeForce product specification pages on nvidia.com."
+    },
+    "product": {
+      "name": "NVIDIA GeForce RTX 2070",
+      "slug": "nvidia-geforce-rtx-2070",
+      "description": "NVIDIA GeForce RTX 2070 desktop graphics card based on the Turing architecture.",
+      "status": "active",
+      "is_popular": true,
+      "architecture": "Turing"
+    },
+    "images": [],
+    "specifications": [
+      {
+        "group": "Identity",
+        "key": "architecture",
+        "value": "Turing"
+      },
+      {
+        "group": "Clocks",
+        "key": "base_clock",
+        "value": "1410",
+        "unit": "MHz"
+      },
+      {
+        "group": "Clocks",
+        "key": "boost_clock",
+        "value": "1710",
+        "unit": "MHz"
+      },
+      {
+        "group": "Compute",
+        "key": "cuda_cores",
+        "value": "2304"
+      },
+      {
+        "group": "Interface",
+        "key": "display_outputs",
+        "value": "DisplayPort (2), HDMI, USB Type-C, DVI-DL"
+      },
+      {
+        "group": "Identity",
+        "key": "generation",
+        "value": "RTX 20 Series"
+      },
+      {
+        "group": "Physical",
+        "key": "height",
+        "value": "113",
+        "unit": "mm"
+      },
+      {
+        "group": "Identity",
+        "key": "launch_msrp",
+        "value": "499",
+        "unit": "USD"
+      },
+      {
+        "group": "Physical",
+        "key": "length",
+        "value": "229",
+        "unit": "mm"
+      },
+      {
+        "group": "Identity",
+        "key": "market_segment",
+        "value": "desktop"
+      },
+      {
+        "group": "Interface",
+        "key": "maximum_displays",
+        "value": "4"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_bus_width",
+        "value": "256",
+        "unit": "bit"
+      },
+      {
+        "group": "Interface",
+        "key": "pci_express",
+        "value": "PCIe 3.0"
+      },
+      {
+        "group": "Physical",
+        "key": "power_connectors",
+        "value": "1x PCIe 8-pin"
+      },
+      {
+        "group": "Identity",
+        "key": "product_family",
+        "value": "GeForce"
+      },
+      {
+        "group": "Power",
+        "key": "recommended_psu",
+        "value": "550",
+        "unit": "W"
+      },
+      {
+        "group": "Physical",
+        "key": "slot_width",
+        "value": "2-Slot"
+      },
+      {
+        "group": "Power",
+        "key": "tbp",
+        "value": "185",
+        "unit": "W"
+      },
+      {
+        "group": "Memory",
+        "key": "vram_capacity",
+        "value": "8",
+        "unit": "GB"
+      },
+      {
+        "group": "Memory",
+        "key": "vram_type",
+        "value": "GDDR6"
+      }
+    ],
+    "benchmarks": []
+  },
+  {
+    "category": "GPU",
+    "manufacturer": "NVIDIA",
+    "family": "GeForce",
+    "series": "GeForce RTX",
+    "generation": "RTX 20 Series",
+    "architecture": "Turing",
+    "source": {
+      "name": "NVIDIA official product specifications",
+      "url": "https://www.nvidia.com/en-us/geforce/news/geforce-rtx-20-series-super-gpus/",
+      "date": "2026-09-16",
+      "notes": "Specifications verified against NVIDIA GeForce product specification pages on nvidia.com."
+    },
+    "product": {
+      "name": "NVIDIA GeForce RTX 2060 SUPER",
+      "slug": "nvidia-geforce-rtx-2060-super",
+      "description": "NVIDIA GeForce RTX 2060 SUPER desktop graphics card based on the Turing architecture.",
+      "release_date": "2019-07-09",
+      "status": "active",
+      "is_popular": true,
+      "architecture": "Turing"
+    },
+    "images": [],
+    "specifications": [
+      {
+        "group": "Identity",
+        "key": "architecture",
+        "value": "Turing"
+      },
+      {
+        "group": "Clocks",
+        "key": "base_clock",
+        "value": "1470",
+        "unit": "MHz"
+      },
+      {
+        "group": "Clocks",
+        "key": "boost_clock",
+        "value": "1650",
+        "unit": "MHz"
+      },
+      {
+        "group": "Compute",
+        "key": "cuda_cores",
+        "value": "2176"
+      },
+      {
+        "group": "Interface",
+        "key": "display_outputs",
+        "value": "DisplayPort (2), HDMI, DVI-DL"
+      },
+      {
+        "group": "Identity",
+        "key": "generation",
+        "value": "RTX 20 Series"
+      },
+      {
+        "group": "Physical",
+        "key": "height",
+        "value": "113",
+        "unit": "mm"
+      },
+      {
+        "group": "Identity",
+        "key": "launch_msrp",
+        "value": "399",
+        "unit": "USD"
+      },
+      {
+        "group": "Physical",
+        "key": "length",
+        "value": "229",
+        "unit": "mm"
+      },
+      {
+        "group": "Identity",
+        "key": "market_segment",
+        "value": "desktop"
+      },
+      {
+        "group": "Interface",
+        "key": "maximum_displays",
+        "value": "4"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_bus_width",
+        "value": "256",
+        "unit": "bit"
+      },
+      {
+        "group": "Interface",
+        "key": "pci_express",
+        "value": "PCIe 3.0"
+      },
+      {
+        "group": "Physical",
+        "key": "power_connectors",
+        "value": "1x PCIe 8-pin"
+      },
+      {
+        "group": "Identity",
+        "key": "product_family",
+        "value": "GeForce"
+      },
+      {
+        "group": "Power",
+        "key": "recommended_psu",
+        "value": "550",
+        "unit": "W"
+      },
+      {
+        "group": "Physical",
+        "key": "slot_width",
+        "value": "2-Slot"
+      },
+      {
+        "group": "Power",
+        "key": "tbp",
+        "value": "175",
+        "unit": "W"
+      },
+      {
+        "group": "Memory",
+        "key": "vram_capacity",
+        "value": "8",
+        "unit": "GB"
+      },
+      {
+        "group": "Memory",
+        "key": "vram_type",
+        "value": "GDDR6"
+      }
+    ],
+    "benchmarks": []
+  },
+  {
+    "category": "GPU",
+    "manufacturer": "NVIDIA",
+    "family": "GeForce",
+    "series": "GeForce RTX",
+    "generation": "RTX 20 Series",
+    "architecture": "Turing",
+    "source": {
+      "name": "NVIDIA official product specifications",
+      "url": "https://www.nvidia.com/en-us/geforce/graphics-cards/rtx-2060/",
+      "date": "2026-09-16",
+      "notes": "Specifications verified against NVIDIA GeForce product specification pages on nvidia.com."
+    },
+    "product": {
+      "name": "NVIDIA GeForce RTX 2060 12GB",
+      "slug": "nvidia-geforce-rtx-2060-12gb",
+      "description": "NVIDIA GeForce RTX 2060 12GB desktop graphics card based on the Turing architecture.",
+      "status": "active",
+      "is_popular": false,
+      "architecture": "Turing"
+    },
+    "images": [],
+    "specifications": [
+      {
+        "group": "Identity",
+        "key": "architecture",
+        "value": "Turing"
+      },
+      {
+        "group": "Clocks",
+        "key": "base_clock",
+        "value": "1470",
+        "unit": "MHz"
+      },
+      {
+        "group": "Clocks",
+        "key": "boost_clock",
+        "value": "1650",
+        "unit": "MHz"
+      },
+      {
+        "group": "Compute",
+        "key": "cuda_cores",
+        "value": "2176"
+      },
+      {
+        "group": "Interface",
+        "key": "display_outputs",
+        "value": "DisplayPort (2), HDMI, DVI-DL"
+      },
+      {
+        "group": "Identity",
+        "key": "generation",
+        "value": "RTX 20 Series"
+      },
+      {
+        "group": "Physical",
+        "key": "height",
+        "value": "113",
+        "unit": "mm"
+      },
+      {
+        "group": "Physical",
+        "key": "length",
+        "value": "229",
+        "unit": "mm"
+      },
+      {
+        "group": "Identity",
+        "key": "market_segment",
+        "value": "desktop"
+      },
+      {
+        "group": "Interface",
+        "key": "maximum_displays",
+        "value": "4"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_bus_width",
+        "value": "192",
+        "unit": "bit"
+      },
+      {
+        "group": "Interface",
+        "key": "pci_express",
+        "value": "PCIe 3.0"
+      },
+      {
+        "group": "Physical",
+        "key": "power_connectors",
+        "value": "1x PCIe 8-pin"
+      },
+      {
+        "group": "Identity",
+        "key": "product_family",
+        "value": "GeForce"
+      },
+      {
+        "group": "Power",
+        "key": "recommended_psu",
+        "value": "550",
+        "unit": "W"
+      },
+      {
+        "group": "Physical",
+        "key": "slot_width",
+        "value": "2-Slot"
+      },
+      {
+        "group": "Power",
+        "key": "tbp",
+        "value": "185",
+        "unit": "W"
+      },
+      {
+        "group": "Memory",
+        "key": "vram_capacity",
+        "value": "12",
+        "unit": "GB"
+      },
+      {
+        "group": "Memory",
+        "key": "vram_type",
+        "value": "GDDR6"
+      }
+    ],
+    "benchmarks": []
+  },
+  {
+    "category": "GPU",
+    "manufacturer": "NVIDIA",
+    "family": "GeForce",
+    "series": "GeForce RTX",
+    "generation": "RTX 20 Series",
+    "architecture": "Turing",
+    "source": {
+      "name": "NVIDIA official product specifications",
+      "url": "https://nvidianews.nvidia.com/news/nvidia-geforce-rtx-2060-is-here-next-gen-gaming-takes-off",
+      "date": "2026-09-16",
+      "notes": "Specifications verified against NVIDIA GeForce product specification pages on nvidia.com."
+    },
+    "product": {
+      "name": "NVIDIA GeForce RTX 2060",
+      "slug": "nvidia-geforce-rtx-2060",
+      "description": "NVIDIA GeForce RTX 2060 desktop graphics card based on the Turing architecture.",
+      "release_date": "2019-01-15",
+      "status": "active",
+      "is_popular": true,
+      "architecture": "Turing"
+    },
+    "images": [],
+    "specifications": [
+      {
+        "group": "Identity",
+        "key": "architecture",
+        "value": "Turing"
+      },
+      {
+        "group": "Clocks",
+        "key": "base_clock",
+        "value": "1365",
+        "unit": "MHz"
+      },
+      {
+        "group": "Clocks",
+        "key": "boost_clock",
+        "value": "1680",
+        "unit": "MHz"
+      },
+      {
+        "group": "Compute",
+        "key": "cuda_cores",
+        "value": "1920"
+      },
+      {
+        "group": "Interface",
+        "key": "display_outputs",
+        "value": "DisplayPort (2), HDMI, USB Type-C, DVI-DL"
+      },
+      {
+        "group": "Identity",
+        "key": "generation",
+        "value": "RTX 20 Series"
+      },
+      {
+        "group": "Physical",
+        "key": "height",
+        "value": "113",
+        "unit": "mm"
+      },
+      {
+        "group": "Identity",
+        "key": "launch_msrp",
+        "value": "349",
+        "unit": "USD"
+      },
+      {
+        "group": "Physical",
+        "key": "length",
+        "value": "229",
+        "unit": "mm"
+      },
+      {
+        "group": "Identity",
+        "key": "market_segment",
+        "value": "desktop"
+      },
+      {
+        "group": "Interface",
+        "key": "maximum_displays",
+        "value": "4"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_bus_width",
+        "value": "192",
+        "unit": "bit"
+      },
+      {
+        "group": "Interface",
+        "key": "pci_express",
+        "value": "PCIe 3.0"
+      },
+      {
+        "group": "Physical",
+        "key": "power_connectors",
+        "value": "1x PCIe 8-pin"
+      },
+      {
+        "group": "Identity",
+        "key": "product_family",
+        "value": "GeForce"
+      },
+      {
+        "group": "Power",
+        "key": "recommended_psu",
+        "value": "500",
+        "unit": "W"
+      },
+      {
+        "group": "Physical",
+        "key": "slot_width",
+        "value": "2-Slot"
+      },
+      {
+        "group": "Power",
+        "key": "tbp",
+        "value": "160",
+        "unit": "W"
+      },
+      {
+        "group": "Memory",
+        "key": "vram_capacity",
+        "value": "6",
+        "unit": "GB"
+      },
+      {
+        "group": "Memory",
+        "key": "vram_type",
+        "value": "GDDR6"
+      }
+    ],
+    "benchmarks": []
+  }
+]

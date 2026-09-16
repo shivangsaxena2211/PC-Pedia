@@ -26,6 +26,14 @@ from data.catalog.gpu.verified_nvidia_rtx_30_gen import (
     NVIDIA_RTX_30_DESKTOP,
     VERIFIED_DATE as VERIFIED_DATE_30,
 )
+from data.catalog.gpu.verified_nvidia_rtx_20_gen import (
+    NVIDIA_RTX_20_DESKTOP,
+    VERIFIED_DATE as VERIFIED_DATE_20,
+)
+from data.catalog.gpu.verified_nvidia_gtx_16_gen import (
+    NVIDIA_GTX_16_DESKTOP,
+    VERIFIED_DATE as VERIFIED_DATE_16,
+)
 
 CATALOG_ROOT = BACKEND_ROOT / "data" / "catalog" / "gpu"
 
@@ -129,7 +137,7 @@ def build_nvidia_record(entry: dict, *, verified_date: str) -> dict:
         "category": "GPU",
         "manufacturer": "NVIDIA",
         "family": "GeForce",
-        "series": "GeForce RTX",
+        "series": entry.get("series", "GeForce RTX"),
         "generation": generation,
         "architecture": architecture,
         "source": {
@@ -147,7 +155,11 @@ def build_nvidia_record(entry: dict, *, verified_date: str) -> dict:
             "description": (
                 f"NVIDIA GeForce {model} desktop graphics card{arch_phrase}."
             ),
-            "release_date": entry["release_date"],
+            **(
+                {"release_date": entry["release_date"]}
+                if entry.get("release_date")
+                else {}
+            ),
             "status": "active",
             "is_popular": entry.get("is_popular", False),
             "architecture": architecture or None,
@@ -173,6 +185,20 @@ def build_rtx_30_desktop_batch() -> list[dict]:
     return [
         build_nvidia_record(entry, verified_date=VERIFIED_DATE_30)
         for entry in NVIDIA_RTX_30_DESKTOP
+    ]
+
+
+def build_rtx_20_desktop_batch() -> list[dict]:
+    return [
+        build_nvidia_record(entry, verified_date=VERIFIED_DATE_20)
+        for entry in NVIDIA_RTX_20_DESKTOP
+    ]
+
+
+def build_gtx_16_desktop_batch() -> list[dict]:
+    return [
+        build_nvidia_record(entry, verified_date=VERIFIED_DATE_16)
+        for entry in NVIDIA_GTX_16_DESKTOP
     ]
 
 
@@ -250,6 +276,14 @@ def build_all() -> None:
     write_catalog(
         CATALOG_ROOT / "nvidia" / "geforce" / "rtx-30-series" / "desktop.json",
         build_rtx_30_desktop_batch(),
+    )
+    write_catalog(
+        CATALOG_ROOT / "nvidia" / "geforce" / "rtx-20-series" / "desktop.json",
+        build_rtx_20_desktop_batch(),
+    )
+    write_catalog(
+        CATALOG_ROOT / "nvidia" / "geforce" / "gtx-16-series" / "desktop.json",
+        build_gtx_16_desktop_batch(),
     )
 
 
