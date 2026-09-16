@@ -1,25 +1,7 @@
 """Category-specific specification definitions."""
 
 from seed_data.cpu_spec_definitions import CPU_SPECS
-
-GPU_SPECS = [
-    ("General", "Architecture", "Architecture", "string", None, True, True, False, 1),
-    ("General", "Process Node", "Process Node", "string", None, True, True, False, 2),
-    ("Compute", "CUDA Cores", "CUDA Cores", "integer", None, True, True, False, 10),
-    ("Compute", "Stream Processors", "Stream Processors", "integer", None, True, True, False, 11),
-    ("Compute", "RT Cores", "RT Cores", "integer", None, False, True, False, 12),
-    ("Compute", "Tensor Cores", "Tensor Cores", "integer", None, False, True, False, 13),
-    ("Memory", "VRAM", "VRAM", "string", "GB", True, True, False, 20),
-    ("Memory", "Memory Type", "Memory Type", "string", None, True, True, False, 21),
-    ("Memory", "Memory Bus", "Memory Bus", "string", "bit", False, True, False, 22),
-    ("Memory", "Memory Bandwidth", "Memory Bandwidth", "string", "GB/s", False, True, False, 23),
-    ("Clock Speeds", "Base Clock", "Base Clock", "string", "MHz", True, True, False, 30),
-    ("Clock Speeds", "Boost Clock", "Boost Clock", "string", "MHz", True, True, False, 31),
-    ("Power", "TDP", "TDP", "integer", "W", True, True, False, 40),
-    ("Power", "TBP", "TBP", "integer", "W", False, True, False, 41),
-    ("Power", "Recommended PSU", "Recommended PSU", "integer", "W", False, True, False, 42),
-    ("Interface", "PCIe Interface", "PCIe Interface", "string", None, False, True, False, 50),
-]
+from seed_data.gpu_spec_definitions import GPU_SPECS
 
 RAM_SPECS = [
     ("Memory", "DDR Generation", "DDR Generation", "string", None, True, True, True, 1),
