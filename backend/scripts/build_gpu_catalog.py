@@ -38,6 +38,14 @@ from data.catalog.gpu.verified_nvidia_gtx_10_gen import (
     NVIDIA_GTX_10_DESKTOP,
     VERIFIED_DATE as VERIFIED_DATE_10,
 )
+from data.catalog.gpu.verified_amd_rx_7000_gen import (
+    AMD_RX_7000_DESKTOP,
+    VERIFIED_DATE as VERIFIED_DATE_AMD_7000,
+)
+from data.catalog.gpu.verified_amd_rx_6000_gen import (
+    AMD_RX_6000_DESKTOP,
+    VERIFIED_DATE as VERIFIED_DATE_AMD_6000,
+)
 
 CATALOG_ROOT = BACKEND_ROOT / "data" / "catalog" / "gpu"
 
@@ -106,8 +114,12 @@ class CatalogBuildError(Exception):
     pass
 
 
-def _model_slug(model: str) -> str:
+def _nvidia_model_slug(model: str) -> str:
     return f"nvidia-geforce-{model.lower().replace(' ', '-')}"
+
+
+def _amd_model_slug(model: str) -> str:
+    return f"amd-radeon-rx-{model.lower().replace('rx ', '').replace(' ', '-')}"
 
 
 def _specs_from_dict(specs: dict) -> list[dict]:
@@ -135,7 +147,7 @@ def build_nvidia_record(entry: dict, *, verified_date: str) -> dict:
     generation = specs.get("generation", "RTX Series")
     architecture = specs.get("architecture", "")
     name = f"NVIDIA GeForce {model}"
-    slug = _model_slug(model)
+    slug = _nvidia_model_slug(model)
     arch_phrase = f" based on the {architecture} architecture" if architecture else ""
     record = {
         "category": "GPU",
@@ -210,6 +222,72 @@ def build_gtx_10_desktop_batch() -> list[dict]:
     return [
         build_nvidia_record(entry, verified_date=VERIFIED_DATE_10)
         for entry in NVIDIA_GTX_10_DESKTOP
+    ]
+
+
+def build_amd_record(entry: dict, *, verified_date: str) -> dict:
+    model = entry["model"]
+    specs = dict(entry["specs"])
+    if entry.get("launch_msrp") is not None:
+        specs["launch_msrp"] = entry["launch_msrp"]
+
+    generation = specs.get("generation", "RX 7000 Series")
+    architecture = specs.get("architecture", "")
+    name = f"AMD Radeon {model}"
+    slug = _amd_model_slug(model)
+    arch_phrase = f" based on the {architecture} architecture" if architecture else ""
+    record = {
+        "category": "GPU",
+        "manufacturer": "AMD",
+        "family": "Radeon RX",
+        "series": entry.get("series", "Radeon RX"),
+        "generation": generation,
+        "architecture": architecture,
+        "source": {
+            "name": "AMD official product specifications",
+            "url": entry["source_url"],
+            "date": verified_date,
+            "notes": (
+                "Specifications verified against AMD Radeon product "
+                "specification pages on amd.com."
+            ),
+        },
+        "product": {
+            "name": name,
+            "slug": slug,
+            "description": (
+                f"AMD Radeon {model} desktop graphics card{arch_phrase}."
+            ),
+            **(
+                {"release_date": entry["release_date"]}
+                if entry.get("release_date")
+                else {}
+            ),
+            "status": "active",
+            "is_popular": entry.get("is_popular", False),
+            "architecture": architecture or None,
+        },
+        "images": [],
+        "specifications": _specs_from_dict(specs),
+        "benchmarks": [],
+    }
+    errors, _ = validate_catalog_records([record])
+    if errors:
+        raise CatalogBuildError(f"AMD {model} validation failed: {'; '.join(errors)}")
+    return record
+
+
+def build_rx_7000_desktop_batch() -> list[dict]:
+    return [
+        build_amd_record(entry, verified_date=VERIFIED_DATE_AMD_7000)
+        for entry in AMD_RX_7000_DESKTOP
+    ]
+
+
+def build_rx_6000_desktop_batch() -> list[dict]:
+    return [
+        build_amd_record(entry, verified_date=VERIFIED_DATE_AMD_6000)
+        for entry in AMD_RX_6000_DESKTOP
     ]
 
 
@@ -299,6 +377,14 @@ def build_all() -> None:
     write_catalog(
         CATALOG_ROOT / "nvidia" / "geforce" / "gtx-10-series" / "desktop.json",
         build_gtx_10_desktop_batch(),
+    )
+    write_catalog(
+        CATALOG_ROOT / "amd" / "radeon" / "rx-7000-series" / "desktop.json",
+        build_rx_7000_desktop_batch(),
+    )
+    write_catalog(
+        CATALOG_ROOT / "amd" / "radeon" / "rx-6000-series" / "desktop.json",
+        build_rx_6000_desktop_batch(),
     )
 
 

@@ -1,0 +1,967 @@
+[
+  {
+    "category": "GPU",
+    "manufacturer": "AMD",
+    "family": "Radeon RX",
+    "series": "Radeon RX",
+    "generation": "RX 7000 Series",
+    "architecture": "RDNA 3",
+    "source": {
+      "name": "AMD official product specifications",
+      "url": "https://www.amd.com/en/products/graphics/desktops/radeon/7000-series/amd-radeon-rx-7900xtx.html",
+      "date": "2026-09-17",
+      "notes": "Specifications verified against AMD Radeon product specification pages on amd.com."
+    },
+    "product": {
+      "name": "AMD Radeon RX 7900 XTX",
+      "slug": "amd-radeon-rx-7900-xtx",
+      "description": "AMD Radeon RX 7900 XTX desktop graphics card based on the RDNA 3 architecture.",
+      "release_date": "2022-12-13",
+      "status": "active",
+      "is_popular": true,
+      "architecture": "RDNA 3"
+    },
+    "images": [],
+    "specifications": [
+      {
+        "group": "Identity",
+        "key": "architecture",
+        "value": "RDNA 3"
+      },
+      {
+        "group": "Clocks",
+        "key": "boost_clock",
+        "value": "2500",
+        "unit": "MHz"
+      },
+      {
+        "group": "Compute",
+        "key": "compute_units",
+        "value": "96"
+      },
+      {
+        "group": "Interface",
+        "key": "display_outputs",
+        "value": "DisplayPort 2.1, HDMI 2.1, USB Type-C"
+      },
+      {
+        "group": "Clocks",
+        "key": "game_clock",
+        "value": "2300",
+        "unit": "MHz"
+      },
+      {
+        "group": "Identity",
+        "key": "generation",
+        "value": "RX 7000 Series"
+      },
+      {
+        "group": "Identity",
+        "key": "launch_msrp",
+        "value": "999",
+        "unit": "USD"
+      },
+      {
+        "group": "Physical",
+        "key": "length",
+        "value": "287",
+        "unit": "mm"
+      },
+      {
+        "group": "Identity",
+        "key": "market_segment",
+        "value": "desktop"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_bandwidth",
+        "value": "960",
+        "unit": "GB/s"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_bus_width",
+        "value": "384",
+        "unit": "bit"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_speed",
+        "value": "20",
+        "unit": "Gbps"
+      },
+      {
+        "group": "Physical",
+        "key": "power_connectors",
+        "value": "2x PCIe 8-pin"
+      },
+      {
+        "group": "Identity",
+        "key": "product_family",
+        "value": "Radeon RX"
+      },
+      {
+        "group": "Compute",
+        "key": "ray_accelerators",
+        "value": "96"
+      },
+      {
+        "group": "Power",
+        "key": "recommended_psu",
+        "value": "800",
+        "unit": "W"
+      },
+      {
+        "group": "Physical",
+        "key": "slot_width",
+        "value": "2.5-Slot"
+      },
+      {
+        "group": "Compute",
+        "key": "stream_processors",
+        "value": "6144"
+      },
+      {
+        "group": "Power",
+        "key": "tbp",
+        "value": "355",
+        "unit": "W"
+      },
+      {
+        "group": "Memory",
+        "key": "vram_capacity",
+        "value": "24",
+        "unit": "GB"
+      },
+      {
+        "group": "Memory",
+        "key": "vram_type",
+        "value": "GDDR6"
+      }
+    ],
+    "benchmarks": []
+  },
+  {
+    "category": "GPU",
+    "manufacturer": "AMD",
+    "family": "Radeon RX",
+    "series": "Radeon RX",
+    "generation": "RX 7000 Series",
+    "architecture": "RDNA 3",
+    "source": {
+      "name": "AMD official product specifications",
+      "url": "https://www.amd.com/en/products/graphics/desktops/radeon/7000-series/amd-radeon-rx-7900xt.html",
+      "date": "2026-09-17",
+      "notes": "Specifications verified against AMD Radeon product specification pages on amd.com."
+    },
+    "product": {
+      "name": "AMD Radeon RX 7900 XT",
+      "slug": "amd-radeon-rx-7900-xt",
+      "description": "AMD Radeon RX 7900 XT desktop graphics card based on the RDNA 3 architecture.",
+      "release_date": "2022-12-13",
+      "status": "active",
+      "is_popular": true,
+      "architecture": "RDNA 3"
+    },
+    "images": [],
+    "specifications": [
+      {
+        "group": "Identity",
+        "key": "architecture",
+        "value": "RDNA 3"
+      },
+      {
+        "group": "Clocks",
+        "key": "boost_clock",
+        "value": "2400",
+        "unit": "MHz"
+      },
+      {
+        "group": "Compute",
+        "key": "compute_units",
+        "value": "84"
+      },
+      {
+        "group": "Interface",
+        "key": "display_outputs",
+        "value": "DisplayPort 2.1, HDMI 2.1, USB Type-C"
+      },
+      {
+        "group": "Clocks",
+        "key": "game_clock",
+        "value": "2000",
+        "unit": "MHz"
+      },
+      {
+        "group": "Identity",
+        "key": "generation",
+        "value": "RX 7000 Series"
+      },
+      {
+        "group": "Identity",
+        "key": "launch_msrp",
+        "value": "899",
+        "unit": "USD"
+      },
+      {
+        "group": "Physical",
+        "key": "length",
+        "value": "276",
+        "unit": "mm"
+      },
+      {
+        "group": "Identity",
+        "key": "market_segment",
+        "value": "desktop"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_bandwidth",
+        "value": "800",
+        "unit": "GB/s"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_bus_width",
+        "value": "320",
+        "unit": "bit"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_speed",
+        "value": "20",
+        "unit": "Gbps"
+      },
+      {
+        "group": "Physical",
+        "key": "power_connectors",
+        "value": "2x PCIe 8-pin"
+      },
+      {
+        "group": "Identity",
+        "key": "product_family",
+        "value": "Radeon RX"
+      },
+      {
+        "group": "Compute",
+        "key": "ray_accelerators",
+        "value": "84"
+      },
+      {
+        "group": "Power",
+        "key": "recommended_psu",
+        "value": "750",
+        "unit": "W"
+      },
+      {
+        "group": "Physical",
+        "key": "slot_width",
+        "value": "2.5-Slot"
+      },
+      {
+        "group": "Compute",
+        "key": "stream_processors",
+        "value": "5376"
+      },
+      {
+        "group": "Power",
+        "key": "tbp",
+        "value": "315",
+        "unit": "W"
+      },
+      {
+        "group": "Memory",
+        "key": "vram_capacity",
+        "value": "20",
+        "unit": "GB"
+      },
+      {
+        "group": "Memory",
+        "key": "vram_type",
+        "value": "GDDR6"
+      }
+    ],
+    "benchmarks": []
+  },
+  {
+    "category": "GPU",
+    "manufacturer": "AMD",
+    "family": "Radeon RX",
+    "series": "Radeon RX",
+    "generation": "RX 7000 Series",
+    "architecture": "RDNA 3",
+    "source": {
+      "name": "AMD official product specifications",
+      "url": "https://www.amd.com/en/products/graphics/desktops/radeon/7000-series/amd-radeon-rx-7900-gre.html",
+      "date": "2026-09-17",
+      "notes": "Specifications verified against AMD Radeon product specification pages on amd.com."
+    },
+    "product": {
+      "name": "AMD Radeon RX 7900 GRE",
+      "slug": "amd-radeon-rx-7900-gre",
+      "description": "AMD Radeon RX 7900 GRE desktop graphics card based on the RDNA 3 architecture.",
+      "release_date": "2023-07-27",
+      "status": "active",
+      "is_popular": false,
+      "architecture": "RDNA 3"
+    },
+    "images": [],
+    "specifications": [
+      {
+        "group": "Identity",
+        "key": "architecture",
+        "value": "RDNA 3"
+      },
+      {
+        "group": "Clocks",
+        "key": "boost_clock",
+        "value": "2245",
+        "unit": "MHz"
+      },
+      {
+        "group": "Compute",
+        "key": "compute_units",
+        "value": "80"
+      },
+      {
+        "group": "Interface",
+        "key": "display_outputs",
+        "value": "DisplayPort 2.1, HDMI 2.1, USB Type-C"
+      },
+      {
+        "group": "Clocks",
+        "key": "game_clock",
+        "value": "1880",
+        "unit": "MHz"
+      },
+      {
+        "group": "Identity",
+        "key": "generation",
+        "value": "RX 7000 Series"
+      },
+      {
+        "group": "Identity",
+        "key": "market_segment",
+        "value": "desktop"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_bandwidth",
+        "value": "576",
+        "unit": "GB/s"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_bus_width",
+        "value": "256",
+        "unit": "bit"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_speed",
+        "value": "18",
+        "unit": "Gbps"
+      },
+      {
+        "group": "Physical",
+        "key": "power_connectors",
+        "value": "2x PCIe 8-pin"
+      },
+      {
+        "group": "Identity",
+        "key": "product_family",
+        "value": "Radeon RX"
+      },
+      {
+        "group": "Compute",
+        "key": "ray_accelerators",
+        "value": "80"
+      },
+      {
+        "group": "Compute",
+        "key": "stream_processors",
+        "value": "5120"
+      },
+      {
+        "group": "Power",
+        "key": "tbp",
+        "value": "260",
+        "unit": "W"
+      },
+      {
+        "group": "Memory",
+        "key": "vram_capacity",
+        "value": "16",
+        "unit": "GB"
+      },
+      {
+        "group": "Memory",
+        "key": "vram_type",
+        "value": "GDDR6"
+      }
+    ],
+    "benchmarks": []
+  },
+  {
+    "category": "GPU",
+    "manufacturer": "AMD",
+    "family": "Radeon RX",
+    "series": "Radeon RX",
+    "generation": "RX 7000 Series",
+    "architecture": "RDNA 3",
+    "source": {
+      "name": "AMD official product specifications",
+      "url": "https://www.amd.com/en/products/graphics/desktops/radeon/7000-series/amd-radeon-rx-7800-xt.html",
+      "date": "2026-09-17",
+      "notes": "Specifications verified against AMD Radeon product specification pages on amd.com."
+    },
+    "product": {
+      "name": "AMD Radeon RX 7800 XT",
+      "slug": "amd-radeon-rx-7800-xt",
+      "description": "AMD Radeon RX 7800 XT desktop graphics card based on the RDNA 3 architecture.",
+      "release_date": "2023-09-06",
+      "status": "active",
+      "is_popular": true,
+      "architecture": "RDNA 3"
+    },
+    "images": [],
+    "specifications": [
+      {
+        "group": "Identity",
+        "key": "architecture",
+        "value": "RDNA 3"
+      },
+      {
+        "group": "Clocks",
+        "key": "boost_clock",
+        "value": "2430",
+        "unit": "MHz"
+      },
+      {
+        "group": "Compute",
+        "key": "compute_units",
+        "value": "60"
+      },
+      {
+        "group": "Interface",
+        "key": "display_outputs",
+        "value": "DisplayPort 2.1, HDMI 2.1, USB Type-C"
+      },
+      {
+        "group": "Clocks",
+        "key": "game_clock",
+        "value": "2124",
+        "unit": "MHz"
+      },
+      {
+        "group": "Identity",
+        "key": "generation",
+        "value": "RX 7000 Series"
+      },
+      {
+        "group": "Identity",
+        "key": "launch_msrp",
+        "value": "499",
+        "unit": "USD"
+      },
+      {
+        "group": "Physical",
+        "key": "length",
+        "value": "267",
+        "unit": "mm"
+      },
+      {
+        "group": "Identity",
+        "key": "market_segment",
+        "value": "desktop"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_bandwidth",
+        "value": "624",
+        "unit": "GB/s"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_bus_width",
+        "value": "256",
+        "unit": "bit"
+      },
+      {
+        "group": "Physical",
+        "key": "power_connectors",
+        "value": "2x PCIe 8-pin"
+      },
+      {
+        "group": "Identity",
+        "key": "product_family",
+        "value": "Radeon RX"
+      },
+      {
+        "group": "Compute",
+        "key": "ray_accelerators",
+        "value": "60"
+      },
+      {
+        "group": "Power",
+        "key": "recommended_psu",
+        "value": "700",
+        "unit": "W"
+      },
+      {
+        "group": "Physical",
+        "key": "slot_width",
+        "value": "2.5-Slot"
+      },
+      {
+        "group": "Compute",
+        "key": "stream_processors",
+        "value": "3840"
+      },
+      {
+        "group": "Power",
+        "key": "tbp",
+        "value": "263",
+        "unit": "W"
+      },
+      {
+        "group": "Memory",
+        "key": "vram_capacity",
+        "value": "16",
+        "unit": "GB"
+      },
+      {
+        "group": "Memory",
+        "key": "vram_type",
+        "value": "GDDR6"
+      }
+    ],
+    "benchmarks": []
+  },
+  {
+    "category": "GPU",
+    "manufacturer": "AMD",
+    "family": "Radeon RX",
+    "series": "Radeon RX",
+    "generation": "RX 7000 Series",
+    "architecture": "RDNA 3",
+    "source": {
+      "name": "AMD official product specifications",
+      "url": "https://www.amd.com/en/products/graphics/desktops/radeon/7000-series/amd-radeon-rx-7700-xt.html",
+      "date": "2026-09-17",
+      "notes": "Specifications verified against AMD Radeon product specification pages on amd.com."
+    },
+    "product": {
+      "name": "AMD Radeon RX 7700 XT",
+      "slug": "amd-radeon-rx-7700-xt",
+      "description": "AMD Radeon RX 7700 XT desktop graphics card based on the RDNA 3 architecture.",
+      "release_date": "2023-09-06",
+      "status": "active",
+      "is_popular": true,
+      "architecture": "RDNA 3"
+    },
+    "images": [],
+    "specifications": [
+      {
+        "group": "Identity",
+        "key": "architecture",
+        "value": "RDNA 3"
+      },
+      {
+        "group": "Clocks",
+        "key": "boost_clock",
+        "value": "2544",
+        "unit": "MHz"
+      },
+      {
+        "group": "Compute",
+        "key": "compute_units",
+        "value": "54"
+      },
+      {
+        "group": "Interface",
+        "key": "display_outputs",
+        "value": "DisplayPort 2.1, HDMI 2.1, USB Type-C"
+      },
+      {
+        "group": "Clocks",
+        "key": "game_clock",
+        "value": "2171",
+        "unit": "MHz"
+      },
+      {
+        "group": "Identity",
+        "key": "generation",
+        "value": "RX 7000 Series"
+      },
+      {
+        "group": "Identity",
+        "key": "launch_msrp",
+        "value": "449",
+        "unit": "USD"
+      },
+      {
+        "group": "Physical",
+        "key": "length",
+        "value": "267",
+        "unit": "mm"
+      },
+      {
+        "group": "Identity",
+        "key": "market_segment",
+        "value": "desktop"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_bandwidth",
+        "value": "432",
+        "unit": "GB/s"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_bus_width",
+        "value": "192",
+        "unit": "bit"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_speed",
+        "value": "18",
+        "unit": "Gbps"
+      },
+      {
+        "group": "Physical",
+        "key": "power_connectors",
+        "value": "2x PCIe 8-pin"
+      },
+      {
+        "group": "Identity",
+        "key": "product_family",
+        "value": "Radeon RX"
+      },
+      {
+        "group": "Compute",
+        "key": "ray_accelerators",
+        "value": "54"
+      },
+      {
+        "group": "Power",
+        "key": "recommended_psu",
+        "value": "700",
+        "unit": "W"
+      },
+      {
+        "group": "Physical",
+        "key": "slot_width",
+        "value": "2.5-Slot"
+      },
+      {
+        "group": "Compute",
+        "key": "stream_processors",
+        "value": "3456"
+      },
+      {
+        "group": "Power",
+        "key": "tbp",
+        "value": "245",
+        "unit": "W"
+      },
+      {
+        "group": "Memory",
+        "key": "vram_capacity",
+        "value": "12",
+        "unit": "GB"
+      },
+      {
+        "group": "Memory",
+        "key": "vram_type",
+        "value": "GDDR6"
+      }
+    ],
+    "benchmarks": []
+  },
+  {
+    "category": "GPU",
+    "manufacturer": "AMD",
+    "family": "Radeon RX",
+    "series": "Radeon RX",
+    "generation": "RX 7000 Series",
+    "architecture": "RDNA 3",
+    "source": {
+      "name": "AMD official product specifications",
+      "url": "https://www.amd.com/en/products/graphics/desktops/radeon/7000-series/amd-radeon-rx-7600-xt.html",
+      "date": "2026-09-17",
+      "notes": "Specifications verified against AMD Radeon product specification pages on amd.com."
+    },
+    "product": {
+      "name": "AMD Radeon RX 7600 XT",
+      "slug": "amd-radeon-rx-7600-xt",
+      "description": "AMD Radeon RX 7600 XT desktop graphics card based on the RDNA 3 architecture.",
+      "release_date": "2024-01-24",
+      "status": "active",
+      "is_popular": false,
+      "architecture": "RDNA 3"
+    },
+    "images": [],
+    "specifications": [
+      {
+        "group": "Identity",
+        "key": "architecture",
+        "value": "RDNA 3"
+      },
+      {
+        "group": "Clocks",
+        "key": "boost_clock",
+        "value": "2755",
+        "unit": "MHz"
+      },
+      {
+        "group": "Compute",
+        "key": "compute_units",
+        "value": "32"
+      },
+      {
+        "group": "Interface",
+        "key": "display_outputs",
+        "value": "DisplayPort 2.1, HDMI 2.1"
+      },
+      {
+        "group": "Clocks",
+        "key": "game_clock",
+        "value": "2470",
+        "unit": "MHz"
+      },
+      {
+        "group": "Identity",
+        "key": "generation",
+        "value": "RX 7000 Series"
+      },
+      {
+        "group": "Identity",
+        "key": "launch_msrp",
+        "value": "329",
+        "unit": "USD"
+      },
+      {
+        "group": "Physical",
+        "key": "length",
+        "value": "241",
+        "unit": "mm"
+      },
+      {
+        "group": "Identity",
+        "key": "market_segment",
+        "value": "desktop"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_bandwidth",
+        "value": "288",
+        "unit": "GB/s"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_bus_width",
+        "value": "128",
+        "unit": "bit"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_speed",
+        "value": "18",
+        "unit": "Gbps"
+      },
+      {
+        "group": "Physical",
+        "key": "power_connectors",
+        "value": "2x PCIe 8-pin"
+      },
+      {
+        "group": "Identity",
+        "key": "product_family",
+        "value": "Radeon RX"
+      },
+      {
+        "group": "Compute",
+        "key": "ray_accelerators",
+        "value": "32"
+      },
+      {
+        "group": "Power",
+        "key": "recommended_psu",
+        "value": "600",
+        "unit": "W"
+      },
+      {
+        "group": "Physical",
+        "key": "slot_width",
+        "value": "2-Slot"
+      },
+      {
+        "group": "Compute",
+        "key": "stream_processors",
+        "value": "2048"
+      },
+      {
+        "group": "Power",
+        "key": "tbp",
+        "value": "190",
+        "unit": "W"
+      },
+      {
+        "group": "Memory",
+        "key": "vram_capacity",
+        "value": "16",
+        "unit": "GB"
+      },
+      {
+        "group": "Memory",
+        "key": "vram_type",
+        "value": "GDDR6"
+      }
+    ],
+    "benchmarks": []
+  },
+  {
+    "category": "GPU",
+    "manufacturer": "AMD",
+    "family": "Radeon RX",
+    "series": "Radeon RX",
+    "generation": "RX 7000 Series",
+    "architecture": "RDNA 3",
+    "source": {
+      "name": "AMD official product specifications",
+      "url": "https://www.amd.com/en/products/graphics/desktops/radeon/7000-series/amd-radeon-rx-7600.html",
+      "date": "2026-09-17",
+      "notes": "Specifications verified against AMD Radeon product specification pages on amd.com."
+    },
+    "product": {
+      "name": "AMD Radeon RX 7600",
+      "slug": "amd-radeon-rx-7600",
+      "description": "AMD Radeon RX 7600 desktop graphics card based on the RDNA 3 architecture.",
+      "release_date": "2023-05-25",
+      "status": "active",
+      "is_popular": true,
+      "architecture": "RDNA 3"
+    },
+    "images": [],
+    "specifications": [
+      {
+        "group": "Identity",
+        "key": "architecture",
+        "value": "RDNA 3"
+      },
+      {
+        "group": "Clocks",
+        "key": "boost_clock",
+        "value": "2655",
+        "unit": "MHz"
+      },
+      {
+        "group": "Compute",
+        "key": "compute_units",
+        "value": "32"
+      },
+      {
+        "group": "Interface",
+        "key": "display_outputs",
+        "value": "DisplayPort 2.1, HDMI 2.1"
+      },
+      {
+        "group": "Clocks",
+        "key": "game_clock",
+        "value": "2250",
+        "unit": "MHz"
+      },
+      {
+        "group": "Identity",
+        "key": "generation",
+        "value": "RX 7000 Series"
+      },
+      {
+        "group": "Identity",
+        "key": "launch_msrp",
+        "value": "269",
+        "unit": "USD"
+      },
+      {
+        "group": "Physical",
+        "key": "length",
+        "value": "204",
+        "unit": "mm"
+      },
+      {
+        "group": "Identity",
+        "key": "market_segment",
+        "value": "desktop"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_bandwidth",
+        "value": "288",
+        "unit": "GB/s"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_bus_width",
+        "value": "128",
+        "unit": "bit"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_speed",
+        "value": "18",
+        "unit": "Gbps"
+      },
+      {
+        "group": "Physical",
+        "key": "power_connectors",
+        "value": "1x PCIe 8-pin"
+      },
+      {
+        "group": "Identity",
+        "key": "product_family",
+        "value": "Radeon RX"
+      },
+      {
+        "group": "Compute",
+        "key": "ray_accelerators",
+        "value": "32"
+      },
+      {
+        "group": "Power",
+        "key": "recommended_psu",
+        "value": "550",
+        "unit": "W"
+      },
+      {
+        "group": "Physical",
+        "key": "slot_width",
+        "value": "2-Slot"
+      },
+      {
+        "group": "Compute",
+        "key": "stream_processors",
+        "value": "2048"
+      },
+      {
+        "group": "Power",
+        "key": "tbp",
+        "value": "165",
+        "unit": "W"
+      },
+      {
+        "group": "Memory",
+        "key": "vram_capacity",
+        "value": "8",
+        "unit": "GB"
+      },
+      {
+        "group": "Memory",
+        "key": "vram_type",
+        "value": "GDDR6"
+      }
+    ],
+    "benchmarks": []
+  }
+]

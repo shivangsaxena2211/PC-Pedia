@@ -1,0 +1,1632 @@
+[
+  {
+    "category": "GPU",
+    "manufacturer": "AMD",
+    "family": "Radeon RX",
+    "series": "Radeon RX",
+    "generation": "RX 6000 Series",
+    "architecture": "RDNA 2",
+    "source": {
+      "name": "AMD official product specifications",
+      "url": "https://www.amd.com/en/products/graphics/desktops/radeon/6000-series/amd-radeon-rx-6950-xt.html",
+      "date": "2026-09-17",
+      "notes": "Specifications verified against AMD Radeon product specification pages on amd.com."
+    },
+    "product": {
+      "name": "AMD Radeon RX 6950 XT",
+      "slug": "amd-radeon-rx-6950-xt",
+      "description": "AMD Radeon RX 6950 XT desktop graphics card based on the RDNA 2 architecture.",
+      "release_date": "2022-05-10",
+      "status": "active",
+      "is_popular": true,
+      "architecture": "RDNA 2"
+    },
+    "images": [],
+    "specifications": [
+      {
+        "group": "Identity",
+        "key": "architecture",
+        "value": "RDNA 2"
+      },
+      {
+        "group": "Clocks",
+        "key": "boost_clock",
+        "value": "2310",
+        "unit": "MHz"
+      },
+      {
+        "group": "Compute",
+        "key": "compute_units",
+        "value": "80"
+      },
+      {
+        "group": "Interface",
+        "key": "display_outputs",
+        "value": "DisplayPort 1.4a, HDMI 2.1"
+      },
+      {
+        "group": "Clocks",
+        "key": "game_clock",
+        "value": "2100",
+        "unit": "MHz"
+      },
+      {
+        "group": "Identity",
+        "key": "generation",
+        "value": "RX 6000 Series"
+      },
+      {
+        "group": "Identity",
+        "key": "launch_msrp",
+        "value": "1099",
+        "unit": "USD"
+      },
+      {
+        "group": "Identity",
+        "key": "market_segment",
+        "value": "desktop"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_bandwidth",
+        "value": "576",
+        "unit": "GB/s"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_bus_width",
+        "value": "256",
+        "unit": "bit"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_speed",
+        "value": "18",
+        "unit": "Gbps"
+      },
+      {
+        "group": "Physical",
+        "key": "power_connectors",
+        "value": "2x PCIe 8-pin"
+      },
+      {
+        "group": "Identity",
+        "key": "product_family",
+        "value": "Radeon RX"
+      },
+      {
+        "group": "Compute",
+        "key": "ray_accelerators",
+        "value": "80"
+      },
+      {
+        "group": "Power",
+        "key": "recommended_psu",
+        "value": "850",
+        "unit": "W"
+      },
+      {
+        "group": "Compute",
+        "key": "stream_processors",
+        "value": "5120"
+      },
+      {
+        "group": "Power",
+        "key": "tbp",
+        "value": "335",
+        "unit": "W"
+      },
+      {
+        "group": "Memory",
+        "key": "vram_capacity",
+        "value": "16",
+        "unit": "GB"
+      },
+      {
+        "group": "Memory",
+        "key": "vram_type",
+        "value": "GDDR6"
+      }
+    ],
+    "benchmarks": []
+  },
+  {
+    "category": "GPU",
+    "manufacturer": "AMD",
+    "family": "Radeon RX",
+    "series": "Radeon RX",
+    "generation": "RX 6000 Series",
+    "architecture": "RDNA 2",
+    "source": {
+      "name": "AMD official product specifications",
+      "url": "https://www.amd.com/en/products/graphics/desktops/radeon/6000-series/amd-radeon-rx-6900-xt.html",
+      "date": "2026-09-17",
+      "notes": "Specifications verified against AMD Radeon product specification pages on amd.com."
+    },
+    "product": {
+      "name": "AMD Radeon RX 6900 XT",
+      "slug": "amd-radeon-rx-6900-xt",
+      "description": "AMD Radeon RX 6900 XT desktop graphics card based on the RDNA 2 architecture.",
+      "release_date": "2020-12-08",
+      "status": "active",
+      "is_popular": true,
+      "architecture": "RDNA 2"
+    },
+    "images": [],
+    "specifications": [
+      {
+        "group": "Identity",
+        "key": "architecture",
+        "value": "RDNA 2"
+      },
+      {
+        "group": "Clocks",
+        "key": "boost_clock",
+        "value": "2250",
+        "unit": "MHz"
+      },
+      {
+        "group": "Compute",
+        "key": "compute_units",
+        "value": "80"
+      },
+      {
+        "group": "Interface",
+        "key": "display_outputs",
+        "value": "DisplayPort 1.4a, HDMI 2.1, USB Type-C"
+      },
+      {
+        "group": "Clocks",
+        "key": "game_clock",
+        "value": "2015",
+        "unit": "MHz"
+      },
+      {
+        "group": "Identity",
+        "key": "generation",
+        "value": "RX 6000 Series"
+      },
+      {
+        "group": "Identity",
+        "key": "launch_msrp",
+        "value": "999",
+        "unit": "USD"
+      },
+      {
+        "group": "Physical",
+        "key": "length",
+        "value": "267",
+        "unit": "mm"
+      },
+      {
+        "group": "Identity",
+        "key": "market_segment",
+        "value": "desktop"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_bandwidth",
+        "value": "512",
+        "unit": "GB/s"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_bus_width",
+        "value": "256",
+        "unit": "bit"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_speed",
+        "value": "16",
+        "unit": "Gbps"
+      },
+      {
+        "group": "Physical",
+        "key": "power_connectors",
+        "value": "2x PCIe 8-pin"
+      },
+      {
+        "group": "Identity",
+        "key": "product_family",
+        "value": "Radeon RX"
+      },
+      {
+        "group": "Compute",
+        "key": "ray_accelerators",
+        "value": "80"
+      },
+      {
+        "group": "Power",
+        "key": "recommended_psu",
+        "value": "850",
+        "unit": "W"
+      },
+      {
+        "group": "Physical",
+        "key": "slot_width",
+        "value": "2.5-Slot"
+      },
+      {
+        "group": "Compute",
+        "key": "stream_processors",
+        "value": "5120"
+      },
+      {
+        "group": "Power",
+        "key": "tbp",
+        "value": "300",
+        "unit": "W"
+      },
+      {
+        "group": "Memory",
+        "key": "vram_capacity",
+        "value": "16",
+        "unit": "GB"
+      },
+      {
+        "group": "Memory",
+        "key": "vram_type",
+        "value": "GDDR6"
+      }
+    ],
+    "benchmarks": []
+  },
+  {
+    "category": "GPU",
+    "manufacturer": "AMD",
+    "family": "Radeon RX",
+    "series": "Radeon RX",
+    "generation": "RX 6000 Series",
+    "architecture": "RDNA 2",
+    "source": {
+      "name": "AMD official product specifications",
+      "url": "https://www.amd.com/en/products/graphics/desktops/radeon/6000-series/amd-radeon-rx-6800-xt.html",
+      "date": "2026-09-17",
+      "notes": "Specifications verified against AMD Radeon product specification pages on amd.com."
+    },
+    "product": {
+      "name": "AMD Radeon RX 6800 XT",
+      "slug": "amd-radeon-rx-6800-xt",
+      "description": "AMD Radeon RX 6800 XT desktop graphics card based on the RDNA 2 architecture.",
+      "release_date": "2020-11-18",
+      "status": "active",
+      "is_popular": true,
+      "architecture": "RDNA 2"
+    },
+    "images": [],
+    "specifications": [
+      {
+        "group": "Identity",
+        "key": "architecture",
+        "value": "RDNA 2"
+      },
+      {
+        "group": "Clocks",
+        "key": "boost_clock",
+        "value": "2250",
+        "unit": "MHz"
+      },
+      {
+        "group": "Compute",
+        "key": "compute_units",
+        "value": "72"
+      },
+      {
+        "group": "Interface",
+        "key": "display_outputs",
+        "value": "DisplayPort 1.4a, HDMI 2.1, USB Type-C"
+      },
+      {
+        "group": "Clocks",
+        "key": "game_clock",
+        "value": "2015",
+        "unit": "MHz"
+      },
+      {
+        "group": "Identity",
+        "key": "generation",
+        "value": "RX 6000 Series"
+      },
+      {
+        "group": "Identity",
+        "key": "launch_msrp",
+        "value": "649",
+        "unit": "USD"
+      },
+      {
+        "group": "Physical",
+        "key": "length",
+        "value": "267",
+        "unit": "mm"
+      },
+      {
+        "group": "Identity",
+        "key": "market_segment",
+        "value": "desktop"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_bandwidth",
+        "value": "512",
+        "unit": "GB/s"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_bus_width",
+        "value": "256",
+        "unit": "bit"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_speed",
+        "value": "16",
+        "unit": "Gbps"
+      },
+      {
+        "group": "Physical",
+        "key": "power_connectors",
+        "value": "2x PCIe 8-pin"
+      },
+      {
+        "group": "Identity",
+        "key": "product_family",
+        "value": "Radeon RX"
+      },
+      {
+        "group": "Compute",
+        "key": "ray_accelerators",
+        "value": "72"
+      },
+      {
+        "group": "Power",
+        "key": "recommended_psu",
+        "value": "750",
+        "unit": "W"
+      },
+      {
+        "group": "Physical",
+        "key": "slot_width",
+        "value": "2.5-Slot"
+      },
+      {
+        "group": "Compute",
+        "key": "stream_processors",
+        "value": "4608"
+      },
+      {
+        "group": "Power",
+        "key": "tbp",
+        "value": "300",
+        "unit": "W"
+      },
+      {
+        "group": "Memory",
+        "key": "vram_capacity",
+        "value": "16",
+        "unit": "GB"
+      },
+      {
+        "group": "Memory",
+        "key": "vram_type",
+        "value": "GDDR6"
+      }
+    ],
+    "benchmarks": []
+  },
+  {
+    "category": "GPU",
+    "manufacturer": "AMD",
+    "family": "Radeon RX",
+    "series": "Radeon RX",
+    "generation": "RX 6000 Series",
+    "architecture": "RDNA 2",
+    "source": {
+      "name": "AMD official product specifications",
+      "url": "https://www.amd.com/en/products/graphics/desktops/radeon/6000-series/amd-radeon-rx-6800.html",
+      "date": "2026-09-17",
+      "notes": "Specifications verified against AMD Radeon product specification pages on amd.com."
+    },
+    "product": {
+      "name": "AMD Radeon RX 6800",
+      "slug": "amd-radeon-rx-6800",
+      "description": "AMD Radeon RX 6800 desktop graphics card based on the RDNA 2 architecture.",
+      "release_date": "2020-11-18",
+      "status": "active",
+      "is_popular": true,
+      "architecture": "RDNA 2"
+    },
+    "images": [],
+    "specifications": [
+      {
+        "group": "Identity",
+        "key": "architecture",
+        "value": "RDNA 2"
+      },
+      {
+        "group": "Clocks",
+        "key": "boost_clock",
+        "value": "2105",
+        "unit": "MHz"
+      },
+      {
+        "group": "Compute",
+        "key": "compute_units",
+        "value": "60"
+      },
+      {
+        "group": "Interface",
+        "key": "display_outputs",
+        "value": "DisplayPort 1.4a, HDMI 2.1, USB Type-C"
+      },
+      {
+        "group": "Clocks",
+        "key": "game_clock",
+        "value": "1815",
+        "unit": "MHz"
+      },
+      {
+        "group": "Identity",
+        "key": "generation",
+        "value": "RX 6000 Series"
+      },
+      {
+        "group": "Identity",
+        "key": "launch_msrp",
+        "value": "579",
+        "unit": "USD"
+      },
+      {
+        "group": "Physical",
+        "key": "length",
+        "value": "267",
+        "unit": "mm"
+      },
+      {
+        "group": "Identity",
+        "key": "market_segment",
+        "value": "desktop"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_bandwidth",
+        "value": "512",
+        "unit": "GB/s"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_bus_width",
+        "value": "256",
+        "unit": "bit"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_speed",
+        "value": "16",
+        "unit": "Gbps"
+      },
+      {
+        "group": "Physical",
+        "key": "power_connectors",
+        "value": "2x PCIe 8-pin"
+      },
+      {
+        "group": "Identity",
+        "key": "product_family",
+        "value": "Radeon RX"
+      },
+      {
+        "group": "Compute",
+        "key": "ray_accelerators",
+        "value": "60"
+      },
+      {
+        "group": "Power",
+        "key": "recommended_psu",
+        "value": "650",
+        "unit": "W"
+      },
+      {
+        "group": "Physical",
+        "key": "slot_width",
+        "value": "2-Slot"
+      },
+      {
+        "group": "Compute",
+        "key": "stream_processors",
+        "value": "3840"
+      },
+      {
+        "group": "Power",
+        "key": "tbp",
+        "value": "250",
+        "unit": "W"
+      },
+      {
+        "group": "Memory",
+        "key": "vram_capacity",
+        "value": "16",
+        "unit": "GB"
+      },
+      {
+        "group": "Memory",
+        "key": "vram_type",
+        "value": "GDDR6"
+      }
+    ],
+    "benchmarks": []
+  },
+  {
+    "category": "GPU",
+    "manufacturer": "AMD",
+    "family": "Radeon RX",
+    "series": "Radeon RX",
+    "generation": "RX 6000 Series",
+    "architecture": "RDNA 2",
+    "source": {
+      "name": "AMD official product specifications",
+      "url": "https://www.amd.com/en/products/graphics/desktops/radeon/6000-series/amd-radeon-rx-6750-xt.html",
+      "date": "2026-09-17",
+      "notes": "Specifications verified against AMD Radeon product specification pages on amd.com."
+    },
+    "product": {
+      "name": "AMD Radeon RX 6750 XT",
+      "slug": "amd-radeon-rx-6750-xt",
+      "description": "AMD Radeon RX 6750 XT desktop graphics card based on the RDNA 2 architecture.",
+      "release_date": "2022-05-10",
+      "status": "active",
+      "is_popular": false,
+      "architecture": "RDNA 2"
+    },
+    "images": [],
+    "specifications": [
+      {
+        "group": "Identity",
+        "key": "architecture",
+        "value": "RDNA 2"
+      },
+      {
+        "group": "Clocks",
+        "key": "boost_clock",
+        "value": "2600",
+        "unit": "MHz"
+      },
+      {
+        "group": "Compute",
+        "key": "compute_units",
+        "value": "40"
+      },
+      {
+        "group": "Interface",
+        "key": "display_outputs",
+        "value": "DisplayPort 1.4a, HDMI 2.1"
+      },
+      {
+        "group": "Clocks",
+        "key": "game_clock",
+        "value": "2495",
+        "unit": "MHz"
+      },
+      {
+        "group": "Identity",
+        "key": "generation",
+        "value": "RX 6000 Series"
+      },
+      {
+        "group": "Identity",
+        "key": "launch_msrp",
+        "value": "549",
+        "unit": "USD"
+      },
+      {
+        "group": "Physical",
+        "key": "length",
+        "value": "267",
+        "unit": "mm"
+      },
+      {
+        "group": "Identity",
+        "key": "market_segment",
+        "value": "desktop"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_bandwidth",
+        "value": "432",
+        "unit": "GB/s"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_bus_width",
+        "value": "192",
+        "unit": "bit"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_speed",
+        "value": "18",
+        "unit": "Gbps"
+      },
+      {
+        "group": "Physical",
+        "key": "power_connectors",
+        "value": "1x PCIe 8-pin"
+      },
+      {
+        "group": "Identity",
+        "key": "product_family",
+        "value": "Radeon RX"
+      },
+      {
+        "group": "Compute",
+        "key": "ray_accelerators",
+        "value": "40"
+      },
+      {
+        "group": "Power",
+        "key": "recommended_psu",
+        "value": "650",
+        "unit": "W"
+      },
+      {
+        "group": "Physical",
+        "key": "slot_width",
+        "value": "2-Slot"
+      },
+      {
+        "group": "Compute",
+        "key": "stream_processors",
+        "value": "2560"
+      },
+      {
+        "group": "Power",
+        "key": "tbp",
+        "value": "250",
+        "unit": "W"
+      },
+      {
+        "group": "Memory",
+        "key": "vram_capacity",
+        "value": "12",
+        "unit": "GB"
+      },
+      {
+        "group": "Memory",
+        "key": "vram_type",
+        "value": "GDDR6"
+      }
+    ],
+    "benchmarks": []
+  },
+  {
+    "category": "GPU",
+    "manufacturer": "AMD",
+    "family": "Radeon RX",
+    "series": "Radeon RX",
+    "generation": "RX 6000 Series",
+    "architecture": "RDNA 2",
+    "source": {
+      "name": "AMD official product specifications",
+      "url": "https://www.amd.com/en/products/graphics/desktops/radeon/6000-series/amd-radeon-rx-6700-xt.html",
+      "date": "2026-09-17",
+      "notes": "Specifications verified against AMD Radeon product specification pages on amd.com."
+    },
+    "product": {
+      "name": "AMD Radeon RX 6700 XT",
+      "slug": "amd-radeon-rx-6700-xt",
+      "description": "AMD Radeon RX 6700 XT desktop graphics card based on the RDNA 2 architecture.",
+      "release_date": "2021-03-01",
+      "status": "active",
+      "is_popular": true,
+      "architecture": "RDNA 2"
+    },
+    "images": [],
+    "specifications": [
+      {
+        "group": "Identity",
+        "key": "architecture",
+        "value": "RDNA 2"
+      },
+      {
+        "group": "Clocks",
+        "key": "boost_clock",
+        "value": "2581",
+        "unit": "MHz"
+      },
+      {
+        "group": "Compute",
+        "key": "compute_units",
+        "value": "40"
+      },
+      {
+        "group": "Interface",
+        "key": "display_outputs",
+        "value": "DisplayPort 1.4a, HDMI 2.1"
+      },
+      {
+        "group": "Clocks",
+        "key": "game_clock",
+        "value": "2424",
+        "unit": "MHz"
+      },
+      {
+        "group": "Identity",
+        "key": "generation",
+        "value": "RX 6000 Series"
+      },
+      {
+        "group": "Identity",
+        "key": "launch_msrp",
+        "value": "479",
+        "unit": "USD"
+      },
+      {
+        "group": "Physical",
+        "key": "length",
+        "value": "267",
+        "unit": "mm"
+      },
+      {
+        "group": "Identity",
+        "key": "market_segment",
+        "value": "desktop"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_bandwidth",
+        "value": "384",
+        "unit": "GB/s"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_bus_width",
+        "value": "192",
+        "unit": "bit"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_speed",
+        "value": "16",
+        "unit": "Gbps"
+      },
+      {
+        "group": "Physical",
+        "key": "power_connectors",
+        "value": "1x PCIe 8-pin"
+      },
+      {
+        "group": "Identity",
+        "key": "product_family",
+        "value": "Radeon RX"
+      },
+      {
+        "group": "Compute",
+        "key": "ray_accelerators",
+        "value": "40"
+      },
+      {
+        "group": "Power",
+        "key": "recommended_psu",
+        "value": "650",
+        "unit": "W"
+      },
+      {
+        "group": "Physical",
+        "key": "slot_width",
+        "value": "2-Slot"
+      },
+      {
+        "group": "Compute",
+        "key": "stream_processors",
+        "value": "2560"
+      },
+      {
+        "group": "Power",
+        "key": "tbp",
+        "value": "230",
+        "unit": "W"
+      },
+      {
+        "group": "Memory",
+        "key": "vram_capacity",
+        "value": "12",
+        "unit": "GB"
+      },
+      {
+        "group": "Memory",
+        "key": "vram_type",
+        "value": "GDDR6"
+      }
+    ],
+    "benchmarks": []
+  },
+  {
+    "category": "GPU",
+    "manufacturer": "AMD",
+    "family": "Radeon RX",
+    "series": "Radeon RX",
+    "generation": "RX 6000 Series",
+    "architecture": "RDNA 2",
+    "source": {
+      "name": "AMD official product specifications",
+      "url": "https://www.amd.com/en/products/graphics/desktops/radeon/6000-series/amd-radeon-rx-6700.html",
+      "date": "2026-09-17",
+      "notes": "Specifications verified against AMD Radeon product specification pages on amd.com."
+    },
+    "product": {
+      "name": "AMD Radeon RX 6700",
+      "slug": "amd-radeon-rx-6700",
+      "description": "AMD Radeon RX 6700 desktop graphics card based on the RDNA 2 architecture.",
+      "release_date": "2021-06-09",
+      "status": "active",
+      "is_popular": false,
+      "architecture": "RDNA 2"
+    },
+    "images": [],
+    "specifications": [
+      {
+        "group": "Identity",
+        "key": "architecture",
+        "value": "RDNA 2"
+      },
+      {
+        "group": "Clocks",
+        "key": "boost_clock",
+        "value": "2450",
+        "unit": "MHz"
+      },
+      {
+        "group": "Compute",
+        "key": "compute_units",
+        "value": "36"
+      },
+      {
+        "group": "Interface",
+        "key": "display_outputs",
+        "value": "DisplayPort 1.4a, HDMI 2.1"
+      },
+      {
+        "group": "Clocks",
+        "key": "game_clock",
+        "value": "2174",
+        "unit": "MHz"
+      },
+      {
+        "group": "Identity",
+        "key": "generation",
+        "value": "RX 6000 Series"
+      },
+      {
+        "group": "Physical",
+        "key": "length",
+        "value": "267",
+        "unit": "mm"
+      },
+      {
+        "group": "Identity",
+        "key": "market_segment",
+        "value": "desktop"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_bandwidth",
+        "value": "320",
+        "unit": "GB/s"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_bus_width",
+        "value": "160",
+        "unit": "bit"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_speed",
+        "value": "16",
+        "unit": "Gbps"
+      },
+      {
+        "group": "Physical",
+        "key": "power_connectors",
+        "value": "1x PCIe 8-pin"
+      },
+      {
+        "group": "Identity",
+        "key": "product_family",
+        "value": "Radeon RX"
+      },
+      {
+        "group": "Compute",
+        "key": "ray_accelerators",
+        "value": "36"
+      },
+      {
+        "group": "Power",
+        "key": "recommended_psu",
+        "value": "600",
+        "unit": "W"
+      },
+      {
+        "group": "Physical",
+        "key": "slot_width",
+        "value": "2-Slot"
+      },
+      {
+        "group": "Compute",
+        "key": "stream_processors",
+        "value": "2304"
+      },
+      {
+        "group": "Power",
+        "key": "tbp",
+        "value": "175",
+        "unit": "W"
+      },
+      {
+        "group": "Memory",
+        "key": "vram_capacity",
+        "value": "10",
+        "unit": "GB"
+      },
+      {
+        "group": "Memory",
+        "key": "vram_type",
+        "value": "GDDR6"
+      }
+    ],
+    "benchmarks": []
+  },
+  {
+    "category": "GPU",
+    "manufacturer": "AMD",
+    "family": "Radeon RX",
+    "series": "Radeon RX",
+    "generation": "RX 6000 Series",
+    "architecture": "RDNA 2",
+    "source": {
+      "name": "AMD official product specifications",
+      "url": "https://www.amd.com/en/products/graphics/desktops/radeon/6000-series/amd-radeon-rx-6650-xt.html",
+      "date": "2026-09-17",
+      "notes": "Specifications verified against AMD Radeon product specification pages on amd.com."
+    },
+    "product": {
+      "name": "AMD Radeon RX 6650 XT",
+      "slug": "amd-radeon-rx-6650-xt",
+      "description": "AMD Radeon RX 6650 XT desktop graphics card based on the RDNA 2 architecture.",
+      "release_date": "2022-05-10",
+      "status": "active",
+      "is_popular": false,
+      "architecture": "RDNA 2"
+    },
+    "images": [],
+    "specifications": [
+      {
+        "group": "Identity",
+        "key": "architecture",
+        "value": "RDNA 2"
+      },
+      {
+        "group": "Clocks",
+        "key": "boost_clock",
+        "value": "2635",
+        "unit": "MHz"
+      },
+      {
+        "group": "Compute",
+        "key": "compute_units",
+        "value": "32"
+      },
+      {
+        "group": "Interface",
+        "key": "display_outputs",
+        "value": "DisplayPort 1.4a, HDMI 2.1"
+      },
+      {
+        "group": "Clocks",
+        "key": "game_clock",
+        "value": "2410",
+        "unit": "MHz"
+      },
+      {
+        "group": "Identity",
+        "key": "generation",
+        "value": "RX 6000 Series"
+      },
+      {
+        "group": "Identity",
+        "key": "launch_msrp",
+        "value": "399",
+        "unit": "USD"
+      },
+      {
+        "group": "Identity",
+        "key": "market_segment",
+        "value": "desktop"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_bandwidth",
+        "value": "280",
+        "unit": "GB/s"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_bus_width",
+        "value": "128",
+        "unit": "bit"
+      },
+      {
+        "group": "Physical",
+        "key": "power_connectors",
+        "value": "1x PCIe 8-pin"
+      },
+      {
+        "group": "Identity",
+        "key": "product_family",
+        "value": "Radeon RX"
+      },
+      {
+        "group": "Compute",
+        "key": "ray_accelerators",
+        "value": "32"
+      },
+      {
+        "group": "Power",
+        "key": "recommended_psu",
+        "value": "500",
+        "unit": "W"
+      },
+      {
+        "group": "Compute",
+        "key": "stream_processors",
+        "value": "2048"
+      },
+      {
+        "group": "Power",
+        "key": "tbp",
+        "value": "180",
+        "unit": "W"
+      },
+      {
+        "group": "Memory",
+        "key": "vram_capacity",
+        "value": "8",
+        "unit": "GB"
+      },
+      {
+        "group": "Memory",
+        "key": "vram_type",
+        "value": "GDDR6"
+      }
+    ],
+    "benchmarks": []
+  },
+  {
+    "category": "GPU",
+    "manufacturer": "AMD",
+    "family": "Radeon RX",
+    "series": "Radeon RX",
+    "generation": "RX 6000 Series",
+    "architecture": "RDNA 2",
+    "source": {
+      "name": "AMD official product specifications",
+      "url": "https://www.amd.com/en/products/graphics/desktops/radeon/6000-series/amd-radeon-rx-6600-xt.html",
+      "date": "2026-09-17",
+      "notes": "Specifications verified against AMD Radeon product specification pages on amd.com."
+    },
+    "product": {
+      "name": "AMD Radeon RX 6600 XT",
+      "slug": "amd-radeon-rx-6600-xt",
+      "description": "AMD Radeon RX 6600 XT desktop graphics card based on the RDNA 2 architecture.",
+      "release_date": "2021-08-11",
+      "status": "active",
+      "is_popular": true,
+      "architecture": "RDNA 2"
+    },
+    "images": [],
+    "specifications": [
+      {
+        "group": "Identity",
+        "key": "architecture",
+        "value": "RDNA 2"
+      },
+      {
+        "group": "Clocks",
+        "key": "boost_clock",
+        "value": "2589",
+        "unit": "MHz"
+      },
+      {
+        "group": "Compute",
+        "key": "compute_units",
+        "value": "32"
+      },
+      {
+        "group": "Interface",
+        "key": "display_outputs",
+        "value": "DisplayPort 1.4a, HDMI 2.1"
+      },
+      {
+        "group": "Clocks",
+        "key": "game_clock",
+        "value": "2359",
+        "unit": "MHz"
+      },
+      {
+        "group": "Identity",
+        "key": "generation",
+        "value": "RX 6000 Series"
+      },
+      {
+        "group": "Identity",
+        "key": "launch_msrp",
+        "value": "379",
+        "unit": "USD"
+      },
+      {
+        "group": "Identity",
+        "key": "market_segment",
+        "value": "desktop"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_bandwidth",
+        "value": "256",
+        "unit": "GB/s"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_bus_width",
+        "value": "128",
+        "unit": "bit"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_speed",
+        "value": "16",
+        "unit": "Gbps"
+      },
+      {
+        "group": "Physical",
+        "key": "power_connectors",
+        "value": "1x PCIe 8-pin"
+      },
+      {
+        "group": "Identity",
+        "key": "product_family",
+        "value": "Radeon RX"
+      },
+      {
+        "group": "Compute",
+        "key": "ray_accelerators",
+        "value": "32"
+      },
+      {
+        "group": "Power",
+        "key": "recommended_psu",
+        "value": "500",
+        "unit": "W"
+      },
+      {
+        "group": "Compute",
+        "key": "stream_processors",
+        "value": "2048"
+      },
+      {
+        "group": "Power",
+        "key": "tbp",
+        "value": "160",
+        "unit": "W"
+      },
+      {
+        "group": "Memory",
+        "key": "vram_capacity",
+        "value": "8",
+        "unit": "GB"
+      },
+      {
+        "group": "Memory",
+        "key": "vram_type",
+        "value": "GDDR6"
+      }
+    ],
+    "benchmarks": []
+  },
+  {
+    "category": "GPU",
+    "manufacturer": "AMD",
+    "family": "Radeon RX",
+    "series": "Radeon RX",
+    "generation": "RX 6000 Series",
+    "architecture": "RDNA 2",
+    "source": {
+      "name": "AMD official product specifications",
+      "url": "https://www.amd.com/en/products/graphics/desktops/radeon/6000-series/amd-radeon-rx-6600.html",
+      "date": "2026-09-17",
+      "notes": "Specifications verified against AMD Radeon product specification pages on amd.com."
+    },
+    "product": {
+      "name": "AMD Radeon RX 6600",
+      "slug": "amd-radeon-rx-6600",
+      "description": "AMD Radeon RX 6600 desktop graphics card based on the RDNA 2 architecture.",
+      "release_date": "2021-10-13",
+      "status": "active",
+      "is_popular": false,
+      "architecture": "RDNA 2"
+    },
+    "images": [],
+    "specifications": [
+      {
+        "group": "Identity",
+        "key": "architecture",
+        "value": "RDNA 2"
+      },
+      {
+        "group": "Clocks",
+        "key": "boost_clock",
+        "value": "2491",
+        "unit": "MHz"
+      },
+      {
+        "group": "Compute",
+        "key": "compute_units",
+        "value": "28"
+      },
+      {
+        "group": "Interface",
+        "key": "display_outputs",
+        "value": "DisplayPort 1.4a, HDMI 2.1"
+      },
+      {
+        "group": "Clocks",
+        "key": "game_clock",
+        "value": "2044",
+        "unit": "MHz"
+      },
+      {
+        "group": "Identity",
+        "key": "generation",
+        "value": "RX 6000 Series"
+      },
+      {
+        "group": "Identity",
+        "key": "launch_msrp",
+        "value": "329",
+        "unit": "USD"
+      },
+      {
+        "group": "Identity",
+        "key": "market_segment",
+        "value": "desktop"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_bandwidth",
+        "value": "224",
+        "unit": "GB/s"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_bus_width",
+        "value": "128",
+        "unit": "bit"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_speed",
+        "value": "14",
+        "unit": "Gbps"
+      },
+      {
+        "group": "Physical",
+        "key": "power_connectors",
+        "value": "1x PCIe 8-pin"
+      },
+      {
+        "group": "Identity",
+        "key": "product_family",
+        "value": "Radeon RX"
+      },
+      {
+        "group": "Compute",
+        "key": "ray_accelerators",
+        "value": "28"
+      },
+      {
+        "group": "Power",
+        "key": "recommended_psu",
+        "value": "450",
+        "unit": "W"
+      },
+      {
+        "group": "Compute",
+        "key": "stream_processors",
+        "value": "1792"
+      },
+      {
+        "group": "Power",
+        "key": "tbp",
+        "value": "132",
+        "unit": "W"
+      },
+      {
+        "group": "Memory",
+        "key": "vram_capacity",
+        "value": "8",
+        "unit": "GB"
+      },
+      {
+        "group": "Memory",
+        "key": "vram_type",
+        "value": "GDDR6"
+      }
+    ],
+    "benchmarks": []
+  },
+  {
+    "category": "GPU",
+    "manufacturer": "AMD",
+    "family": "Radeon RX",
+    "series": "Radeon RX",
+    "generation": "RX 6000 Series",
+    "architecture": "RDNA 2",
+    "source": {
+      "name": "AMD official product specifications",
+      "url": "https://www.amd.com/en/products/graphics/desktops/radeon/6000-series/amd-radeon-rx-6500-xt.html",
+      "date": "2026-09-17",
+      "notes": "Specifications verified against AMD Radeon product specification pages on amd.com."
+    },
+    "product": {
+      "name": "AMD Radeon RX 6500 XT",
+      "slug": "amd-radeon-rx-6500-xt",
+      "description": "AMD Radeon RX 6500 XT desktop graphics card based on the RDNA 2 architecture.",
+      "release_date": "2022-01-19",
+      "status": "active",
+      "is_popular": false,
+      "architecture": "RDNA 2"
+    },
+    "images": [],
+    "specifications": [
+      {
+        "group": "Identity",
+        "key": "architecture",
+        "value": "RDNA 2"
+      },
+      {
+        "group": "Clocks",
+        "key": "boost_clock",
+        "value": "2815",
+        "unit": "MHz"
+      },
+      {
+        "group": "Compute",
+        "key": "compute_units",
+        "value": "16"
+      },
+      {
+        "group": "Interface",
+        "key": "display_outputs",
+        "value": "DisplayPort 1.4a, HDMI 2.1"
+      },
+      {
+        "group": "Clocks",
+        "key": "game_clock",
+        "value": "2650",
+        "unit": "MHz"
+      },
+      {
+        "group": "Identity",
+        "key": "generation",
+        "value": "RX 6000 Series"
+      },
+      {
+        "group": "Identity",
+        "key": "launch_msrp",
+        "value": "199",
+        "unit": "USD"
+      },
+      {
+        "group": "Identity",
+        "key": "market_segment",
+        "value": "desktop"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_bandwidth",
+        "value": "144",
+        "unit": "GB/s"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_bus_width",
+        "value": "64",
+        "unit": "bit"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_speed",
+        "value": "18",
+        "unit": "Gbps"
+      },
+      {
+        "group": "Physical",
+        "key": "power_connectors",
+        "value": "1x PCIe 6-pin"
+      },
+      {
+        "group": "Identity",
+        "key": "product_family",
+        "value": "Radeon RX"
+      },
+      {
+        "group": "Compute",
+        "key": "ray_accelerators",
+        "value": "16"
+      },
+      {
+        "group": "Power",
+        "key": "recommended_psu",
+        "value": "400",
+        "unit": "W"
+      },
+      {
+        "group": "Physical",
+        "key": "slot_width",
+        "value": "2-Slot"
+      },
+      {
+        "group": "Compute",
+        "key": "stream_processors",
+        "value": "1024"
+      },
+      {
+        "group": "Power",
+        "key": "tbp",
+        "value": "113",
+        "unit": "W"
+      },
+      {
+        "group": "Memory",
+        "key": "vram_capacity",
+        "value": "8",
+        "unit": "GB"
+      },
+      {
+        "group": "Memory",
+        "key": "vram_type",
+        "value": "GDDR6"
+      }
+    ],
+    "benchmarks": []
+  },
+  {
+    "category": "GPU",
+    "manufacturer": "AMD",
+    "family": "Radeon RX",
+    "series": "Radeon RX",
+    "generation": "RX 6000 Series",
+    "architecture": "RDNA 2",
+    "source": {
+      "name": "AMD official product specifications",
+      "url": "https://www.amd.com/en/products/graphics/desktops/radeon/6000-series/amd-radeon-rx-6400.html",
+      "date": "2026-09-17",
+      "notes": "Specifications verified against AMD Radeon product specification pages on amd.com."
+    },
+    "product": {
+      "name": "AMD Radeon RX 6400",
+      "slug": "amd-radeon-rx-6400",
+      "description": "AMD Radeon RX 6400 desktop graphics card based on the RDNA 2 architecture.",
+      "release_date": "2022-01-19",
+      "status": "active",
+      "is_popular": false,
+      "architecture": "RDNA 2"
+    },
+    "images": [],
+    "specifications": [
+      {
+        "group": "Identity",
+        "key": "architecture",
+        "value": "RDNA 2"
+      },
+      {
+        "group": "Clocks",
+        "key": "boost_clock",
+        "value": "2321",
+        "unit": "MHz"
+      },
+      {
+        "group": "Compute",
+        "key": "compute_units",
+        "value": "12"
+      },
+      {
+        "group": "Interface",
+        "key": "display_outputs",
+        "value": "DisplayPort 1.4a, HDMI 2.1"
+      },
+      {
+        "group": "Clocks",
+        "key": "game_clock",
+        "value": "2039",
+        "unit": "MHz"
+      },
+      {
+        "group": "Identity",
+        "key": "generation",
+        "value": "RX 6000 Series"
+      },
+      {
+        "group": "Identity",
+        "key": "market_segment",
+        "value": "desktop"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_bandwidth",
+        "value": "128",
+        "unit": "GB/s"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_bus_width",
+        "value": "64",
+        "unit": "bit"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_speed",
+        "value": "16",
+        "unit": "Gbps"
+      },
+      {
+        "group": "Physical",
+        "key": "power_connectors",
+        "value": "PCIe Powered"
+      },
+      {
+        "group": "Identity",
+        "key": "product_family",
+        "value": "Radeon RX"
+      },
+      {
+        "group": "Compute",
+        "key": "ray_accelerators",
+        "value": "12"
+      },
+      {
+        "group": "Power",
+        "key": "recommended_psu",
+        "value": "350",
+        "unit": "W"
+      },
+      {
+        "group": "Physical",
+        "key": "slot_width",
+        "value": "1-Slot"
+      },
+      {
+        "group": "Compute",
+        "key": "stream_processors",
+        "value": "768"
+      },
+      {
+        "group": "Power",
+        "key": "tbp",
+        "value": "53",
+        "unit": "W"
+      },
+      {
+        "group": "Memory",
+        "key": "vram_capacity",
+        "value": "4",
+        "unit": "GB"
+      },
+      {
+        "group": "Memory",
+        "key": "vram_type",
+        "value": "GDDR6"
+      }
+    ],
+    "benchmarks": []
+  }
+]

@@ -6,6 +6,7 @@ from __future__ import annotations
 LEGACY_GPU_SLUG_MAP: dict[str, str] = {
     "rtx-4090": "nvidia-geforce-rtx-4090",
     "rtx-4070-super": "nvidia-geforce-rtx-4070-super",
+    "rx-7900-xtx": "amd-radeon-rx-7900-xtx",
 }
 
 
