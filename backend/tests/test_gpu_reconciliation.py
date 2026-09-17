@@ -29,6 +29,7 @@ def test_legacy_gpu_slug_map_covers_known_duplicates():
     assert LEGACY_GPU_SLUG_MAP["rtx-4090"] == "nvidia-geforce-rtx-4090"
     assert LEGACY_GPU_SLUG_MAP["rtx-4070-super"] == "nvidia-geforce-rtx-4070-super"
     assert LEGACY_GPU_SLUG_MAP["rx-7900-xtx"] == "amd-radeon-rx-7900-xtx"
+    assert LEGACY_GPU_SLUG_MAP["arc-a770"] == "intel-arc-a770"
 
 
 def test_merge_legacy_gpu_slug_into_canonical(nvidia_gpu_setup):
@@ -156,4 +157,3 @@ def test_search_no_duplicate_legacy_and_canonical_gpu(client, nvidia_gpu_setup):
 
 def test_non_duplicate_demo_gpus_not_in_legacy_map():
     assert LEGACY_GPU_SLUG_MAP["rx-7900-xtx"] == "amd-radeon-rx-7900-xtx"
-    assert "arc-a770" not in LEGACY_GPU_SLUG_MAP

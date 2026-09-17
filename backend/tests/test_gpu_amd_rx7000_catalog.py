@@ -279,8 +279,8 @@ def test_nvidia_catalog_still_valid_after_rx7000_builder():
     assert len(records) == 9
 
 
-def test_intel_arc_legacy_slug_not_in_rx7000_legacy_map():
-    assert "arc-a770" not in LEGACY_GPU_SLUG_MAP
+def test_intel_arc_legacy_slug_in_legacy_map():
+    assert LEGACY_GPU_SLUG_MAP["arc-a770"] == "intel-arc-a770"
 
 
 def test_builder_produces_valid_rx7000_output():

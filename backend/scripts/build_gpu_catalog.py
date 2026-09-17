@@ -46,6 +46,10 @@ from data.catalog.gpu.verified_amd_rx_6000_gen import (
     AMD_RX_6000_DESKTOP,
     VERIFIED_DATE as VERIFIED_DATE_AMD_6000,
 )
+from data.catalog.gpu.verified_intel_arc_a_series_gen import (
+    INTEL_ARC_A_SERIES_DESKTOP,
+    VERIFIED_DATE as VERIFIED_DATE_INTEL_ARC,
+)
 
 CATALOG_ROOT = BACKEND_ROOT / "data" / "catalog" / "gpu"
 
@@ -120,6 +124,10 @@ def _nvidia_model_slug(model: str) -> str:
 
 def _amd_model_slug(model: str) -> str:
     return f"amd-radeon-rx-{model.lower().replace('rx ', '').replace(' ', '-')}"
+
+
+def _intel_model_slug(model: str) -> str:
+    return f"intel-{model.lower().replace(' ', '-')}"
 
 
 def _specs_from_dict(specs: dict) -> list[dict]:
@@ -291,6 +299,65 @@ def build_rx_6000_desktop_batch() -> list[dict]:
     ]
 
 
+def build_intel_record(entry: dict, *, verified_date: str) -> dict:
+    model = entry["model"]
+    specs = dict(entry["specs"])
+    if entry.get("launch_msrp") is not None:
+        specs["launch_msrp"] = entry["launch_msrp"]
+
+    generation = specs.get("generation", "Arc A-Series")
+    architecture = specs.get("architecture", "")
+    name = f"Intel {model}"
+    slug = _intel_model_slug(model)
+    arch_phrase = f" based on the {architecture} architecture" if architecture else ""
+    record = {
+        "category": "GPU",
+        "manufacturer": "Intel",
+        "family": "Arc",
+        "series": entry.get("series", "Arc A-Series"),
+        "generation": generation,
+        "architecture": architecture,
+        "source": {
+            "name": "Intel official product specifications",
+            "url": entry["source_url"],
+            "date": verified_date,
+            "notes": (
+                "Specifications verified against Intel Arc product "
+                "specification pages on intel.com."
+            ),
+        },
+        "product": {
+            "name": name,
+            "slug": slug,
+            "description": (
+                f"Intel {model} desktop graphics card{arch_phrase}."
+            ),
+            **(
+                {"release_date": entry["release_date"]}
+                if entry.get("release_date")
+                else {}
+            ),
+            "status": "active",
+            "is_popular": entry.get("is_popular", False),
+            "architecture": architecture or None,
+        },
+        "images": [],
+        "specifications": _specs_from_dict(specs),
+        "benchmarks": [],
+    }
+    errors, _ = validate_catalog_records([record])
+    if errors:
+        raise CatalogBuildError(f"Intel {model} validation failed: {'; '.join(errors)}")
+    return record
+
+
+def build_intel_arc_a_series_desktop_batch() -> list[dict]:
+    return [
+        build_intel_record(entry, verified_date=VERIFIED_DATE_INTEL_ARC)
+        for entry in INTEL_ARC_A_SERIES_DESKTOP
+    ]
+
+
 def write_catalog(path: Path, records: list[dict]) -> None:
     errors, warnings = validate_catalog_records(records)
     if errors:
@@ -385,6 +452,10 @@ def build_all() -> None:
     write_catalog(
         CATALOG_ROOT / "amd" / "radeon" / "rx-6000-series" / "desktop.json",
         build_rx_6000_desktop_batch(),
+    )
+    write_catalog(
+        CATALOG_ROOT / "intel" / "arc" / "a-series" / "desktop.json",
+        build_intel_arc_a_series_desktop_batch(),
     )
 
 

@@ -1,0 +1,578 @@
+[
+  {
+    "category": "GPU",
+    "manufacturer": "Intel",
+    "family": "Arc",
+    "series": "Arc A-Series",
+    "generation": "Arc A-Series",
+    "architecture": "Xe HPG",
+    "source": {
+      "name": "Intel official product specifications",
+      "url": "https://www.intel.com/content/www/us/en/products/sku/227955/intel-arc-a770-graphics-8gb/specifications.html",
+      "date": "2026-09-17",
+      "notes": "Specifications verified against Intel Arc product specification pages on intel.com."
+    },
+    "product": {
+      "name": "Intel Arc A770",
+      "slug": "intel-arc-a770",
+      "description": "Intel Arc A770 desktop graphics card based on the Xe HPG architecture.",
+      "release_date": "2022-10-12",
+      "status": "active",
+      "is_popular": true,
+      "architecture": "Xe HPG"
+    },
+    "images": [],
+    "specifications": [
+      {
+        "group": "Identity",
+        "key": "architecture",
+        "value": "Xe HPG"
+      },
+      {
+        "group": "Clocks",
+        "key": "boost_clock",
+        "value": "2100",
+        "unit": "MHz"
+      },
+      {
+        "group": "Interface",
+        "key": "display_outputs",
+        "value": "eDP 1.4, DP 2.0 up to UHBR 10, HDMI 2.1, HDMI 2.0b"
+      },
+      {
+        "group": "Identity",
+        "key": "generation",
+        "value": "Arc A-Series"
+      },
+      {
+        "group": "Identity",
+        "key": "market_segment",
+        "value": "desktop"
+      },
+      {
+        "group": "Interface",
+        "key": "maximum_displays",
+        "value": "4"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_bus_width",
+        "value": "256",
+        "unit": "bit"
+      },
+      {
+        "group": "Interface",
+        "key": "pci_express",
+        "value": "PCIe 4.0 x16"
+      },
+      {
+        "group": "Identity",
+        "key": "product_family",
+        "value": "Arc A-Series"
+      },
+      {
+        "group": "Compute",
+        "key": "ray_tracing_units",
+        "value": "32"
+      },
+      {
+        "group": "Power",
+        "key": "tbp",
+        "value": "225",
+        "unit": "W"
+      },
+      {
+        "group": "Memory",
+        "key": "vram_type",
+        "value": "GDDR6"
+      },
+      {
+        "group": "Compute",
+        "key": "xe_cores",
+        "value": "32"
+      },
+      {
+        "group": "Compute",
+        "key": "xmx_engines",
+        "value": "512"
+      }
+    ],
+    "benchmarks": []
+  },
+  {
+    "category": "GPU",
+    "manufacturer": "Intel",
+    "family": "Arc",
+    "series": "Arc A-Series",
+    "generation": "Arc A-Series",
+    "architecture": "Xe HPG",
+    "source": {
+      "name": "Intel official product specifications",
+      "url": "https://www.intel.com/content/www/us/en/products/sku/227954/intel-arc-a750-graphics/specifications.html",
+      "date": "2026-09-17",
+      "notes": "Specifications verified against Intel Arc product specification pages on intel.com."
+    },
+    "product": {
+      "name": "Intel Arc A750",
+      "slug": "intel-arc-a750",
+      "description": "Intel Arc A750 desktop graphics card based on the Xe HPG architecture.",
+      "release_date": "2022-10-12",
+      "status": "active",
+      "is_popular": true,
+      "architecture": "Xe HPG"
+    },
+    "images": [],
+    "specifications": [
+      {
+        "group": "Identity",
+        "key": "architecture",
+        "value": "Xe HPG"
+      },
+      {
+        "group": "Clocks",
+        "key": "boost_clock",
+        "value": "2050",
+        "unit": "MHz"
+      },
+      {
+        "group": "Interface",
+        "key": "display_outputs",
+        "value": "eDP 1.4, DP 2.0 up to UHBR 10, HDMI 2.1, HDMI 2.0b"
+      },
+      {
+        "group": "Identity",
+        "key": "generation",
+        "value": "Arc A-Series"
+      },
+      {
+        "group": "Identity",
+        "key": "launch_msrp",
+        "value": "289",
+        "unit": "USD"
+      },
+      {
+        "group": "Identity",
+        "key": "market_segment",
+        "value": "desktop"
+      },
+      {
+        "group": "Interface",
+        "key": "maximum_displays",
+        "value": "4"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_bandwidth",
+        "value": "512",
+        "unit": "GB/s"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_bus_width",
+        "value": "256",
+        "unit": "bit"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_speed",
+        "value": "16",
+        "unit": "Gbps"
+      },
+      {
+        "group": "Interface",
+        "key": "pci_express",
+        "value": "PCIe 4.0 x16"
+      },
+      {
+        "group": "Identity",
+        "key": "product_family",
+        "value": "Arc A-Series"
+      },
+      {
+        "group": "Compute",
+        "key": "ray_tracing_units",
+        "value": "28"
+      },
+      {
+        "group": "Power",
+        "key": "tbp",
+        "value": "225",
+        "unit": "W"
+      },
+      {
+        "group": "Memory",
+        "key": "vram_capacity",
+        "value": "8",
+        "unit": "GB"
+      },
+      {
+        "group": "Memory",
+        "key": "vram_type",
+        "value": "GDDR6"
+      },
+      {
+        "group": "Compute",
+        "key": "xe_cores",
+        "value": "28"
+      },
+      {
+        "group": "Compute",
+        "key": "xmx_engines",
+        "value": "448"
+      }
+    ],
+    "benchmarks": []
+  },
+  {
+    "category": "GPU",
+    "manufacturer": "Intel",
+    "family": "Arc",
+    "series": "Arc A-Series",
+    "generation": "Arc A-Series",
+    "architecture": "Xe HPG",
+    "source": {
+      "name": "Intel official product specifications",
+      "url": "https://www.intel.com/content/www/us/en/products/sku/227961/intel-arc-a580-graphics/specifications.html",
+      "date": "2026-09-17",
+      "notes": "Specifications verified against Intel Arc product specification pages on intel.com."
+    },
+    "product": {
+      "name": "Intel Arc A580",
+      "slug": "intel-arc-a580",
+      "description": "Intel Arc A580 desktop graphics card based on the Xe HPG architecture.",
+      "release_date": "2023-10-10",
+      "status": "active",
+      "is_popular": false,
+      "architecture": "Xe HPG"
+    },
+    "images": [],
+    "specifications": [
+      {
+        "group": "Identity",
+        "key": "architecture",
+        "value": "Xe HPG"
+      },
+      {
+        "group": "Clocks",
+        "key": "boost_clock",
+        "value": "1700",
+        "unit": "MHz"
+      },
+      {
+        "group": "Interface",
+        "key": "display_outputs",
+        "value": "eDP 1.4, DP 2.0 up to UHBR 10, HDMI 2.1, HDMI 2.0b"
+      },
+      {
+        "group": "Identity",
+        "key": "generation",
+        "value": "Arc A-Series"
+      },
+      {
+        "group": "Identity",
+        "key": "launch_msrp",
+        "value": "179",
+        "unit": "USD"
+      },
+      {
+        "group": "Identity",
+        "key": "market_segment",
+        "value": "desktop"
+      },
+      {
+        "group": "Interface",
+        "key": "maximum_displays",
+        "value": "4"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_bandwidth",
+        "value": "512",
+        "unit": "GB/s"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_bus_width",
+        "value": "256",
+        "unit": "bit"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_speed",
+        "value": "16",
+        "unit": "Gbps"
+      },
+      {
+        "group": "Interface",
+        "key": "pci_express",
+        "value": "PCIe 4.0 x16"
+      },
+      {
+        "group": "Identity",
+        "key": "product_family",
+        "value": "Arc A-Series"
+      },
+      {
+        "group": "Compute",
+        "key": "ray_tracing_units",
+        "value": "24"
+      },
+      {
+        "group": "Power",
+        "key": "tbp",
+        "value": "185",
+        "unit": "W"
+      },
+      {
+        "group": "Memory",
+        "key": "vram_capacity",
+        "value": "8",
+        "unit": "GB"
+      },
+      {
+        "group": "Memory",
+        "key": "vram_type",
+        "value": "GDDR6"
+      },
+      {
+        "group": "Compute",
+        "key": "xe_cores",
+        "value": "24"
+      },
+      {
+        "group": "Compute",
+        "key": "xmx_engines",
+        "value": "384"
+      }
+    ],
+    "benchmarks": []
+  },
+  {
+    "category": "GPU",
+    "manufacturer": "Intel",
+    "family": "Arc",
+    "series": "Arc A-Series",
+    "generation": "Arc A-Series",
+    "architecture": "Xe HPG",
+    "source": {
+      "name": "Intel official product specifications",
+      "url": "https://www.intel.com/content/www/us/en/products/sku/227959/intel-arc-a380-graphics/specifications.html",
+      "date": "2026-09-17",
+      "notes": "Specifications verified against Intel Arc product specification pages on intel.com."
+    },
+    "product": {
+      "name": "Intel Arc A380",
+      "slug": "intel-arc-a380",
+      "description": "Intel Arc A380 desktop graphics card based on the Xe HPG architecture.",
+      "status": "active",
+      "is_popular": false,
+      "architecture": "Xe HPG"
+    },
+    "images": [],
+    "specifications": [
+      {
+        "group": "Identity",
+        "key": "architecture",
+        "value": "Xe HPG"
+      },
+      {
+        "group": "Clocks",
+        "key": "boost_clock",
+        "value": "2000",
+        "unit": "MHz"
+      },
+      {
+        "group": "Interface",
+        "key": "display_outputs",
+        "value": "eDP 1.4, DP 2.0 up to UHBR 10, HDMI 2.1, HDMI 2.0b"
+      },
+      {
+        "group": "Identity",
+        "key": "generation",
+        "value": "Arc A-Series"
+      },
+      {
+        "group": "Identity",
+        "key": "launch_msrp",
+        "value": "139.99",
+        "unit": "USD"
+      },
+      {
+        "group": "Identity",
+        "key": "market_segment",
+        "value": "desktop"
+      },
+      {
+        "group": "Interface",
+        "key": "maximum_displays",
+        "value": "4"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_bandwidth",
+        "value": "186",
+        "unit": "GB/s"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_bus_width",
+        "value": "96",
+        "unit": "bit"
+      },
+      {
+        "group": "Interface",
+        "key": "pci_express",
+        "value": "PCIe 4.0 x8 (x16 slot required)"
+      },
+      {
+        "group": "Identity",
+        "key": "product_family",
+        "value": "Arc A-Series"
+      },
+      {
+        "group": "Compute",
+        "key": "ray_tracing_units",
+        "value": "8"
+      },
+      {
+        "group": "Power",
+        "key": "tbp",
+        "value": "75",
+        "unit": "W"
+      },
+      {
+        "group": "Memory",
+        "key": "vram_capacity",
+        "value": "6",
+        "unit": "GB"
+      },
+      {
+        "group": "Memory",
+        "key": "vram_type",
+        "value": "GDDR6"
+      },
+      {
+        "group": "Compute",
+        "key": "xe_cores",
+        "value": "8"
+      },
+      {
+        "group": "Compute",
+        "key": "xmx_engines",
+        "value": "128"
+      }
+    ],
+    "benchmarks": []
+  },
+  {
+    "category": "GPU",
+    "manufacturer": "Intel",
+    "family": "Arc",
+    "series": "Arc A-Series",
+    "generation": "Arc A-Series",
+    "architecture": "Xe HPG",
+    "source": {
+      "name": "Intel official product specifications",
+      "url": "https://www.intel.com/content/www/us/en/products/sku/227958/intel-arc-a310-graphics/specifications.html",
+      "date": "2026-09-17",
+      "notes": "Specifications verified against Intel Arc product specification pages on intel.com."
+    },
+    "product": {
+      "name": "Intel Arc A310",
+      "slug": "intel-arc-a310",
+      "description": "Intel Arc A310 desktop graphics card based on the Xe HPG architecture.",
+      "status": "active",
+      "is_popular": false,
+      "architecture": "Xe HPG"
+    },
+    "images": [],
+    "specifications": [
+      {
+        "group": "Identity",
+        "key": "architecture",
+        "value": "Xe HPG"
+      },
+      {
+        "group": "Clocks",
+        "key": "boost_clock",
+        "value": "2000",
+        "unit": "MHz"
+      },
+      {
+        "group": "Interface",
+        "key": "display_outputs",
+        "value": "eDP 1.4, DP 2.0 up to UHBR 10, HDMI 2.1, HDMI 2.0b"
+      },
+      {
+        "group": "Identity",
+        "key": "generation",
+        "value": "Arc A-Series"
+      },
+      {
+        "group": "Identity",
+        "key": "market_segment",
+        "value": "desktop"
+      },
+      {
+        "group": "Interface",
+        "key": "maximum_displays",
+        "value": "4"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_bandwidth",
+        "value": "124",
+        "unit": "GB/s"
+      },
+      {
+        "group": "Memory",
+        "key": "memory_bus_width",
+        "value": "64",
+        "unit": "bit"
+      },
+      {
+        "group": "Interface",
+        "key": "pci_express",
+        "value": "PCIe 4.0 x8 (x16 slot required)"
+      },
+      {
+        "group": "Identity",
+        "key": "product_family",
+        "value": "Arc A-Series"
+      },
+      {
+        "group": "Compute",
+        "key": "ray_tracing_units",
+        "value": "6"
+      },
+      {
+        "group": "Power",
+        "key": "tbp",
+        "value": "75",
+        "unit": "W"
+      },
+      {
+        "group": "Memory",
+        "key": "vram_capacity",
+        "value": "4",
+        "unit": "GB"
+      },
+      {
+        "group": "Memory",
+        "key": "vram_type",
+        "value": "GDDR6"
+      },
+      {
+        "group": "Compute",
+        "key": "xe_cores",
+        "value": "6"
+      },
+      {
+        "group": "Compute",
+        "key": "xmx_engines",
+        "value": "96"
+      }
+    ],
+    "benchmarks": []
+  }
+]
