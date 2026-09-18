@@ -50,7 +50,7 @@ RAM_ALLOWED_SPEC_KEYS = {
     "memory_type", "form_factor", "market_segment", "product_family", "generation",
     "part_number", "module_capacity", "total_kit_capacity", "module_count",
     "memory_speed", "jedec_speed", "cas_latency", "timings", "voltage",
-    "ecc", "registered", "xmp", "pin_count", "module_height",
+    "ecc", "registered", "xmp", "expo", "pin_count", "module_height",
 }
 
 # Backward-compatible alias used by the CPU catalog builder.

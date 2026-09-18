@@ -3,132 +3,18 @@
     "category": "RAM",
     "manufacturer": "Corsair",
     "family": "Vengeance",
-    "series": "Vengeance LPX",
-    "generation": "DDR4",
+    "series": "Vengeance",
+    "generation": "DDR5",
     "source": {
       "name": "Corsair official product specifications",
-      "url": "https://www.corsair.com/us/en/p/memory/cmk8gx4m1e3200c16/vengeance-lpx-8gb-1-x-8gb-ddr4-dram-3200mhz-c16-memory-kit-black-cmk8gx4m1e3200c16",
+      "url": "https://www.corsair.com/us/en/p/memory/cmk32gx5m2b6000c30/vengeance-32gb-2x16gb-ddr5-dram-6000mt-s-cl30-memory-kit-black-cmk32gx5m2b6000c30",
       "date": "2026-09-18",
       "notes": "Specifications verified against official manufacturer product pages or datasheets. memory_speed is the manufacturer tested/rated data rate in MT/s (typically XMP/EXPO profile speed). voltage is the tested profile voltage when documented; SPD/JEDEC voltage is not stored separately."
     },
     "product": {
-      "name": "Corsair Vengeance LPX 8GB (1 x 8GB) DDR4-3200 C16 CMK8GX4M1E3200C16",
-      "slug": "corsair-vengeance-lpx-cmk8gx4m1e3200c16",
-      "description": "Corsair Vengeance LPX 8GB (1 x 8GB) DDR4-3200 C16 CMK8GX4M1E3200C16 desktop DDR4 UDIMM memory (part CMK8GX4M1E3200C16).",
-      "status": "active",
-      "is_popular": false
-    },
-    "images": [],
-    "specifications": [
-      {
-        "group": "Performance",
-        "key": "cas_latency",
-        "value": "16"
-      },
-      {
-        "group": "Features",
-        "key": "ecc",
-        "value": "Non-ECC"
-      },
-      {
-        "group": "Identity",
-        "key": "form_factor",
-        "value": "UDIMM"
-      },
-      {
-        "group": "Identity",
-        "key": "generation",
-        "value": "DDR4"
-      },
-      {
-        "group": "Performance",
-        "key": "jedec_speed",
-        "value": "2133",
-        "unit": "MT/s"
-      },
-      {
-        "group": "Identity",
-        "key": "market_segment",
-        "value": "desktop"
-      },
-      {
-        "group": "Performance",
-        "key": "memory_speed",
-        "value": "3200",
-        "unit": "MT/s"
-      },
-      {
-        "group": "Identity",
-        "key": "memory_type",
-        "value": "DDR4"
-      },
-      {
-        "group": "Capacity",
-        "key": "module_capacity",
-        "value": "8",
-        "unit": "GB"
-      },
-      {
-        "group": "Capacity",
-        "key": "module_count",
-        "value": "1"
-      },
-      {
-        "group": "Identity",
-        "key": "part_number",
-        "value": "CMK8GX4M1E3200C16"
-      },
-      {
-        "group": "Physical",
-        "key": "pin_count",
-        "value": "288"
-      },
-      {
-        "group": "Identity",
-        "key": "product_family",
-        "value": "Vengeance LPX"
-      },
-      {
-        "group": "Features",
-        "key": "registered",
-        "value": "Unbuffered"
-      },
-      {
-        "group": "Capacity",
-        "key": "total_kit_capacity",
-        "value": "8",
-        "unit": "GB"
-      },
-      {
-        "group": "Performance",
-        "key": "voltage",
-        "value": "1.35",
-        "unit": "V"
-      },
-      {
-        "group": "Features",
-        "key": "xmp",
-        "value": "XMP 2.0"
-      }
-    ],
-    "benchmarks": []
-  },
-  {
-    "category": "RAM",
-    "manufacturer": "Corsair",
-    "family": "Vengeance",
-    "series": "Vengeance LPX",
-    "generation": "DDR4",
-    "source": {
-      "name": "Corsair official product specifications",
-      "url": "https://www.corsair.com/us/en/p/memory/cmk16gx4m2b3200c16/vengeancea-lpx-16gb-2-x-8gb-ddr4-dram-3200mhz-c16-memory-kit-black-cmk16gx4m2b3200c16",
-      "date": "2026-09-18",
-      "notes": "Specifications verified against official manufacturer product pages or datasheets. memory_speed is the manufacturer tested/rated data rate in MT/s (typically XMP/EXPO profile speed). voltage is the tested profile voltage when documented; SPD/JEDEC voltage is not stored separately."
-    },
-    "product": {
-      "name": "Corsair Vengeance LPX 16GB (2 x 8GB) DDR4-3200 C16 CMK16GX4M2B3200C16",
-      "slug": "corsair-vengeance-lpx-cmk16gx4m2b3200c16",
-      "description": "Corsair Vengeance LPX 16GB (2 x 8GB) DDR4-3200 C16 CMK16GX4M2B3200C16 desktop DDR4 UDIMM memory (part CMK16GX4M2B3200C16).",
+      "name": "Corsair Vengeance 32GB (2 x 16GB) DDR5-6000 C30 CMK32GX5M2B6000C30",
+      "slug": "corsair-vengeance-cmk32gx5m2b6000c30",
+      "description": "Corsair Vengeance 32GB (2 x 16GB) DDR5-6000 C30 CMK32GX5M2B6000C30 desktop DDR5 UDIMM memory (part CMK32GX5M2B6000C30).",
       "status": "active",
       "is_popular": true
     },
@@ -137,7 +23,7 @@
       {
         "group": "Performance",
         "key": "cas_latency",
-        "value": "16"
+        "value": "30"
       },
       {
         "group": "Features",
@@ -152,12 +38,12 @@
       {
         "group": "Identity",
         "key": "generation",
-        "value": "DDR4"
+        "value": "DDR5"
       },
       {
         "group": "Performance",
         "key": "jedec_speed",
-        "value": "2133",
+        "value": "4800",
         "unit": "MT/s"
       },
       {
@@ -168,127 +54,13 @@
       {
         "group": "Performance",
         "key": "memory_speed",
-        "value": "3200",
+        "value": "6000",
         "unit": "MT/s"
       },
       {
         "group": "Identity",
         "key": "memory_type",
-        "value": "DDR4"
-      },
-      {
-        "group": "Capacity",
-        "key": "module_capacity",
-        "value": "8",
-        "unit": "GB"
-      },
-      {
-        "group": "Capacity",
-        "key": "module_count",
-        "value": "2"
-      },
-      {
-        "group": "Identity",
-        "key": "part_number",
-        "value": "CMK16GX4M2B3200C16"
-      },
-      {
-        "group": "Physical",
-        "key": "pin_count",
-        "value": "288"
-      },
-      {
-        "group": "Identity",
-        "key": "product_family",
-        "value": "Vengeance LPX"
-      },
-      {
-        "group": "Features",
-        "key": "registered",
-        "value": "Unbuffered"
-      },
-      {
-        "group": "Capacity",
-        "key": "total_kit_capacity",
-        "value": "16",
-        "unit": "GB"
-      },
-      {
-        "group": "Performance",
-        "key": "voltage",
-        "value": "1.35",
-        "unit": "V"
-      },
-      {
-        "group": "Features",
-        "key": "xmp",
-        "value": "XMP 2.0"
-      }
-    ],
-    "benchmarks": []
-  },
-  {
-    "category": "RAM",
-    "manufacturer": "Corsair",
-    "family": "Vengeance",
-    "series": "Vengeance LPX",
-    "generation": "DDR4",
-    "source": {
-      "name": "Corsair official product specifications",
-      "url": "https://www.corsair.com/us/en/p/memory/cmk32gx4m2e3200c16/vengeance-lpx-32gb-2-x-16gb-ddr4-dram-3200mhz-c16-memory-kit-black-cmk32gx4m2e3200c16",
-      "date": "2026-09-18",
-      "notes": "Specifications verified against official manufacturer product pages or datasheets. memory_speed is the manufacturer tested/rated data rate in MT/s (typically XMP/EXPO profile speed). voltage is the tested profile voltage when documented; SPD/JEDEC voltage is not stored separately."
-    },
-    "product": {
-      "name": "Corsair Vengeance LPX 32GB (2 x 16GB) DDR4-3200 C16 CMK32GX4M2E3200C16",
-      "slug": "corsair-vengeance-lpx-cmk32gx4m2e3200c16",
-      "description": "Corsair Vengeance LPX 32GB (2 x 16GB) DDR4-3200 C16 CMK32GX4M2E3200C16 desktop DDR4 UDIMM memory (part CMK32GX4M2E3200C16).",
-      "status": "active",
-      "is_popular": true
-    },
-    "images": [],
-    "specifications": [
-      {
-        "group": "Performance",
-        "key": "cas_latency",
-        "value": "16"
-      },
-      {
-        "group": "Features",
-        "key": "ecc",
-        "value": "Non-ECC"
-      },
-      {
-        "group": "Identity",
-        "key": "form_factor",
-        "value": "UDIMM"
-      },
-      {
-        "group": "Identity",
-        "key": "generation",
-        "value": "DDR4"
-      },
-      {
-        "group": "Performance",
-        "key": "jedec_speed",
-        "value": "2133",
-        "unit": "MT/s"
-      },
-      {
-        "group": "Identity",
-        "key": "market_segment",
-        "value": "desktop"
-      },
-      {
-        "group": "Performance",
-        "key": "memory_speed",
-        "value": "3200",
-        "unit": "MT/s"
-      },
-      {
-        "group": "Identity",
-        "key": "memory_type",
-        "value": "DDR4"
+        "value": "DDR5"
       },
       {
         "group": "Capacity",
@@ -304,7 +76,7 @@
       {
         "group": "Identity",
         "key": "part_number",
-        "value": "CMK32GX4M2E3200C16"
+        "value": "CMK32GX5M2B6000C30"
       },
       {
         "group": "Physical",
@@ -314,7 +86,7 @@
       {
         "group": "Identity",
         "key": "product_family",
-        "value": "Vengeance LPX"
+        "value": "Vengeance"
       },
       {
         "group": "Features",
@@ -330,13 +102,13 @@
       {
         "group": "Performance",
         "key": "voltage",
-        "value": "1.35",
+        "value": "1.40",
         "unit": "V"
       },
       {
         "group": "Features",
         "key": "xmp",
-        "value": "XMP 2.0"
+        "value": "XMP 3.0"
       }
     ],
     "benchmarks": []
@@ -345,32 +117,37 @@
     "category": "RAM",
     "manufacturer": "Corsair",
     "family": "Vengeance",
-    "series": "Vengeance LPX",
-    "generation": "DDR4",
+    "series": "Vengeance",
+    "generation": "DDR5",
     "source": {
       "name": "Corsair official product specifications",
-      "url": "https://www.corsair.com/us/en/p/memory/cmk32gx4m2a2666c16/vengeancea-lpx-32gb-2-x-16gb-ddr4-dram-2666mhz-c16-memory-kit-black-cmk32gx4m2a2666c16",
+      "url": "https://www.corsair.com/us/en/p/memory/cmk32gx5m2b6000z30/vengeance-32gb-2x16gb-ddr5-dram-6000mt-s-cl30-amd-expo-memory-black-cmk32gx5m2b6000z30",
       "date": "2026-09-18",
       "notes": "Specifications verified against official manufacturer product pages or datasheets. memory_speed is the manufacturer tested/rated data rate in MT/s (typically XMP/EXPO profile speed). voltage is the tested profile voltage when documented; SPD/JEDEC voltage is not stored separately."
     },
     "product": {
-      "name": "Corsair Vengeance LPX 32GB (2 x 16GB) DDR4-2666 C16 CMK32GX4M2A2666C16",
-      "slug": "corsair-vengeance-lpx-cmk32gx4m2a2666c16",
-      "description": "Corsair Vengeance LPX 32GB (2 x 16GB) DDR4-2666 C16 CMK32GX4M2A2666C16 desktop DDR4 UDIMM memory (part CMK32GX4M2A2666C16).",
+      "name": "Corsair Vengeance 32GB (2 x 16GB) DDR5-6000 C30 EXPO CMK32GX5M2B6000Z30",
+      "slug": "corsair-vengeance-cmk32gx5m2b6000z30",
+      "description": "Corsair Vengeance 32GB (2 x 16GB) DDR5-6000 C30 EXPO CMK32GX5M2B6000Z30 desktop DDR5 UDIMM memory (part CMK32GX5M2B6000Z30).",
       "status": "active",
-      "is_popular": false
+      "is_popular": true
     },
     "images": [],
     "specifications": [
       {
         "group": "Performance",
         "key": "cas_latency",
-        "value": "16"
+        "value": "30"
       },
       {
         "group": "Features",
         "key": "ecc",
         "value": "Non-ECC"
+      },
+      {
+        "group": "Features",
+        "key": "expo",
+        "value": "AMD EXPO"
       },
       {
         "group": "Identity",
@@ -380,12 +157,12 @@
       {
         "group": "Identity",
         "key": "generation",
-        "value": "DDR4"
+        "value": "DDR5"
       },
       {
         "group": "Performance",
         "key": "jedec_speed",
-        "value": "2133",
+        "value": "4800",
         "unit": "MT/s"
       },
       {
@@ -396,13 +173,13 @@
       {
         "group": "Performance",
         "key": "memory_speed",
-        "value": "2666",
+        "value": "6000",
         "unit": "MT/s"
       },
       {
         "group": "Identity",
         "key": "memory_type",
-        "value": "DDR4"
+        "value": "DDR5"
       },
       {
         "group": "Capacity",
@@ -418,7 +195,7 @@
       {
         "group": "Identity",
         "key": "part_number",
-        "value": "CMK32GX4M2A2666C16"
+        "value": "CMK32GX5M2B6000Z30"
       },
       {
         "group": "Physical",
@@ -428,7 +205,7 @@
       {
         "group": "Identity",
         "key": "product_family",
-        "value": "Vengeance LPX"
+        "value": "Vengeance"
       },
       {
         "group": "Features",
@@ -444,33 +221,33 @@
       {
         "group": "Performance",
         "key": "voltage",
-        "value": "1.2",
+        "value": "1.40",
         "unit": "V"
       },
       {
         "group": "Features",
         "key": "xmp",
-        "value": "XMP 2.0"
+        "value": "XMP 3.0"
       }
     ],
     "benchmarks": []
   },
   {
     "category": "RAM",
-    "manufacturer": "Kingston",
-    "family": "Fury",
-    "series": "Fury Beast",
-    "generation": "DDR4",
+    "manufacturer": "Corsair",
+    "family": "Vengeance",
+    "series": "Vengeance",
+    "generation": "DDR5",
     "source": {
-      "name": "Kingston official product datasheet",
-      "url": "https://www.kingston.com/datasheets/KF432C16BB_8.pdf",
+      "name": "Corsair official product specifications",
+      "url": "https://www.corsair.com/us/en/p/memory/cmk64gx5m2b6000c30/vengeance-64gb-2x32gb-ddr5-dram-6000mt-s-cl30-memory-kit-black-cmk64gx5m2b6000c30",
       "date": "2026-09-18",
       "notes": "Specifications verified against official manufacturer product pages or datasheets. memory_speed is the manufacturer tested/rated data rate in MT/s (typically XMP/EXPO profile speed). voltage is the tested profile voltage when documented; SPD/JEDEC voltage is not stored separately."
     },
     "product": {
-      "name": "Kingston FURY Beast 8GB DDR4-3200 CL16 KF432C16BB/8",
-      "slug": "kingston-fury-beast-kf432c16bb-8",
-      "description": "Kingston FURY Beast 8GB DDR4-3200 CL16 KF432C16BB/8 desktop DDR4 UDIMM memory (part KF432C16BB/8).",
+      "name": "Corsair Vengeance 64GB (2 x 32GB) DDR5-6000 C30 CMK64GX5M2B6000C30",
+      "slug": "corsair-vengeance-cmk64gx5m2b6000c30",
+      "description": "Corsair Vengeance 64GB (2 x 32GB) DDR5-6000 C30 CMK64GX5M2B6000C30 desktop DDR5 UDIMM memory (part CMK64GX5M2B6000C30).",
       "status": "active",
       "is_popular": false
     },
@@ -479,7 +256,7 @@
       {
         "group": "Performance",
         "key": "cas_latency",
-        "value": "16"
+        "value": "30"
       },
       {
         "group": "Features",
@@ -494,12 +271,12 @@
       {
         "group": "Identity",
         "key": "generation",
-        "value": "DDR4"
+        "value": "DDR5"
       },
       {
         "group": "Performance",
         "key": "jedec_speed",
-        "value": "2400",
+        "value": "4800",
         "unit": "MT/s"
       },
       {
@@ -510,35 +287,29 @@
       {
         "group": "Performance",
         "key": "memory_speed",
-        "value": "3200",
+        "value": "6000",
         "unit": "MT/s"
       },
       {
         "group": "Identity",
         "key": "memory_type",
-        "value": "DDR4"
+        "value": "DDR5"
       },
       {
         "group": "Capacity",
         "key": "module_capacity",
-        "value": "8",
+        "value": "32",
         "unit": "GB"
       },
       {
         "group": "Capacity",
         "key": "module_count",
-        "value": "1"
-      },
-      {
-        "group": "Physical",
-        "key": "module_height",
-        "value": "34",
-        "unit": "mm"
+        "value": "2"
       },
       {
         "group": "Identity",
         "key": "part_number",
-        "value": "KF432C16BB/8"
+        "value": "CMK64GX5M2B6000C30"
       },
       {
         "group": "Physical",
@@ -548,7 +319,7 @@
       {
         "group": "Identity",
         "key": "product_family",
-        "value": "Fury Beast"
+        "value": "Vengeance"
       },
       {
         "group": "Features",
@@ -556,46 +327,41 @@
         "value": "Unbuffered"
       },
       {
-        "group": "Performance",
-        "key": "timings",
-        "value": "16-18-18"
-      },
-      {
         "group": "Capacity",
         "key": "total_kit_capacity",
-        "value": "8",
+        "value": "64",
         "unit": "GB"
       },
       {
         "group": "Performance",
         "key": "voltage",
-        "value": "1.35",
+        "value": "1.40",
         "unit": "V"
       },
       {
         "group": "Features",
         "key": "xmp",
-        "value": "XMP 2.0"
+        "value": "XMP 3.0"
       }
     ],
     "benchmarks": []
   },
   {
     "category": "RAM",
-    "manufacturer": "Kingston",
-    "family": "Fury",
-    "series": "Fury Beast",
-    "generation": "DDR4",
+    "manufacturer": "Corsair",
+    "family": "Vengeance",
+    "series": "Vengeance",
+    "generation": "DDR5",
     "source": {
-      "name": "Kingston official product datasheet",
-      "url": "https://www.kingston.com/dataSheets/KF432C16BB1_16.pdf",
+      "name": "Corsair official product specifications",
+      "url": "https://www.corsair.com/us/en/p/memory/cmk16gx5m1b5600c40/vengeance-16gb-1x16gb-ddr5-dram-5600mt-s-cl40-memory-kit-black-cmk16gx5m1b5600c40",
       "date": "2026-09-18",
       "notes": "Specifications verified against official manufacturer product pages or datasheets. memory_speed is the manufacturer tested/rated data rate in MT/s (typically XMP/EXPO profile speed). voltage is the tested profile voltage when documented; SPD/JEDEC voltage is not stored separately."
     },
     "product": {
-      "name": "Kingston FURY Beast 16GB DDR4-3200 CL16 KF432C16BB1/16",
-      "slug": "kingston-fury-beast-kf432c16bb1-16",
-      "description": "Kingston FURY Beast 16GB DDR4-3200 CL16 KF432C16BB1/16 desktop DDR4 UDIMM memory (part KF432C16BB1/16).",
+      "name": "Corsair Vengeance 16GB (1 x 16GB) DDR5-5600 C40 CMK16GX5M1B5600C40",
+      "slug": "corsair-vengeance-cmk16gx5m1b5600c40",
+      "description": "Corsair Vengeance 16GB (1 x 16GB) DDR5-5600 C40 CMK16GX5M1B5600C40 desktop DDR5 UDIMM memory (part CMK16GX5M1B5600C40).",
       "status": "active",
       "is_popular": false
     },
@@ -604,7 +370,7 @@
       {
         "group": "Performance",
         "key": "cas_latency",
-        "value": "16"
+        "value": "40"
       },
       {
         "group": "Features",
@@ -619,12 +385,12 @@
       {
         "group": "Identity",
         "key": "generation",
-        "value": "DDR4"
+        "value": "DDR5"
       },
       {
         "group": "Performance",
         "key": "jedec_speed",
-        "value": "2400",
+        "value": "4800",
         "unit": "MT/s"
       },
       {
@@ -635,13 +401,13 @@
       {
         "group": "Performance",
         "key": "memory_speed",
-        "value": "3200",
+        "value": "5600",
         "unit": "MT/s"
       },
       {
         "group": "Identity",
         "key": "memory_type",
-        "value": "DDR4"
+        "value": "DDR5"
       },
       {
         "group": "Capacity",
@@ -655,15 +421,9 @@
         "value": "1"
       },
       {
-        "group": "Physical",
-        "key": "module_height",
-        "value": "34",
-        "unit": "mm"
-      },
-      {
         "group": "Identity",
         "key": "part_number",
-        "value": "KF432C16BB1/16"
+        "value": "CMK16GX5M1B5600C40"
       },
       {
         "group": "Physical",
@@ -673,7 +433,121 @@
       {
         "group": "Identity",
         "key": "product_family",
-        "value": "Fury Beast"
+        "value": "Vengeance"
+      },
+      {
+        "group": "Features",
+        "key": "registered",
+        "value": "Unbuffered"
+      },
+      {
+        "group": "Capacity",
+        "key": "total_kit_capacity",
+        "value": "16",
+        "unit": "GB"
+      },
+      {
+        "group": "Performance",
+        "key": "voltage",
+        "value": "1.25",
+        "unit": "V"
+      },
+      {
+        "group": "Features",
+        "key": "xmp",
+        "value": "XMP 3.0"
+      }
+    ],
+    "benchmarks": []
+  },
+  {
+    "category": "RAM",
+    "manufacturer": "G.Skill",
+    "family": "Trident",
+    "series": "Trident Z5 Neo",
+    "generation": "DDR5",
+    "source": {
+      "name": "G.Skill official product specifications",
+      "url": "https://www.gskill.com/specification/165/393/1661410171/F5-6000J3038F16GX2-TZ5N-Specification",
+      "date": "2026-09-18",
+      "notes": "Specifications verified against official manufacturer product pages or datasheets. memory_speed is the manufacturer tested/rated data rate in MT/s (typically XMP/EXPO profile speed). voltage is the tested profile voltage when documented; SPD/JEDEC voltage is not stored separately."
+    },
+    "product": {
+      "name": "G.Skill Trident Z5 Neo 32GB (2 x 16GB) DDR5-6000 CL30 F5-6000J3038F16GX2-TZ5N",
+      "slug": "gskill-trident-z5-neo-f5-6000j3038f16gx2-tz5n",
+      "description": "G.Skill Trident Z5 Neo 32GB (2 x 16GB) DDR5-6000 CL30 F5-6000J3038F16GX2-TZ5N desktop DDR5 UDIMM memory (part F5-6000J3038F16GX2-TZ5N).",
+      "status": "active",
+      "is_popular": true
+    },
+    "images": [],
+    "specifications": [
+      {
+        "group": "Performance",
+        "key": "cas_latency",
+        "value": "30"
+      },
+      {
+        "group": "Features",
+        "key": "ecc",
+        "value": "Non-ECC"
+      },
+      {
+        "group": "Features",
+        "key": "expo",
+        "value": "AMD EXPO"
+      },
+      {
+        "group": "Identity",
+        "key": "form_factor",
+        "value": "UDIMM"
+      },
+      {
+        "group": "Identity",
+        "key": "generation",
+        "value": "DDR5"
+      },
+      {
+        "group": "Performance",
+        "key": "jedec_speed",
+        "value": "4800",
+        "unit": "MT/s"
+      },
+      {
+        "group": "Identity",
+        "key": "market_segment",
+        "value": "desktop"
+      },
+      {
+        "group": "Performance",
+        "key": "memory_speed",
+        "value": "6000",
+        "unit": "MT/s"
+      },
+      {
+        "group": "Identity",
+        "key": "memory_type",
+        "value": "DDR5"
+      },
+      {
+        "group": "Capacity",
+        "key": "module_capacity",
+        "value": "16",
+        "unit": "GB"
+      },
+      {
+        "group": "Capacity",
+        "key": "module_count",
+        "value": "2"
+      },
+      {
+        "group": "Identity",
+        "key": "part_number",
+        "value": "F5-6000J3038F16GX2-TZ5N"
+      },
+      {
+        "group": "Identity",
+        "key": "product_family",
+        "value": "Trident Z5 Neo"
       },
       {
         "group": "Features",
@@ -683,12 +557,12 @@
       {
         "group": "Performance",
         "key": "timings",
-        "value": "16-18-18"
+        "value": "30-38-38-96"
       },
       {
         "group": "Capacity",
         "key": "total_kit_capacity",
-        "value": "16",
+        "value": "32",
         "unit": "GB"
       },
       {
@@ -700,7 +574,245 @@
       {
         "group": "Features",
         "key": "xmp",
-        "value": "XMP 2.0"
+        "value": "XMP 3.0"
+      }
+    ],
+    "benchmarks": []
+  },
+  {
+    "category": "RAM",
+    "manufacturer": "G.Skill",
+    "family": "Trident",
+    "series": "Trident Z5 Neo",
+    "generation": "DDR5",
+    "source": {
+      "name": "G.Skill official product specifications",
+      "url": "https://www.gskill.com/specification/165/393/1662622365/F5-6000J3238F16GX2-TZ5N-Specification",
+      "date": "2026-09-18",
+      "notes": "Specifications verified against official manufacturer product pages or datasheets. memory_speed is the manufacturer tested/rated data rate in MT/s (typically XMP/EXPO profile speed). voltage is the tested profile voltage when documented; SPD/JEDEC voltage is not stored separately."
+    },
+    "product": {
+      "name": "G.Skill Trident Z5 Neo 32GB (2 x 16GB) DDR5-6000 CL32 F5-6000J3238F16GX2-TZ5N",
+      "slug": "gskill-trident-z5-neo-f5-6000j3238f16gx2-tz5n",
+      "description": "G.Skill Trident Z5 Neo 32GB (2 x 16GB) DDR5-6000 CL32 F5-6000J3238F16GX2-TZ5N desktop DDR5 UDIMM memory (part F5-6000J3238F16GX2-TZ5N).",
+      "status": "active",
+      "is_popular": false
+    },
+    "images": [],
+    "specifications": [
+      {
+        "group": "Performance",
+        "key": "cas_latency",
+        "value": "32"
+      },
+      {
+        "group": "Features",
+        "key": "ecc",
+        "value": "Non-ECC"
+      },
+      {
+        "group": "Features",
+        "key": "expo",
+        "value": "AMD EXPO"
+      },
+      {
+        "group": "Identity",
+        "key": "form_factor",
+        "value": "UDIMM"
+      },
+      {
+        "group": "Identity",
+        "key": "generation",
+        "value": "DDR5"
+      },
+      {
+        "group": "Performance",
+        "key": "jedec_speed",
+        "value": "4800",
+        "unit": "MT/s"
+      },
+      {
+        "group": "Identity",
+        "key": "market_segment",
+        "value": "desktop"
+      },
+      {
+        "group": "Performance",
+        "key": "memory_speed",
+        "value": "6000",
+        "unit": "MT/s"
+      },
+      {
+        "group": "Identity",
+        "key": "memory_type",
+        "value": "DDR5"
+      },
+      {
+        "group": "Capacity",
+        "key": "module_capacity",
+        "value": "16",
+        "unit": "GB"
+      },
+      {
+        "group": "Capacity",
+        "key": "module_count",
+        "value": "2"
+      },
+      {
+        "group": "Identity",
+        "key": "part_number",
+        "value": "F5-6000J3238F16GX2-TZ5N"
+      },
+      {
+        "group": "Identity",
+        "key": "product_family",
+        "value": "Trident Z5 Neo"
+      },
+      {
+        "group": "Features",
+        "key": "registered",
+        "value": "Unbuffered"
+      },
+      {
+        "group": "Performance",
+        "key": "timings",
+        "value": "32-38-38-96"
+      },
+      {
+        "group": "Capacity",
+        "key": "total_kit_capacity",
+        "value": "32",
+        "unit": "GB"
+      },
+      {
+        "group": "Performance",
+        "key": "voltage",
+        "value": "1.35",
+        "unit": "V"
+      },
+      {
+        "group": "Features",
+        "key": "xmp",
+        "value": "XMP 3.0"
+      }
+    ],
+    "benchmarks": []
+  },
+  {
+    "category": "RAM",
+    "manufacturer": "G.Skill",
+    "family": "Aegis",
+    "series": "Aegis 5",
+    "generation": "DDR5",
+    "source": {
+      "name": "G.Skill official product specifications",
+      "url": "https://www.gskill.com/specification/165/440/1729563609/F5-5600J3636C16GX2-IS-Specification",
+      "date": "2026-09-18",
+      "notes": "Specifications verified against official manufacturer product pages or datasheets. memory_speed is the manufacturer tested/rated data rate in MT/s (typically XMP/EXPO profile speed). voltage is the tested profile voltage when documented; SPD/JEDEC voltage is not stored separately."
+    },
+    "product": {
+      "name": "G.Skill Aegis 5 32GB (2 x 16GB) DDR5-5600 CL36 F5-5600J3636C16GX2-IS",
+      "slug": "gskill-aegis-5-f5-5600j3636c16gx2-is",
+      "description": "G.Skill Aegis 5 32GB (2 x 16GB) DDR5-5600 CL36 F5-5600J3636C16GX2-IS desktop DDR5 UDIMM memory (part F5-5600J3636C16GX2-IS).",
+      "status": "active",
+      "is_popular": false
+    },
+    "images": [],
+    "specifications": [
+      {
+        "group": "Performance",
+        "key": "cas_latency",
+        "value": "36"
+      },
+      {
+        "group": "Features",
+        "key": "ecc",
+        "value": "Non-ECC"
+      },
+      {
+        "group": "Features",
+        "key": "expo",
+        "value": "AMD EXPO"
+      },
+      {
+        "group": "Identity",
+        "key": "form_factor",
+        "value": "UDIMM"
+      },
+      {
+        "group": "Identity",
+        "key": "generation",
+        "value": "DDR5"
+      },
+      {
+        "group": "Performance",
+        "key": "jedec_speed",
+        "value": "4800",
+        "unit": "MT/s"
+      },
+      {
+        "group": "Identity",
+        "key": "market_segment",
+        "value": "desktop"
+      },
+      {
+        "group": "Performance",
+        "key": "memory_speed",
+        "value": "5600",
+        "unit": "MT/s"
+      },
+      {
+        "group": "Identity",
+        "key": "memory_type",
+        "value": "DDR5"
+      },
+      {
+        "group": "Capacity",
+        "key": "module_capacity",
+        "value": "16",
+        "unit": "GB"
+      },
+      {
+        "group": "Capacity",
+        "key": "module_count",
+        "value": "2"
+      },
+      {
+        "group": "Identity",
+        "key": "part_number",
+        "value": "F5-5600J3636C16GX2-IS"
+      },
+      {
+        "group": "Identity",
+        "key": "product_family",
+        "value": "Aegis 5"
+      },
+      {
+        "group": "Features",
+        "key": "registered",
+        "value": "Unbuffered"
+      },
+      {
+        "group": "Performance",
+        "key": "timings",
+        "value": "36-36-36-89"
+      },
+      {
+        "group": "Capacity",
+        "key": "total_kit_capacity",
+        "value": "32",
+        "unit": "GB"
+      },
+      {
+        "group": "Performance",
+        "key": "voltage",
+        "value": "1.20",
+        "unit": "V"
+      },
+      {
+        "group": "Features",
+        "key": "xmp",
+        "value": "XMP 3.0"
       }
     ],
     "benchmarks": []
@@ -710,17 +822,17 @@
     "manufacturer": "Kingston",
     "family": "Fury",
     "series": "Fury Beast",
-    "generation": "DDR4",
+    "generation": "DDR5",
     "source": {
       "name": "Kingston official product datasheet",
-      "url": "https://www.kingston.com/datasheets/KF432C16BB1K2_32.pdf",
+      "url": "https://www.kingston.com/datasheets/KF556C40BBK2-32.pdf",
       "date": "2026-09-18",
       "notes": "Specifications verified against official manufacturer product pages or datasheets. memory_speed is the manufacturer tested/rated data rate in MT/s (typically XMP/EXPO profile speed). voltage is the tested profile voltage when documented; SPD/JEDEC voltage is not stored separately."
     },
     "product": {
-      "name": "Kingston FURY Beast 32GB (2 x 16GB) DDR4-3200 CL16 KF432C16BB1K2/32",
-      "slug": "kingston-fury-beast-kf432c16bb1k2-32",
-      "description": "Kingston FURY Beast 32GB (2 x 16GB) DDR4-3200 CL16 KF432C16BB1K2/32 desktop DDR4 UDIMM memory (part KF432C16BB1K2/32).",
+      "name": "Kingston FURY Beast 32GB (2 x 16GB) DDR5-5600 CL40 KF556C40BBK2-32",
+      "slug": "kingston-fury-beast-kf556c40bbk2-32",
+      "description": "Kingston FURY Beast 32GB (2 x 16GB) DDR5-5600 CL40 KF556C40BBK2-32 desktop DDR5 UDIMM memory (part KF556C40BBK2-32).",
       "status": "active",
       "is_popular": true
     },
@@ -729,7 +841,7 @@
       {
         "group": "Performance",
         "key": "cas_latency",
-        "value": "16"
+        "value": "40"
       },
       {
         "group": "Features",
@@ -744,12 +856,12 @@
       {
         "group": "Identity",
         "key": "generation",
-        "value": "DDR4"
+        "value": "DDR5"
       },
       {
         "group": "Performance",
         "key": "jedec_speed",
-        "value": "2400",
+        "value": "4800",
         "unit": "MT/s"
       },
       {
@@ -760,13 +872,13 @@
       {
         "group": "Performance",
         "key": "memory_speed",
-        "value": "3200",
+        "value": "5600",
         "unit": "MT/s"
       },
       {
         "group": "Identity",
         "key": "memory_type",
-        "value": "DDR4"
+        "value": "DDR5"
       },
       {
         "group": "Capacity",
@@ -782,13 +894,13 @@
       {
         "group": "Physical",
         "key": "module_height",
-        "value": "34",
+        "value": "34.9",
         "unit": "mm"
       },
       {
         "group": "Identity",
         "key": "part_number",
-        "value": "KF432C16BB1K2/32"
+        "value": "KF556C40BBK2-32"
       },
       {
         "group": "Physical",
@@ -798,7 +910,7 @@
       {
         "group": "Identity",
         "key": "product_family",
-        "value": "Fury Beast"
+        "value": "FURY Beast"
       },
       {
         "group": "Features",
@@ -808,7 +920,7 @@
       {
         "group": "Performance",
         "key": "timings",
-        "value": "16-18-18"
+        "value": "40-40-40"
       },
       {
         "group": "Capacity",
@@ -819,147 +931,33 @@
       {
         "group": "Performance",
         "key": "voltage",
-        "value": "1.35",
+        "value": "1.25",
         "unit": "V"
       },
       {
         "group": "Features",
         "key": "xmp",
-        "value": "XMP 2.0"
+        "value": "XMP 3.0"
       }
     ],
     "benchmarks": []
   },
   {
     "category": "RAM",
-    "manufacturer": "G.Skill",
-    "family": "Ripjaws",
-    "series": "Ripjaws V",
-    "generation": "DDR4",
+    "manufacturer": "Kingston",
+    "family": "Fury",
+    "series": "Fury Beast",
+    "generation": "DDR5",
     "source": {
-      "name": "G.Skill official product specifications",
-      "url": "https://www.gskill.com/specification/165/184/1536110922/F4-3200C16D-32GVK-Specification",
+      "name": "Kingston official product datasheet",
+      "url": "https://www.kingston.com/datasheets/KF556C40BB2-32.pdf",
       "date": "2026-09-18",
       "notes": "Specifications verified against official manufacturer product pages or datasheets. memory_speed is the manufacturer tested/rated data rate in MT/s (typically XMP/EXPO profile speed). voltage is the tested profile voltage when documented; SPD/JEDEC voltage is not stored separately."
     },
     "product": {
-      "name": "G.Skill Ripjaws V 32GB (2 x 16GB) DDR4-3200 CL16 F4-3200C16D-32GVK",
-      "slug": "gskill-ripjaws-v-f4-3200c16d-32gvk",
-      "description": "G.Skill Ripjaws V 32GB (2 x 16GB) DDR4-3200 CL16 F4-3200C16D-32GVK desktop DDR4 UDIMM memory (part F4-3200C16D-32GVK).",
-      "status": "active",
-      "is_popular": true
-    },
-    "images": [],
-    "specifications": [
-      {
-        "group": "Performance",
-        "key": "cas_latency",
-        "value": "16"
-      },
-      {
-        "group": "Features",
-        "key": "ecc",
-        "value": "Non-ECC"
-      },
-      {
-        "group": "Identity",
-        "key": "form_factor",
-        "value": "UDIMM"
-      },
-      {
-        "group": "Identity",
-        "key": "generation",
-        "value": "DDR4"
-      },
-      {
-        "group": "Performance",
-        "key": "jedec_speed",
-        "value": "2133",
-        "unit": "MT/s"
-      },
-      {
-        "group": "Identity",
-        "key": "market_segment",
-        "value": "desktop"
-      },
-      {
-        "group": "Performance",
-        "key": "memory_speed",
-        "value": "3200",
-        "unit": "MT/s"
-      },
-      {
-        "group": "Identity",
-        "key": "memory_type",
-        "value": "DDR4"
-      },
-      {
-        "group": "Capacity",
-        "key": "module_capacity",
-        "value": "16",
-        "unit": "GB"
-      },
-      {
-        "group": "Capacity",
-        "key": "module_count",
-        "value": "2"
-      },
-      {
-        "group": "Identity",
-        "key": "part_number",
-        "value": "F4-3200C16D-32GVK"
-      },
-      {
-        "group": "Identity",
-        "key": "product_family",
-        "value": "Ripjaws V"
-      },
-      {
-        "group": "Features",
-        "key": "registered",
-        "value": "Unbuffered"
-      },
-      {
-        "group": "Performance",
-        "key": "timings",
-        "value": "16-18-18-38"
-      },
-      {
-        "group": "Capacity",
-        "key": "total_kit_capacity",
-        "value": "32",
-        "unit": "GB"
-      },
-      {
-        "group": "Performance",
-        "key": "voltage",
-        "value": "1.35",
-        "unit": "V"
-      },
-      {
-        "group": "Features",
-        "key": "xmp",
-        "value": "XMP 2.0"
-      }
-    ],
-    "benchmarks": []
-  },
-  {
-    "category": "RAM",
-    "manufacturer": "G.Skill",
-    "family": "Ripjaws",
-    "series": "Ripjaws V",
-    "generation": "DDR4",
-    "source": {
-      "name": "G.Skill official product specifications",
-      "url": "https://www.gskill.com/specification/165/184/1562832515/F4-3600C18D-16GVK-Specification",
-      "date": "2026-09-18",
-      "notes": "Specifications verified against official manufacturer product pages or datasheets. memory_speed is the manufacturer tested/rated data rate in MT/s (typically XMP/EXPO profile speed). voltage is the tested profile voltage when documented; SPD/JEDEC voltage is not stored separately."
-    },
-    "product": {
-      "name": "G.Skill Ripjaws V 16GB (2 x 8GB) DDR4-3600 CL18 F4-3600C18D-16GVK",
-      "slug": "gskill-ripjaws-v-f4-3600c18d-16gvk",
-      "description": "G.Skill Ripjaws V 16GB (2 x 8GB) DDR4-3600 CL18 F4-3600C18D-16GVK desktop DDR4 UDIMM memory (part F4-3600C18D-16GVK).",
+      "name": "Kingston FURY Beast 32GB (1 x 32GB) DDR5-5600 CL40 KF556C40BB2-32",
+      "slug": "kingston-fury-beast-kf556c40bb2-32",
+      "description": "Kingston FURY Beast 32GB (1 x 32GB) DDR5-5600 CL40 KF556C40BB2-32 desktop DDR5 UDIMM memory (part KF556C40BB2-32).",
       "status": "active",
       "is_popular": false
     },
@@ -968,12 +966,17 @@
       {
         "group": "Performance",
         "key": "cas_latency",
-        "value": "18"
+        "value": "40"
       },
       {
         "group": "Features",
         "key": "ecc",
         "value": "Non-ECC"
+      },
+      {
+        "group": "Features",
+        "key": "expo",
+        "value": "AMD EXPO"
       },
       {
         "group": "Identity",
@@ -983,12 +986,12 @@
       {
         "group": "Identity",
         "key": "generation",
-        "value": "DDR4"
+        "value": "DDR5"
       },
       {
         "group": "Performance",
         "key": "jedec_speed",
-        "value": "2133",
+        "value": "4800",
         "unit": "MT/s"
       },
       {
@@ -999,34 +1002,45 @@
       {
         "group": "Performance",
         "key": "memory_speed",
-        "value": "3600",
+        "value": "5600",
         "unit": "MT/s"
       },
       {
         "group": "Identity",
         "key": "memory_type",
-        "value": "DDR4"
+        "value": "DDR5"
       },
       {
         "group": "Capacity",
         "key": "module_capacity",
-        "value": "8",
+        "value": "32",
         "unit": "GB"
       },
       {
         "group": "Capacity",
         "key": "module_count",
-        "value": "2"
+        "value": "1"
+      },
+      {
+        "group": "Physical",
+        "key": "module_height",
+        "value": "34.9",
+        "unit": "mm"
       },
       {
         "group": "Identity",
         "key": "part_number",
-        "value": "F4-3600C18D-16GVK"
+        "value": "KF556C40BB2-32"
+      },
+      {
+        "group": "Physical",
+        "key": "pin_count",
+        "value": "288"
       },
       {
         "group": "Identity",
         "key": "product_family",
-        "value": "Ripjaws V"
+        "value": "FURY Beast"
       },
       {
         "group": "Features",
@@ -1036,44 +1050,44 @@
       {
         "group": "Performance",
         "key": "timings",
-        "value": "18-22-22-42"
+        "value": "40-40-40"
       },
       {
         "group": "Capacity",
         "key": "total_kit_capacity",
-        "value": "16",
+        "value": "32",
         "unit": "GB"
       },
       {
         "group": "Performance",
         "key": "voltage",
-        "value": "1.35",
+        "value": "1.25",
         "unit": "V"
       },
       {
         "group": "Features",
         "key": "xmp",
-        "value": "XMP 2.0"
+        "value": "XMP 3.0"
       }
     ],
     "benchmarks": []
   },
   {
     "category": "RAM",
-    "manufacturer": "G.Skill",
-    "family": "Ripjaws",
-    "series": "Ripjaws V",
-    "generation": "DDR4",
+    "manufacturer": "Kingston",
+    "family": "Fury",
+    "series": "Fury Beast",
+    "generation": "DDR5",
     "source": {
-      "name": "G.Skill official product specifications",
-      "url": "https://www.gskill.com/specification/165/184/1562833535/F4-3600C18D-32GVK-Specification",
+      "name": "Kingston official product datasheet",
+      "url": "https://www.kingston.com/datasheets/KF560C36BBEK2-32.pdf",
       "date": "2026-09-18",
       "notes": "Specifications verified against official manufacturer product pages or datasheets. memory_speed is the manufacturer tested/rated data rate in MT/s (typically XMP/EXPO profile speed). voltage is the tested profile voltage when documented; SPD/JEDEC voltage is not stored separately."
     },
     "product": {
-      "name": "G.Skill Ripjaws V 32GB (2 x 16GB) DDR4-3600 CL18 F4-3600C18D-32GVK",
-      "slug": "gskill-ripjaws-v-f4-3600c18d-32gvk",
-      "description": "G.Skill Ripjaws V 32GB (2 x 16GB) DDR4-3600 CL18 F4-3600C18D-32GVK desktop DDR4 UDIMM memory (part F4-3600C18D-32GVK).",
+      "name": "Kingston FURY Beast 32GB (2 x 16GB) DDR5-6000 CL36 KF560C36BBEK2-32",
+      "slug": "kingston-fury-beast-kf560c36bbek2-32",
+      "description": "Kingston FURY Beast 32GB (2 x 16GB) DDR5-6000 CL36 KF560C36BBEK2-32 desktop DDR5 UDIMM memory (part KF560C36BBEK2-32).",
       "status": "active",
       "is_popular": true
     },
@@ -1082,12 +1096,17 @@
       {
         "group": "Performance",
         "key": "cas_latency",
-        "value": "18"
+        "value": "36"
       },
       {
         "group": "Features",
         "key": "ecc",
         "value": "Non-ECC"
+      },
+      {
+        "group": "Features",
+        "key": "expo",
+        "value": "AMD EXPO"
       },
       {
         "group": "Identity",
@@ -1097,12 +1116,12 @@
       {
         "group": "Identity",
         "key": "generation",
-        "value": "DDR4"
+        "value": "DDR5"
       },
       {
         "group": "Performance",
         "key": "jedec_speed",
-        "value": "2133",
+        "value": "4800",
         "unit": "MT/s"
       },
       {
@@ -1113,13 +1132,13 @@
       {
         "group": "Performance",
         "key": "memory_speed",
-        "value": "3600",
+        "value": "6000",
         "unit": "MT/s"
       },
       {
         "group": "Identity",
         "key": "memory_type",
-        "value": "DDR4"
+        "value": "DDR5"
       },
       {
         "group": "Capacity",
@@ -1133,14 +1152,25 @@
         "value": "2"
       },
       {
+        "group": "Physical",
+        "key": "module_height",
+        "value": "34.9",
+        "unit": "mm"
+      },
+      {
         "group": "Identity",
         "key": "part_number",
-        "value": "F4-3600C18D-32GVK"
+        "value": "KF560C36BBEK2-32"
+      },
+      {
+        "group": "Physical",
+        "key": "pin_count",
+        "value": "288"
       },
       {
         "group": "Identity",
         "key": "product_family",
-        "value": "Ripjaws V"
+        "value": "FURY Beast"
       },
       {
         "group": "Features",
@@ -1150,7 +1180,7 @@
       {
         "group": "Performance",
         "key": "timings",
-        "value": "18-22-22-42"
+        "value": "36-38-38"
       },
       {
         "group": "Capacity",
@@ -1167,7 +1197,7 @@
       {
         "group": "Features",
         "key": "xmp",
-        "value": "XMP 2.0"
+        "value": "XMP 3.0"
       }
     ],
     "benchmarks": []
@@ -1176,18 +1206,18 @@
     "category": "RAM",
     "manufacturer": "Crucial",
     "family": "Crucial",
-    "series": "Crucial DDR4",
-    "generation": "DDR4",
+    "series": "Crucial DDR5",
+    "generation": "DDR5",
     "source": {
       "name": "Crucial official product specifications",
-      "url": "https://www.crucial.com/memory/ddr4/CT8G4DFRA32A",
+      "url": "https://www.crucial.com/memory/ddr5/ct16g56c46u5",
       "date": "2026-09-18",
       "notes": "Specifications verified against official manufacturer product pages or datasheets. memory_speed is the manufacturer tested/rated data rate in MT/s (typically XMP/EXPO profile speed). voltage is the tested profile voltage when documented; SPD/JEDEC voltage is not stored separately."
     },
     "product": {
-      "name": "Crucial 8GB DDR4-3200 UDIMM CT8G4DFRA32A",
-      "slug": "crucial-crucial-ddr4-ct8g4dfra32a",
-      "description": "Crucial 8GB DDR4-3200 UDIMM CT8G4DFRA32A desktop DDR4 UDIMM memory (part CT8G4DFRA32A).",
+      "name": "Crucial 16GB (1 x 16GB) DDR5-5600 CT16G56C46U5",
+      "slug": "crucial-crucial-ddr5-ct16g56c46u5",
+      "description": "Crucial 16GB (1 x 16GB) DDR5-5600 CT16G56C46U5 desktop DDR5 UDIMM memory (part CT16G56C46U5).",
       "status": "active",
       "is_popular": false
     },
@@ -1206,7 +1236,13 @@
       {
         "group": "Identity",
         "key": "generation",
-        "value": "DDR4"
+        "value": "DDR5"
+      },
+      {
+        "group": "Performance",
+        "key": "jedec_speed",
+        "value": "5600",
+        "unit": "MT/s"
       },
       {
         "group": "Identity",
@@ -1216,18 +1252,18 @@
       {
         "group": "Performance",
         "key": "memory_speed",
-        "value": "3200",
+        "value": "5600",
         "unit": "MT/s"
       },
       {
         "group": "Identity",
         "key": "memory_type",
-        "value": "DDR4"
+        "value": "DDR5"
       },
       {
         "group": "Capacity",
         "key": "module_capacity",
-        "value": "8",
+        "value": "16",
         "unit": "GB"
       },
       {
@@ -1238,12 +1274,12 @@
       {
         "group": "Identity",
         "key": "part_number",
-        "value": "CT8G4DFRA32A"
+        "value": "CT16G56C46U5"
       },
       {
         "group": "Identity",
         "key": "product_family",
-        "value": "Crucial DDR4"
+        "value": "Crucial DDR5"
       },
       {
         "group": "Features",
@@ -1253,8 +1289,14 @@
       {
         "group": "Capacity",
         "key": "total_kit_capacity",
-        "value": "8",
+        "value": "16",
         "unit": "GB"
+      },
+      {
+        "group": "Performance",
+        "key": "voltage",
+        "value": "1.1",
+        "unit": "V"
       }
     ],
     "benchmarks": []
@@ -1263,20 +1305,20 @@
     "category": "RAM",
     "manufacturer": "Crucial",
     "family": "Crucial",
-    "series": "Crucial DDR4",
-    "generation": "DDR4",
+    "series": "Crucial Pro",
+    "generation": "DDR5",
     "source": {
       "name": "Crucial official product specifications",
-      "url": "https://www.crucial.com/memory/ddr4/CT16G4DFRA32A",
+      "url": "https://www.crucial.com/memory/ddr5/cp16g56c46u5",
       "date": "2026-09-18",
       "notes": "Specifications verified against official manufacturer product pages or datasheets. memory_speed is the manufacturer tested/rated data rate in MT/s (typically XMP/EXPO profile speed). voltage is the tested profile voltage when documented; SPD/JEDEC voltage is not stored separately."
     },
     "product": {
-      "name": "Crucial 16GB DDR4-3200 UDIMM CT16G4DFRA32A",
-      "slug": "crucial-crucial-ddr4-ct16g4dfra32a",
-      "description": "Crucial 16GB DDR4-3200 UDIMM CT16G4DFRA32A desktop DDR4 UDIMM memory (part CT16G4DFRA32A).",
+      "name": "Crucial Pro 16GB (1 x 16GB) DDR5-5600 CP16G56C46U5",
+      "slug": "crucial-crucial-pro-cp16g56c46u5",
+      "description": "Crucial Pro 16GB (1 x 16GB) DDR5-5600 CP16G56C46U5 desktop DDR5 UDIMM memory (part CP16G56C46U5).",
       "status": "active",
-      "is_popular": false
+      "is_popular": true
     },
     "images": [],
     "specifications": [
@@ -1286,6 +1328,11 @@
         "value": "Non-ECC"
       },
       {
+        "group": "Features",
+        "key": "expo",
+        "value": "AMD EXPO"
+      },
+      {
         "group": "Identity",
         "key": "form_factor",
         "value": "UDIMM"
@@ -1293,7 +1340,7 @@
       {
         "group": "Identity",
         "key": "generation",
-        "value": "DDR4"
+        "value": "DDR5"
       },
       {
         "group": "Identity",
@@ -1303,13 +1350,13 @@
       {
         "group": "Performance",
         "key": "memory_speed",
-        "value": "3200",
+        "value": "5600",
         "unit": "MT/s"
       },
       {
         "group": "Identity",
         "key": "memory_type",
-        "value": "DDR4"
+        "value": "DDR5"
       },
       {
         "group": "Capacity",
@@ -1325,12 +1372,12 @@
       {
         "group": "Identity",
         "key": "part_number",
-        "value": "CT16G4DFRA32A"
+        "value": "CP16G56C46U5"
       },
       {
         "group": "Identity",
         "key": "product_family",
-        "value": "Crucial DDR4"
+        "value": "Crucial Pro"
       },
       {
         "group": "Features",
@@ -1342,6 +1389,251 @@
         "key": "total_kit_capacity",
         "value": "16",
         "unit": "GB"
+      },
+      {
+        "group": "Features",
+        "key": "xmp",
+        "value": "XMP 3.0"
+      }
+    ],
+    "benchmarks": []
+  },
+  {
+    "category": "RAM",
+    "manufacturer": "TeamGroup",
+    "family": "Elite",
+    "series": "Elite DDR5",
+    "generation": "DDR5",
+    "source": {
+      "name": "TeamGroup official product specifications",
+      "url": "https://www.teamgroupinc.com/en/product-detail/memory/TEAMGROUP/elite-u-dimm-ddr5/elite-u-dimm-ddr5-TED532G6000C48DC01/",
+      "date": "2026-09-18",
+      "notes": "Specifications verified against official manufacturer product pages or datasheets. memory_speed is the manufacturer tested/rated data rate in MT/s (typically XMP/EXPO profile speed). voltage is the tested profile voltage when documented; SPD/JEDEC voltage is not stored separately."
+    },
+    "product": {
+      "name": "TeamGroup Elite 32GB (2 x 16GB) DDR5-6000 CL48 TED532G6000C48DC01",
+      "slug": "teamgroup-elite-ddr5-ted532g6000c48dc01",
+      "description": "TeamGroup Elite 32GB (2 x 16GB) DDR5-6000 CL48 TED532G6000C48DC01 desktop DDR5 UDIMM memory (part TED532G6000C48DC01).",
+      "status": "active",
+      "is_popular": false
+    },
+    "images": [],
+    "specifications": [
+      {
+        "group": "Performance",
+        "key": "cas_latency",
+        "value": "48"
+      },
+      {
+        "group": "Features",
+        "key": "ecc",
+        "value": "Non-ECC"
+      },
+      {
+        "group": "Features",
+        "key": "expo",
+        "value": "AMD EXPO"
+      },
+      {
+        "group": "Identity",
+        "key": "form_factor",
+        "value": "UDIMM"
+      },
+      {
+        "group": "Identity",
+        "key": "generation",
+        "value": "DDR5"
+      },
+      {
+        "group": "Performance",
+        "key": "jedec_speed",
+        "value": "4800",
+        "unit": "MT/s"
+      },
+      {
+        "group": "Identity",
+        "key": "market_segment",
+        "value": "desktop"
+      },
+      {
+        "group": "Performance",
+        "key": "memory_speed",
+        "value": "6000",
+        "unit": "MT/s"
+      },
+      {
+        "group": "Identity",
+        "key": "memory_type",
+        "value": "DDR5"
+      },
+      {
+        "group": "Capacity",
+        "key": "module_capacity",
+        "value": "16",
+        "unit": "GB"
+      },
+      {
+        "group": "Capacity",
+        "key": "module_count",
+        "value": "2"
+      },
+      {
+        "group": "Physical",
+        "key": "module_height",
+        "value": "32",
+        "unit": "mm"
+      },
+      {
+        "group": "Identity",
+        "key": "part_number",
+        "value": "TED532G6000C48DC01"
+      },
+      {
+        "group": "Identity",
+        "key": "product_family",
+        "value": "Elite DDR5"
+      },
+      {
+        "group": "Features",
+        "key": "registered",
+        "value": "Unbuffered"
+      },
+      {
+        "group": "Capacity",
+        "key": "total_kit_capacity",
+        "value": "32",
+        "unit": "GB"
+      },
+      {
+        "group": "Performance",
+        "key": "voltage",
+        "value": "1.1",
+        "unit": "V"
+      },
+      {
+        "group": "Features",
+        "key": "xmp",
+        "value": "XMP 3.0"
+      }
+    ],
+    "benchmarks": []
+  },
+  {
+    "category": "RAM",
+    "manufacturer": "TeamGroup",
+    "family": "Elite",
+    "series": "Elite DDR5",
+    "generation": "DDR5",
+    "source": {
+      "name": "TeamGroup official product specifications",
+      "url": "https://www.teamgroupinc.com/en/product-detail/memory/TEAMGROUP/elite-u-dimm-ddr5/elite-u-dimm-ddr5-TED516G6000C4801/",
+      "date": "2026-09-18",
+      "notes": "Specifications verified against official manufacturer product pages or datasheets. memory_speed is the manufacturer tested/rated data rate in MT/s (typically XMP/EXPO profile speed). voltage is the tested profile voltage when documented; SPD/JEDEC voltage is not stored separately."
+    },
+    "product": {
+      "name": "TeamGroup Elite 16GB (1 x 16GB) DDR5-6000 CL48 TED516G6000C4801",
+      "slug": "teamgroup-elite-ddr5-ted516g6000c4801",
+      "description": "TeamGroup Elite 16GB (1 x 16GB) DDR5-6000 CL48 TED516G6000C4801 desktop DDR5 UDIMM memory (part TED516G6000C4801).",
+      "status": "active",
+      "is_popular": false
+    },
+    "images": [],
+    "specifications": [
+      {
+        "group": "Performance",
+        "key": "cas_latency",
+        "value": "48"
+      },
+      {
+        "group": "Features",
+        "key": "ecc",
+        "value": "Non-ECC"
+      },
+      {
+        "group": "Features",
+        "key": "expo",
+        "value": "AMD EXPO"
+      },
+      {
+        "group": "Identity",
+        "key": "form_factor",
+        "value": "UDIMM"
+      },
+      {
+        "group": "Identity",
+        "key": "generation",
+        "value": "DDR5"
+      },
+      {
+        "group": "Performance",
+        "key": "jedec_speed",
+        "value": "4800",
+        "unit": "MT/s"
+      },
+      {
+        "group": "Identity",
+        "key": "market_segment",
+        "value": "desktop"
+      },
+      {
+        "group": "Performance",
+        "key": "memory_speed",
+        "value": "6000",
+        "unit": "MT/s"
+      },
+      {
+        "group": "Identity",
+        "key": "memory_type",
+        "value": "DDR5"
+      },
+      {
+        "group": "Capacity",
+        "key": "module_capacity",
+        "value": "16",
+        "unit": "GB"
+      },
+      {
+        "group": "Capacity",
+        "key": "module_count",
+        "value": "1"
+      },
+      {
+        "group": "Physical",
+        "key": "module_height",
+        "value": "32",
+        "unit": "mm"
+      },
+      {
+        "group": "Identity",
+        "key": "part_number",
+        "value": "TED516G6000C4801"
+      },
+      {
+        "group": "Identity",
+        "key": "product_family",
+        "value": "Elite DDR5"
+      },
+      {
+        "group": "Features",
+        "key": "registered",
+        "value": "Unbuffered"
+      },
+      {
+        "group": "Capacity",
+        "key": "total_kit_capacity",
+        "value": "16",
+        "unit": "GB"
+      },
+      {
+        "group": "Performance",
+        "key": "voltage",
+        "value": "1.1",
+        "unit": "V"
+      },
+      {
+        "group": "Features",
+        "key": "xmp",
+        "value": "XMP 3.0"
       }
     ],
     "benchmarks": []

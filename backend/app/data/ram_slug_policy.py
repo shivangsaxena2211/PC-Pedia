@@ -7,6 +7,7 @@ import re
 # Legacy seed/demo slugs mapped to canonical catalog slugs for the same product.
 LEGACY_RAM_SLUG_MAP: dict[str, str] = {
     "fury-beast-ddr4-32gb": "kingston-fury-beast-kf432c16bb1k2-32",
+    "vengeance-ddr5-6000": "corsair-vengeance-cmk32gx5m2b6000c30",
 }
 
 

@@ -6,9 +6,14 @@ Tuple format:
 
 Convention:
 - memory_speed stores the manufacturer tested/rated data rate in MT/s
-  (typically the XMP profile speed for gaming kits).
+  (typically the XMP/EXPO profile speed for gaming kits).
 - jedec_speed stores the SPD/JEDEC default data rate in MT/s when documented.
+- voltage stores the tested/XMP/EXPO operating voltage when that is the
+  marketed rating; SPD/JEDEC voltage is not stored as a separate field.
+- xmp / expo capture profile support when officially documented.
 - Do not treat MT/s as physical clock frequency (half the effective data rate).
+- Do not treat DDR5 on-die ECC as traditional system ECC (use Non-ECC for
+  consumer UDIMM unless the manufacturer documents system ECC).
 """
 
 RAM_SPECS = [
@@ -33,6 +38,7 @@ RAM_SPECS = [
     ("Features", "ecc", "ECC", "string", None, True, True, False, 30),
     ("Features", "registered", "Registered", "string", None, False, True, False, 31),
     ("Features", "xmp", "XMP", "string", None, True, True, False, 32),
+    ("Features", "expo", "EXPO", "string", None, True, True, False, 33),
     # Physical
     ("Physical", "pin_count", "Pin Count", "integer", None, False, True, False, 40),
     ("Physical", "module_height", "Module Height", "decimal", "mm", False, True, False, 41),

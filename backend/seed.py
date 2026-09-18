@@ -33,7 +33,7 @@ CATEGORIES = [
 
 MANUFACTURERS = [
     "Intel", "AMD", "NVIDIA", "ASUS", "MSI", "Gigabyte", "ASRock", "Biostar",
-    "Corsair", "G.Skill", "Kingston", "Crucial", "Samsung", "Western Digital",
+    "Corsair", "G.Skill", "Kingston", "Crucial", "TeamGroup", "Samsung", "Western Digital",
     "Seagate", "SK hynix", "Cooler Master", "Noctua", "be quiet!", "NZXT",
     "Arctic", "Lian Li", "Thermaltake", "EVGA", "Seasonic", "Super Flower",
 ]
@@ -83,8 +83,13 @@ OTHER_TAXONOMY = [
     ("ram", "Corsair", "Vengeance", "Vengeance", ["DDR5", "DDR4", "DDR3"]),
     ("ram", "G.Skill", "Ripjaws", "Ripjaws V", ["DDR4"]),
     ("ram", "G.Skill", "Trident", "Trident Z", ["DDR5", "DDR4"]),
+    ("ram", "G.Skill", "Trident", "Trident Z5 Neo", ["DDR5"]),
+    ("ram", "G.Skill", "Aegis", "Aegis 5", ["DDR5"]),
     ("ram", "Kingston", "Fury", "Fury Beast", ["DDR5", "DDR4"]),
     ("ram", "Crucial", "Crucial", "Crucial DDR4", ["DDR4", "DDR5"]),
+    ("ram", "Crucial", "Crucial", "Crucial DDR5", ["DDR5"]),
+    ("ram", "Crucial", "Crucial", "Crucial Pro", ["DDR5"]),
+    ("ram", "TeamGroup", "Elite", "Elite DDR5", ["DDR5"]),
     ("ssd", "Samsung", "990 Series", "990 PRO", ["NVMe", "PCIe Gen 4"]),
     ("ssd", "Western Digital", "Black", "SN850X", ["NVMe", "PCIe Gen 4"]),
     ("ssd", "Samsung", "870 EVO", "870 EVO", ["SATA", "2.5-inch"]),

@@ -21,7 +21,11 @@ from app.catalog.catalog_validation import validate_catalog_records
 from app.data.ram_slug_policy import canonical_ram_slug
 from data.catalog.ram.verified_ddr4_desktop_udimm import (
     DDR4_DESKTOP_UDIMM,
-    VERIFIED_DATE,
+    VERIFIED_DATE as DDR4_VERIFIED_DATE,
+)
+from data.catalog.ram.verified_ddr5_desktop_udimm import (
+    DDR5_DESKTOP_UDIMM,
+    VERIFIED_DATE as DDR5_VERIFIED_DATE,
 )
 
 CATALOG_ROOT = BACKEND_ROOT / "data" / "catalog" / "ram"
@@ -44,6 +48,7 @@ SPEC_GROUPS = {
     "ecc": "Features",
     "registered": "Features",
     "xmp": "Features",
+    "expo": "Features",
     "pin_count": "Physical",
     "module_height": "Physical",
 }
@@ -98,14 +103,16 @@ def build_ram_record(entry: dict, *, verified_date: str) -> dict:
             "notes": (
                 "Specifications verified against official manufacturer product "
                 "pages or datasheets. memory_speed is the manufacturer tested/"
-                "rated data rate in MT/s (typically XMP profile speed)."
+                "rated data rate in MT/s (typically XMP/EXPO profile speed). "
+                "voltage is the tested profile voltage when documented; "
+                "SPD/JEDEC voltage is not stored separately."
             ),
         },
         "product": {
             "name": entry["name"],
             "slug": slug,
             "description": (
-                f"{entry['name']} desktop DDR4 UDIMM memory "
+                f"{entry['name']} desktop {generation} UDIMM memory "
                 f"(part {part_number})."
             ),
             "status": "active",
@@ -125,8 +132,15 @@ def build_ram_record(entry: dict, *, verified_date: str) -> dict:
 
 def build_ddr4_desktop_udimm_batch() -> list[dict]:
     return [
-        build_ram_record(entry, verified_date=VERIFIED_DATE)
+        build_ram_record(entry, verified_date=DDR4_VERIFIED_DATE)
         for entry in DDR4_DESKTOP_UDIMM
+    ]
+
+
+def build_ddr5_desktop_udimm_batch() -> list[dict]:
+    return [
+        build_ram_record(entry, verified_date=DDR5_VERIFIED_DATE)
+        for entry in DDR5_DESKTOP_UDIMM
     ]
 
 
@@ -199,6 +213,10 @@ def build_all() -> None:
     write_catalog(
         CATALOG_ROOT / "ddr4" / "desktop-udimm" / "desktop.json",
         build_ddr4_desktop_udimm_batch(),
+    )
+    write_catalog(
+        CATALOG_ROOT / "ddr5" / "desktop-udimm" / "desktop.json",
+        build_ddr5_desktop_udimm_batch(),
     )
 
 
