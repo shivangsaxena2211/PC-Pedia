@@ -79,9 +79,12 @@ GPU_TAXONOMY = [
 ]
 
 OTHER_TAXONOMY = [
+    ("ram", "Corsair", "Vengeance", "Vengeance LPX", ["DDR5", "DDR4", "DDR3"]),
     ("ram", "Corsair", "Vengeance", "Vengeance", ["DDR5", "DDR4", "DDR3"]),
+    ("ram", "G.Skill", "Ripjaws", "Ripjaws V", ["DDR4"]),
     ("ram", "G.Skill", "Trident", "Trident Z", ["DDR5", "DDR4"]),
     ("ram", "Kingston", "Fury", "Fury Beast", ["DDR5", "DDR4"]),
+    ("ram", "Crucial", "Crucial", "Crucial DDR4", ["DDR4", "DDR5"]),
     ("ssd", "Samsung", "990 Series", "990 PRO", ["NVMe", "PCIe Gen 4"]),
     ("ssd", "Western Digital", "Black", "SN850X", ["NVMe", "PCIe Gen 4"]),
     ("ssd", "Samsung", "870 EVO", "870 EVO", ["SATA", "2.5-inch"]),

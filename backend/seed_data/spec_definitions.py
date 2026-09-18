@@ -2,16 +2,7 @@
 
 from seed_data.cpu_spec_definitions import CPU_SPECS
 from seed_data.gpu_spec_definitions import GPU_SPECS
-
-RAM_SPECS = [
-    ("Memory", "DDR Generation", "DDR Generation", "string", None, True, True, True, 1),
-    ("Memory", "Capacity", "Capacity", "string", "GB", True, True, True, 2),
-    ("Memory", "Module Configuration", "Module Configuration", "string", None, False, True, False, 3),
-    ("Performance", "Frequency", "Frequency", "integer", "MHz", True, True, False, 10),
-    ("Performance", "CAS Latency", "CAS Latency", "integer", None, True, True, False, 11),
-    ("Performance", "Voltage", "Voltage", "decimal", "V", False, True, False, 12),
-    ("Physical", "Form Factor", "Form Factor", "string", None, True, True, False, 20),
-]
+from seed_data.ram_spec_definitions import RAM_SPECS
 
 SSD_SPECS = [
     ("General", "Interface", "Interface", "string", None, True, True, True, 1),

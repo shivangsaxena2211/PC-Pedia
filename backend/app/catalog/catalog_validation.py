@@ -12,6 +12,13 @@ from app.catalog.gpu_slug import (
     validate_gpu_market_segment,
     validate_gpu_slug,
 )
+from app.catalog.ram_slug import (
+    is_official_ram_source_url,
+    validate_ram_form_factor,
+    validate_ram_manufacturer,
+    validate_ram_market_segment,
+    validate_ram_slug,
+)
 from app.data.taxonomy_rules import validate_family_for_manufacturer
 from app.utils.helpers import slugify
 
@@ -39,6 +46,13 @@ GPU_ALLOWED_SPEC_KEYS = {
     "height", "power_connectors",
 }
 
+RAM_ALLOWED_SPEC_KEYS = {
+    "memory_type", "form_factor", "market_segment", "product_family", "generation",
+    "part_number", "module_capacity", "total_kit_capacity", "module_count",
+    "memory_speed", "jedec_speed", "cas_latency", "timings", "voltage",
+    "ecc", "registered", "xmp", "pin_count", "module_height",
+}
+
 # Backward-compatible alias used by the CPU catalog builder.
 ALLOWED_SPEC_KEYS = CPU_ALLOWED_SPEC_KEYS
 
@@ -54,6 +68,15 @@ GPU_DECIMAL_SPEC_KEYS = {
     "memory_bandwidth", "length", "height",
 }
 
+RAM_INTEGER_SPEC_KEYS = {
+    "module_capacity", "total_kit_capacity", "module_count", "memory_speed",
+    "jedec_speed", "cas_latency", "pin_count",
+}
+
+RAM_DECIMAL_SPEC_KEYS = {
+    "voltage", "module_height",
+}
+
 INVALID_SOURCE_PATTERNS = (
     re.compile(r"^https?://example\.com", re.I),
     re.compile(r"^https?://\.\.\.", re.I),
@@ -67,6 +90,8 @@ INVALID_SOURCE_PATTERNS = (
 def get_allowed_spec_keys(category_slug: str) -> set[str]:
     if category_slug == "gpu":
         return GPU_ALLOWED_SPEC_KEYS
+    if category_slug == "ram":
+        return RAM_ALLOWED_SPEC_KEYS
     return CPU_ALLOWED_SPEC_KEYS
 
 
@@ -91,16 +116,22 @@ def _spec_value_from_record(record: dict, key: str) -> str | None:
 
 
 def _validate_numeric_spec_value(key: str, value: str, category_slug: str) -> str | None:
-    if category_slug != "gpu":
+    if category_slug == "gpu":
+        integer_keys = GPU_INTEGER_SPEC_KEYS
+        decimal_keys = GPU_DECIMAL_SPEC_KEYS
+    elif category_slug == "ram":
+        integer_keys = RAM_INTEGER_SPEC_KEYS
+        decimal_keys = RAM_DECIMAL_SPEC_KEYS
+    else:
         return None
-    if key in GPU_INTEGER_SPEC_KEYS:
+    if key in integer_keys:
         try:
             parsed = int(str(value).strip())
         except (TypeError, ValueError):
             return f"Specification '{key}' must be an integer"
         if parsed < 0:
             return f"Specification '{key}' must be non-negative"
-    elif key in GPU_DECIMAL_SPEC_KEYS:
+    elif key in decimal_keys:
         try:
             parsed = float(str(value).strip())
         except (TypeError, ValueError):
@@ -165,6 +196,31 @@ def validate_catalog_record(record: dict, *, index: int | None = None) -> list[s
         )
         if segment_error:
             errors.append(f"{prefix}{segment_error}")
+    elif category == "ram":
+        if manufacturer:
+            mfr_error = validate_ram_manufacturer(manufacturer)
+            if mfr_error:
+                errors.append(f"{prefix}{mfr_error}")
+            if slug:
+                slug_error = validate_ram_slug(slug, manufacturer)
+                if slug_error:
+                    errors.append(f"{prefix}{slug_error}")
+            if manufacturer and source.get("url") and is_valid_source_url(source.get("url")):
+                if not is_official_ram_source_url(manufacturer, source.get("url")):
+                    errors.append(
+                        f"{prefix}RAM source URL must be an official manufacturer source "
+                        f"for '{manufacturer}'"
+                    )
+        segment_error = validate_ram_market_segment(
+            _spec_value_from_record(record, "market_segment")
+        )
+        if segment_error:
+            errors.append(f"{prefix}{segment_error}")
+        form_error = validate_ram_form_factor(
+            _spec_value_from_record(record, "form_factor")
+        )
+        if form_error:
+            errors.append(f"{prefix}{form_error}")
     elif manufacturer and family:
         family_error = validate_family_for_manufacturer(
             slugify(manufacturer), category, family

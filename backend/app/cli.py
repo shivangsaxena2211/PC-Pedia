@@ -11,6 +11,7 @@ from app.services.import_service import import_hardware_from_path
 from app.services.product_reconciliation_service import (
     reconcile_legacy_cpu_slugs,
     reconcile_legacy_gpu_slugs,
+    reconcile_legacy_ram_slugs,
 )
 
 
@@ -69,6 +70,18 @@ def cmd_reconcile_gpus(args) -> int:
     app = create_app()
     with app.app_context():
         result = reconcile_legacy_gpu_slugs(dry_run=args.dry_run)
+        _print_reconciliation(result, dry_run=args.dry_run)
+        for error in result.errors:
+            print(f"  ERROR: {error}", file=sys.stderr)
+        if args.dry_run:
+            db.session.rollback()
+        return 1 if result.errors else 0
+
+
+def cmd_reconcile_rams(args) -> int:
+    app = create_app()
+    with app.app_context():
+        result = reconcile_legacy_ram_slugs(dry_run=args.dry_run)
         _print_reconciliation(result, dry_run=args.dry_run)
         for error in result.errors:
             print(f"  ERROR: {error}", file=sys.stderr)
@@ -152,6 +165,17 @@ def build_parser() -> argparse.ArgumentParser:
         help="Preview reconciliation without modifying the database",
     )
     reconcile_gpu_parser.set_defaults(func=cmd_reconcile_gpus)
+
+    reconcile_ram_parser = subparsers.add_parser(
+        "reconcile-rams",
+        help="Merge legacy seed RAM slugs into canonical catalog slugs",
+    )
+    reconcile_ram_parser.add_argument(
+        "--dry-run",
+        action="store_true",
+        help="Preview reconciliation without modifying the database",
+    )
+    reconcile_ram_parser.set_defaults(func=cmd_reconcile_rams)
 
     return parser
 

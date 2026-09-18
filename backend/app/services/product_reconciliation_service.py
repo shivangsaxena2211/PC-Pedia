@@ -2,11 +2,13 @@
 
 from __future__ import annotations
 
+import re
 from dataclasses import dataclass, field
 
 from app import db
 from app.data.cpu_slug_policy import LEGACY_CPU_SLUG_MAP
 from app.data.gpu_slug_policy import LEGACY_GPU_SLUG_MAP
+from app.data.ram_slug_policy import LEGACY_RAM_SLUG_MAP
 from app.models import Benchmark, Product, ProductImage, ProductSource, Specification
 
 
@@ -20,11 +22,22 @@ class ReconciliationResult:
 
 
 def _same_identity(demo: Product, canonical: Product) -> bool:
-    return (
-        demo.name.strip().lower() == canonical.name.strip().lower()
-        and demo.manufacturer_id == canonical.manufacturer_id
-        and demo.category_id == canonical.category_id
-    )
+    if (
+        demo.manufacturer_id != canonical.manufacturer_id
+        or demo.category_id != canonical.category_id
+    ):
+        return False
+    demo_name = demo.name.strip().lower()
+    canonical_name = canonical.name.strip().lower()
+    if demo_name == canonical_name:
+        return True
+    # Explicit legacy maps may pair a vague demo name with a canonical SKU name.
+    # Require meaningful token overlap so unrelated products cannot merge.
+    demo_tokens = {token for token in re.findall(r"[a-z0-9]+", demo_name) if len(token) > 1}
+    canon_tokens = {
+        token for token in re.findall(r"[a-z0-9]+", canonical_name) if len(token) > 1
+    }
+    return len(demo_tokens & canon_tokens) >= 3
 
 
 def _reassign_child_rows(model, demo_id: int, canonical_id: int):
@@ -123,3 +136,8 @@ def reconcile_legacy_cpu_slugs(dry_run: bool = False) -> ReconciliationResult:
 def reconcile_legacy_gpu_slugs(dry_run: bool = False) -> ReconciliationResult:
     """Merge or rename legacy demo GPU slugs into canonical catalog slugs."""
     return _reconcile_legacy_slug_map(LEGACY_GPU_SLUG_MAP, dry_run=dry_run)
+
+
+def reconcile_legacy_ram_slugs(dry_run: bool = False) -> ReconciliationResult:
+    """Merge or rename legacy demo RAM slugs into canonical catalog slugs."""
+    return _reconcile_legacy_slug_map(LEGACY_RAM_SLUG_MAP, dry_run=dry_run)
