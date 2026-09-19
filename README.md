@@ -1,223 +1,746 @@
-# PC Pedia — PC Hardware Database
+# 🖥️ PC PEDIA
 
-A scalable searchable encyclopedia for computer hardware. Built with React (Vite + TypeScript) and Flask (Python) REST API with SQLite (development) and SQLAlchemy.
+### The Hardware Encyclopedia for PC Builders, Enthusiasts & Developers
 
-## Architecture
+> **PC PEDIA** is a data-driven PC hardware encyclopedia designed to make computer hardware easier to explore, compare, understand, and build around.
 
+<p align="center">
+  <strong>CPU • GPU • RAM • Motherboards • Storage • Power • Cooling • Cases</strong>
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Status-Active%20Development-8B5CF6?style=for-the-badge" alt="Status">
+  <img src="https://img.shields.io/badge/Frontend-React%20%2B%20Vite-61DAFB?style=for-the-badge&logo=react&logoColor=black" alt="Frontend">
+  <img src="https://img.shields.io/badge/Backend-Flask-000000?style=for-the-badge&logo=flask" alt="Backend">
+  <img src="https://img.shields.io/badge/Database-SQLite-003B57?style=for-the-badge&logo=sqlite" alt="Database">
+</p>
+
+---
+
+## ✨ What is PC PEDIA?
+
+PC PEDIA is being built as a **structured encyclopedia and catalog for computer hardware**.
+
+Instead of relying on hardcoded product pages or scattered specification lists, PC PEDIA uses a structured catalog architecture:
+
+```text
+Category
+   ↓
+Manufacturer
+   ↓
+Family
+   ↓
+Series
+   ↓
+Generation
+   ↓
+Product
+   ↓
+Specifications + Provenance
 ```
-                    PC PEDIA
-                       │
-                React + Vite
-                       │
-                  REST / JSON
-                       │
-                     Flask
-                       │
-                  SQLAlchemy
-                       │
-                   SQLite
-                       │
-        ┌──────────────┴──────────────┐
-        │                             │
-   Hardware Taxonomy            Specifications
-        │                             │
- Category → Manufacturer       Flexible Definitions
- → Family → Series             + Product Values
- → Generation → Product
+
+The goal is simple:
+
+> **Find a component → understand its specifications → compare it with alternatives → build better PCs.**
+
+---
+
+## 🚀 Current Catalog
+
+The project is being expanded in controlled, verified phases rather than importing unverified hardware data in bulk.
+
+### 📊 Current verified catalog
+
+| Hardware | Verified Products | Coverage |
+|---|---:|---|
+| 🧠 CPU | **219 catalog records** | Multiple Intel & AMD generations |
+| 🎮 GPU | **67** | NVIDIA + AMD + Intel Arc |
+| 🧩 RAM | **26** | DDR4 + DDR5 Desktop UDIMM |
+| 🖥️ Motherboard | In development | — |
+| 💾 SSD | In development | — |
+| ⚡ PSU | In development | — |
+| ❄️ CPU Cooler | In development | — |
+| 💧 AIO | In development | — |
+| 🌪️ Fan | In development | — |
+| 🏠 Case | In development | — |
+
+> **Note:** The CPU catalog contains 219 catalog records; the production database may contain an additional legacy/demo record depending on the current development state.
+
+### 🎮 GPU coverage
+
+**NVIDIA — 43 verified**
+
+- GTX 10 Series — 9
+- GTX 16 Series — 7
+- RTX 20 Series — 8
+- RTX 30 Series — 10
+- RTX 40 Series — 9
+
+**AMD — 19 verified**
+
+- RX 6000 Series — 12
+- RX 7000 Series — 7
+
+**Intel — 5 verified**
+
+- Arc A-Series Desktop — 5
+
+### 🧩 RAM coverage
+
+**26 verified desktop UDIMMs**
+
+- DDR4 — 12
+- DDR5 — 14
+
+Current verified RAM manufacturers include:
+
+- Corsair
+- Kingston
+- G.Skill
+- Crucial
+- TeamGroup
+
+---
+
+# 🎯 Core Principles
+
+PC PEDIA follows a few rules throughout the catalog.
+
+### 1. 🔎 Verified data over fabricated data
+
+Hardware specifications should come from manufacturer documentation wherever possible.
+
+The project deliberately avoids filling missing values with guesses.
+
+```text
+Official source
+      ↓
+Verified specification
+      ↓
+Structured catalog
+      ↓
+Database
+      ↓
+API
+      ↓
+Frontend
 ```
 
-### Hardware Taxonomy
+### 2. 🧬 Structured hardware identity
 
+Products are represented using canonical identities rather than arbitrary retailer listings.
+
+This allows the same hardware to remain identifiable across:
+
+- Search
+- Product pages
+- Comparisons
+- Filters
+- Database records
+- Catalog imports
+
+### 3. 📚 Provenance matters
+
+Catalog records contain source information so specifications can be traced back to their origin.
+
+The project uses:
+
+- `DataSource`
+- `ProductSource`
+- `SpecificationSource`
+
+### 4. 🔁 Idempotent imports
+
+Running a catalog importer repeatedly should not create duplicate products.
+
+```text
+First import
+    ↓
+Create verified products
+
+Second import
+    ↓
+0 unexpected duplicates
 ```
-Category → Manufacturer → Family → Series → Generation → Product → Specifications
+
+### 5. 🧪 Test before expansion
+
+Each major catalog phase is validated before moving to the next one.
+
+The project uses:
+
+- Focused catalog tests
+- Full backend regression tests
+- Catalog validation
+- Import/dry-run validation
+- API verification
+- Frontend production builds
+
+---
+
+# 🏗️ Architecture
+
+```text
+                 ┌──────────────────────┐
+                 │      React + Vite    │
+                 │      Frontend        │
+                 └──────────┬───────────┘
+                            │
+                         Axios
+                            │
+                            ▼
+                 ┌──────────────────────┐
+                 │      Flask API       │
+                 │      Backend         │
+                 └──────────┬───────────┘
+                            │
+                       SQLAlchemy
+                            │
+                            ▼
+                 ┌──────────────────────┐
+                 │       SQLite         │
+                 │      Database        │
+                 └──────────────────────┘
+
+             Catalog Data / Provenance
+                       │
+                       ▼
+             Validation + Importers
+                       │
+                       ▼
+                    Database
 ```
 
-Not every level is required for every product. For example, an SSD may skip Generation; a PSU may use Family → Series only.
+---
 
-## Project Structure
+# 🛠️ Technology Stack
 
-```
-pc-hardware-database/
-├── frontend/          # React + Vite + TypeScript + Tailwind CSS
-├── backend/           # Flask REST API + SQLAlchemy
+## Frontend
+
+- **React**
+- **Vite**
+- **TypeScript**
+- **React Router**
+- **Tailwind CSS**
+- **Axios**
+
+## Backend
+
+- **Python**
+- **Flask**
+- **Flask-SQLAlchemy**
+- **Flask-Migrate**
+- **SQLAlchemy**
+
+## Database
+
+- **SQLite**
+
+## Development & Data Pipeline
+
+- Python catalog builders
+- JSON catalog files
+- Structured specification definitions
+- Catalog validation
+- Provenance tracking
+- Automated test suites
+- Git-based version control
+
+---
+
+# 📁 Project Structure
+
+```text
+PC-Pedia/
+│
+├── backend/
 │   ├── app/
-│   │   ├── models/    # Category, Manufacturer, Family, Series, Generation, Product, etc.
-│   │   ├── routes/    # REST API endpoints
-│   │   ├── services/  # product_service, taxonomy_service, import_service, admin_service
-│   │   ├── schemas/
-│   │   └── utils/     # validation, responses, helpers
-│   ├── seed_data/     # Taxonomy and spec definition seed modules
-│   ├── migrations/    # Flask-Migrate / Alembic
-│   ├── tests/         # pytest API tests
-│   └── seed.py        # Database seeder
+│   │   ├── catalog/
+│   │   ├── data/
+│   │   ├── services/
+│   │   └── ...
+│   │
+│   ├── data/
+│   │   └── catalog/
+│   │       ├── cpu/
+│   │       ├── gpu/
+│   │       └── ram/
+│   │
+│   ├── scripts/
+│   │   ├── build_cpu_catalog.py
+│   │   ├── build_gpu_catalog.py
+│   │   └── build_ram_catalog.py
+│   │
+│   ├── seed_data/
+│   ├── tests/
+│   └── ...
+│
+├── frontend/
+│   ├── public/
+│   │   └── images/
+│   │       └── hardware/
+│   │           ├── cpu.svg
+│   │           ├── gpu.svg
+│   │           ├── ram.svg
+│   │           ├── motherboard.svg
+│   │           ├── ssd.svg
+│   │           ├── psu.svg
+│   │           ├── cooler.svg
+│   │           ├── aio.svg
+│   │           ├── fan.svg
+│   │           └── case.svg
+│   │
+│   └── ...
+│
 └── README.md
 ```
 
-## Prerequisites
+---
 
-- Node.js 18+ and npm
-- Python 3.10+
-- SQLite 3 (included with Python; no separate database server required)
+# 🗂️ Catalog Pipeline
 
-## Backend Setup
+Every hardware category follows a controlled pipeline.
 
-```bash
-cd backend
-pip install -r requirements.txt
-cp .env.example .env   # optional — SQLite default works out of the box
+```text
+Manufacturer Documentation
+            │
+            ▼
+     Catalog Definition
+            │
+            ▼
+       Validation
+            │
+            ▼
+        Dry Run
+            │
+            ▼
+       Database Import
+            │
+            ▼
+      Reconciliation
+            │
+            ▼
+       API Validation
+            │
+            ▼
+      Frontend Validation
+            │
+            ▼
+          Tests
 ```
 
-### Database Migrations
+This approach makes it possible to expand PC PEDIA without turning the database into an uncontrolled collection of scraped or duplicated products.
 
-```bash
-cd backend
-set FLASK_APP=run.py        # Windows
-export FLASK_APP=run.py     # macOS/Linux
+---
 
-python -m flask db upgrade  # apply migrations
-python seed.py              # seed taxonomy + demo products
-python seed.py --reset      # drop and reseed (dev only)
+# 🔐 Data Provenance
+
+PC PEDIA treats source provenance as part of the hardware data model.
+
+```text
+Product
+ ├── ProductSource
+ │      ├── Manufacturer
+ │      ├── URL
+ │      └── Source metadata
+ │
+ └── Specifications
+        └── SpecificationSource
 ```
 
-### Run Flask
+Official manufacturer sources used throughout the catalog include domains such as:
 
-```bash
-cd backend
-python run.py
+- `intel.com`
+- `amd.com`
+- `nvidia.com`
+- `corsair.com`
+- `kingston.com`
+- `gskill.com`
+- `crucial.com`
+- `teamgroup.com`
+
+The exact source is stored with the corresponding catalog/product data.
+
+---
+
+# 🎮 GPU Catalog
+
+The GPU catalog is currently one of the most mature sections of PC PEDIA.
+
+```text
+GPU
+├── NVIDIA
+│   └── GeForce
+│       ├── GTX 10
+│       ├── GTX 16
+│       ├── RTX 20
+│       ├── RTX 30
+│       └── RTX 40
+│
+├── AMD
+│   └── Radeon RX
+│       ├── RX 6000
+│       └── RX 7000
+│
+└── Intel
+    └── Arc
+        └── A-Series
 ```
 
-API: `http://localhost:5000`
+### GPU verification status
 
-The frontend requires the Flask backend to be running. If the UI shows a network error, verify that `python run.py` is active in a separate terminal.
+**67 verified products**
 
-## Frontend Setup
+- 43 NVIDIA
+- 19 AMD
+- 5 Intel
+
+The catalog has also undergone a cross-vendor audit covering:
+
+- Catalog ↔ database parity
+- Taxonomy
+- Canonical slugs
+- Variant representation
+- Provenance
+- Specifications
+- API filters
+- Search
+- Import idempotency
+- Legacy/demo reconciliation
+
+---
+
+# 🧩 RAM Catalog
+
+The RAM catalog currently focuses on desktop UDIMM memory.
+
+```text
+RAM
+└── Desktop Memory
+    └── UDIMM
+        ├── DDR4
+        └── DDR5
+```
+
+Current verified catalog:
+
+```text
+DDR4 → 12
+DDR5 → 14
+──────────
+Total → 26
+```
+
+The RAM model distinguishes concepts such as:
+
+- Module capacity
+- Total kit capacity
+- Module count
+- Rated data rate
+- JEDEC speed
+- CAS latency
+- Timings
+- Voltage
+- XMP
+- EXPO
+- Form factor
+- ECC/registered/buffered characteristics
+
+The catalog intentionally leaves fields empty when official manufacturer documentation does not provide reliable information.
+
+---
+
+# 🧠 CPU Catalog
+
+The CPU catalog follows the same verification-first approach.
+
+It includes multiple Intel and AMD generations and uses structured specifications rather than hardcoded product pages.
+
+The CPU pipeline includes:
+
+- Canonical CPU slugs
+- Manufacturer taxonomy
+- Generation classification
+- Specification definitions
+- Official-source provenance
+- Catalog validation
+- Import idempotency
+- Automated regression tests
+
+---
+
+# 🔍 Search & Discovery
+
+PC PEDIA is designed around hardware discovery.
+
+Users should be able to search by:
+
+```text
+Product name
+Manufacturer
+Family
+Series
+Generation
+Part number
+Specification
+```
+
+Example searches:
+
+```text
+RTX 4090
+RX 7900 XTX
+Arc A770
+CMK32GX5M2B6000C30
+KF556C40BBK2-32
+```
+
+Part numbers are particularly important for RAM because visually similar products can have completely different specifications.
+
+---
+
+# ⚖️ Hardware Comparison
+
+PC PEDIA supports structured hardware comparison.
+
+Instead of comparing arbitrary text descriptions, products can be compared through their structured specification data.
+
+```text
+┌──────────────────┬─────────────────┬─────────────────┐
+│ Specification    │ Product A       │ Product B       │
+├──────────────────┼─────────────────┼─────────────────┤
+│ Manufacturer     │ ...             │ ...             │
+│ Generation       │ ...             │ ...             │
+│ Capacity         │ ...             │ ...             │
+│ Speed            │ ...             │ ...             │
+│ Architecture     │ ...             │ ...             │
+│ Power            │ ...             │ ...             │
+└──────────────────┴─────────────────┴─────────────────┘
+```
+
+Missing official specifications are kept missing rather than replaced with guesses.
+
+---
+
+# 🖼️ Hardware Visual System
+
+PC PEDIA uses category-specific graphical fallbacks for hardware that does not have a verified product image.
+
+```text
+CPU          → cpu.svg
+GPU          → gpu.svg
+RAM          → ram.svg
+Motherboard  → motherboard.svg
+SSD          → ssd.svg
+PSU          → psu.svg
+Cooler       → cooler.svg
+AIO          → aio.svg
+Fan          → fan.svg
+Case         → case.svg
+```
+
+This provides a consistent visual identity without relying on random scraped images.
+
+---
+
+# 🧪 Quality & Testing
+
+PC PEDIA uses automated testing as part of catalog expansion.
+
+### Catalog
+
+- Schema validation
+- Required fields
+- Canonical slugs
+- Duplicate detection
+- Specification definitions
+- Provenance
+
+### Database
+
+- Product creation
+- Reconciliation
+- Import idempotency
+- Taxonomy
+- Product relationships
+
+### API
+
+- Listing
+- Search
+- Filtering
+- Pagination
+- Product details
+- Comparison
+
+### Frontend
+
+- Production builds
+- Hardware rendering
+- Catalog integration
+
+---
+
+# 🚦 Development Philosophy
+
+PC PEDIA is intentionally being developed in **phases**.
+
+A typical phase looks like:
+
+```text
+Research
+   ↓
+Official source verification
+   ↓
+Catalog construction
+   ↓
+Validation
+   ↓
+Import
+   ↓
+Reconciliation
+   ↓
+Testing
+   ↓
+Audit
+   ↓
+Next phase
+```
+
+This prevents rapid catalog expansion from compromising data quality.
+
+---
+
+# 🗺️ Roadmap
+
+### ✅ Completed / Active
+
+- [x] Core hardware catalog architecture
+- [x] CPU catalog infrastructure
+- [x] NVIDIA GPU catalog
+- [x] AMD GPU catalog
+- [x] Intel Arc GPU catalog
+- [x] GPU cross-vendor audit
+- [x] RAM catalog infrastructure
+- [x] DDR4 desktop UDIMM catalog
+- [x] DDR5 desktop UDIMM catalog
+
+### 🔨 In Development
+
+- [ ] RAM cross-generation audit
+- [ ] Motherboard catalog
+- [ ] SSD catalog
+- [ ] PSU catalog
+- [ ] CPU cooler catalog
+- [ ] AIO catalog
+- [ ] Fan catalog
+- [ ] PC case catalog
+
+### 🔮 Future
+
+- [ ] Advanced PC Builder
+- [ ] Compatibility analysis
+- [ ] Build recommendations
+- [ ] Performance-oriented comparisons
+- [ ] More hardware generations
+- [ ] More form factors
+- [ ] Expanded hardware provenance
+- [ ] Richer product imagery
+
+---
+
+# 💻 Local Development
+
+## Clone
+
+```bash
+git clone https://github.com/shivangsaxena2211/PC-Pedia.git
+cd PC-Pedia
+```
+
+## Frontend
 
 ```bash
 cd frontend
 npm install
-cp .env.example .env
 npm run dev
 ```
 
-Frontend: `http://localhost:5173`
+For the backend, install the project's Python dependencies and start Flask using the commands/configuration defined by the current repository.
 
-### Development (both servers)
+---
 
-Run these in **two separate terminals**:
+# 🤝 Contributing
 
-```bash
-# Terminal 1 — API
-cd backend
-python run.py
+Contributions are welcome around:
 
-# Terminal 2 — UI
-cd frontend
-npm run dev
+- Hardware data verification
+- Catalog tooling
+- API improvements
+- Frontend UX
+- Testing
+- Documentation
+- Hardware taxonomy
+
+For new catalog data, follow the core rule:
+
+> **If the specification cannot be verified, don't invent it.**
+
+When adding hardware, provide:
+
+1. Official manufacturer source
+2. Correct manufacturer identity
+3. Correct product/part number
+4. Canonical slug
+5. Verified specifications
+6. Appropriate provenance
+7. Tests where applicable
+
+---
+
+# 📜 Data Philosophy
+
+PC PEDIA is not intended to be a giant list of numbers.
+
+It is intended to become a **structured knowledge base for PC hardware**.
+
+```text
+Accuracy
+   +
+Structure
+   +
+Provenance
+   +
+Searchability
+   +
+Comparability
+   =
+PC PEDIA
 ```
 
-The frontend `.env` uses `VITE_API_URL=/api` so Vite proxies API calls to `http://localhost:5000`.
+When a manufacturer does not publish a specification clearly, PC PEDIA prefers:
 
-## API Documentation
+> **Unknown**
 
-### Response Format
+over:
 
-List endpoints return:
-```json
-{ "data": [...] }
-```
+> **Made up**
 
-Paginated endpoints return:
-```json
-{
-  "data": [...],
-  "pagination": { "page": 1, "limit": 24, "total": 100, "pages": 5 }
-}
-```
+---
 
-### Endpoints
+# 👨‍💻 Project
 
-| Method | Endpoint | Description |
-|--------|----------|-------------|
-| GET | `/api/health` | Health check |
-| GET | `/api/home` | Popular, latest, manufacturers |
-| GET | `/api/categories` | All categories (for navbar) |
-| GET | `/api/categories/<slug>` | Category detail |
-| GET | `/api/categories/<slug>/families` | Families in category |
-| GET | `/api/categories/<slug>/series` | Series in category |
-| GET | `/api/categories/<slug>/generations` | Generations in category |
-| GET | `/api/categories/<slug>/specification-definitions` | Spec field definitions |
-| GET | `/api/manufacturers` | Manufacturers (`?category=cpu`) |
-| GET | `/api/products` | All products with filters |
-| GET | `/api/products/<id>` | Product by ID |
-| GET | `/api/products/by-slug/<slug>` | Product by slug |
-| GET | `/api/products/<category>/<manufacturer>/<slug>` | Product by URL path |
-| GET | `/api/cpus` … `/api/cases` | Category product listings |
-| GET | `/api/search?q=<query>` | Global search |
-| GET | `/api/compare?products=slug1,slug2` | Compare products (same category) |
+**PC PEDIA**
 
-### Query Parameters (product listings)
+A hardware encyclopedia and catalog for PC enthusiasts, builders, students, developers, and anyone who wants structured information about computer components.
 
-| Parameter | Description |
-|-----------|-------------|
-| `page` | Page number (default: 1) |
-| `limit` | Items per page (default: 24, max: 100) |
-| `category` | Category slug |
-| `manufacturer` | Manufacturer slug |
-| `family` | Family slug |
-| `series` | Series slug |
-| `generation` | Generation slug |
-| `search` | Search term |
-| `sort` | Sort field (`name`, `release_date`, `created_at`; prefix `-` for desc) |
-| `order` | `asc` or `desc` |
-| `spec_<key>` | Filter by specification value |
+### Built with ❤️ using
 
-### Admin API (`/api/admin/*`)
+**React • TypeScript • Vite • Tailwind • Flask • Python • SQLAlchemy • SQLite**
 
-CRUD for categories, manufacturers, families, series, generations, products, specification definitions. Bulk import via `POST /api/admin/import` with JSON array.
+---
 
-## URL Structure
-
-| Pattern | Example |
-|---------|---------|
-| `/cpu` | CPU category page |
-| `/cpu/amd/ryzen-7-7800x3d` | Product detail page |
-| `/compare` | Comparison tool |
-| `/admin` | Admin panel |
-
-## Testing
-
-```bash
-cd backend
-python -m pytest tests/ -v
-```
-
-```bash
-cd frontend
-npm run build
-```
-
-## Environment Variables
-
-**Backend (`backend/.env`):**
-```
-# Optional — defaults to backend/instance/pc_pedia.db
-# DATABASE_URL=sqlite:///instance/pc_pedia.db
-SECRET_KEY=your-secret-key
-```
-
-**Frontend (`frontend/.env`):**
-```
-VITE_API_URL=http://localhost:5000/api
-```
-
-## Data Import
-
-Future hardware imports use `backend/app/services/import_service.py`:
-
-```python
-from app.services.import_service import HardwareImportService
-service = HardwareImportService()
-result = service.import_batch(records)  # JSON or CSV-derived records
-```
-
-The service resolves taxonomy (manufacturer → family → series → generation), validates specifications, and avoids duplicate products.
+<p align="center">
+  <strong>PC PEDIA</strong><br>
+  <em>Know your hardware. Build smarter.</em>
+</p>
